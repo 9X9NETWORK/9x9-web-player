@@ -1,0 +1,311 @@
+
+body
+    font-family: $basic-font-family
+
+
+.l-main-container
+    +container
+    +show-grid(overlay)
+//
+.player-wrap
+    color: #fff
+    background-color: $basic-bgcolor
+    +clearfix
+
+.playback-info
+    +span(12 of 12)
+    border-bottom: solid 1px #000
+    .episode-name
+        font-size: $large-font
+        line-height: 2
+        +ellipsis
+
+.episode-info-wrap
+    +span(12 nest)
+
+.playback-episode-src
+    +span(8 of 12 first)
+    padding-bottom: 0.5rem 
+    padding-top: 0.5rem
+    .program-from
+        color: #777
+        font-size: $small-font
+    .program-logo-small
+        display: inline-block
+        vertical-align: middle
+        margin-left: 0.5rem
+        margin-right: 0.5rem
+        img
+            width: 1.2rem
+            border-radius: 10%
+    .program-name
+        font-size: $small-font
+.playback-episode-count
+    +span(4)
+    +pull(0.25)
+    background-color: #000
+    border-radius: 50rem
+    border: solid 1px #2b2b2b
+    margin-top: 0.3rem
+    padding-top: 0.3rem
+    padding-bottom: 0.3rem
+    //padding: 0.3rem 0.5rem 0.3rem 0.5rem
+    text-align: center
+    .episode-number
+        color: #fff
+        font-size: 1rem
+    .episode-text
+        font-size: 0.75rem
+        color: #5b5b5b
+
+
+.episode-list-wrap
+    width: 100%
+    overflow-x: auto
+    overflow-y: hidden
+    box-sizing: border-box
+    padding: 0.2rem 0 0.8rem 0 
+.episode-list
+    white-space: nowrap
+
+.episode-list-item
+    display: inline-block
+    width: 7.8rem
+    margin-right: 0.5rem
+    cursor: pointer
+    //now playing
+    &.now-playing
+        border: solid 0.2rem #ffffff
+        box-sizing: border-box
+        .episode-name
+            display: none
+
+    .episode-detail
+        position: relative
+    .episode-preview
+        width: 100%
+        height: auto
+    .episode-name
+        display: block
+        position: absolute
+        background-color: rgba(0,0,0,0.5)
+        padding: 0.15rem
+        bottom: 0
+        height: 1.5rem
+        font-size: $tiny-font
+        white-space: normal
+
+.social-media-wrap
+    +span(12)
+    color: #000
+    font-size: $large-font
+    background-color: #fff
+    border-top: solid 0.25rem #c6c3bf
+    border-bottom: solid 0.25rem #c6c3bf
+    padding-top: 0.5rem
+    padding-bottom: 0.5rem
+.social-media-text
+    display: inline-block
+    
+.social-media-list
+    display: inline-block
+   
+
+.social-media-item
+    margin-left: 0.5rem
+    display: inline-block
+    vertical-align: middle
+    a
+        display: inline-block
+        width: 2rem
+        height: 2rem
+        img
+            width: 100%
+
+
+.app-download-wrap
+    +span(12)
+    padding: 1rem
+    //+background-image(linear-gradient(to top, #70938f, #5f8b80 25%, #4c8170 50%, #37785d 75%, #1f573d))
+    background-color: #ff8000
+    +background-image(linear-gradient(to top, rgba(0,0,0,.4), rgba(0,0,0,0)))
+
+    .app-download-icon
+        width: 3.2rem
+        height: 3.2rem
+        float: left
+        margin-right: 1rem 
+        img
+            width: 100%
+    .app-name
+        font-size: 1.1
+        font-weight: bolder
+        line-height: 1.8
+.app-download-appstore,.app-download-googleplay    
+    margin: 1rem 1rem 0 1rem
+    text-align: center
+    .app-button
+        display: inline-block
+        width: 11.875rem
+        img
+            width: 100%
+
+
+.is-ios .app-download-googleplay,.is-android .app-download-appstore
+    display: none
+
+
+
+
+
+
+
+
+
+
+//
+.promote-wrap
+    +span(12 no-gutters)
+    +clearfix
+    background-color: $basic-bgcolor
+    color: #fff
+.promote-programe-text,.promote-programe-text-sub
+    text-align: center
+    padding: 1rem
+    font-size: $huge-font
+    line-height: 1.5
+
+.promote-programe-list
+    +clearfix
+
+.promote-programe-item
+
+    +gallery(4 of 12)
+
+    
+.promote-programe-img
+    height: 6rem
+    border-radius: 7%
+    border: solid 0.2rem #fff
+    overflow: hidden
+    .thumb-inner-center
+        display: inline-block
+        width: 300%
+        margin-left: -100%
+        height: 100%
+        text-align: center
+        vertical-align: middle
+    img
+        width: 60%
+        vertical-align: middle
+.promote-programe-name
+    text-align: center
+    display: block
+    +ellipsis
+    line-height: 1.8
+.promote-app-wrap
+    //+bleed(0.83333%)
+    +span(12 no-gutters) 
+    background-color: #fff
+    color: #000
+
+.promote-content-wrap
+    position: relative
+    
+    .program-gesture,.episode-gesture
+
+        position: absolute
+        background-color: #fff
+        border-radius: 0.25rem
+        padding: 0.5rem 1rem
+        color: #ff8309
+        +box-shadow(0 0.3125rem 0 0 rgba(0,0,0,0.6))
+    .program-gesture
+        top: calc(50% - 7rem)
+        left: calc(50% - 2.7rem)
+    .episode-gesture
+        top: calc(50% + 3.3rem)
+        left: calc(50% - 8rem)
+        
+     
+
+    .promote-back-img
+
+        height: 20rem
+        width: 100%
+        background-image: url(../images/app-promote.jpg)
+        background-position: 50% 0
+        background-repeat: no-repeat
+        background-size: 140%
+        margin-bottom: 0.5rem 
+        background-size: cover
+    
+.promote-app-text
+    text-align: center
+    padding: 1rem
+    font-size: 1.2rem
+    line-height: 1.5
+.promote-app-link-wrap
+    +span(12)
+    text-align: center
+    padding: 1rem
+    line-height: 1.5
+    //dirty work
+.promote-app-link-text
+    display: inline-block
+    //padding-top: 0.5rem
+    padding-bottom: 1rem
+
+
+.promote-app-link
+    +quickbutton(#ff8309)
+    display: block
+    margin-bottom: 0.5rem 
+    //text-decoration: none
+    //font-size: 1.2rem
+    //color: #ff6c00
+        
+
+
+
+
+
+.app-group-wrap
+    +span(12)
+    +clearfix
+    background-color: $basic-bgcolor
+    color: #fff
+    padding-top: 1.5rem
+    padding-bottom: 1.5rem
+    .app-group-text
+        font-size: $huge-font
+        line-height: 1.5
+        text-align: left
+        margin-bottom: 1rem
+.app-group-item
+    +clearfix
+    margin-bottom: 0.8rem
+    .app-item-icon
+        +span(2 of 12)
+        img
+            width: 100%
+    .app-name
+        +span(7 of 12)
+        font-size: 1.2rem
+        line-height: 1.5
+        padding-left: 0.5rem
+        +ellipsis
+    .app-item-link
+        +span(3 of 12 last)
+        padding-top: 0.2rem
+        padding-bottom: 0.2rem
+        text-decoration: none
+        text-align: center
+        color: $link-color
+        border: solid 1px $link-color
+        border-radius: 0.35rem
+    .app-item-descript
+        +span(12)
+        padding: 0.5rem 
+        font-size: $small-font
+        line-height: 1.5

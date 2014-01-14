@@ -1,0 +1,132 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="landing"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:title" content="9x9 flirp landing page"/>
+    <meta property="og:type" content="video"/>
+    <meta property="og:url" content="https://s3-us-west-2.amazonaws.com/9x9pm/landing_prototype/index.html"/>
+    <meta property="og:image" content="http://i1.ytimg.com/vi/dm_A_1xp_Vo/mqdefault.jpg"/>
+    <meta property="og:site_name" content="9x9.tv"/>
+    <meta property="og:description"
+          content="A First Look at VICE News with Shane Smith-content"/>
+    <meta property="og:video" content="http://www.youtube.com/v/dm_A_1xp_Vo?version=3&amp;autohide=1">
+    <meta property="og:video:type" content="application/x-shockwave-flash">
+    <meta property="og:video:width" content="480">
+    <meta property="og:video:height" content="360">
+    
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/susytest.css">
+        <!-- endbuild -->
+</head>
+  <body >
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+  <div class="l-main-container">
+      <div class="test1"></div>
+      <div class="test2">
+          <div class="test2-1"></div>
+      </div>
+      <div class="test3"></div>
+      <div class="test4"></div>
+      <div class="test5"></div>
+      <div class="test6"></div>
+      <div class="test7"></div>
+      <div class="test8"></div>
+      <div class="test9">
+        <div class="test9-1"></div>
+        <div class="test9-2"></div>        
+      </div>
+      <div class="test10">
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        
+      </div>
+    
+  </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <script>
+      // Load the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "//www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      function onYouTubeIframeAPIReady() {
+        new YT.Player('ytplayer', {
+          width: '100%',
+          height: '153px',
+
+          //videoId: 'dm_A_1xp_Vo',
+          playerVars: {
+            'controls': 0 ,
+            'showinfo' : 0,
+            'rel' : 0
+          }
+
+          //events: {
+            //'onReady': onPlayerReady
+          //   'onStateChange': onPlayerStateChange
+         // }
+        });
+
+      }
+      // function onPlayerReady(){
+      //   console.log('hello');         
+
+      // }
+    </script>
+
+
+    <script src="bower_components/angular/angular.js"></script>
+
+        <!-- build:js scripts/modules.js -->
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+        <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/promote.js"></script>
+        <script src="scripts/controllers/app-group.js"></script>
+        <script src="scripts/services/youtube-player.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

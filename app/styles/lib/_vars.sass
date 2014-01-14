@@ -1,0 +1,64 @@
+@charset "UTF-8"
+
+//global setting
+$susy: (columns: 12, gutters: 1, math: fluid, output: float, gutter-position: inside, debug: (image: show,color: rgba(#66f, .25),   output: overlay,toggle: top right))
+//$susy: (columns: 12, gutters: 1/4,)
+
+
+//$symmetrical: (columns: 12, gutters: 1/4,)
+//$asymmetrical: ( columns: (1 3 4 6 2),  gutters: .5,)
+
+
+////demo
+// $map: (
+//   columns: 12,
+//   gutters: 1/4,
+//   math: fluid,
+//   output: float,
+//   gutter-position: inside,
+// );
+
+////shorthand
+//$map:: 12 1/4 fluid float inside;
+
+
+
+//color
+$basic-bgcolor: rgb(29,29,29)
+$link-color: #f0871c
+
+
+
+//basic-font-family
+$basic-font-family: Arial, Helvetica, "Myriad Pro", "Hiragino Kaku Gothic Pro", "微軟正黑體", "Microsoft JhengHei", "Hiragino Sans GB", "Lihei Pro", "Droid Sans allback", Sans-serif
+
+//font-size-setting
+$huge-font: 1.25rem
+$large-font: 0.9375rem
+$small-font: 0.8125rem
+$tiny-font: 0.625rem
+
+
+=quickbutton($covercolor,$fontcolor: #fff,$fontsize: $huge-font )
+    +box-shadow(0 0.3125rem 0 0 shade($covercolor,20%))
+    background-color: $covercolor
+    border-radius: 0.3125rem
+    display: inline-block
+    cursor: pointer
+    color: $fontcolor
+    //font-weight: bold
+    font-size: $fontsize
+    text-decoration: none
+    //text-shadow: 0px 1px 0px #ffee66
+    padding: 0.5rem 1.5rem
+    &:hover
+        background-color: scale-lightness($covercolor,15)
+
+
+    &:active
+        box-shadow: none
+        position: relative
+        top: 0.3125rem
+    
+    
+    
