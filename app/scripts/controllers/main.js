@@ -1,58 +1,27 @@
 'use strict';
-angular.module('app.controllers').
- controller('MainCtrl', function (
-	  	$scope,
-	  	youtubePlayer
-  ){
-    
-    $scope.episodes = [
-      {
-        videoId: 'dm_A_1xp_Vo',
-        title: 'A First Look at VICE News with Shane Smith'
+ld.controller('MainCtrl', function ($scope, $stateParams){
 
-      },
-      {
-        videoId: 'lLMSRUNF7ec',
-        title: 'A First Look at VICE News with Shane Smith'
-      },
-      {
-        videoId: '-Ntzy0EPhF8',
-        title: 'A First Look at VICE News with Shane Smith'
-      },
-      {
-        videoId: 'KhTdK7y7n3A',
-        title: 'A First Look at VICE News with Shane Smith'
-      },
-      {
-        videoId: 'gMxhIfG0MpY',
-        title: 'A First Look at VICE News with Shane Smith'
-      },
-      {
-        videoId: 'dOYXaoJZjYc',
-        title: 'A First Look at VICE News with Shane Smith'
-      },
-      {
-        videoId: 'v_rVSqBiyXc',
-        title: 'A First Look at VICE News with Shane Smith'
-      },
-      {
-        videoId: 'qXQk5oNVU3s',
-        title: 'A First Look at VICE News with Shane Smith'
-      },
-      {
-        videoId: 'tzkABXZs-nc',
-        title: 'A First Look at VICE News with Shane Smith'
-      }      
-
-    ];
-
-    $scope.videoPlay=function(videoId){
-      //youtubePlayer.cueVideoById(videoId);
-      youtubePlayer.cueById(videoId);
-    };
-
-    youtubePlayer.playById($scope.episodes[0].videoId);
-
-
-
-  });
+	if($stateParams.channelId){
+		var cid = $stateParams.channelId;
+		var channel = new nn.model.Channel(cid);
+        nnApp.channel = channel;
+        channel.get().then(function(){
+            channel.loadEpisodes().then(function(){
+                var ep = channel.episodes.first();
+                var path = base + '/' + cid + '/' + ep.id;
+                location.hash = path;
+            });
+        });
+	}else{
+		var mso = nn.global.mso;
+        var portal = new nn.model.Portal();
+        var set, setInfo;
+        portal.get().then(function(){
+            set = portal.first();
+            setInfo = new nn.model.Set(set.id);
+            setInfo.get().then(function(){
+            	location.hash = base + '/' + setInfo.channels.first().id+'/'+setInfo.episodes.first().id;
+            });
+        });
+	}
+});

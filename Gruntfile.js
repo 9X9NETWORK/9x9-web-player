@@ -135,6 +135,15 @@ module.exports = function (grunt) {
         }]
       }
     },
+    compileCss : {
+      dist : {
+        options : {
+          sassDir: '<%= yeoman.app %>/styles',
+          cssDir: '<%= yeoman.app %>/styles',
+          relativeAssets: false
+        }
+      }
+    },
     compass: {
       options: {
         
@@ -151,7 +160,13 @@ module.exports = function (grunt) {
         require: ['susy','breakpoint'],
         relativeAssets: false
       },
-      dist: {},
+      dist: {
+        options : {
+          sassDir: '<%= yeoman.app %>/styles',
+          cssDir: '<%= yeoman.app %>/styles',
+          relativeAssets: false
+        }
+      },
       server: {
         options: {
           debugInfo: true
@@ -366,5 +381,9 @@ module.exports = function (grunt) {
     'jshint',
     'test',
     'build'
+  ]);
+
+  grunt.registerTask('ccss', [
+    "compass:dist"
   ]);
 };

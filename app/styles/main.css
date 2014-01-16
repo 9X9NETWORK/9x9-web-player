@@ -1,0 +1,700 @@
+@charset "UTF-8";
+/* line 5, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 2, lib/_layout.sass */
+body {
+  font-family: Arial, Helvetica, "Myriad Pro", "Hiragino Kaku Gothic Pro", "微軟正黑體", "Microsoft JhengHei", "Hiragino Sans GB", "Lihei Pro", "Droid Sans allback", Sans-serif;
+}
+
+/* line 6, lib/_layout.sass */
+.l-main-container {
+  *zoom: 1;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 10, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/../output/float/_clearfix.scss */
+.l-main-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 61, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/susy/_background.scss */
+head {
+  display: block;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 999;
+  color: #333;
+  background: rgba(255, 255, 255, 0.25);
+}
+/* line 100, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/susy/_background.scss */
+head::before {
+  content: "|||";
+  display: block;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 110, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/susy/_background.scss */
+head:hover {
+  box-shadow: 0 0 1px rgba(51, 51, 51, 0.5);
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 68, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/susy/_background.scss */
+head:hover ~ .l-main-container,
+head:hover ~ body .l-main-container {
+  position: relative;
+}
+/* line 71, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/susy/_background.scss */
+head:hover ~ .l-main-container::before,
+head:hover ~ body .l-main-container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: " ";
+  z-index: 998;
+  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+  background-image: -o-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+  -webkit-background-size: 8.33333%;
+  background-size: 8.33333%;
+  -webkit-background-origin: content-box;
+  -webkit-background-clip: content-box;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+}
+/* line 68, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/susy/_background.scss */
+head:hover ~ .l-main-container,
+head:hover ~ body .l-main-container {
+  position: relative;
+}
+/* line 71, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/susy/_background.scss */
+head:hover ~ .l-main-container::before,
+head:hover ~ body .l-main-container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: " ";
+  z-index: 998;
+  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+  background-image: -o-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+  -webkit-background-size: 8.33333%;
+  background-size: 8.33333%;
+  -webkit-background-origin: content-box;
+  -webkit-background-clip: content-box;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+}
+
+/* line 10, lib/_layout.sass */
+.player-wrap {
+  color: white;
+  background-color: #1d1d1d;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 15, lib/_layout.sass */
+.playback-info {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  border-bottom: solid 1px black;
+}
+/* line 18, lib/_layout.sass */
+.playback-info .episode-name {
+  font-size: 0.9375rem;
+  line-height: 2;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+/* line 23, lib/_layout.sass */
+.episode-info-wrap {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+}
+
+/* line 26, lib/_layout.sass */
+.playback-episode-src {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+/* line 30, lib/_layout.sass */
+.playback-episode-src .program-from {
+  color: #777777;
+  font-size: 0.8125rem;
+}
+/* line 33, lib/_layout.sass */
+.playback-episode-src .program-logo-small {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+/* line 38, lib/_layout.sass */
+.playback-episode-src .program-logo-small img {
+  width: 1.2rem;
+  border-radius: 10%;
+}
+/* line 41, lib/_layout.sass */
+.playback-episode-src .program-name {
+  font-size: 0.8125rem;
+}
+
+/* line 43, lib/_layout.sass */
+.playback-episode-count {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  margin-left: -2.08333%;
+  background-color: black;
+  border-radius: 50rem;
+  border: solid 1px #2b2b2b;
+  margin-top: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+/* line 54, lib/_layout.sass */
+.playback-episode-count .episode-number {
+  color: white;
+  font-size: 1rem;
+}
+/* line 57, lib/_layout.sass */
+.playback-episode-count .episode-text {
+  font-size: 0.75rem;
+  color: #5b5b5b;
+}
+
+/* line 62, lib/_layout.sass */
+.episode-list-wrap {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  padding: 0.2rem 0 0.8rem 0;
+}
+
+/* line 68, lib/_layout.sass */
+.episode-list {
+  white-space: nowrap;
+}
+
+/* line 71, lib/_layout.sass */
+.episode-list-item {
+  display: inline-block;
+  width: 7.8rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+/* line 77, lib/_layout.sass */
+.episode-list-item.now-playing {
+  border: solid 0.2rem white;
+  box-sizing: border-box;
+}
+/* line 80, lib/_layout.sass */
+.episode-list-item.now-playing .episode-name {
+  display: none;
+}
+/* line 83, lib/_layout.sass */
+.episode-list-item .episode-detail {
+  position: relative;
+}
+/* line 85, lib/_layout.sass */
+.episode-list-item .episode-preview {
+  width: 100%;
+  height: auto;
+}
+/* line 88, lib/_layout.sass */
+.episode-list-item .episode-name {
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.15rem;
+  bottom: 0;
+  height: 1.5rem;
+  font-size: 0.625rem;
+  white-space: normal;
+}
+
+/* line 98, lib/_layout.sass */
+.social-media-wrap {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  color: black;
+  font-size: 0.9375rem;
+  background-color: white;
+  border-top: solid 0.25rem #c6c3bf;
+  border-bottom: solid 0.25rem #c6c3bf;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* line 107, lib/_layout.sass */
+.social-media-text {
+  display: inline-block;
+}
+
+/* line 110, lib/_layout.sass */
+.social-media-list {
+  display: inline-block;
+}
+
+/* line 114, lib/_layout.sass */
+.social-media-item {
+  margin-left: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 118, lib/_layout.sass */
+.social-media-item a {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+/* line 122, lib/_layout.sass */
+.social-media-item a img {
+  width: 100%;
+}
+
+/* line 126, lib/_layout.sass */
+.app-download-wrap {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  padding: 1rem;
+  background-color: #ff8000;
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+/* line 133, lib/_layout.sass */
+.app-download-wrap .app-download-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  float: left;
+  margin-right: 1rem;
+}
+/* line 138, lib/_layout.sass */
+.app-download-wrap .app-download-icon img {
+  width: 100%;
+}
+/* line 140, lib/_layout.sass */
+.app-download-wrap .app-name {
+  font-size: 1.1;
+  font-weight: bolder;
+  line-height: 1.8;
+}
+
+/* line 144, lib/_layout.sass */
+.app-download-appstore, .app-download-googleplay {
+  margin: 1rem 1rem 0 1rem;
+  text-align: center;
+}
+/* line 147, lib/_layout.sass */
+.app-download-appstore .app-button, .app-download-googleplay .app-button {
+  display: inline-block;
+  width: 11.875rem;
+}
+/* line 150, lib/_layout.sass */
+.app-download-appstore .app-button img, .app-download-googleplay .app-button img {
+  width: 100%;
+}
+
+/* line 154, lib/_layout.sass */
+.is-ios .app-download-googleplay, .is-android .app-download-appstore {
+  display: none;
+}
+
+/* line 167, lib/_layout.sass */
+.promote-wrap {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  *zoom: 1;
+  background-color: #1d1d1d;
+  color: white;
+}
+
+/* line 172, lib/_layout.sass */
+.promote-programe-text, .promote-programe-text-sub {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/* line 178, lib/_layout.sass */
+.promote-programe-list {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 181, lib/_layout.sass */
+.promote-programe-item {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+}
+/* line 63, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/susy/_gallery.scss */
+.promote-programe-item:nth-child(3n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+}
+/* line 63, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/susy/_gallery.scss */
+.promote-programe-item:nth-child(3n + 2) {
+  margin-left: 33.33333%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 63, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/susy/_gallery.scss */
+.promote-programe-item:nth-child(3n + 3) {
+  margin-left: 66.66667%;
+  margin-right: -100%;
+  clear: none;
+}
+
+/* line 186, lib/_layout.sass */
+.promote-programe-img {
+  height: 6rem;
+  border-radius: 7%;
+  border: solid 0.2rem white;
+  overflow: hidden;
+}
+/* line 191, lib/_layout.sass */
+.promote-programe-img .thumb-inner-center {
+  display: inline-block;
+  width: 300%;
+  margin-left: -100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 198, lib/_layout.sass */
+.promote-programe-img img {
+  width: 60%;
+  vertical-align: middle;
+}
+
+/* line 201, lib/_layout.sass */
+.promote-programe-name {
+  text-align: center;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  line-height: 1.8;
+}
+
+/* line 206, lib/_layout.sass */
+.promote-app-wrap {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  background-color: white;
+  color: black;
+}
+
+/* line 212, lib/_layout.sass */
+.promote-content-wrap {
+  position: relative;
+}
+/* line 215, lib/_layout.sass */
+.promote-content-wrap .program-gesture, .promote-content-wrap .episode-gesture {
+  position: absolute;
+  background-color: white;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  color: #ff8309;
+  -moz-box-shadow: 0 0.3125rem 0 0 rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0.3125rem 0 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0.3125rem 0 0 rgba(0, 0, 0, 0.6);
+}
+/* line 223, lib/_layout.sass */
+.promote-content-wrap .program-gesture {
+  top: calc(50% - 7rem);
+  left: calc(50% - 2.7rem);
+}
+/* line 226, lib/_layout.sass */
+.promote-content-wrap .episode-gesture {
+  top: calc(50% + 3.3rem);
+  left: calc(50% - 8rem);
+}
+/* line 232, lib/_layout.sass */
+.promote-content-wrap .promote-back-img {
+  height: 20rem;
+  width: 100%;
+  background-image: url(../images/app-promote.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 140%;
+  margin-bottom: 0.5rem;
+  background-size: cover;
+}
+
+/* line 243, lib/_layout.sass */
+.promote-app-text {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* line 248, lib/_layout.sass */
+.promote-app-link-wrap {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  text-align: center;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+/* line 254, lib/_layout.sass */
+.promote-app-link-text {
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+/* line 260, lib/_layout.sass */
+.promote-app-link {
+  -moz-box-shadow: 0 0.3125rem 0 0 #cc6807;
+  -webkit-box-shadow: 0 0.3125rem 0 0 #cc6807;
+  box-shadow: 0 0.3125rem 0 0 #cc6807;
+  background-color: #ff8309;
+  border-radius: 0.3125rem;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+/* line 54, lib/_vars.sass */
+.promote-app-link:hover {
+  background-color: #ff962e;
+}
+/* line 58, lib/_vars.sass */
+.promote-app-link:active {
+  box-shadow: none;
+  position: relative;
+  top: 0.3125rem;
+}
+
+/* line 273, lib/_layout.sass */
+.app-group-wrap {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  overflow: hidden;
+  *zoom: 1;
+  background-color: #1d1d1d;
+  color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+/* line 280, lib/_layout.sass */
+.app-group-wrap .app-group-text {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+/* line 285, lib/_layout.sass */
+.app-group-item {
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 0.8rem;
+}
+/* line 288, lib/_layout.sass */
+.app-group-item .app-item-icon {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 16.66667%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+}
+/* line 290, lib/_layout.sass */
+.app-group-item .app-item-icon img {
+  width: 100%;
+}
+/* line 292, lib/_layout.sass */
+.app-group-item .app-name {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 58.33333%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding-left: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+/* line 298, lib/_layout.sass */
+.app-group-item .app-item-link {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  float: right;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  text-decoration: none;
+  text-align: center;
+  color: #f0871c;
+  border: solid 1px #f0871c;
+  border-radius: 0.35rem;
+}
+/* line 307, lib/_layout.sass */
+.app-group-item .app-item-descript {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  padding: 0.5rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
