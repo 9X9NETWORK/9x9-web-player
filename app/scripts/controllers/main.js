@@ -46,9 +46,21 @@ angular.module('app.controllers').
 
     ];
 
-    $scope.videoPlay=function(videoId){
+    $scope.videoPlay=function(episode,index){
       //youtubePlayer.cueVideoById(videoId);
-      youtubePlayer.cueById(videoId);
+      youtubePlayer.cueById(episode.videoId);
+      $scope.episodes.forEach(
+        function(episode){
+          console.log('episode=',episode);
+          episode.isSelected=false;
+        }
+      )
+
+      if(episode.isSelected!==true){
+
+        episode.isSelected=true;
+      }
+
     };
 
     youtubePlayer.playById($scope.episodes[0].videoId);
