@@ -46,23 +46,23 @@ angular.module('app.controllers').
 
     ];
 
+    //for remember last Select
+    var lastSelected=0;
+
     $scope.videoPlay=function(episode,index){
-      //youtubePlayer.cueVideoById(videoId);
+
       youtubePlayer.cueById(episode.videoId);
-      $scope.episodes.forEach(
-        function(episode){
-          console.log('episode=',episode);
-          episode.isSelected=false;
-        }
-      )
 
-      if(episode.isSelected!==true){
+      if (lastSelected!==index){
+        $scope.episodes[lastSelected].isSelected=false;
+        $scope.episodes[index].isSelected=true;
+        lastSelected=index;
 
-        episode.isSelected=true;
-      }
+      };      
 
     };
 
+    $scope.episodes[lastSelected].isSelected=true;
     youtubePlayer.playById($scope.episodes[0].videoId);
 
 
