@@ -2,7 +2,6 @@
 
 //angular.module('landing', ['ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 'landing.services', 'landing.filters', 'landing.directives'])
 var base = "/web";
-var nnApp = {};
 var ld = angular.module('landing', [
   'ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 
   'landing.services', 'landing.filters', 'landing.directives'])
