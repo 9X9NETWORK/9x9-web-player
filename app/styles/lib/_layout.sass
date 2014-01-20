@@ -1,20 +1,23 @@
 
 body
     font-family: $basic-font-family
+    overflow-x: hidden
 
 
 .l-main-container
     +container
-    +show-grid(overlay)
-//
+    //+show-grid(overlay)
+
+//player
 .player-wrap
     color: #fff
     background-color: $basic-bgcolor
     +clearfix
 
 .playback-info
-    +span(12 of 12)
+    +full
     border-bottom: solid 1px #000
+    background-color: $basic-bgcolor
     .episode-name
         font-size: $large-font
         line-height: 2
@@ -22,6 +25,7 @@ body
 
 .episode-info-wrap
     +span(12 nest)
+    background-color: $basic-bgcolor
 
 .playback-episode-src
     +span(8 of 12 first)
@@ -49,7 +53,6 @@ body
     margin-top: 0.3rem
     padding-top: 0.3rem
     padding-bottom: 0.3rem
-    //padding: 0.3rem 0.5rem 0.3rem 0.5rem
     text-align: center
     .episode-number
         color: #fff
@@ -65,23 +68,30 @@ body
     overflow-y: hidden
     box-sizing: border-box
     padding: 0.2rem 0 0.8rem 0 
+    //for mobile scrolling
+    -webkit-overflow-scrolling: touch
 .episode-list
     white-space: nowrap
+
+
 
 .episode-list-item
     display: inline-block
     width: 7.8rem
     margin-right: 0.5rem
     cursor: pointer
-    //now playing
-    &.now-playing
-        border: solid 0.2rem #ffffff
-        box-sizing: border-box
-        .episode-name
-            display: none
+   
+    
+       
+    //box-sizing: border-box
+        
+
+        
 
     .episode-detail
         position: relative
+        
+
     .episode-preview
         width: 100%
         height: auto
@@ -94,6 +104,23 @@ body
         height: 1.5rem
         font-size: $tiny-font
         white-space: normal
+
+//now playing
+.is-playing 
+    .episode-detail:before
+        content: ""
+        display: block
+        border: solid 0.25rem rgba(#ffffff,0.65)
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        box-sizing: border-box
+        z-index: 10
+
+    .episode-name
+        display: none
 
 .social-media-wrap
     +span(12)
@@ -141,6 +168,8 @@ body
         font-size: 1.1
         font-weight: bolder
         line-height: 1.8
+    .app-item-descript
+        display: none 
 .app-download-appstore,.app-download-googleplay    
     margin: 1rem 1rem 0 1rem
     text-align: center
@@ -167,8 +196,9 @@ body
 .promote-wrap
     +span(12 no-gutters)
     +clearfix
-    background-color: $basic-bgcolor
     color: #fff
+.promote-programe-wrap
+    background-color: $basic-bgcolor
 .promote-programe-text,.promote-programe-text-sub
     text-align: center
     padding: 1rem
@@ -181,23 +211,24 @@ body
 .promote-programe-item
 
     +gallery(4 of 12)
+    //padding-bottom: span(4 of 12)
 
     
 .promote-programe-img
-    height: 6rem
+    //height: 6rem
     border-radius: 7%
     border: solid 0.2rem #fff
     overflow: hidden
     .thumb-inner-center
-        display: inline-block
-        width: 300%
-        margin-left: -100%
-        height: 100%
-        text-align: center
-        vertical-align: middle
+        //display: inline-block
+        //width: 300%
+        //margin-left: -100%
+        //height: 100%
+        //text-align: center
+        //vertical-align: middle
     img
-        width: 60%
-        vertical-align: middle
+        width: 100%
+        //vertical-align: middle
 .promote-programe-name
     text-align: center
     display: block
@@ -221,24 +252,26 @@ body
         color: #ff8309
         +box-shadow(0 0.3125rem 0 0 rgba(0,0,0,0.6))
     .program-gesture
-        top: calc(50% - 7rem)
-        left: calc(50% - 2.7rem)
+        display: none
+        // top: calc(50% - 7rem)
+        // left: calc(50% - 2.7rem)
     .episode-gesture
-        top: calc(50% + 3.3rem)
-        left: calc(50% - 8rem)
+        display: none
+        // top: calc(50% + 3.3rem)
+        // left: calc(50% - 8rem)
         
      
 
-    .promote-back-img
+.promote-back-img
 
-        height: 20rem
-        width: 100%
-        background-image: url(../images/app-promote.jpg)
-        background-position: 50% 0
-        background-repeat: no-repeat
-        background-size: 140%
-        margin-bottom: 0.5rem 
-        background-size: cover
+    height: 20rem
+    width: 100%
+    background-image: url(../images/app-promote-text.jpg)
+    background-position: 50% 0
+    background-repeat: no-repeat
+    background-size: 140%
+    margin-bottom: 0.5rem 
+    //background-size: cover
     
 .promote-app-text
     text-align: center
@@ -257,13 +290,11 @@ body
     padding-bottom: 1rem
 
 
-.promote-app-link
-    +quickbutton(#ff8309)
-    display: block
-    margin-bottom: 0.5rem 
-    //text-decoration: none
-    //font-size: 1.2rem
-    //color: #ff6c00
+// .promote-app-link
+//     +quickbutton(#ff8309)
+//     display: block
+//     margin-bottom: 0.5rem 
+
         
 
 
@@ -285,6 +316,7 @@ body
 .app-group-item
     +clearfix
     margin-bottom: 0.8rem
+    border-bottom: 1px solid #444
     .app-item-icon
         +span(2 of 12)
         img

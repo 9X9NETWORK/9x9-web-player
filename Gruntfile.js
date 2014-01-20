@@ -149,6 +149,7 @@ module.exports = function (grunt) {
         httpGeneratedImagesPath: '/images/generated',
         httpFontsPath: '/styles/fonts',
         require: ['susy','breakpoint'],
+        sourcemap: true,
         relativeAssets: false
       },
       dist: {},
