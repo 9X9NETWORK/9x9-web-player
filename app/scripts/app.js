@@ -2,6 +2,7 @@
 
 //angular.module('landing', ['ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 'landing.services', 'landing.filters', 'landing.directives'])
 var base = "/web";
+var player;
 var ld = angular.module('landing', [
   'ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 
   'landing.services', 'landing.filters', 'landing.directives'])
@@ -9,6 +10,9 @@ var ld = angular.module('landing', [
     function($rootScope, $state, $stateParams) {
         $rootScope.$state = $state;
         $rootScope.$stateParams = $stateParams;
+
+        $rootScope.$on('$viewContentLoaded', function() {
+        });
     }
 ])
 .config(function($stateProvider, $urlRouterProvider){
@@ -55,8 +59,6 @@ angular.module('landing.controllers', []);
 angular.module('landing.services', []);
 angular.module('landing.filters', []);
 angular.module('landing.directives', []);
-
-
 
 
 

@@ -25,7 +25,7 @@
 	    </div>
 	    <div class="episode-list-wrap">
 		    <ul class="episode-list">
-		        <li ng-repeat="episode in episodes.array" class="episode-list-item" ng-click="onEpisodeClick(episode.id)">
+		        <li ng-repeat="episode in episodes.array" class="episode-list-item" ng-class="{{$index === episodeIndex ? 'is-playing' : ''}}" ng-click="onEpisodeClick(episode.id)">
 		            <div class="episode-detail">
 		            	<img class="episode-preview" ng-src="{{episode.thumb}}" alt="{{episode.name}}">
 		            	
