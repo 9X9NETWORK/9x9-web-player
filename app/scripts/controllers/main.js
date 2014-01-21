@@ -2,52 +2,22 @@
 angular.module('app.controllers').
  controller('MainCtrl', function (
 	  	$scope,
-	  	youtubePlayer
+	  	youtubePlayer,
+      videoData
   ){
-    
-    $scope.episodes = [
-      {
-        videoId: 'dm_A_1xp_Vo',
-        title: 'A First Look at VICE News with Shane Smith'
-
-      },
-      {
-        videoId: 'lLMSRUNF7ec',
-        title: 'A First Look at VICE News with Shane Smith'
-      },
-      {
-        videoId: '-Ntzy0EPhF8',
-        title: 'A First Look at VICE News with Shane Smith'
-      },
-      {
-        videoId: 'KhTdK7y7n3A',
-        title: 'A First Look at VICE News with Shane Smith'
-      },
-      {
-        videoId: 'gMxhIfG0MpY',
-        title: 'A First Look at VICE News with Shane Smith'
-      },
-      {
-        videoId: 'dOYXaoJZjYc',
-        title: 'A First Look at VICE News with Shane Smith'
-      },
-      {
-        videoId: 'v_rVSqBiyXc',
-        title: 'A First Look at VICE News with Shane Smith'
-      },
-      {
-        videoId: 'qXQk5oNVU3s',
-        title: 'A First Look at VICE News with Shane Smith'
-      },
-      {
-        videoId: 'tzkABXZs-nc',
-        title: 'A First Look at VICE News with Shane Smith'
-      }      
-
-    ];
 
     //for remember last Select
     var lastSelected=0;
+
+    videoData.async().then(function(data){
+      console.log('episodes=',data);
+      $scope.episodes=data;
+      $scope.episodes[lastSelected].isSelected=true;
+      youtubePlayer.playById($scope.episodes[0].videoId);
+    });
+
+
+    
 
     $scope.videoPlay=function(episode,index){
 
@@ -62,8 +32,7 @@ angular.module('app.controllers').
 
     };
 
-    $scope.episodes[lastSelected].isSelected=true;
-    youtubePlayer.playById($scope.episodes[0].videoId);
+    
 
 
 
