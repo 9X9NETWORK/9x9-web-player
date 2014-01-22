@@ -2,11 +2,11 @@
 angular.module('app.controllers').
  controller('MainCtrl', function (
 	  	$scope,
-        youtubePlayer,
-        videoData,
-        $stateParams,
-        $location, 
-        $rootScope
+      youtubePlayer,
+      videoData,
+      $stateParams,
+      $location, 
+      $rootScope
 	  	
   ){
 
@@ -19,11 +19,11 @@ angular.module('app.controllers').
       //console.log('episodes=',data);
       $scope.episodes=data;
       $scope.episodes[lastSelected].isSelected=true;
-      if(episodeId!=='undefined'){
+      if(episodeId){
          youtubePlayer.playById(episodeId);
       }else{
-          youtubePlayer.playById($scope.episodes[0].videoId);
-      }
+         youtubePlayer.playById($scope.episodes[0].videoId);
+      };
 
     
 
@@ -44,8 +44,9 @@ angular.module('app.controllers').
 
       };    
       youtubePlayer.cueById(episode.videoId); 
-      $location.path(episode.videoId); 
-      //youtubePlayer.playById(episode.videoId);  
+      //notice youtube not ready issues
+      //$location.path(episode.videoId); 
+
 
     };
 
