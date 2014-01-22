@@ -17,14 +17,37 @@ angular.module('landing', ['ngCookies','ngResource','ngSanitize','ui.router','ap
         // to active whenever 'contacts.list' or one of its decendents is active.
         $rootScope.$state = $state;
         $rootScope.$stateParams = $stateParams;
+
     }
 ])
-.config(['$stateProvider', '$urlRouterProvider',
-    function($stateProvider, $urlRouterProvider){
+.config(function($locationProvider,$stateProvider, $urlRouterProvider){
+      //$locationProvider.html5Mode(true);
       $urlRouterProvider.otherwise('/');
       $stateProvider
         .state("index", {
-          url: "/",
+          url: "/home",
+          views: {
+            'view.player': {
+              templateUrl: 'views/main.html',
+              controller:'MainCtrl'
+
+            },
+            'view.promote': {
+              templateUrl: 'views/promote.html',
+
+              controller:'PromoteCtrl'
+              
+            },
+            'view.appGroup': {
+              templateUrl: 'views/app_group.html',
+
+              controller:'AppGroupCtrl'
+              
+            }
+          }
+        })
+        .state('episode', {
+          url: '/:episodeId',
           views: {
             'view.player': {
               templateUrl: 'views/main.html',
@@ -48,10 +71,10 @@ angular.module('landing', ['ngCookies','ngResource','ngSanitize','ui.router','ap
 
         .state('testb', {
           url: '/awert',
-          templateUrl: 'views/promote.html'
+          templateUrl: 'views/main.html',
         });
     }
-  ]);
+  );
 
 
 

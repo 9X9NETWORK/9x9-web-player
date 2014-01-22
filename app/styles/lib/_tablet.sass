@@ -1,16 +1,53 @@
 +susy-breakpoint(30em,16)
-	.playback-player
-		height: 20em
-	.playback-episode-count
-		width: 8rem
-		float: right
-		margin-right: 0.5rem
+    .playback-player
+        height: 20em
+    .playback-episode-count
+        width: 8rem
+        float: right
+        margin-right: 0.5rem
 
 
 
-	.episode-list-item
-		width: 8.2rem
+    .episode-list-item
+        width: 8.2rem
 
 
-	.promote-back-img
-		background-size: contain
+    .promote-back-img
+        background-size: contain
+
+
++susy-breakpoint(48em,16)
+    .app-download-info
+        .app-download-icon
+            width: 4rem
+            height: 4rem
+        .app-name
+            font-size: 1.8rem
+            line-height: 1.4
+        .app-download-text
+            font-size: 1.3rem
+    .app-download-wrap
+        .app-download-icon
+            width: 4rem
+            height: 4rem
+    //promote
+    .promote-programe-text,.promote-programe-text-sub
+        font-size: 1.5rem
+    .promote-programe-list
+        +pad(1)
+    .promote-content-wrap
+        //height: 30rem
+
+
+
+    .app-group-item
+        +span(7.5 no-gutter)
+        +squish(0,0.5)
+        //padding-left: 0
+        .app-name
+            +span(4 of 7.5)
+
+        .app-item-link
+            +span(2 of 7.5 last)
+            padding-top: 0.35rem
+            padding-bottom: 0.35rem
