@@ -69,6 +69,9 @@
     }
 
     $mso = json_decode(file_get_contents("http://$localhost/api/mso/$msoName"), true);
+    if ($mso == null) {
+	    $mso = json_decode(file_get_contents("http://$localhost/api/mso/9x9"), true);
+    }
     if ($mso['title']) $content = str_replace("{{meta_title}}", htmlsafe($mso['title']), $content);
     if ($mso['intro']) $content = str_replace("{{meta_description}}", htmlsafe($mso['intro']), $content);
     if ($mso['logoUrl']) $content = str_replace("{{meta_thumbnail}}", htmlsafe($mso['logoUrl']), $content);
