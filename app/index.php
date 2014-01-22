@@ -10,7 +10,7 @@
 
     $host = $_SERVER['HTTP_HOST'];
     $localhost = "localhost:8080";
-    list($mso, $remain) = explode('.', $host, 2);
+    list($msoName, $remain) = explode('.', $host, 2);
 
     $content = file_get_contents(__DIR__ . '/index.html');
 
@@ -68,13 +68,12 @@
         }
     }
 
-    $msoInfo = json_decode(file_get_contents("http://$localhost/api/mso/$mso"), true);
-    $meta = $msoInfo['meta'];
-    if (isset($meta['meta-title'])) $content = str_replace("{{meta_title}}", htmlsafe($meta['meta-title']), $content);
-    if (isset($meta['meta-description'])) $content = str_replace("{{meta_description}}", htmlsafe($meta['meta-description']), $content);
-    if (isset($meta['meta-thumbnail'])) $content = str_replace("{{meta_thumbnail}}", htmlsafe($meta['meta-thumbnail']), $content);
-    if (isset($meta['meta-keyword'])) $content = str_replace("{{meta_keyword}}", htmlsafe($meta['meta-keyword']), $content);
-    $content = str_replace("{{favicon}}", isset($meta['favicon-url']) ? "<link rel='shortcut icon' href='${meta['favicon-url']}' type='image/x-icon'/>" : "", $content);
+    $mso = json_decode(file_get_contents("http://$localhost/api/mso/$msoName"), true);
+    if ($mso['title']) $content = str_replace("{{meta_title}}", htmlsafe($mso['title']), $content);
+    if ($mso['intro']) $content = str_replace("{{meta_description}}", htmlsafe($mso['intro']), $content);
+    if ($mso['logoUrl']) $content = str_replace("{{meta_thumbnail}}", htmlsafe($mso['logoUrl']), $content);
+    if ($mso['keyword']) $content = str_replace("{{meta_keyword}}", htmlsafe($mso['keyword']), $content);
+    $content = str_replace("{{favicon}}", ($mso['jingleUrl'] ? "<link rel='shortcut icon' href='${mso['jingleUrl']}' type='image/x-icon'/>" : ""), $content);
 
     $content = str_replace("{{meta_title}}", htmlsafe("9x9 flirp landing page"), $content);
     $content = str_replace("{{meta_description}}", htmlsafe(null), $content);
