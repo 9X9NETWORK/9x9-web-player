@@ -1,0 +1,82 @@
+<div class="player-wrap">
+	<div class="player-device">
+		<div class="playback-player" style="height:300px">
+		    <div id="ytplayer-1"></div>
+		</div>
+		<div class="playback-info">
+		    <p class="episode-name">{{episode.anme}}</p>
+		    <!-- <p class="episode-last-updated">2 hours ago</p> -->
+		    <!-- <ul class="playback-info-buttons">
+		        <li class="playback-info-share"><i class="icon-menu"></i></li>
+		        <li class="playback-info-favorite"><i class="icon-search"></i></li>
+		    </ul> -->
+		</div>
+
+		<div class="episode-info-wrap">
+			<div class="playback-episode-src">
+		        <span class="program-from">from</span>
+		        <figure class="program-logo-small">
+		        	<img ng-src="{{channel.images[0]}}" >
+		        </figure>
+		        <span class="program-name">{{channel.name}}</span>
+		    </div>
+		    <div class="playback-episode-count">
+		            <span class="episode-number">{{episodes.array.length}}</span>
+		            <span class="episode-text">episodes</span>
+		    </div>
+
+		    <div class="episode-list-wrap" style="position:relative; height : 70px;">
+			    <ul class="episode-list" episode-list  style="position:absolute; left : 0; top : 0">
+			        <li ng-repeat="episode in episodes.array" ng-click="onEpisodeClick(episode.id)" class="episode-list-item {{$index === episodeIndex ? 'is-playing' : ''}}" ng-class="" >
+			        	<!-- ng-click="onEpisodeClick(episode.id)" -->
+			            <div class="episode-detail">
+			            	<img class="episode-preview" ng-src="{{episode.thumb}}" alt="{{episode.name}}">
+			            	
+			                <!-- <div class=""> -->
+			                <p class="episode-name">{{episode.name}}</p>
+			                <!-- </div> -->
+			            </div>
+			        </li>
+			    </ul>
+		    </div>
+	</div>
+
+	</div>
+	<div class="app-download-wrap">
+		<div class="app-download-info">
+		<figure class="app-download-icon">
+			<img src="images/app_icon_high_res_iphone.png">
+			
+		</figure>
+		<h1 class="app-name">華視雲端網</h1>
+		<p class="app-download-text">立刻免費下載app看更多節目！</p>
+
+		</div>
+
+		
+
+		<div class="app-download-appstore">
+
+			<a href="" class="app-button">
+			   <img src="images/btn_app_store@x2.png">	
+		   </a>
+		</div>
+		<div class="app-download-googleplay">
+
+			<a href="" class="app-button">
+			   <img src="images/btn_google_play@x2.png">	
+		   </a>
+		</div>
+
+	</div>
+	<div class="social-media-wrap">
+	<h1 class="social-media-text">或造訪社群</h1>
+		<ul class="social-media-list">
+			<li class="social-media-item"><a href="#"><img src="images/social-media-fb.png" alt=""></a></li>
+			<li class="social-media-item"><a href="#"><img src="images/social-media-twitter.png" alt=""></a></li>
+			<li class="social-media-item"><a href="#"><img src="images/social-media-google.png" alt=""></a></li>
+		</ul>
+		
+	</div>
+
+</div>

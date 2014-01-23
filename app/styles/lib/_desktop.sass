@@ -1,0 +1,175 @@
+$desktop-large-font: 2.25rem
+
++susy-breakpoint(60rem,16)
+    //+layout($desktop-layout)
+    body
+        +background-image(linear-gradient(to bottom, #d9d9d9, #ededed 2%, #f5f5f5 4%, #fff 8%))
+    .l-main-container
+        +container(70rem)
+        //+show-grid(overlay)
+
+
+    .player-wrap
+        //+background-image(linear-gradient(to bottom, #d9d9d9, #ededed 6%, #f5f5f5 9%, #fff))       
+        background-color: transparent
+    .player-device
+        width: 37.5rem        
+        height: 35rem
+        padding: 6.75rem 2.7rem 0 2.56rem
+        margin-right: 2rem
+        background: url('../images/ipad-outline.png') no-repeat 0 100%
+        float: right
+        box-sizing: border-box
+        
+    // .playback-player
+    //     height: 20rem
+
+    .playback-info
+        //+span(7 last)
+        //clear: both
+    .episode-info-wrap
+        //+span(7 last)
+        //clear: both
+    .playback-episode-src
+        padding-top: 0.4rem
+        padding-bottom: 0.25rem
+    .playback-episode-count
+        //display: none
+    .episode-list-item
+        width: 7.3rem
+    .episode-list-wrap
+        padding: 0.2rem 0 0 0
+        overflow-x: hidden 
+
+
+    .app-download-wrap
+        +span(5 first)
+        margin-top: 2.5rem
+        background-image: none
+        background-color: transparent
+        color: #555
+        .app-download-icon
+            width: 5.5rem
+            height: 5.5rem
+            float: none
+            margin-bottom: 1rem
+        .app-name
+            font-size: 2.5rem 
+        .app-item-descript
+            display: block
+            margin-bottom: 1rem
+            line-height: 1.4
+        .app-download-text
+            font-size: 1.25rem
+
+        .app-download-appstore,.app-download-googleplay
+            //+span(3 of 6)
+            .app-button
+                +span(3 of 6)
+
+        
+    .social-media-wrap
+        +span(5)
+        border: none
+    .social-media-text
+        font-size: 1rem
+    
+
+
+
+    //promote-programe
+    .promote-wrap
+        overflow: visible
+
+    .promote-programe-wrap
+        +bleed-x(100rem)
+        padding-top: span(1)
+        padding-bottom: span(1)
+
+        //+clearfix
+        &:after
+            content: ''
+            display: block
+            clear: both
+
+    .promote-programe-img
+        //height: 9rem
+    
+    .promote-programe-list
+        +span(9)
+    .promote-programe-text
+        +span(7 last)
+        font-size: $desktop-large-font
+        text-align: left
+        padding-left: 0
+        margin-bottom: 3.5rem
+    .promote-content-wrap
+
+        .program-gesture
+            top: calc(50% - 9rem)
+            left: calc(50% - 2.5rem)
+        .episode-gesture
+            top: calc(50% + 6.6rem)
+            left: calc(50% - 9rem)
+    .promote-app-wrap
+        +bleed-x(100rem)
+        +background-image(linear-gradient(to top, #d5d5d5, #fff 24%))
+        margin-top: span(1)
+        
+
+    .promote-app-text
+        +span(7)
+        font-size: $desktop-large-font
+        text-align: left
+        position: relative
+        z-index: 2
+
+
+    .promote-programe-text-sub
+        color: #999
+        text-align: left
+        font-size: 1.5rem
+
+
+    .promote-back-img
+        height: 35rem
+        width: 100%
+        margin-bottom: 0.5rem 
+        background-size: contain
+    .promote-app-link-wrap        
+        text-align: center
+        .app-download-appstore,.app-download-googleplay
+            //+span(3 of 6)
+            display: inline-block
+    .app-group-wrap
+        .app-group-text
+            font-size: $desktop-large-font
+            margin-top: 2rem
+            margin-bottom: 2rem
+
+    .promote-app-link-text
+        +span(16 of 16)
+    .promote-app-link
+        width: span(6)
+        display: inline-block
+    //app-group
+    .app-group-wrap
+        +bleed-x(100rem)
+    .app-group-item
+        +span(7.5 no-gutter)
+        +squish(0,0.5)
+        //padding-left: 0
+        .app-item-link
+            +span(1.5 of 7.5 last)
+            padding-top: 0.35rem
+            padding-bottom: 0.35rem
+
+
+
++susy-breakpoint(70rem,16)
+    .app-download-wrap
+        +span(6 first)
+    .social-media-wrap
+        +span(6)
+    .social-media-item
+        margin-left: 1rem

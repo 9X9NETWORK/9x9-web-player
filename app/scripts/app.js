@@ -1,67 +1,64 @@
 'use strict';
 
-
-if (!String.prototype.trim) {
-    String.prototype.trim = function() {
-        return this.replace(/^\s+|\s+$/g, '');
-    };
-}
-
-angular.module('landing', ['ngCookies','ngResource','ngSanitize','ui.router','app.controllers', 'app.services', 'app.filters', 'app.directives'])
+//angular.module('landing', ['ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 'landing.services', 'landing.filters', 'landing.directives'])
+var base = "/view";
+var player;
+var ld = angular.module('landing', [
+  'ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 
+  'landing.services', 'landing.filters', 'landing.directives'])
 .run(['$rootScope', '$state', '$stateParams',
     function($rootScope, $state, $stateParams) {
-
-        // It's very handy to add references to $state and $stateParams to the $rootScope
-        // so that you can access them from any scope within your applications.For example,
-        // <li ng-class="{ active: $state.includes('contacts.list') }"> will set the <li>
-        // to active whenever 'contacts.list' or one of its decendents is active.
         $rootScope.$state = $state;
         $rootScope.$stateParams = $stateParams;
+
+        $rootScope.$on('$viewContentLoaded', function() {
+        });
     }
 ])
-.config(['$stateProvider', '$urlRouterProvider',
-    function($stateProvider, $urlRouterProvider){
-      $urlRouterProvider.otherwise('/');
+.config(function($stateProvider, $urlRouterProvider){
+
+      $urlRouterProvider.when("", base).when("/", base);
+
       $stateProvider
-        .state("index", {
-          url: "/",
+        .state('channel', {
+          url : base,
+          templateUrl: 'views/blank.html',
+          controller : "MainCtrl"
+        })
+        .state('episode', {
+          url : base + "/p{channelId}",
+          templateUrl: 'views/blank.html',
+          controller : "MainCtrl"
+        })
+        .state("watch", {
+          url: base + "/p{channelId}/{episodeId}",
           views: {
-            'view.player': {
-              templateUrl: 'views/main.html',
-              controller:'MainCtrl'
-
+            'player': {
+              templateUrl: 'views/player.html',
+              controller:'PlayerCtrl'
             },
-            'view.promate': {
+            'promote': {
               templateUrl: 'views/promote.html',
-
               controller:'PromoteCtrl'
-              
             },
-            'view.appGroup': {
+            'appGroup': {
               templateUrl: 'views/app_group.html',
-
               controller:'AppGroupCtrl'
-              
             }
           }
         })
-
         .state('testb', {
           url: '/awert',
           templateUrl: 'views/promote.html'
         });
     }
-  ]);
+);
 
 
-
-
-angular.module('app.controllers', []);
-angular.module('app.services', []);
-angular.module('app.filters', []);
-angular.module('app.directives', []);
-
-
+angular.module('landing.controllers', []);
+angular.module('landing.services', []);
+angular.module('landing.filters', []);
+angular.module('landing.directives', []);
 
 
 
