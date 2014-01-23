@@ -1,4 +1,4 @@
-+susy-breakpoint(30em,16)
++susy-breakpoint(30rem,16)
     .playback-player
         height: 20em
     .playback-episode-count
@@ -16,7 +16,11 @@
         background-size: contain
 
 
-+susy-breakpoint(48em,16)
++susy-breakpoint(48rem,16)
+    .episode-list-item
+        width: 9.6rem
+        .episode-name
+            font-size: 0.8rem
     .app-download-info
         .app-download-icon
             width: 4rem
@@ -37,13 +41,20 @@
         +pad(1)
     .promote-content-wrap
         //height: 30rem
+    .promote-app-text,.promote-app-link-text
+        font-size:  1.5rem
 
 
 
+    .app-group-wrap
+        .app-group-text
+            font-size: 1.5rem  
     .app-group-item
         +span(7.5 no-gutter)
         +squish(0,0.5)
         //padding-left: 0
+        .app-item-icon
+            +span(1.5 of 7.5 no-gutter)
         .app-name
             +span(4 of 7.5)
 

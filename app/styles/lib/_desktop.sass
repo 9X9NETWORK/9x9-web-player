@@ -2,8 +2,12 @@ $desktop-large-font: 2.25rem
 
 +susy-breakpoint(60rem,16)
     //+layout($desktop-layout)
+    html,body
+        overflow-x: hidden
+
     body
         +background-image(linear-gradient(to bottom, #d9d9d9, #ededed 2%, #f5f5f5 4%, #fff 8%))
+        
     .l-main-container
         +container(70rem)
         //+show-grid(overlay)
@@ -39,11 +43,11 @@ $desktop-large-font: 2.25rem
         width: 7.3rem
     .episode-list-wrap
         padding: 0.2rem 0 0 0
-        overflow-x: hidden 
+        //overflow-x: hidden 
 
 
     .app-download-wrap
-        +span(5 first)
+        +span(5 of 16 first)
         margin-top: 2.5rem
         background-image: none
         background-color: transparent
@@ -164,6 +168,7 @@ $desktop-large-font: 2.25rem
     //         padding-top: 0.35rem
     //         padding-bottom: 0.35rem
 
+  
 
 
 +susy-breakpoint(70rem,16)

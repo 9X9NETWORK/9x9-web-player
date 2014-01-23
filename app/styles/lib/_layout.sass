@@ -1,7 +1,9 @@
 
 body
     font-family: $basic-font-family
-    overflow-x: hidden
+    
+
+
 
 
 .l-main-container
@@ -106,6 +108,7 @@ body
         height: 1.5rem
         font-size: $tiny-font
         white-space: normal
+        overflow: hidden
 
 //now playing
 .is-playing 
@@ -141,7 +144,7 @@ body
    
 
 .social-media-item
-    margin-left: 0.5rem
+    margin-left: 0.85rem
     display: inline-block
     vertical-align: middle
     a
@@ -221,7 +224,7 @@ body
     border-radius: 7%
     border: solid 0.2rem #fff
     overflow: hidden
-    .thumb-inner-center
+    //.thumb-inner-center
         //display: inline-block
         //width: 300%
         //margin-left: -100%
@@ -326,9 +329,11 @@ body
     .app-name
         +span(7 of 12)
         font-size: 1.2rem
-        line-height: 1.5
+        line-height: 1.4
         padding-left: 0.5rem
-        +ellipsis
+        height: 3.5rem
+        overflow: hidden
+        //+ellipsis
     .app-item-link
         +span(3 of 12 last)
         padding-top: 0.2rem
