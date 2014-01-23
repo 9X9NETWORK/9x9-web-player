@@ -24,8 +24,8 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
           loadApi();
           player  = new nn.Player("ytplayer-1", true);
 
-          //if(episodes){
-          if(false){
+          if(episodes){
+          //if(false){
 
               episode = episodes.findByAttr("id", episodeId);
               episodeIndex = episodes.index;
@@ -74,7 +74,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     var startPlay = function(){
 
        player.ready().then(function(){
-          console.log("ready");
           player.cueVideoById(programs.current().videoId);
        });
 
@@ -93,7 +92,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     };
 
     $scope.onEpisodeClick = function(eid){
-        var path = base + '/' + channelId + '/' + eid;
+        var path = base + '/p' + channelId + '/' + eid;
         $location.path(path);
     }
 

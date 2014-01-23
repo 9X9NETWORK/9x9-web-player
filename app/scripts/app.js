@@ -1,7 +1,7 @@
 'use strict';
 
 //angular.module('landing', ['ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 'landing.services', 'landing.filters', 'landing.directives'])
-var base = "/web";
+var base = "/view";
 var player;
 var ld = angular.module('landing', [
   'ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 
@@ -26,12 +26,12 @@ var ld = angular.module('landing', [
           controller : "MainCtrl"
         })
         .state('episode', {
-          url : base + "/{channelId}",
+          url : base + "/p{channelId}",
           templateUrl: 'views/blank.html',
           controller : "MainCtrl"
         })
         .state("watch", {
-          url: base + "/{channelId}/{episodeId}",
+          url: base + "/p{channelId}/{episodeId}",
           views: {
             'player': {
               templateUrl: 'views/player.html',

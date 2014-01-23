@@ -11,7 +11,7 @@ ld.controller('MainCtrl', function ($scope, $stateParams, sharedObjects){
             channel.loadEpisodes().then(function(){
 
                 var ep = channel.episodes.first();
-                var path = base + '/' + cid + '/' + ep.id;
+                var path = base + '/p' + cid + '/' + ep.id;
                 sharedObjects.set('episodes', channel.episodes);
                 location.hash = path;
             });
@@ -25,7 +25,7 @@ ld.controller('MainCtrl', function ($scope, $stateParams, sharedObjects){
             setInfo = new nn.model.Set(set.id);
             setInfo.get().then(function(){
                 sharedObjects.set('currentSet', setInfo);
-            	location.hash = base + '/' + setInfo.channels.first().id;
+            	location.hash = base + '/p' + setInfo.channels.first().id;
             });
         });
 	}
