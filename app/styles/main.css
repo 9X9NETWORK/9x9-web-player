@@ -1,0 +1,952 @@
+@charset "UTF-8";
+/* line 5, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 2, lib/_layout.sass */
+body {
+  font-family: Arial, Helvetica, "Myriad Pro", "Hiragino Kaku Gothic Pro", "微軟正黑體", "Microsoft JhengHei", "Hiragino Sans GB", "Lihei Pro", "Droid Sans allback", Sans-serif;
+  overflow-x: hidden;
+}
+
+/* line 7, lib/_layout.sass */
+.l-main-container {
+  *zoom: 1;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 10, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/../output/float/_clearfix.scss */
+.l-main-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 12, lib/_layout.sass */
+.player-wrap {
+  color: white;
+  background-color: #1d1d1d;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 17, lib/_layout.sass */
+.playback-info {
+  clear: both;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  border-bottom: solid 1px black;
+  background-color: #1d1d1d;
+}
+/* line 21, lib/_layout.sass */
+.playback-info .episode-name {
+  font-size: 0.9375rem;
+  line-height: 2;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+/* line 26, lib/_layout.sass */
+.episode-info-wrap {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  background-color: #1d1d1d;
+}
+
+/* line 30, lib/_layout.sass */
+.playback-episode-src {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+/* line 34, lib/_layout.sass */
+.playback-episode-src .program-from {
+  color: #777777;
+  font-size: 0.8125rem;
+}
+/* line 37, lib/_layout.sass */
+.playback-episode-src .program-logo-small {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+/* line 42, lib/_layout.sass */
+.playback-episode-src .program-logo-small img {
+  width: 1.2rem;
+  border-radius: 10%;
+}
+/* line 45, lib/_layout.sass */
+.playback-episode-src .program-name {
+  font-size: 0.8125rem;
+}
+
+/* line 47, lib/_layout.sass */
+.playback-episode-count {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  margin-left: -2.08333%;
+  background-color: black;
+  border-radius: 50rem;
+  border: solid 1px #2b2b2b;
+  margin-top: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+/* line 57, lib/_layout.sass */
+.playback-episode-count .episode-number {
+  color: white;
+  font-size: 1rem;
+}
+/* line 60, lib/_layout.sass */
+.playback-episode-count .episode-text {
+  font-size: 0.75rem;
+  color: #5b5b5b;
+}
+
+/* line 65, lib/_layout.sass */
+.episode-list-wrap {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  padding: 0.2rem 0 0.8rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 73, lib/_layout.sass */
+.episode-list {
+  white-space: nowrap;
+}
+
+/* line 78, lib/_layout.sass */
+.episode-list-item {
+  display: inline-block;
+  width: 7.8rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+/* line 91, lib/_layout.sass */
+.episode-list-item .episode-detail {
+  position: relative;
+}
+/* line 95, lib/_layout.sass */
+.episode-list-item .episode-preview {
+  width: 100%;
+  height: auto;
+}
+/* line 98, lib/_layout.sass */
+.episode-list-item .episode-name {
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.15rem;
+  bottom: 0;
+  height: 1.5rem;
+  font-size: 0.625rem;
+  white-space: normal;
+}
+
+/* line 110, lib/_layout.sass */
+.is-playing .episode-detail:before {
+  content: "";
+  display: block;
+  border: solid 0.25rem rgba(255, 255, 255, 0.65);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+/* line 122, lib/_layout.sass */
+.is-playing .episode-name {
+  display: none;
+}
+
+/* line 125, lib/_layout.sass */
+.social-media-wrap {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  color: black;
+  font-size: 0.9375rem;
+  background-color: white;
+  border-top: solid 0.25rem #c6c3bf;
+  border-bottom: solid 0.25rem #c6c3bf;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* line 134, lib/_layout.sass */
+.social-media-text {
+  display: inline-block;
+}
+
+/* line 137, lib/_layout.sass */
+.social-media-list {
+  display: inline-block;
+}
+
+/* line 141, lib/_layout.sass */
+.social-media-item {
+  margin-left: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 145, lib/_layout.sass */
+.social-media-item a {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+/* line 149, lib/_layout.sass */
+.social-media-item a img {
+  width: 100%;
+}
+
+/* line 153, lib/_layout.sass */
+.app-download-wrap {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  padding: 1rem;
+  background-color: #ff8000;
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+/* line 160, lib/_layout.sass */
+.app-download-wrap .app-download-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  float: left;
+  margin-right: 1rem;
+}
+/* line 165, lib/_layout.sass */
+.app-download-wrap .app-download-icon img {
+  width: 100%;
+}
+/* line 167, lib/_layout.sass */
+.app-download-wrap .app-name {
+  font-size: 1.1;
+  font-weight: bolder;
+  line-height: 1.8;
+}
+/* line 171, lib/_layout.sass */
+.app-download-wrap .app-item-descript {
+  display: none;
+}
+
+/* line 173, lib/_layout.sass */
+.app-download-appstore, .app-download-googleplay {
+  margin: 1rem 1rem 0 1rem;
+  text-align: center;
+}
+/* line 176, lib/_layout.sass */
+.app-download-appstore .app-button, .app-download-googleplay .app-button {
+  display: inline-block;
+  width: 11.875rem;
+}
+/* line 179, lib/_layout.sass */
+.app-download-appstore .app-button img, .app-download-googleplay .app-button img {
+  width: 100%;
+}
+
+/* line 183, lib/_layout.sass */
+.is-ios .app-download-googleplay, .is-android .app-download-appstore {
+  display: none;
+}
+
+/* line 196, lib/_layout.sass */
+.promote-wrap {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  *zoom: 1;
+  color: white;
+}
+
+/* line 200, lib/_layout.sass */
+.promote-programe-wrap {
+  background-color: #1d1d1d;
+}
+
+/* line 202, lib/_layout.sass */
+.promote-programe-text, .promote-programe-text-sub {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/* line 208, lib/_layout.sass */
+.promote-programe-list {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 211, lib/_layout.sass */
+.promote-programe-item {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+}
+/* line 63, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/susy/_gallery.scss */
+.promote-programe-item:nth-child(3n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+}
+/* line 63, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/susy/_gallery.scss */
+.promote-programe-item:nth-child(3n + 2) {
+  margin-left: 33.33333%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 63, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/susy/_gallery.scss */
+.promote-programe-item:nth-child(3n + 3) {
+  margin-left: 66.66667%;
+  margin-right: -100%;
+  clear: none;
+}
+
+/* line 217, lib/_layout.sass */
+.promote-programe-img {
+  border-radius: 7%;
+  border: solid 0.2rem white;
+  overflow: hidden;
+}
+/* line 229, lib/_layout.sass */
+.promote-programe-img img {
+  width: 100%;
+}
+
+/* line 232, lib/_layout.sass */
+.promote-programe-name {
+  text-align: center;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  line-height: 1.8;
+}
+
+/* line 237, lib/_layout.sass */
+.promote-app-wrap {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  background-color: white;
+  color: black;
+}
+
+/* line 243, lib/_layout.sass */
+.promote-content-wrap {
+  position: relative;
+}
+/* line 246, lib/_layout.sass */
+.promote-content-wrap .program-gesture, .promote-content-wrap .episode-gesture {
+  position: absolute;
+  background-color: white;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  color: #ff8309;
+  -moz-box-shadow: 0 0.3125rem 0 0 rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0.3125rem 0 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0.3125rem 0 0 rgba(0, 0, 0, 0.6);
+}
+/* line 254, lib/_layout.sass */
+.promote-content-wrap .program-gesture {
+  display: none;
+}
+/* line 258, lib/_layout.sass */
+.promote-content-wrap .episode-gesture {
+  display: none;
+}
+
+/* line 265, lib/_layout.sass */
+.promote-back-img {
+  height: 20rem;
+  width: 100%;
+  background-image: url(../images/app-promote-text.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 140%;
+  margin-bottom: 0.5rem;
+}
+
+/* line 276, lib/_layout.sass */
+.promote-app-text {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* line 281, lib/_layout.sass */
+.promote-app-link-wrap {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  text-align: center;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+/* line 287, lib/_layout.sass */
+.promote-app-link-text {
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+/* line 304, lib/_layout.sass */
+.app-group-wrap {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  overflow: hidden;
+  *zoom: 1;
+  background-color: #1d1d1d;
+  color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+/* line 311, lib/_layout.sass */
+.app-group-wrap .app-group-text {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+/* line 316, lib/_layout.sass */
+.app-group-item {
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #444444;
+}
+/* line 320, lib/_layout.sass */
+.app-group-item .app-item-icon {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 16.66667%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+}
+/* line 322, lib/_layout.sass */
+.app-group-item .app-item-icon img {
+  width: 100%;
+}
+/* line 324, lib/_layout.sass */
+.app-group-item .app-name {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 58.33333%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding-left: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+/* line 330, lib/_layout.sass */
+.app-group-item .app-item-link {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  float: right;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  text-decoration: none;
+  text-align: center;
+  color: #f0871c;
+  border: solid 1px #f0871c;
+  border-radius: 0.35rem;
+}
+/* line 339, lib/_layout.sass */
+.app-group-item .app-item-descript {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  padding: 0.5rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 30em) {
+  /* line 2, lib/_tablet.sass */
+  .playback-player {
+    height: 20em;
+  }
+
+  /* line 4, lib/_tablet.sass */
+  .playback-episode-count {
+    width: 8rem;
+    float: right;
+    margin-right: 0.5rem;
+  }
+
+  /* line 11, lib/_tablet.sass */
+  .episode-list-item {
+    width: 8.2rem;
+  }
+
+  /* line 15, lib/_tablet.sass */
+  .promote-back-img {
+    background-size: contain;
+  }
+}
+@media (min-width: 60rem) {
+  /* line 5, lib/_desktop.sass */
+  body {
+    background-image: -moz-linear-gradient(top, #d9d9d9, #ededed 2%, #f5f5f5 4%, #ffffff 8%);
+    background-image: -o-linear-gradient(top, #d9d9d9, #ededed 2%, #f5f5f5 4%, #ffffff 8%);
+    background-image: -webkit-linear-gradient(top, #d9d9d9, #ededed 2%, #f5f5f5 4%, #ffffff 8%);
+    background-image: linear-gradient(to bottom, #d9d9d9, #ededed 2%, #f5f5f5 4%, #ffffff 8%);
+  }
+
+  /* line 7, lib/_desktop.sass */
+  .l-main-container {
+    *zoom: 1;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 10, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/../output/float/_clearfix.scss */
+  .l-main-container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  /* line 12, lib/_desktop.sass */
+  .player-wrap {
+    background-color: transparent;
+  }
+
+  /* line 15, lib/_desktop.sass */
+  .player-device {
+    width: 37.5rem;
+    height: 35rem;
+    padding: 6.75rem 2.7rem 0 2.56rem;
+    margin-right: 2rem;
+    background: url("../images/ipad-outline.png") no-repeat 0 100%;
+    float: right;
+    box-sizing: border-box;
+  }
+
+  /* line 33, lib/_desktop.sass */
+  .playback-episode-src {
+    padding-top: 0.4rem;
+    padding-bottom: 0.25rem;
+  }
+
+  /* line 38, lib/_desktop.sass */
+  .episode-list-item {
+    width: 7.3rem;
+  }
+
+  /* line 40, lib/_desktop.sass */
+  .episode-list-wrap {
+    padding: 0.2rem 0 0 0;
+    overflow-x: hidden;
+  }
+
+  /* line 45, lib/_desktop.sass */
+  .app-download-wrap {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 31.25%;
+    float: left;
+    padding-left: 1.5625%;
+    padding-right: 1.5625%;
+    margin-top: 2.5rem;
+    background-image: none;
+    background-color: transparent;
+    color: #555555;
+  }
+  /* line 51, lib/_desktop.sass */
+  .app-download-wrap .app-download-icon {
+    width: 5.5rem;
+    height: 5.5rem;
+    float: none;
+    margin-bottom: 1rem;
+  }
+  /* line 56, lib/_desktop.sass */
+  .app-download-wrap .app-name {
+    font-size: 2.5rem;
+  }
+  /* line 58, lib/_desktop.sass */
+  .app-download-wrap .app-item-descript {
+    display: block;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+  /* line 62, lib/_desktop.sass */
+  .app-download-wrap .app-download-text {
+    font-size: 1.25rem;
+  }
+  /* line 67, lib/_desktop.sass */
+  .app-download-wrap .app-download-appstore .app-button, .app-download-wrap .app-download-googleplay .app-button {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 4.16667%;
+    padding-right: 4.16667%;
+  }
+
+  /* line 71, lib/_desktop.sass */
+  .social-media-wrap {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 31.25%;
+    float: left;
+    padding-left: 1.5625%;
+    padding-right: 1.5625%;
+    border: none;
+  }
+
+  /* line 74, lib/_desktop.sass */
+  .social-media-text {
+    font-size: 1rem;
+  }
+
+  /* line 81, lib/_desktop.sass */
+  .promote-wrap {
+    overflow: visible;
+  }
+
+  /* line 84, lib/_desktop.sass */
+  .promote-programe-wrap {
+    margin-right: -100rem;
+    margin-left: -100rem;
+    padding-right: 100rem;
+    padding-left: 100rem;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    padding-top: 6.25%;
+    padding-bottom: 6.25%;
+  }
+  /* line 90, lib/_desktop.sass */
+  .promote-programe-wrap:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  /* line 98, lib/_desktop.sass */
+  .promote-programe-list {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 56.25%;
+    float: left;
+    padding-left: 1.5625%;
+    padding-right: 1.5625%;
+  }
+
+  /* line 100, lib/_desktop.sass */
+  .promote-programe-text {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 43.75%;
+    float: right;
+    padding-left: 1.5625%;
+    padding-right: 1.5625%;
+    font-size: 2.25rem;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 3.5rem;
+  }
+
+  /* line 108, lib/_desktop.sass */
+  .promote-content-wrap .program-gesture {
+    top: calc(50% - 9rem);
+    left: calc(50% - 2.5rem);
+  }
+  /* line 111, lib/_desktop.sass */
+  .promote-content-wrap .episode-gesture {
+    top: calc(50% + 6.6rem);
+    left: calc(50% - 9rem);
+  }
+
+  /* line 114, lib/_desktop.sass */
+  .promote-app-wrap {
+    margin-right: -100rem;
+    margin-left: -100rem;
+    padding-right: 100rem;
+    padding-left: 100rem;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    background-image: -moz-linear-gradient(bottom, #d5d5d5, #ffffff 24%);
+    background-image: -o-linear-gradient(bottom, #d5d5d5, #ffffff 24%);
+    background-image: -webkit-linear-gradient(bottom, #d5d5d5, #ffffff 24%);
+    background-image: linear-gradient(to top, #d5d5d5, #ffffff 24%);
+    margin-top: 6.25%;
+  }
+
+  /* line 120, lib/_desktop.sass */
+  .promote-app-text {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 43.75%;
+    float: left;
+    padding-left: 1.5625%;
+    padding-right: 1.5625%;
+    font-size: 2.25rem;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* line 128, lib/_desktop.sass */
+  .promote-programe-text-sub {
+    color: #999999;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+  /* line 134, lib/_desktop.sass */
+  .promote-back-img {
+    height: 35rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    background-size: contain;
+  }
+
+  /* line 139, lib/_desktop.sass */
+  .promote-app-link-wrap {
+    text-align: center;
+  }
+  /* line 141, lib/_desktop.sass */
+  .promote-app-link-wrap .app-download-appstore, .promote-app-link-wrap .app-download-googleplay {
+    display: inline-block;
+  }
+
+  /* line 145, lib/_desktop.sass */
+  .app-group-wrap .app-group-text {
+    font-size: 2.25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* line 150, lib/_desktop.sass */
+  .promote-app-link-text {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 1.5625%;
+    padding-right: 1.5625%;
+  }
+
+  /* line 152, lib/_desktop.sass */
+  .promote-app-link {
+    width: 37.5%;
+    display: inline-block;
+  }
+
+  /* line 156, lib/_desktop.sass */
+  .app-group-wrap {
+    margin-right: -100rem;
+    margin-left: -100rem;
+    padding-right: 100rem;
+    padding-left: 100rem;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+
+  /* line 158, lib/_desktop.sass */
+  .app-group-item {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 46.875%;
+    float: left;
+    margin-left: 0%;
+    margin-right: 3.125%;
+  }
+  /* line 162, lib/_desktop.sass */
+  .app-group-item .app-item-link {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 20%;
+    float: right;
+    padding-left: 3.33333%;
+    padding-right: 3.33333%;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+  }
+}
+@media (min-width: 70rem) {
+  /* line 170, lib/_desktop.sass */
+  .app-download-wrap {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 37.5%;
+    float: left;
+    padding-left: 1.5625%;
+    padding-right: 1.5625%;
+  }
+
+  /* line 172, lib/_desktop.sass */
+  .social-media-wrap {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 37.5%;
+    float: left;
+    padding-left: 1.5625%;
+    padding-right: 1.5625%;
+  }
+
+  /* line 174, lib/_desktop.sass */
+  .social-media-item {
+    margin-left: 1rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

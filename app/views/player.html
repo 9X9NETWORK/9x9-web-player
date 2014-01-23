@@ -1,10 +1,10 @@
 <div class="player-wrap">
 	<div class="player-device">
-		<div class="playback-player">
-		    <div id="ytplayer"></div>
+		<div class="playback-player" style="height:300px">
+		    <div id="ytplayer-1"></div>
 		</div>
 		<div class="playback-info">
-		    <p class="episode-name">Vice The Japanese Love Industry (Teaser) It show time!!!</p>
+		    <p class="episode-name">{{episode.anme}}</p>
 		    <!-- <p class="episode-last-updated">2 hours ago</p> -->
 		    <!-- <ul class="playback-info-buttons">
 		        <li class="playback-info-share"><i class="icon-menu"></i></li>
@@ -16,30 +16,31 @@
 			<div class="playback-episode-src">
 		        <span class="program-from">from</span>
 		        <figure class="program-logo-small">
-		        	<img src="http://9x9tmp.s3.amazonaws.com/cms-thumbnail-1377158420560-33298.jpg" >
+		        	<img ng-src="{{channel.images[0]}}" >
 		        </figure>
-		        <span class="program-name">Latest and Greatest</span>
+		        <span class="program-name">{{channel.name}}</span>
 		    </div>
 		    <div class="playback-episode-count">
-		            <span class="episode-number">58</span>
+		            <span class="episode-number">{{episodes.array.length}}</span>
 		            <span class="episode-text">episodes</span>
 		    </div>
-		    <div class="episode-list-wrap">
-			    <ul class="episode-list">
-			        <li ng-repeat="episode in episodes" class="episode-list-item" ng-click="videoPlay(episode,$index);" ng-class="{'is-playing':episode.isSelected===true}">
+
+		    <div class="episode-list-wrap" style="position:relative; height : 70px;">
+			    <ul class="episode-list" episode-list  style="position:absolute; left : 0; top : 0">
+			        <li ng-repeat="episode in episodes.array" class="episode-list-item {{$index === episodeIndex ? 'is-playing' : ''}}" ng-class="" >
+			        	<!-- ng-click="onEpisodeClick(episode.id)" -->
 			            <div class="episode-detail">
-			            	<img class="episode-preview" src="http://i1.ytimg.com/vi/{{episode.videoId}}/mqdefault.jpg" alt="{{episode.title}}">
+			            	<img class="episode-preview" ng-src="{{episode.thumb}}" alt="{{episode.name}}">
 			            	
 			                <!-- <div class=""> -->
-			                <p class="episode-name">Vice The Japanese Love Industry</p>
+			                <p class="episode-name">{{episode.name}}</p>
 			                <!-- </div> -->
 			            </div>
 			        </li>
 			    </ul>
 		    </div>
+	</div>
 
-
-		</div>
 	</div>
 	<div class="app-download-wrap">
 		<div class="app-download-info">
@@ -48,8 +49,6 @@
 			
 		</figure>
 		<h1 class="app-name">華視雲端網</h1>
-		<p class="app-item-descript">App description...App description...App description...App description...App description...App description...App description...App description...App</p>
-
 		<p class="app-download-text">立刻免費下載app看更多節目！</p>
 
 		</div>
@@ -76,7 +75,6 @@
 			<li class="social-media-item"><a href="#"><img src="images/social-media-fb.png" alt=""></a></li>
 			<li class="social-media-item"><a href="#"><img src="images/social-media-twitter.png" alt=""></a></li>
 			<li class="social-media-item"><a href="#"><img src="images/social-media-google.png" alt=""></a></li>
-			<li class="social-media-item"><a href="#"><img src="images/app_icon_high_res_iphone.png"></a></li>
 		</ul>
 		
 	</div>

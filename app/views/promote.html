@@ -2,59 +2,21 @@
 
 	<div class="promote-programe-wrap">
 		<h1 class="promote-programe-text">超多精選節目新鮮放送， 歡迎沒事翻翻逛逛！</h1>
+
 		<ul class="promote-programe-list">
-			<li class="promote-programe-item">
+			<li class="promote-programe-item" ng-repeat="item in promotionItems">
 				<figure class="promote-programe-img">
 					<div class="thumb-inner-center">
-						<img src="images/cms-thumbnail-ratio-1.jpg">
+						<img src="{{item.thumb}}">
 					</div>
 				</figure>
-				<span class="promote-programe-name">華視新聞</span>
-			</li>
-			<li class="promote-programe-item">
-				<figure class="promote-programe-img">
-					<div class="thumb-inner-center">
-						<img src="images/cms-thumbnail-ratio-2.jpg">
-					</div>
-				</figure>
-				<span class="promote-programe-name">圓夢廚房</span>
-			</li>
-			<li class="promote-programe-item">
-				<figure class="promote-programe-img">
-					<div class="thumb-inner-center">
-						<img src="images/cms-thumbnail-ratio-3.jpg">
-					</div>
-				</figure>
-				<span class="promote-programe-name">華視新聞雜誌</span>
-			</li>
-			<li class="promote-programe-item">
-				<figure class="promote-programe-img">
-					<div class="thumb-inner-center">
-						<img src="images/cms-thumbnail-ratio-4.jpg">
-					</div>
-				</figure>
-				<span class="promote-programe-name">天才衝衝衝</span>
-			</li>
-			<li class="promote-programe-item">
-				<figure class="promote-programe-img">
-					<div class="thumb-inner-center">
-						<img src="images/cms-thumbnail-ratio-5.jpg">
-					</div>
-				</figure>
-				<span class="promote-programe-name">我們的那首歌</span>
-			</li>
-			<li class="promote-programe-item">
-				<figure class="promote-programe-img">
-					<div class="thumb-inner-center">
-						<img src="images/cms-thumbnail-ratio-6.jpg">
-					</div>
-				</figure>
-				<span class="promote-programe-name">華視綜藝頻道</span>
+				<span class="promote-programe-name">{{item.name}}</span>
 			</li>
 		</ul>
 		<h1 class="promote-programe-text-sub">還有更多精彩節目等你來挖掘！</h1>		
 		
 	</div>
+
 	<div class="promote-app-wrap">
 		<h1 class="promote-app-text">左右換集數，上下換節目，不用找來找去超輕鬆！</h1>
 		<div class="promote-content-wrap">

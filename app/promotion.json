@@ -1,0 +1,32 @@
+[
+	{
+		"name" : "華視新聞",
+		"thumb" : "images/cms-thumbnail-ratio-1.jpg",
+		"channelId" : "14657"
+	},
+	{
+		"name" : "圓夢廚房",
+		"thumb" : "images/cms-thumbnail-ratio-2.jpg",
+		"channelId" : "26070"
+	},
+	{
+		"name" : "華視新聞雜誌",
+		"thumb" : "images/cms-thumbnail-ratio-3.jpg",
+		"channelId" : "14465"
+	},
+	{
+		"name" : "天才衝衝衝",
+		"thumb" : "images/cms-thumbnail-ratio-4.jpg",
+		"channelId" : "14469"
+	},
+	{
+		"name" : "我們的那首歌",
+		"thumb" : "images/cms-thumbnail-ratio-5.jpg",
+		"channelId" : "27600"
+	},
+	{
+		"name" : "華視綜藝頻道",
+		"thumb" : "images/cms-thumbnail-ratio-6.jpg",
+		"channelId" : "28082"
+	}
+]

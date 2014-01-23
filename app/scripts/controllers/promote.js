@@ -1,13 +1,13 @@
 'use strict';
-angular.module('app.controllers').
- controller('PromoteCtrl', function (
-	  	$scope,
-	  	youtubePlayer
-  ){
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-    //youtubePlayer.play
-  });
+ld.controller('PromoteCtrl', function ($scope, $http){
+    //$scope.awesomeThings = ['HTML5 Boilerplate','AngularJS','Karma'];
+    $http({
+        url: "promotion.json",
+        method: "GET",
+        data: {}
+    }).success(function(data, status, headers, config) {
+        $scope.promotionItems = data;
+    }).error(function(data, status, headers, config) {
+        //$scope.status = status;
+    });
+});
