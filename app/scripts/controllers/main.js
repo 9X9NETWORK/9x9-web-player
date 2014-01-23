@@ -14,7 +14,7 @@ angular.module('app.controllers').
     var lastSelected=0;
     var episodeId = $stateParams.episodeId;
     console.log('episodeId=',episodeId);
-    $scope.testText='hahahahaah';
+
 
     videoData.async().then(function(data){
       //console.log('episodes=',data);

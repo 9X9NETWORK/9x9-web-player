@@ -25,7 +25,7 @@ angular.module('landing', ['ngCookies','ngResource','ngSanitize','ui.router','ap
       $urlRouterProvider.otherwise('/');
       $stateProvider
         .state("index", {
-          url: "/home",
+          url: "/",
           views: {
             'view.player': {
               templateUrl: 'views/main.html',
@@ -46,7 +46,7 @@ angular.module('landing', ['ngCookies','ngResource','ngSanitize','ui.router','ap
             }
           }
         })
-        .state('episode', {
+        .state('index.episode', {
           url: '/:episodeId',
           views: {
             'view.player': {
