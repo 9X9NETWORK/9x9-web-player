@@ -32,7 +32,7 @@ angular.module('landing', ['ngCookies','ngResource','ngSanitize','ui.router','ap
               controller:'MainCtrl'
 
             },
-            'view.promote': {
+            'view.promate': {
               templateUrl: 'views/promote.html',
 
               controller:'PromoteCtrl'

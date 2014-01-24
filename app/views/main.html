@@ -6,11 +6,7 @@
 		</div>
 		<div class="playback-info">
 		    <p class="episode-name">Vice The Japanese Love Industry (Teaser) It show time!!!</p>
-		    <!-- <p class="episode-last-updated">2 hours ago</p> -->
-		    <!-- <ul class="playback-info-buttons">
-		        <li class="playback-info-share"><i class="icon-menu"></i></li>
-		        <li class="playback-info-favorite"><i class="icon-search"></i></li>
-		    </ul> -->
+
 		</div>
 
 		<div class="episode-info-wrap">
@@ -28,13 +24,14 @@
 		    <div class="episode-list-wrap">
 			    <ul class="episode-list">
 			        <li ng-repeat="episode in episodes" class="episode-list-item" ng-click="videoPlay(episode,$index);" ng-class="{'is-playing':episode.isSelected===true}">
-			            <div class="episode-detail">
-			            	<img class="episode-preview" src="http://i1.ytimg.com/vi/{{episode.videoId}}/mqdefault.jpg" alt="{{episode.title}}">
-			            	
-			                <!-- <div class=""> -->
+
+			            <!-- <a ui-href="index.episode({episodeId})" class="episode-detail"> -->
+			            <a class="episode-detail">
+			            	<img class="episode-preview" src="http://i1.ytimg.com/vi/{{episode.videoId}}/mqdefault.jpg" alt="{{episode.title}}">	            	
+
 			                <p class="episode-name">Vice The Japanese Love Industry</p>
-			                <!-- </div> -->
-			            </div>
+	
+			            </a>
 			        </li>
 			    </ul>
 		    </div>

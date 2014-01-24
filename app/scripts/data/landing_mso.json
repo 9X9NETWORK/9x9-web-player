@@ -1,0 +1,109 @@
+{
+	"app-data":{
+
+		"app-name": "華視雲端網 FLIPr",
+		"app-icon": "123",
+		"app-calltoaction": "立刻免費下載給你看更多！",
+		"app-description": "本APP專為喜愛華視節目之觀眾設計，讓粉絲在各種螢幕上，隨時隨地，都能收看即時又精彩的節目！簡易直覺的操作，上下左右翻。就像在家中客廳看電視一樣的簡單。",
+		"app-ios": "",
+		"app-android": "",
+		"social-link": [
+			{
+				"social-icon": "",
+				"social-url": "https://www.facebook.com/TBSCTS"
+			},
+			{
+				"social-icon": "",
+				"social-url": "https://plus.google.com/111035766158749236867/posts"
+			},
+			{
+				"social-icon": "",
+				"social-url": "http://www.youtube.com/user/TBSCTS "
+			},
+			{
+				"social-icon": "",
+				"social-url": "http://www.cts.com.tw/ "
+			}
+
+		]
+	},
+
+	"promote-data": {
+
+
+		
+		"promote-wrap":[
+			{
+				"promote-image": "",
+				"promote-name": "華視新聞",
+				"promote-channel": ""
+			},
+			{
+				"promote-image": "",
+				"promote-name": "華視新聞雜誌",
+				"promote-channel": ""
+			},
+			{
+				"promote-image": "",
+				"promote-name": "POWER星期天",
+				"promote-channel": ""
+			},
+			{
+				"promote-image": "",
+				"promote-name": "天才衝衝衝",
+				"promote-channel": ""
+			},
+			{
+				"promote-image": "",
+				"promote-name": "圓夢廚房",
+				"promote-channel": ""
+			},
+			{
+				"promote-image": "",
+				"promote-name": "我們的那首歌",
+				"promote-channel": ""
+			}
+
+
+		]
+	},
+
+	"link-data": [
+
+		{	
+			"link-name": "華視雲端網 FLIPr",
+			"link-icon": "",			
+			"link-ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
+			"link-android" : "https://play.google.com/store/apps/details?id=tw.com.cts.player",
+			"link-description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。"
+		},
+		{	
+			"link-name": "關鍵評論網 FLIPr",
+			"link-icon": "",			
+			"link-ios": "",
+			"link-android" : "",
+			"link-description": "News worth knowing, voices worth sharing. 分享觀點從這開始。"
+		},
+		{	
+			"link-name": "Good TV FLIPr",
+			"link-icon": "",			
+			"link-ios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
+			"link-android" : "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv",
+			"link-description": "您是Good TV的忠實觀眾嗎？帶給人們信心、希望、與真愛的電視台，趕快來看。"
+		},
+		{	
+			"link-name": "MV不解釋 FLIPr",
+			"link-icon": "",			
+			"link-ios": "",
+			"link-android" : "",
+			"link-description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！"
+		}
+
+
+
+	]
+
+	
+
+
+}
