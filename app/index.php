@@ -6,6 +6,33 @@
     $ytGdata = "http://gdata.youtube.com";
     $ytParam = "v=2&alt=json&key=$ytApiKey";
 
+    function fetch_yt_video($videoId) {
+
+        global $ytGdata, $ytParam;
+
+        if ($videoId == null) {
+            return null;
+        }
+        $ytVideo = json_decode(file_get_contents("$ytGdata/feeds/api/videos/$videoId?$ytParam"), true);
+        if ($ytVideo == null || !isset($ytVideo['entry'])) {
+            return null;
+        }
+        if (isset($ytVideo['entry']['media$group']['media$description'])) {
+            // shortcut
+            $ytVideo['entry']['description'] = $ytVideo['entry']['media$group']['media$description'];
+        }
+        if (isset($ytVideo['entry']['media$group']['yt$duration'])) {
+            $ytVideo['entry']['duration'] = $ytVideo['entry']['media$group']['yt$duration'];
+        }
+        // sort thumbnails by size
+        $thumbnails = $ytVideo['entry']['media$group']['media$thumbnail'];
+        if ($thumbnails && is_array($thumbnails) && count($thumbnails) > 0) {
+            usort($thumbnails, 'compare_thumbnail');
+            $ytVideo['entry']['thumbnails'] = $thumbnails;
+        }
+        return $ytVideo['entry'];
+    }
+
     function compare_thumbnail($thumb1, $thumb2) {
         return $thumb1['width'] - $thumb2['width'];
     }
@@ -39,14 +66,21 @@
     
                 $meta = json_decode(file_get_contents("http://$localhost/api/episodes/$matches[1]"), true);
                 if ($meta) {
-                    if ($chMeta['sourceUrl']) {
+                    if ($chMeta['sourceUrl']) { // YouTube sync
                         $programs = json_decode(file_get_contents("http://$localhost/api/episodes/$matches[1]/programs"), true);
-                        if ($programs && is_array($programs) && isset($programs[1])) {
-                            $videoId = substr($programs[1]['fileUrl'], 32);
-                            if ($videoId) {
-                                $ytVideo = json_decode(file_get_contents("$ytGdata/feeds/api/videos/$videoId?v=2&alt=jsonc&key=$ytApiKey"));
-                                if ($ytVideo && $ytVideo['data']) {
-                                    $content = str_replace("{{meta_thumbnail}}", $ytVideo['data']['thumbnail']['hqDefault'], $content);
+                        if ($programs && is_array($programs) && count($programs) > 0) {
+                            $videoId = substr($programs[0]['fileUrl'], 31);
+                            $ytVideo = fetch_yt_video($videoId);
+                            if ($ytVideo) {
+                                if ($ytVideo['thumbnails']) {
+                                    $thumb = array_pop($ytVideo['thumbnails']);
+                                    $content = str_replace("{{meta_thumbnail}}", $thumb['url'], $content);
+                                }
+                                if ($ytVideo['title']) {
+                                    $content = str_replace("{{meta_title}}", htmlsafe($ytVideo['title']['$t']), $content);
+                                }
+                                if ($ytVideo['description']) {
+                                    $content = str_replace("{{meta_description}}", htmlsafe($ytVideo['description']['$t']), $content);
                                 }
                             }
                         }
@@ -54,38 +88,46 @@
                     $content = str_replace("{{meta_title}}", htmlsafe($meta['name']), $content);
                     $content = str_replace("{{meta_description}}", htmlsafe($meta['intro']), $content);
                     $content = str_replace("{{meta_thumbnail}}", htmlsafe($meta['imageUrl']), $content);
-                    $content = str_replace("{{meta_url}}", "http://$host/web/p$ch/$ep", $content);
+                    $content = str_replace("{{meta_url}}", "http://$host/view/p$ch/$ep", $content);
                 }
-    
             } else if (preg_match('/^(\\d+)$/', $ep, $matches)) {
     
                 $ytProgram = json_decode(file_get_contents("http://$localhost/api/ytprograms/$matches[1]"), true);
                 if ($ytProgram) {
                         
-                    $ytVideo = json_decode(file_get_contents("$ytGdata/feeds/api/videos/${ytProgram['ytVideoId']}?v=2&alt=jsonc&key=$ytApiKey"));
-                    if ($ytVideo && $ytVideo['data']) {
-                        $content = str_replace("{{meta_thumbnail}}", $ytVideo['data']['thumbnail']['hqDefault'], $content);
+                    $ytVideo = fetch_yt_video($ytProgram['ytVideoId']);
+                    if ($ytVideo) {
+                        if ($ytVideo['thumbnails']) {
+                            $thumb = array_pop($ytVideo['thumbnails']);
+                            $content = str_replace("{{meta_thumbnail}}", $thumb['url'], $content);
+                        }
+                        if ($ytVideo['title']) {
+                            $content = str_replace("{{meta_title}}", htmlsafe($ytVideo['title']['$t']), $content);
+                        }
+                        if ($ytVideo['description']) {
+                            $content = str_replace("{{meta_description}}", htmlsafe($ytVideo['description']['$t']), $content);
+                        }
                     }
-                    $content = str_replace("{{meta_title}}", htmlsafe($meta['name']), $content);
-                    $content = str_replace("{{meta_description}}", htmlsafe($meta['intro']), $content);
-                    $content = str_replace("{{meta_thumbnail}}", htmlsafe($meta['imageUrl']), $content);
-                    $content = str_replace("{{meta_url}}", "http://$host/web/p$ch/$ep", $content);
+                    $content = str_replace("{{meta_title}}", htmlsafe($ytProgram['name']), $content);
+                    $content = str_replace("{{meta_description}}", trim(htmlsafe($ytProgram['intro'])), $content);
+                    $content = str_replace("{{meta_thumbnail}}", htmlsafe($ytProgram['imageUrl']), $content);
+                    $content = str_replace("{{meta_url}}", "http://$host/view/p$ch/$ep", $content);
                 }
+            } else if (preg_match("/^yt([\\w-]+)$/", $ep, $matches)) {
     
-            } else if (preg_match("/^yt(\\w+)$/", $ep, $matches)) {
-    
-                $meta = json_decode(file_get_contents("$ytGdata/feeds/api/videos/$matches[1]?v=2&alt=jsonc&key=$ytApiKey"), true);
-                if ($meta && $meta['data']) {
-                    $data = $meta['data'];
-                    $content = str_replace("{{meta_title}}", htmlsafe($data['title']), $content);
-                    $content = str_replace("{{meta_description}}", htmlsafe($data['description']), $content);
-                    $content = str_replace("{{meta_thumbnail}}", htmlsafe($data['thumbnail']['hqDefault']), $content);
-                    $content = str_replace("{{meta_url}}", "http://$host/web/p$ch/$ep", $content);
-                    $content = str_replace("{{meta_type}}", "video", $content);
-                    $content = str_replace("{{meta_video}}", htmlsafe("http://www.youtube.com/v/$matches[1]?version=3&autohide=1"), $content);
-                    $content = str_replace("{{meta_video_type}}", "application/x-shockwave-flash", $content);
-                    $content = str_replace("{{meta_video_width}}", "480", $content);
-                    $content = str_replace("{{meta_video_height}}", "360", $content);
+                $ytVideo = fetch_yt_video($matches[1]);
+                if ($ytVideo) {
+                    $thumb = array_pop($ytVideo['thumbnails']);
+                    $content = str_replace("{{meta_thumbnail}}", $thumb['url'], $content);
+                    $content = str_replace("{{meta_title}}", htmlsafe($ytVideo['title']['$t']), $content);
+                    $content = str_replace("{{meta_description}}", htmlsafe($ytVideo['description']['$t']), $content);
+                    $content = str_replace("{{meta_url}}", "http://$host/view/p$ch/$ep", $content);
+//                    $content = str_replace("{{meta_type}}", "video.tv_show", $content);
+//                    $content = str_replace("{{meta_video}}", htmlsafe("http://www.youtube.com/v/$matches[1]?version=3&autohide=1"), $content);
+//                    $content = str_replace("{{meta_video_type}}", "application/x-shockwave-flash", $content);
+//                    $content = str_replace("{{meta_video_width}}", "480", $content);
+//                    $content = str_replace("{{meta_video_height}}", "360", $content);
+//                    $content = str_replace("{{meta_video_duration}}", $ytVideo['duration']['seconds'], $content);
                 }
             }
         } else {
@@ -122,7 +164,7 @@
                 $content = str_replace("{{meta_title}}", htmlsafe($chMeta['name']), $content);
                 $content = str_replace("{{meta_description}}", htmlsafe($chMeta['intro']), $content);
                 $content = str_replace("{{meta_thumbnail}}", htmlsafe($chMeta['imageUrl']), $content);
-                $content = str_replace("{{meta_url}}", "http://$host/web/$ch", $content);
+                $content = str_replace("{{meta_url}}", "http://$host/view/p$ch", $content);
             }
         }
     }
@@ -138,13 +180,14 @@
     $content = str_replace("{{meta_title}}", "9x9 flirp landing page", $content);
     $content = str_replace("{{meta_description}}", htmlsafe(null), $content);
     $content = str_replace("{{meta_thumbnail}}", htmlsafe(null), $content);
-    $content = str_replace("{{meta_url}}", "http://$host/web/", $content);
-    $content = str_replace("{{meta_type}}", "web", $content);
-    $content = str_replace("{{meta_video}}", "", $content);
-    $content = str_replace("{{meta_video_type}}", "", $content);
-    $content = str_replace("{{meta_video_width}}", "", $content);
-    $content = str_replace("{{meta_video_height}}", "", $content);
+    $content = str_replace("{{meta_url}}", "http://$host/view/", $content);
+    $content = str_replace("{{meta_type}}", "website", $content);
     $content = str_replace("{{meta_site_name}}", $host, $content);
+//    $content = str_replace("{{meta_video}}", "", $content);
+//    $content = str_replace("{{meta_video_type}}", "", $content);
+//    $content = str_replace("{{meta_video_width}}", "", $content);
+//    $content = str_replace("{{meta_video_height}}", "", $content);
+//    $content = str_replace("{{meta_video_duration}}", "", $content);
 
     header('Content-Type: text/html');
     header('Content-Length: ' . strlen($content));
