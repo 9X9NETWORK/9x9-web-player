@@ -2,6 +2,7 @@
 
     $ytChannelRegex = "/^http:\\/\\/www\\.youtube\\.com\\/user\\/(.*)$/";
     $ytPlaylistRegex = "/^http:\\/\\/www\\.youtube\\.com\\/view_play_list\\?p=(.*)$/";
+    $ytThumbRegex ="/^http:\\/\\/i[0-9]?\\.ytimg\\.com\\/vi\\/([\\w-]+)\\/(sd|hq|mq)?default\\.jpg$/";
     $ytApiKey = "AI39si7lCrdz_clsMg5Ssip-jeguuZIZZ7Zev-pz35ay43sH2ApxagMgtUOa6j3kWpcOU-2P-ERJ44oLwRdbidDJJlPR2nKCGw";
     $ytGdata = "http://gdata.youtube.com";
     $ytParam = "v=2&alt=json&key=$ytApiKey";
@@ -83,6 +84,13 @@
                                     $content = str_replace("{{meta_description}}", htmlsafe($ytVideo['description']['$t']), $content);
                                 }
                             }
+                        }
+                    } else if (preg_match($ytThumbRegex, $meta['imageUrl'], $matches)) {
+
+                        $ytVideo = fetch_yt_video($matches[1]);
+                        if ($ytVideo && $ytVideo['thumbnails']) {
+                            $thumb = array_pop($ytVideo['thumbnails']);
+                            $content = str_replace("{{meta_thumbnail}}", $thumb['url'], $content);
                         }
                     }
                     $content = str_replace("{{meta_title}}", htmlsafe($meta['name']), $content);
