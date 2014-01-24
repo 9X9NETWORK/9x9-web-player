@@ -39,6 +39,18 @@
     
                 $meta = json_decode(file_get_contents("http://$localhost/api/episodes/$matches[1]"), true);
                 if ($meta) {
+                    if ($chMeta['sourceUrl']) {
+                        $programs = json_decode(file_get_contents("http://$localhost/api/episodes/$matches[1]/programs"), true);
+                        if ($programs && is_array($programs) && isset($programs[1])) {
+                            $videoId = substr($programs[1]['fileUrl'], 32);
+                            if ($videoId) {
+                                $ytVideo = json_decode(file_get_contents("$ytGdata/feeds/api/videos/$videoId?v=2&alt=jsonc&key=$ytApiKey"));
+                                if ($ytVideo && $ytVideo['data']) {
+                                    $content = str_replace("{{meta_thumbnail}}", $ytVideo['data']['thumbnail']['hqDefault'], $content);
+                                }
+                            }
+                        }
+                    }
                     $content = str_replace("{{meta_title}}", htmlsafe($meta['name']), $content);
                     $content = str_replace("{{meta_description}}", htmlsafe($meta['intro']), $content);
                     $content = str_replace("{{meta_thumbnail}}", htmlsafe($meta['imageUrl']), $content);
@@ -47,8 +59,13 @@
     
             } else if (preg_match('/^(\\d+)$/', $ep, $matches)) {
     
-                $meta = json_decode(file_get_contents("http://$localhost/api/programs/$matches[1]"), true);
-                if ($meta) {
+                $ytProgram = json_decode(file_get_contents("http://$localhost/api/ytprograms/$matches[1]"), true);
+                if ($ytProgram) {
+                        
+                    $ytVideo = json_decode(file_get_contents("$ytGdata/feeds/api/videos/${ytProgram['ytVideoId']}?v=2&alt=jsonc&key=$ytApiKey"));
+                    if ($ytVideo && $ytVideo['data']) {
+                        $content = str_replace("{{meta_thumbnail}}", $ytVideo['data']['thumbnail']['hqDefault'], $content);
+                    }
                     $content = str_replace("{{meta_title}}", htmlsafe($meta['name']), $content);
                     $content = str_replace("{{meta_description}}", htmlsafe($meta['intro']), $content);
                     $content = str_replace("{{meta_thumbnail}}", htmlsafe($meta['imageUrl']), $content);
@@ -57,7 +74,7 @@
     
             } else if (preg_match("/^yt(\\w+)$/", $ep, $matches)) {
     
-                $meta = json_decode(file_get_contents("$ytGdata/feeds/api/videos/$matches[1]?$ytParam"), true);
+                $meta = json_decode(file_get_contents("$ytGdata/feeds/api/videos/$matches[1]?v=2&alt=jsonc&key=$ytApiKey"), true);
                 if ($meta && $meta['data']) {
                     $data = $meta['data'];
                     $content = str_replace("{{meta_title}}", htmlsafe($data['title']), $content);
@@ -71,7 +88,6 @@
                     $content = str_replace("{{meta_video_height}}", "360", $content);
                 }
             }
-
         } else {
 
             if ($chMeta) {
