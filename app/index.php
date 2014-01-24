@@ -40,10 +40,7 @@
 
     function htmlsafe($str) {
 
-        if ($str)
-            return htmlspecialchars($str);
-        else
-            return '&nbsp;';
+        return $str ? htmlspecialchars($str) : '&nbsp;';
     }
 
     $host = $_SERVER['HTTP_HOST'];
@@ -138,46 +135,45 @@
 //                    $content = str_replace("{{meta_video_duration}}", $ytVideo['duration']['seconds'], $content);
                 }
             }
-        } else {
+        } else if ($chMeta) {
 
-            if ($chMeta) {
+            if (preg_match($ytChannelRegex, $chMeta['sourceUrl'], $matches)) {
 
-                if (preg_match($ytChannelRegex, $chMeta['sourceUrl'], $matches)) {
-
-                    $data = json_decode(file_get_contents("$ytGdata/feeds/api/partners/$matches[1]/branding/default?$ytParam"), true);
-                    if ($data && $data['entry'] && $data['entry']['yt$option'] && is_array($data['entry']['yt$option'])) {
-                        $ytOption = $data['entry']['yt$option'];
-                        for ($i = 0; $i < count($ytOption); $i++) {
-                            if ($ytOption[$i]['name'] == 'channel.banner.tv.low.image.url')
-                                $content = str_replace('{{meta_thumbnail}}', $ytOption[$i]['$t'], $content);
-                        }
-                    } else {
-                        $data = json_decode(file_get_contents("$ytGdata/feeds/api/users/$matches[1]?$ytParam"), true);
-                        $content = str_replace('{{meta_thumbnail}}', $data['media$thumbnail']['url'], $content);
+                $data = json_decode(file_get_contents("$ytGdata/feeds/api/partners/$matches[1]/branding/default?$ytParam"), true);
+                if ($data && $data['entry'] && $data['entry']['yt$option'] && is_array($data['entry']['yt$option'])) {
+                    $ytOption = $data['entry']['yt$option'];
+                    for ($i = 0; $i < count($ytOption); $i++) {
+                        if ($ytOption[$i]['name'] == 'channel.banner.tv.low.image.url')
+                            $content = str_replace('{{meta_thumbnail}}', $ytOption[$i]['$t'], $content);
                     }
-
-                } else if (preg_match($ytPlaylistRegex, $chMeta['sourceUrl'], $matches)) {
-
-                    $data = json_decode(file_get_contents("$ytGdata/feeds/api/playlists/$matches[1]?$ytParam"), true);
-                    if ($data && $data['feed'] && $data['feed']['media$group'] &&
-                        $data['feed']['media$group']['media$thumbnail'] &&
-                        is_array($data['feed']['media$group']['media$thumbnail'])) {
-                        
-                        $thumbnails = $data['feed']['media$group']['media$thumbnail'];
-                        usort($thumbnails, 'compare_thumbnail');
-                        $thumbnail = array_pop($thumbnails);
-                        $content = str_replace('{{meta_thumbnail}}', $thumbnail['url'], $content);
-                    }
+                } else {
+                    $data = json_decode(file_get_contents("$ytGdata/feeds/api/users/$matches[1]?$ytParam"), true);
+                    $content = str_replace('{{meta_thumbnail}}', $data['media$thumbnail']['url'], $content);
                 }
-                $content = str_replace("{{meta_title}}", htmlsafe($chMeta['name']), $content);
-                $content = str_replace("{{meta_description}}", htmlsafe($chMeta['intro']), $content);
-                $content = str_replace("{{meta_thumbnail}}", htmlsafe($chMeta['imageUrl']), $content);
-                $content = str_replace("{{meta_url}}", "http://$host/view/p$ch", $content);
+
+            } else if (preg_match($ytPlaylistRegex, $chMeta['sourceUrl'], $matches)) {
+
+                $data = json_decode(file_get_contents("$ytGdata/feeds/api/playlists/$matches[1]?$ytParam"), true);
+                if ($data && $data['feed'] && $data['feed']['media$group'] &&
+                    $data['feed']['media$group']['media$thumbnail'] &&
+                    is_array($data['feed']['media$group']['media$thumbnail']) &&
+                    count($data['feed']['media$group']['media$thumbnail']) > 0) {
+                    
+                    $thumbnails = $data['feed']['media$group']['media$thumbnail'];
+                    usort($thumbnails, 'compare_thumbnail');
+                    $thumbnail = array_pop($thumbnails);
+                    $content = str_replace('{{meta_thumbnail}}', $thumbnail['url'], $content);
+                }
             }
+            $content = str_replace("{{meta_title}}", htmlsafe($chMeta['name']), $content);
+            $content = str_replace("{{meta_description}}", htmlsafe($chMeta['intro']), $content);
+            $content = str_replace("{{meta_thumbnail}}", htmlsafe($chMeta['imageUrl']), $content);
+            $content = str_replace("{{meta_url}}", "http://$host/view/p$ch", $content);
         }
     }
     $mso = json_decode(file_get_contents("http://$localhost/api/mso/$msoName"), true);
     if ($mso == null) {
+        // fallback
         $mso = json_decode(file_get_contents("http://$localhost/api/mso/9x9"), true);
     }
     if ($mso['title']) $content = str_replace("{{meta_title}}", htmlsafe($mso['title']), $content);
