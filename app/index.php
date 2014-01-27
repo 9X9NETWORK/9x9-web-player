@@ -6,6 +6,11 @@
     $ytApiKey = "AI39si7lCrdz_clsMg5Ssip-jeguuZIZZ7Zev-pz35ay43sH2ApxagMgtUOa6j3kWpcOU-2P-ERJ44oLwRdbidDJJlPR2nKCGw";
     $ytGdata = "http://gdata.youtube.com";
     $ytParam = "v=2&alt=json&key=$ytApiKey";
+    $ytBannerImageNames = array(
+        'channel.banner.tv.high.image.url',
+        'channel.banner.tv.image.url',
+        'channel.banner.tv.low.image.url',
+    );
 
     function fetch_yt_video($videoId) {
 
@@ -152,11 +157,15 @@
             if (preg_match($ytChannelRegex, $chMeta['sourceUrl'], $matches)) {
 
                 $data = json_decode(file_get_contents("$ytGdata/feeds/api/partners/$matches[1]/branding/default?$ytParam"), true);
-                if ($data && $data['entry'] && $data['entry']['yt$option'] && is_array($data['entry']['yt$option'])) {
+                if ($data && $data['entry'] && $data['entry']['yt$option'] &&
+                    is_array($data['entry']['yt$option']) && count($data['entry']['yt$option']) > 0) {
+
                     $ytOption = $data['entry']['yt$option'];
-                    for ($i = 0; $i < count($ytOption); $i++) {
-                        if ($ytOption[$i]['name'] == 'channel.banner.tv.low.image.url')
-                            $content = str_replace('{{meta_thumbnail}}', $ytOption[$i]['$t'], $content);
+                    for ($i = 0; $i < count($ytBannerImageNames); $i++) {
+                        for ($j = 0; $j < count($ytOption); $j++) {
+                            if ($ytOption[$j]['name'] == $ytBannerImageNames[$i])
+                                $content = str_replace('{{meta_thumbnail}}', $ytOption[$j]['$t'], $content);
+                        }
                     }
                 } else {
                     $data = json_decode(file_get_contents("$ytGdata/feeds/api/users/$matches[1]?$ytParam"), true);
