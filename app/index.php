@@ -12,6 +12,11 @@
         'channel.banner.tv.low.image.url',
     );
 
+    function get_json($url) {
+
+        return json_decode(file_get_contents($url), true);
+    }
+
     function fetch_yt_video($videoId) {
 
         global $ytGdata, $ytParam;
@@ -19,7 +24,7 @@
         if ($videoId == null) {
             return null;
         }
-        $ytVideo = json_decode(file_get_contents("$ytGdata/feeds/api/videos/$videoId?$ytParam"), true);
+        $ytVideo = get_json("$ytGdata/feeds/api/videos/$videoId?$ytParam");
         if ($ytVideo == null || !isset($ytVideo['entry'])) {
             return null;
         }
@@ -61,16 +66,16 @@
 
     if ($ch && preg_match('/^\\d+$/', $ch)) {
 
-        $chMeta = json_decode(file_get_contents("http://$localhost/api/channels/$ch"), true);
+        $chMeta = get_json("http://$localhost/api/channels/$ch");
 
         if ($ep) {
     
             if (preg_match('/^e(\\d+)$/', $ep, $matches)) {
     
-                $meta = json_decode(file_get_contents("http://$localhost/api/episodes/$matches[1]"), true);
+                $meta = get_json("http://$localhost/api/episodes/$matches[1]");
                 if ($meta) {
                     if ($chMeta['sourceUrl']) { // YouTube sync
-                        $programs = json_decode(file_get_contents("http://$localhost/api/episodes/$matches[1]/programs"), true);
+                        $programs = get_json("http://$localhost/api/episodes/$matches[1]/programs");
                         if ($programs && is_array($programs) && count($programs) > 0) {
                             $videoId = substr($programs[0]['fileUrl'], 31);
                             $ytVideo = fetch_yt_video($videoId);
@@ -110,7 +115,7 @@
                 }
             } else if (preg_match('/^(\\d+)$/', $ep, $matches)) {
     
-                $ytProgram = json_decode(file_get_contents("http://$localhost/api/ytprograms/$matches[1]"), true);
+                $ytProgram = get_json("http://$localhost/api/ytprograms/$matches[1]");
                 if ($ytProgram) {
                         
                     $ytVideo = fetch_yt_video($ytProgram['ytVideoId']);
@@ -156,7 +161,7 @@
 
             if (preg_match($ytChannelRegex, $chMeta['sourceUrl'], $matches)) {
 
-                $data = json_decode(file_get_contents("$ytGdata/feeds/api/partners/$matches[1]/branding/default?$ytParam"), true);
+                $data = get_json("$ytGdata/feeds/api/partners/$matches[1]/branding/default?$ytParam");
                 if ($data && $data['entry'] && $data['entry']['yt$option'] &&
                     is_array($data['entry']['yt$option']) && count($data['entry']['yt$option']) > 0) {
 
@@ -168,13 +173,13 @@
                         }
                     }
                 } else {
-                    $data = json_decode(file_get_contents("$ytGdata/feeds/api/users/$matches[1]?$ytParam"), true);
+                    $data = get_json("$ytGdata/feeds/api/users/$matches[1]?$ytParam");
                     $content = str_replace('{{meta_thumbnail}}', $data['media$thumbnail']['url'], $content);
                 }
 
             } else if (preg_match($ytPlaylistRegex, $chMeta['sourceUrl'], $matches)) {
 
-                $data = json_decode(file_get_contents("$ytGdata/feeds/api/playlists/$matches[1]?$ytParam"), true);
+                $data = get_json("$ytGdata/feeds/api/playlists/$matches[1]?$ytParam");
                 if ($data && $data['feed'] && $data['feed']['media$group'] &&
                     $data['feed']['media$group']['media$thumbnail'] &&
                     is_array($data['feed']['media$group']['media$thumbnail']) &&
@@ -192,10 +197,10 @@
             $content = str_replace("{{meta_url}}", "http://$host/view/p$ch", $content);
         }
     }
-    $mso = json_decode(file_get_contents("http://$localhost/api/mso/$msoName"), true);
+    $mso = get_json("http://$localhost/api/mso/$msoName");
     if ($mso == null) {
         // fallback
-        $mso = json_decode(file_get_contents("http://$localhost/api/mso/9x9"), true);
+        $mso = get_json("http://$localhost/api/mso/9x9");
     }
     if ($mso['title']) $content = str_replace("{{meta_title}}", htmlsafe($mso['title']), $content);
     if ($mso['intro']) $content = str_replace("{{meta_description}}", htmlsafe($mso['intro']), $content);
