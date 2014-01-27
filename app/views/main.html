@@ -22,6 +22,7 @@
 		            <span class="episode-text">episodes</span>
 		    </div>
 		    <div class="episode-list-wrap">
+		    	
 			    <ul class="episode-list">
 			        <li ng-repeat="episode in episodes" class="episode-list-item" ng-click="videoPlay(episode,$index);" ng-class="{'is-playing':episode.isSelected===true}">
 
@@ -33,8 +34,11 @@
 	
 			            </a>
 			        </li>
-			    </ul>
+			    </ul>		    
+
 		    </div>
+		    <a href="#" class="epsode-prev-button"></a>
+			<a href="#" class="epsode-next-button"></a>
 
 
 		</div>

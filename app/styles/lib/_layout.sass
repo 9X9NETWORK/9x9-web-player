@@ -1,4 +1,4 @@
-
+@charset "UTF-8"
 body
     font-family: $basic-font-family
     
@@ -72,6 +72,7 @@ body
     overflow-y: hidden
     box-sizing: border-box
     padding: 0.2rem 0 0.8rem 0 
+
     //for mobile scrolling
     -webkit-overflow-scrolling: touch
 .episode-list
@@ -127,6 +128,12 @@ body
 
     .episode-name
         display: none
+.player-device
+    position: relative
+.epsode-prev-button,.epsode-next-button
+    display: none
+
+
 
 .social-media-wrap
     +span(12)
@@ -344,6 +351,43 @@ body
         color: $link-color
         border: solid 1px $link-color
         border-radius: 0.35rem
+    .app-item-link-group
+        +span(3 of 12 last)
+        padding-top: 0.2rem
+        padding-bottom: 0.2rem
+        text-decoration: none
+        text-align: center
+        color: $link-color
+        border: solid 1px $link-color
+        border-radius: 0.35rem
+        a
+            text-decoration: none
+            color: $link-color
+        .app-item-mobile
+            display: none
+        .app-item-ios,.app-item-android
+            background: url(../images/app-link-icon.png) no-repeat
+            position: relative 
+            display: inline-block
+            width: 2rem
+            height: 2rem
+        .app-item-ios 
+            background-position: 0 0.3rem
+            left: -12%
+            &:after
+                content: ""
+                display: block
+                position: absolute
+                right: -45%
+                height: 2rem
+                border-right: 1px $link-color solid
+
+
+        
+        .app-item-android 
+            background-position: 0 -2rem 
+            left: 12%
+
     .app-item-descript
         +span(12)
         padding: 0.5rem 
