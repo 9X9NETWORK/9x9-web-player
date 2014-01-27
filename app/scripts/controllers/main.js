@@ -1,6 +1,7 @@
 'use strict';
-ld.controller('MainCtrl', function ($scope, $stateParams, sharedObjects){
+ld.controller('MainCtrl', function ($scope, $stateParams, sharedObjects, $location){
 
+    console.log("main");
 	if($stateParams.channelId){
 		var cid = $stateParams.channelId;
 		var channel = new nn.model.Channel(cid);
@@ -9,11 +10,10 @@ ld.controller('MainCtrl', function ($scope, $stateParams, sharedObjects){
 
         channel.get().then(function(){
             channel.loadEpisodes().then(function(){
-
                 var ep = channel.episodes.first();
                 var path = base + '/p' + cid + '/' + ep.id;
                 sharedObjects.set('episodes', channel.episodes);
-                location.hash = path;
+                $location.path(path);
             });
         });
 	}else{
@@ -25,7 +25,7 @@ ld.controller('MainCtrl', function ($scope, $stateParams, sharedObjects){
             setInfo = new nn.model.Set(set.id);
             setInfo.get().then(function(){
                 sharedObjects.set('currentSet', setInfo);
-            	location.hash = base + '/p' + setInfo.channels.first().id;
+                $location.path(base + '/p' + setInfo.channels.first().id);
             });
         });
 	}

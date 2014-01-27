@@ -1,7 +1,7 @@
 'use strict';
 
 //angular.module('landing', ['ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 'landing.services', 'landing.filters', 'landing.directives'])
-var base = "/view";
+var base = "view/";
 var player;
 var ld = angular.module('landing', [
   'ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 
@@ -15,8 +15,10 @@ var ld = angular.module('landing', [
         });
     }
 ])
-.config(function($stateProvider, $urlRouterProvider){
+.config(function($stateProvider, $urlRouterProvider, $locationProvider){
 
+      console.log("app");
+      $locationProvider.html5Mode(true);
       $urlRouterProvider.when("", base).when("/", base);
 
       $stateProvider
