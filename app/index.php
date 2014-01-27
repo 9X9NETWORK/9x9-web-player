@@ -161,8 +161,8 @@
                     
                     $thumbnails = $data['feed']['media$group']['media$thumbnail'];
                     usort($thumbnails, 'compare_thumbnail');
-                    $thumbnail = array_pop($thumbnails);
-                    $content = str_replace('{{meta_thumbnail}}', $thumbnail['url'], $content);
+                    $thumb = array_pop($thumbnails);
+                    $content = str_replace('{{meta_thumbnail}}', $thum['url'], $content);
                 }
             }
             $content = str_replace("{{meta_title}}", htmlsafe($chMeta['name']), $content);
