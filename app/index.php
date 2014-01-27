@@ -51,8 +51,8 @@
 
     $ch = isset($_GET['ch']) ? $_GET['ch'] : null;
     $ep = isset($_GET['ep']) ? $_GET['ep'] : null;
-    $content = str_replace("{{ch}}", htmlsafe($ch), $content);
-    $content = str_replace("{{ep}}", htmlsafe($ep), $content);
+    $content = str_replace("{{meta_nn_ch}}", htmlsafe($ch), $content);
+    $content = str_replace("{{meta_nn_ep}}", htmlsafe($ep), $content);
 
     if ($ch && preg_match('/^\\d+$/', $ch)) {
 
@@ -80,14 +80,22 @@
                                 if ($ytVideo['description']) {
                                     $content = str_replace("{{meta_description}}", htmlsafe($ytVideo['description']['$t']), $content);
                                 }
+                                if (is_array($ytVideo['link']) && count($ytVideo['link']) > 0) {
+                                    $content = str_replace("{{meta_yt_link}}", htmlsafe($ytVideo['link'][0]['href']), $content);
+                                }
                             }
                         }
                     } else if (preg_match($ytThumbRegex, $meta['imageUrl'], $matches)) {
 
                         $ytVideo = fetch_yt_video($matches[1]);
-                        if ($ytVideo && $ytVideo['thumbnails']) {
-                            $thumb = array_pop($ytVideo['thumbnails']);
-                            $content = str_replace("{{meta_thumbnail}}", $thumb['url'], $content);
+                        if ($ytVideo) {
+                            if (is_array($ytVideo['thumbnails']) && count($ytVideo['thumbnails']) > 0) {
+                                $thumb = array_pop($ytVideo['thumbnails']);
+                                $content = str_replace("{{meta_thumbnail}}", $thumb['url'], $content);
+                            }
+                            if (is_array($ytVideo['link']) && count($ytVideo['link']) > 0) {
+                                $content = str_replace("{{meta_yt_link}}", htmlsafe($ytVideo['link'][0]['href']), $content);
+                            }
                         }
                     }
                     $content = str_replace("{{meta_title}}", htmlsafe($meta['name']), $content);
@@ -102,7 +110,7 @@
                         
                     $ytVideo = fetch_yt_video($ytProgram['ytVideoId']);
                     if ($ytVideo) {
-                        if ($ytVideo['thumbnails']) {
+                        if (is_array($ytVideo['thumbnails']) && count($ytVideo['thumbnails']) > 0) {
                             $thumb = array_pop($ytVideo['thumbnails']);
                             $content = str_replace("{{meta_thumbnail}}", $thumb['url'], $content);
                         }
@@ -111,6 +119,9 @@
                         }
                         if ($ytVideo['description']) {
                             $content = str_replace("{{meta_description}}", htmlsafe($ytVideo['description']['$t']), $content);
+                        }
+                        if (is_array($ytVideo['link']) && count($ytVideo['link']) > 0) {
+                            $content = str_replace("{{meta_yt_link}}", htmlsafe($ytVideo['link'][0]['href']), $content);
                         }
                     }
                     $content = str_replace("{{meta_title}}", htmlsafe($ytProgram['name']), $content);
@@ -133,6 +144,7 @@
 //                    $content = str_replace("{{meta_video_width}}", "480", $content);
 //                    $content = str_replace("{{meta_video_height}}", "360", $content);
 //                    $content = str_replace("{{meta_video_duration}}", $ytVideo['duration']['seconds'], $content);
+                    $content = str_replace("{{meta_yt_link}}", htmlsafe($ytVideo['link'][0]['href']), $content);
                 }
             }
         } else if ($chMeta) {
