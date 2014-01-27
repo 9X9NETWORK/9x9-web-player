@@ -1,0 +1,46 @@
+{
+    "app": [
+        {
+            "mso": "musicvideo.9x9.tv",
+            "appname": "MV不解釋 FLIPr",
+            "appicon": "images/mv/app_icon.png",
+            "appdescription": "想收到最新最快的音樂MV和樂壇消息，卻厭倦打開網頁和搜尋的繁瑣過程，「MV不解釋」讓你隨時更新音樂情報，隨時讓你耳目一新！",
+            "appcalltoaction": "立即擁有最fashion的MV廣播電台！"
+        }
+    ],
+    "promote": [
+        {
+            "promotename1": "相信音樂",
+            "promoteimage1": "images/mv/cms-thumbnail-ratio-1.jpg",
+            "promotename2": "華納音樂",
+            "promoteimage2": "images/mv/cms-thumbnail-ratio-2.jpg",
+            "promotename3": "滾石唱片",
+            "promoteimage3": "images/mv/cms-thumbnail-ratio-3.jpg",
+            "promotename4": "MBC KPOP",
+            "promoteimage4": "images/mv/cms-thumbnail-ratio-4.jpg",
+            "promotename5": "Billboard.com",
+            "promoteimage5": "images/mv/cms-thumbnail-ratio-5.jpg",
+            "promotename6": "VEVO",
+            "promoteimage6": "images/mv/cms-thumbnail-ratio-6.png"
+        }
+    ],
+    "link": [
+        {
+            "applinkname1": "MV不解釋 FLIPr",
+            "applinkdescription1": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
+            "applinkicon1": "images/mv/app_icon.png",
+            "applinkname2": "關鍵評論網 FLIPr",
+            "applinkdescription2": "News worth knowing, voices worth sharing. 分享觀點從這開始。",
+            "applinkicon2": "images/app-group-icon-5.png",
+            "applinkname3": "Good TV FLIPr",
+            "applinkdescription3": "您是Good TV的忠實觀眾嗎？帶給人們信心、希望、與真愛的電視台，趕快來看。",
+            "applinkios3": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
+            "applinkandroid3": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv",
+            "applinkname4": "華視雲端網 FLIPr",
+            "applinkdescription4": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
+            "applinkicon4": "images/cts/app_icon.png",
+            "applinkios4": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
+            "applinkandroid4": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
+        }
+    ]
+}

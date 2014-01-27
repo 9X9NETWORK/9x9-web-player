@@ -71,32 +71,32 @@
 	"link-data": [
 
 		{	
-			"link-name": "華視雲端網 FLIPr",
-			"link-icon": "",			
-			"link-ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
-			"link-android" : "https://play.google.com/store/apps/details?id=tw.com.cts.player",
-			"link-description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。"
+			"app-link-name": "華視雲端網 FLIPr",
+			"app-link-icon": "",			
+			"app-link-ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
+			"app-link-android" : "https://play.google.com/store/apps/details?id=tw.com.cts.player",
+			"app-link-description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。"
 		},
 		{	
-			"link-name": "關鍵評論網 FLIPr",
-			"link-icon": "",			
-			"link-ios": "",
-			"link-android" : "",
-			"link-description": "News worth knowing, voices worth sharing. 分享觀點從這開始。"
+			"app-link-name": "關鍵評論網 FLIPr",
+			"app-link-icon": "",			
+			"app-link-ios": "",
+			"app-link-android" : "",
+			"app-link-description": "News worth knowing, voices worth sharing. 分享觀點從這開始。"
 		},
 		{	
-			"link-name": "Good TV FLIPr",
-			"link-icon": "",			
-			"link-ios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
-			"link-android" : "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv",
-			"link-description": "您是Good TV的忠實觀眾嗎？帶給人們信心、希望、與真愛的電視台，趕快來看。"
+			"app-link-name": "Good TV FLIPr",
+			"app-link-icon": "",			
+			"app-link-ios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
+			"app-link-android" : "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv",
+			"app-link-description": "您是Good TV的忠實觀眾嗎？帶給人們信心、希望、與真愛的電視台，趕快來看。"
 		},
 		{	
-			"link-name": "MV不解釋 FLIPr",
-			"link-icon": "",			
-			"link-ios": "",
-			"link-android" : "",
-			"link-description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！"
+			"app-link-name": "MV不解釋 FLIPr",
+			"app-link-icon": "",			
+			"app-link-ios": "",
+			"app-link-android" : "",
+			"app-link-description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！"
 		}
 
 
