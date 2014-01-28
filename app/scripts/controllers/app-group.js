@@ -1,4 +1,7 @@
 'use strict';
-ld.controller('AppGroupCtrl', function ($scope){
+angular.module('app.controllers').
+ controller('AppGroupCtrl', function (
+	  	$scope
+  ){
   
-});
+  });
