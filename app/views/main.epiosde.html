@@ -1,0 +1,42 @@
+
+
+
+		<div class="playback-player">
+		    <div id="ytplayer"></div>
+		</div>
+		<div class="playback-info">
+		    <p class="episode-name">{{}}</p>
+		</div>
+
+		<div class="episode-info-wrap">
+			<div class="playback-episode-src">
+		        <span class="program-from">from</span>
+		        <figure class="program-logo-small">
+		        	<img src="http://9x9tmp.s3.amazonaws.com/cms-thumbnail-1377158420560-33298.jpg" >
+		        </figure>
+		        <span class="program-name">Latest and Greatest</span>
+		    </div>
+		    <div class="playback-episode-count">
+		            <span class="episode-number">58</span>
+		            <span class="episode-text">episodes</span>
+		    </div>
+		    <div class="episode-list-wrap">
+			    <ul class="episode-list">
+			        <li ng-repeat="episode in episodes" class="episode-list-item" ng-click="videoPlay(episode,$index);" ng-class="{'is-playing':episode.isSelected===true}">
+			            <div class="episode-detail">
+			            	<img class="episode-preview" src="http://i1.ytimg.com/vi/{{episode.videoId}}/mqdefault.jpg" alt="{{episode.title}}">
+			            	
+			                <!-- <div class=""> -->
+			                <p class="episode-name">Vice The Japanese Love Industry</p>
+			                <!-- </div> -->
+			            </div>
+			        </li>
+			    </ul>
+		    </div>
+
+
+		</div>
+
+
+
+

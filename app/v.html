@@ -5,11 +5,13 @@
 <!--[if gt IE 8]><!--> <html class="no-js" ng-app="landing"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    
+
     {{favicon}}
     <title>{{meta_title}}</title>
     <meta name="keyword" content="{{meta_keyword}}"/>
-    <meta name="viewport" content="width=device-width">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
     <meta name="title" content="{{meta_title}}"/>
     <meta name="description" content="{{meta_description}}">
     <link rel="image_src" href="{{meta_thumbnail}}" />
@@ -27,15 +29,15 @@
     <meta itemprop="name" content="{{meta_title}}">
     <meta itemprop="description" content="{{meta_description}}">
     <meta itemprop="image" content="{{meta_thumbnail}}"><!-- google+ requires thumbnail size at least 125px -->
-    
-    <base href="/lab/web5.x/">
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
 </head>
-  <body ontouchstart="">
+   <body ontouchstart="">
+
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -46,12 +48,12 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="l-main-container">
-      <div ui-view="player"></div>
-      <div ui-view="promote"></div>
-      <div ui-view="appGroup"></div>
-    </div>
-    <div ui-view></div>
+  <div class="l-main-container">
+    <div ui-view="view.player"></div>
+    <div ui-view="view.promate"></div>
+    <div ui-view="view.appGroup"></div>
+  </div>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -64,16 +66,36 @@
        ga('send', 'pageview');
     </script>
     
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://9x9ui.s3.amazonaws.com/playerlib/nn.landing/nn.js"></script>
-    <script src="https://9x9ui.s3.amazonaws.com/playerlib/nn.landing/nn.player.js"></script>
-    <script src="https://9x9ui.s3.amazonaws.com/playerlib/nn.landing/nn.parser.js"></script>
-    <script src="https://9x9ui.s3.amazonaws.com/playerlib/nn.landing/nn.model.js"></script>
-    <script src="https://9x9ui.s3.amazonaws.com/playerlib/nn.landing/nn.utils.js"></script>
+
+    <script>
+      // Load the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "//www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      function onYouTubeIframeAPIReady() {
+        new YT.Player('ytplayer', {
+          width: '100%',
+          //height: '153px',
+
+          //videoId: 'dm_A_1xp_Vo',
+          playerVars: {
+            'controls': 0 ,
+            'showinfo' : 0,
+            'rel' : 0
+          }
+
+
+        });
+
+      }
+
+    </script>
+
 
     <script src="bower_components/angular/angular.js"></script>
-
-        <!-- build:js scripts/modules.js -->
 
         <!-- build:js scripts/modules.js -->
         <script src="bower_components/angular-resource/angular-resource.js"></script>
@@ -86,11 +108,10 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/player.js"></script>
         <script src="scripts/controllers/promote.js"></script>
-        <script src="scripts/controllers/app-group.js"></script>
-        <script src="scripts/services/shared-objects.js"></script>
-        <!-- <script src="scripts/services/youtube-player.js"></script>-->
+        <script src="scripts/controllers/app-group.js"></script>        
+        <script src="scripts/services/video-data.js"></script>
+        <script src="scripts/services/youtube-player.js"></script>
         <!-- endbuild -->
 </body>
 </html>

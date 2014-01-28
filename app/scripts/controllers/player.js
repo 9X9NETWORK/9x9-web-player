@@ -98,97 +98,99 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     init();
 
-  })
-.directive("episodeList", function($document){
-  return function($scope, ele, attrs){
-      // properties
+  });
 
-      //Draggable.create(".episode-list", {type:"x", edgeResistance:0.65, bounds:".episode-list-wrap", throwProps:true});
 
-      return;
-      var bool = false;
-      var ox = 0;
-      var mouseX = 0;
-      var x = 0;
-      var startX = 0;
-      var lastX;
-      var friction = 0.9;
-      var vx;
-      var frameRate = 1000 / 20;
-      var tx;
-      var minLeft;
-      var onMouseUp = function(){
-        bool = false;
-        $document.unbind('mousemove', onMouseMove);
-        $document.unbind('mouseup', onMouseUp);
-        //clearInterval(interval);
-      }
+// .directive("episodeList", function($document){
+//   return function($scope, ele, attrs){
+//       // properties
 
-      var onMouseMove = function(e){
-          x = mouseX - startX;
-          vx = (lastX - x) * 10;
+//       //Draggable.create(".episode-list", {type:"x", edgeResistance:0.65, bounds:".episode-list-wrap", throwProps:true});
 
-          x = x > 0 ? 0 : x;
-          x = x < minLeft ? minLeft : x;
-          lastX = x;
-          ele.css({
-            left:  x + 'px'
-          });
-      }
+//       return;
+//       var bool = false;
+//       var ox = 0;
+//       var mouseX = 0;
+//       var x = 0;
+//       var startX = 0;
+//       var lastX;
+//       var friction = 0.9;
+//       var vx;
+//       var frameRate = 1000 / 20;
+//       var tx;
+//       var minLeft;
+//       var onMouseUp = function(){
+//         bool = false;
+//         $document.unbind('mousemove', onMouseMove);
+//         $document.unbind('mouseup', onMouseUp);
+//         //clearInterval(interval);
+//       }
 
-      var onInterval = function(){
+//       var onMouseMove = function(e){
+//           x = mouseX - startX;
+//           vx = (lastX - x) * 10;
 
-          if(bool){
-            //console.log(vx);
-          }else{
+//           x = x > 0 ? 0 : x;
+//           x = x < minLeft ? minLeft : x;
+//           lastX = x;
+//           ele.css({
+//             left:  x + 'px'
+//           });
+//       }
 
-            //console.log(vx, x);
-            if(Math.abs(vx) > 1){
-                console.log(vx);
-                vx *= friction;
-                tx = x + vx;
-                if(tx > 10){
-                  //v = -v;
-                  // x = 0;
-                  // v = -v;
-                }else if(tx < minLeft){
-                  //console.log(2, tx);
-                  // x = -$(ele).width();
-                  // v = -v;
-                }
-                ele.css({
-                  left: tx + 'px'
-                });
-            }else{
-              vx = 0;
-              clearInterval(interval);
-            }
-          }
-      }
+//       var onInterval = function(){
 
-      var initMouseDetect = function(){
-        $(document).mousemove(function(e){
-            mouseX = e.pageX;
-         }); 
-      }
+//           if(bool){
+//             //console.log(vx);
+//           }else{
 
-      initMouseDetect();
+//             //console.log(vx, x);
+//             if(Math.abs(vx) > 1){
+//                 console.log(vx);
+//                 vx *= friction;
+//                 tx = x + vx;
+//                 if(tx > 10){
+//                   //v = -v;
+//                   // x = 0;
+//                   // v = -v;
+//                 }else if(tx < minLeft){
+//                   //console.log(2, tx);
+//                   // x = -$(ele).width();
+//                   // v = -v;
+//                 }
+//                 ele.css({
+//                   left: tx + 'px'
+//                 });
+//             }else{
+//               vx = 0;
+//               clearInterval(interval);
+//             }
+//           }
+//       }
 
-      var interval;
+//       var initMouseDetect = function(){
+//         $(document).mousemove(function(e){
+//             mouseX = e.pageX;
+//          }); 
+//       }
 
-      ele.on('mousedown', function(e) {
-        // Prevent default dragging of selected content
-        minLeft = -$(ele).width() + $(".episode-list-wrap").width()
-        bool = true;
-        e.preventDefault();
-        startX = e.pageX - x;
-        interval = setInterval(onInterval, frameRate);
-        // console.log(e.pageX);
-        // console.log(x);
-        // console.log(startX);
+//       initMouseDetect();
 
-        $document.on('mousemove', onMouseMove);
-        $document.on('mouseup', onMouseUp);
-      });
-  }
-});
+//       var interval;
+
+//       ele.on('mousedown', function(e) {
+//         // Prevent default dragging of selected content
+//         minLeft = -$(ele).width() + $(".episode-list-wrap").width()
+//         bool = true;
+//         e.preventDefault();
+//         startX = e.pageX - x;
+//         interval = setInterval(onInterval, frameRate);
+//         // console.log(e.pageX);
+//         // console.log(x);
+//         // console.log(startX);
+
+//         $document.on('mousemove', onMouseMove);
+//         $document.on('mouseup', onMouseUp);
+//       });
+//   }
+// });

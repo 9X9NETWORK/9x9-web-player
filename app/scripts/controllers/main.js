@@ -1,13 +1,12 @@
 'use strict';
 ld.controller('MainCtrl', function ($scope, $stateParams, sharedObjects, $location){
 
-    console.log("main");
+  console.log($stateParams.channelId);
 	if($stateParams.channelId){
 		var cid = $stateParams.channelId;
 		var channel = new nn.model.Channel(cid);
 
         sharedObjects.set('currentChannel', channel);
-
         channel.get().then(function(){
             channel.loadEpisodes().then(function(){
                 var ep = channel.episodes.first();
