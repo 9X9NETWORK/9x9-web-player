@@ -65,6 +65,33 @@ $desktop-large-font: 2.25rem
         &:hover,&:active
             background-position: 0 -16.75rem
 
+    .app-item-link-group
+
+        padding-top: 0
+        padding-bottom: 0
+
+        .app-item-mobile
+            display: none
+        .app-item-ios,.app-item-android
+            background: url(../images/app-link-icon.png) no-repeat
+            position: relative 
+            display: inline-block
+            width: 2rem
+            height: 2rem
+        .app-item-ios 
+            background-position: 0 0.3rem
+            left: -12%
+            &:after
+                content: ""
+                display: block
+                position: absolute
+                right: -45%
+                height: 2rem
+                border-right: 1px $link-color solid
+        .app-item-android 
+            background-position: 0 -2rem 
+            left: 12%
+
 
     .app-download-wrap
         +span(5 of 16 first)
