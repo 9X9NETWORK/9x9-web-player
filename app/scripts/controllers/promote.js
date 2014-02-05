@@ -6,6 +6,7 @@ ld.controller('PromoteCtrl', function ($scope, $http){
         method: "GET",
         data: {}
     }).success(function(data, status, headers, config) {
+        //console.log(data);
         $scope.promotionItems = data;
     }).error(function(data, status, headers, config) {
         //$scope.status = status;

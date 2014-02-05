@@ -1,5 +1,5 @@
 'use strict';
-ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $location, $rootScope){
+ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $location, $rootScope, jsonService){
 
     // var un = $rootScope.$on('$stateChangeStart', function (event) {
     //     event.preventDefault();
@@ -11,13 +11,18 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     var channelId = $stateParams.channelId;
     var episodeId = $stateParams.episodeId;
-    var channel = sharedObjects.get("channel") || new nn.model.Channel(channelId);
+    var channel;
     var episodes = sharedObjects.get("episodes");
     var episode;
     var programs;
     var episodeIndex = 0;
 
-    sharedObjects.set('channel', channel);
+    if(sharedObjects.get("channel")){
+        channel = sharedObjects.get("channel");
+    }else{
+        channel = new nn.model.Channel(channelId);
+        sharedObjects.set('channel', channel);
+    }
 
     var init = function(){
           
@@ -26,13 +31,13 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
           if(episodes){
           //if(false){
-
               episode = episodes.findByAttr("id", episodeId);
               episodeIndex = episodes.index;
               programs = new nn.utils.NnArray(episode.programs, false);
-
-              $scope.safeApply(update);
-              startPlay();
+              channel.get().then(function(){
+                  $scope.safeApply(update);
+                  startPlay();
+              });
           }else{
               channel.get().then(function(){
                 channel.loadEpisodes().then(function(){
@@ -61,6 +66,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         $scope.channel = channel;
         $scope.episodes = channel.episodes;
         $scope.episodeIndex = episodeIndex;
+        $scope.episode = episode;
     }
 
     var onVideoEnd = function(){
@@ -92,13 +98,25 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     };
 
     $scope.onEpisodeClick = function(eid){
-        var path = base + '/p' + channelId + '/' + eid;
+        var path = '/p' + channelId + '/' + eid;
         $location.path(path);
     }
 
+    $scope.jsonData = jsonService.getMsoData(mso);
+
     init();
 
-  });
+
+})
+.service("jsonService", function($http){
+    return {
+      getMsoData : function(mso){
+        return $http.get("scripts/data/" + mso + ".json").then(function(rs){
+          return rs.data;
+        })
+      }
+    }
+});
 
 
 // .directive("episodeList", function($document){

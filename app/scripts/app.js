@@ -1,8 +1,10 @@
 'use strict';
 
 //angular.module('landing', ['ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 'landing.services', 'landing.filters', 'landing.directives'])
-var base = "";
+var base = "/view/";
 var player;
+var mso = nn.global.mso;
+var search;
 var ld = angular.module('landing', [
   'ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 
   'landing.services', 'landing.filters', 'landing.directives'])
@@ -18,21 +20,21 @@ var ld = angular.module('landing', [
 .config(function($stateProvider, $urlRouterProvider, $locationProvider){
 
       $locationProvider.html5Mode(true);
-      $urlRouterProvider.when("", base).when("/", base);
+      $urlRouterProvider.when("", "/");
 
       $stateProvider
         .state('channel', {
-          url : base,
+          url : "/",
           templateUrl: 'views/blank.html',
           controller : "MainCtrl"
         })
         .state('episode', {
-          url : base + "/p{channelId}",
+          url : "/p{channelId}",
           templateUrl: 'views/blank.html',
           controller : "MainCtrl"
         })
         .state("watch", {
-          url: base + "/p{channelId}/{episodeId}",
+          url: "/p{channelId}/{episodeId}",
           views: {
             'player': {
               templateUrl: 'views/player.html',

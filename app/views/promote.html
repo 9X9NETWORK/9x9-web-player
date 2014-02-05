@@ -4,7 +4,7 @@
 		<h1 class="promote-programe-text">超多精選節目新鮮放送， 歡迎沒事翻翻逛逛！</h1>
 
 		<ul class="promote-programe-list">
-			<li class="promote-programe-item" ng-repeat="item in promotionItems">
+			<li class="promote-programe-item" ng-repeat="item in promotionItems track by $index">
 				<figure class="promote-programe-img">
 					<div class="thumb-inner-center">
 						<img src="{{item.thumb}}">

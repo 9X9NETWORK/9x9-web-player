@@ -18,18 +18,28 @@
     ],
     "promote": [
         {
-            "promotename1": "華視新聞",
-            "promoteimage1": "images/cts/cms-thumbnail-ratio-1.jpg",
-            "promotename2": "華視新聞雜誌",
-            "promoteimage2": "images/cts/cms-thumbnail-ratio-2.jpg",
-            "promotename3": "POWER星期天",
-            "promoteimage3": "images/cts/cms-thumbnail-ratio-3.jpg",
-            "promotename4": "天才衝衝衝",
-            "promoteimage4": "images/cts/cms-thumbnail-ratio-4.jpg",
-            "promotename5": "圓夢廚房",
-            "promoteimage5": "images/cts/cms-thumbnail-ratio-5.jpg",
-            "promotename6": "我們的那首歌",
-            "promoteimage6": "images/cts/cms-thumbnail-ratio-6.jpg"
+            "name" : "華視新聞",
+            "image" : "images/cts/cms-thumbnail-ratio-1.jpg"
+        },
+        {
+            "name" : "華視新聞雜誌",
+            "image" : "images/cts/cms-thumbnail-ratio-2.jpg"
+        },
+        {
+            "name" : "POWER星期天",
+            "image" : "images/cts/cms-thumbnail-ratio-3.jpg"
+        },
+        {
+            "name" : "天才衝衝衝",
+            "image" : "images/cts/cms-thumbnail-ratio-4.jpg"
+        },
+        {
+            "name" : "圓夢廚房",
+            "image" : "images/cts/cms-thumbnail-ratio-5.jpg"
+        },
+        {
+            "name" : "我們的那首歌",
+            "image" : "images/cts/cms-thumbnail-ratio-6.jpg"
         }
     ],
     "link": [
