@@ -1,7 +1,7 @@
 $desktop-large-font: 2.25rem
 
 +susy-breakpoint(60rem,16)
-    //+layout($desktop-layout)
+    
     html,body
         overflow-x: hidden
 
@@ -24,26 +24,17 @@ $desktop-large-font: 2.25rem
         background: url('../images/ipad-outline.png') no-repeat 0 100%
         float: right
         box-sizing: border-box
-        
-    // .playback-player
-    //     height: 20rem
-
-    .playback-info
-        //+span(7 last)
-        //clear: both
-    .episode-info-wrap
-        //+span(7 last)
-        //clear: both
+           
     .playback-episode-src
         padding-top: 0.4rem
         padding-bottom: 0.25rem
-    .playback-episode-count
-        //display: none
+
     .episode-list-item
         width: 7.3rem
     .episode-list-wrap
         padding: 0.2rem 0 0 0
-        //overflow-x: hidden 
+        overflow: hidden
+ 
     .epsode-prev-button,.epsode-next-button
         display: block
         position: absolute
@@ -90,7 +81,7 @@ $desktop-large-font: 2.25rem
                 border-right: 1px $link-color solid
         .app-item-android 
             background-position: 0 -2rem 
-            left: 12%
+            left: 14%
 
 
     .app-download-wrap
@@ -114,7 +105,6 @@ $desktop-large-font: 2.25rem
             font-size: 1.25rem
 
         .app-download-appstore,.app-download-googleplay
-            //+span(3 of 6)
             .app-button
                 +span(3 of 6)
 
@@ -145,8 +135,7 @@ $desktop-large-font: 2.25rem
             display: block
             clear: both
 
-    .promote-programe-img
-        //height: 9rem
+
     
     .promote-programe-list
         +span(9)
@@ -208,14 +197,7 @@ $desktop-large-font: 2.25rem
     //app-group
     .app-group-wrap
         +bleed-x(100rem)
-    // .app-group-item
-    //     +span(7.5 no-gutter)
-    //     +squish(0,0.5)
-    //     //padding-left: 0
-    //     .app-item-link
-    //         +span(1.5 of 7.5 last)
-    //         padding-top: 0.35rem
-    //         padding-bottom: 0.35rem
+
 
   
 

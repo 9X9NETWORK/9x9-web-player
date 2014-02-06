@@ -2,81 +2,82 @@
     "app": [
         {
             "mso": "cts.9x9.tv",
-            "appname": "華視雲端網 FLIPr",
-            "appicon": "images/cts/app_icon.png",
-            "appdescription": "本APP專為喜愛華視節目之觀眾設計，讓粉絲在各種螢幕上，隨時隨地，都能收看即時又精彩的節目！簡易直覺的操作，上下左右翻。就像在家中客廳看電視一樣的簡單。",
-            "appcalltoaction": "立刻免費下載給你看更多！",
-            "appios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
-            "appandroid": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
+            "name": "華視雲端網 FLIPr",
+            "icon": "images/cts/app_icon.png",
+            "description": "本APP專為喜愛華視節目之觀眾設計，讓粉絲在各種螢幕上，隨時隨地，都能收看即時又精彩的節目！簡易直覺的操作，上下左右翻。就像在家中客廳看電視一樣的簡單。",
+            "calltoaction": "立刻免費下載給你看更多！",
+            "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
         }
     ],
     "social": [
         {
-            "socialicon": "images/social-media-fb.png",
-            "socialurl": "https://www.facebook.com/TBSCTS"
+            "icon": "images/social-media-fb.png",
+            "url": "https://www.facebook.com/TBSCTS"
         },
         {
-            "socialicon": "images/social-media-google.png",
-            "socialurl": "https://plus.google.com/111035766158749236867/posts"
+            "icon": "images/social-media-google.png",
+            "url": "https://plus.google.com/111035766158749236867/posts"
         },
         {
-            "socialicon": "images/social-media-twitter.png",
-            "socialurl": "http://www.youtube.com/user/TBSCTS"
+            "icon": "images/social-media-twitter.png",
+            "url": "http://www.youtube.com/user/TBSCTS"
         },
         {
-            "socialicon": "images/social_media_icon_4.png",
-            "socialurl": "http://www.cts.com.tw/ "
+            "icon": "images/social_media_icon_4.png",
+            "url": "http://www.cts.com.tw/ "
         }
     ],
     "promote": [
         {
-            "promotename1": "華視新聞",
-            "promoteimage1": "images/cts/cms-thumbnail-ratio-1.jpg"
+            "name": "華視新聞",
+            "image": "images/cts/cms-thumbnail-ratio-1.jpg"
         },
         {
-            "promotename1": "華視新聞雜誌",
-            "promoteimage1": "images/cts/cms-thumbnail-ratio-2.jpg"
+            "name": "華視新聞雜誌",
+            "image": "images/cts/cms-thumbnail-ratio-2.jpg"
         },
         {
-            "promotename1": "POWER星期天",
-            "promoteimage1": "images/cts/cms-thumbnail-ratio-3.jpg"
+            "name": "POWER星期天",
+            "image": "images/cts/cms-thumbnail-ratio-3.jpg"
         },
         {
-            "promotename1": "天才衝衝衝",
-            "promoteimage1": "images/cts/cms-thumbnail-ratio-4.jpg"
+            "name": "天才衝衝衝",
+            "image": "images/cts/cms-thumbnail-ratio-4.jpg"
         },
         {
-            "promotename1": "圓夢廚房",
-            "promoteimage1": "images/cts/cms-thumbnail-ratio-5.jpg"
+            "name": "圓夢廚房",
+            "image": "images/cts/cms-thumbnail-ratio-5.jpg"
         },
         {
-            "promotename1": "我們的那首歌",
-            "promoteimage1": "images/cts/cms-thumbnail-ratio-6.jpg"
+            "name": "我們的那首歌",
+            "image": "images/cts/cms-thumbnail-ratio-6.jpg"
         }
     ],
     "link": [
         {
-            "applinkname": "MV不解釋 FLIPr",
-            "applinkdescription": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
-            "applinkicon": "images/mv/app_icon.png"
+            "name": "MV不解釋 FLIPr",
+            "description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
+            "icon": "images/mv/app_icon.png"
         },
         {
-            "applinkname": "關鍵評論網 FLIPr",
-            "applinkdescription": "News worth knowing, voices worth sharing. 分享觀點從這開始。",
-            "applinkicon": "images/app-group-icon-5.png"
+            "name": "關鍵評論網 FLIPr",
+            "description": "News worth knowing, voices worth sharing. 分享觀點從這開始。",
+            "icon": "images/app-group-icon-5.png"
         },
         {
-            "applinkname": "Good TV FLIPr",
-            "applinkdescription": "您是Good TV的忠實觀眾嗎？帶給人們信心、希望、與真愛的電視台，趕快來看。",
-            "applinkios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
-            "applinkandroid": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv"
+            "name": "Good TV FLIPr",
+            "description": "您是Good TV的忠實觀眾嗎？帶給人們信心、希望、與真愛的電視台，趕快來看。",
+            "icon": "images/app_icon_goodtv_200x200.png",
+            "ios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv"
         },
         {
-            "applinkname": "華視雲端網 FLIPr",
-            "applinkdescription": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
-            "applinkicon": "images/cts/app_icon.png",
-            "applinkios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
-            "applinkandroid": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
+            "name": "華視雲端網 FLIPr",
+            "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
+            "icon": "images/cts/app_icon.png",
+            "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
         }
     ]
 }
