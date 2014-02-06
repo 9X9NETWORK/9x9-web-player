@@ -1,5 +1,5 @@
 'use strict';
-ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $location, $rootScope, jsonService){
+ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $location, $rootScope, jsonService, msoService){
 
     // var un = $rootScope.$on('$stateChangeStart', function (event) {
     //     event.preventDefault();
@@ -8,6 +8,13 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     // $scope.$on('$viewContentLoaded', function() {
 
     // });
+
+    msoService.get().then(function(data){
+        $scope.app = data.app[0];
+        //$scope.$apply();
+        //console.log($scope.promotionItems);
+        // console.log($scope.items);
+    });
 
     var channelId = $stateParams.channelId;
     var episodeId = $stateParams.episodeId;

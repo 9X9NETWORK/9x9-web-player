@@ -4,10 +4,10 @@
 		<h1 class="promote-programe-text">超多精選節目新鮮放送， 歡迎沒事翻翻逛逛！</h1>
 
 		<ul class="promote-programe-list">
-			<li class="promote-programe-item" ng-repeat="item in promotionItems track by $index">
+			<li class="promote-programe-item" ng-repeat="item in promotionItems">
 				<figure class="promote-programe-img">
 					<div class="thumb-inner-center">
-						<img src="{{item.thumb}}">
+						<img ng-src="{{item.image}}">
 					</div>
 				</figure>
 				<span class="promote-programe-name">{{item.name}}</span>
@@ -30,13 +30,13 @@
 			<!-- <a href="#" class="promote-app-link">了解更多App資訊</a> -->
 			<div class="app-download-appstore">
 
-				<a href="" class="app-button">
+				<a href="{{app.ios}}" class="app-button">
 				   <img src="images/btn_app_store@x2.png">	
 			   </a>
 			</div>
 			<div class="app-download-googleplay">
 
-				<a href="" class="app-button">
+				<a href="{{app.android}}" class="app-button">
 				   <img src="images/btn_google_play@x2.png">	
 			   </a>
 			</div>

@@ -57,7 +57,6 @@ var ld = angular.module('landing', [
     }
 );
 
-
 angular.module('landing.controllers', []);
 angular.module('landing.services', []);
 angular.module('landing.filters', []);
