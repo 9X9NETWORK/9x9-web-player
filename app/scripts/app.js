@@ -9,13 +9,13 @@ var ld = angular.module('landing', [
   'ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 
   'landing.services', 'landing.filters', 'landing.directives'])
 .run(['$rootScope', '$state', '$stateParams',
-    function($rootScope, $state, $stateParams) {
-        $rootScope.$state = $state;
-        $rootScope.$stateParams = $stateParams;
+    // function($rootScope, $state, $stateParams) {
+    //     $rootScope.$state = $state;
+    //     $rootScope.$stateParams = $stateParams;
 
-        $rootScope.$on('$viewContentLoaded', function() {
-        });
-    }
+    //     $rootScope.$on('$viewContentLoaded', function() {
+    //     });
+    // }
 ])
 .config(function($stateProvider, $urlRouterProvider, $locationProvider){
 
