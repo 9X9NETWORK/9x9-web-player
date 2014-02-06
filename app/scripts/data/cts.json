@@ -68,6 +68,7 @@
         {
             "name": "Good TV FLIPr",
             "description": "您是Good TV的忠實觀眾嗎？帶給人們信心、希望、與真愛的電視台，趕快來看。",
+            "icon": "images/app_icon_goodtv_200x200.png",
             "ios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv"
         },
