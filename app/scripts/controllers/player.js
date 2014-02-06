@@ -111,6 +111,31 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     $scope.jsonData = jsonService.getMsoData(mso);
 
+    var list = $(".episode-list");
+    var left = 0;
+    var amount = 250;
+    $scope.slidePrev = function(){
+        list = $("ul.episode-list");
+        left = list.position().left;
+        left += amount;
+        if(left > 0) left = 0;
+        list.animate({
+          left : left
+        }, 500);
+        return false;
+    }
+
+    $scope.slideNext = function(){
+        list = $("ul.episode-list");
+        left = list.position().left;
+        left -= amount;
+        if(left < -list.width()) left = -list.width();
+        list.animate({
+          left : left
+        }, 500);
+        return false;
+    }
+
     init();
 
 

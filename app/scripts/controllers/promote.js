@@ -6,7 +6,6 @@ ld.controller('PromoteCtrl', function ($scope, $http, msoService){
         $scope.promotionItems = data.promote;
         $scope.social = data.social;
         $scope.app = data.app[0];
-        console.log($scope.app);
         //$scope.$apply();
         //console.log($scope.promotionItems);
         // console.log($scope.items);
