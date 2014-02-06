@@ -5,6 +5,10 @@ var base = "/view/";
 var player;
 var mso = nn.global.mso;
 var search;
+
+mso = "cts";
+nn.global.mso = mso;
+
 var ld = angular.module('landing', [
   'ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 
   'landing.services', 'landing.filters', 'landing.directives'])
