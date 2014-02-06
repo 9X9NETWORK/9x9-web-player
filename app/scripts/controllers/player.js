@@ -1,5 +1,5 @@
 'use strict';
-ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $location, $rootScope, jsonService, msoService){
+ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $location, $rootScope, msoService){
 
     // var un = $rootScope.$on('$stateChangeStart', function (event) {
     //     event.preventDefault();
@@ -12,7 +12,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     msoService.get().then(function(data){
         $scope.app = data.app[0];
         $scope.social = data.social;
-        console.log($scope.social);
+        //console.log($scope.social);
         //$scope.$apply();
         //console.log($scope.promotionItems);
         // console.log($scope.items);
@@ -111,8 +111,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         $location.path(path);
     }
 
-    $scope.jsonData = jsonService.getMsoData(mso);
-
     var list = $(".episode-list");
     var left = 0;
     var amount = 250;
@@ -141,15 +139,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     init();
 
 
-})
-.service("jsonService", function($http){
-    return {
-      getMsoData : function(mso){
-        return $http.get("scripts/data/" + mso + ".json").then(function(rs){
-          return rs.data;
-        })
-      }
-    }
 });
 
 
