@@ -11,6 +11,8 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     msoService.get().then(function(data){
         $scope.app = data.app[0];
+        $scope.social = data.social;
+        console.log($scope.social);
         //$scope.$apply();
         //console.log($scope.promotionItems);
         // console.log($scope.items);
