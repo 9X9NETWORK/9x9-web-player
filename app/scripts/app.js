@@ -49,11 +49,11 @@ var ld = angular.module('landing', [
               controller:'AppGroupCtrl'
             }
           }
-        })
-        .state('testb', {
-          url: '/awert',
-          templateUrl: 'views/promote.html'
         });
+        // .state('testb', {
+        //   url: '/awert',
+        //   templateUrl: 'views/promote.html'
+        // });
     }
 );
 
