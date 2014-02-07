@@ -12,15 +12,14 @@ nn.global.mso = mso;
 var ld = angular.module('landing', [
   'ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 
   'landing.services', 'landing.filters', 'landing.directives'])
-.run(['$rootScope', '$state', '$stateParams',
-    // function($rootScope, $state, $stateParams) {
-    //     $rootScope.$state = $state;
-    //     $rootScope.$stateParams = $stateParams;
+.run(function() {
+        // $rootScope.$state = $state;
+        // $rootScope.$stateParams = $stateParams;
 
-    //     $rootScope.$on('$viewContentLoaded', function() {
-    //     });
-    // }
-])
+        // $rootScope.$on('$viewContentLoaded', function() {
+        // });
+    }
+)
 .config(function($stateProvider, $urlRouterProvider, $locationProvider){
 
       $locationProvider.html5Mode(true);
@@ -37,7 +36,7 @@ var ld = angular.module('landing', [
           templateUrl: 'views/blank.html',
           controller : "MainCtrl"
         })
-        .state("watch", {
+        .state("watchEpisode", {
           url: "/p{channelId}/{episodeId}",
           views: {
             'player': {
@@ -54,10 +53,6 @@ var ld = angular.module('landing', [
             }
           }
         });
-        // .state('testb', {
-        //   url: '/awert',
-        //   templateUrl: 'views/promote.html'
-        // });
     }
 );
 
