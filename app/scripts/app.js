@@ -10,7 +10,7 @@ mso = "cts";
 nn.global.mso = mso;
 $(document).ready(function(){
     var getOs = function(){
-      console.log(navigator.userAgent);
+      //console.log(navigator.userAgent);
       if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
         return "is-ios";
       }else if(navigator.userAgent.match(/mobile|android|Mobile|Android/)){
@@ -20,7 +20,7 @@ $(document).ready(function(){
       }
     }
     var os = getOs();
-    console.log(os);
+    //console.log(os);
     $("body").addClass(os);
 });
 var ld = angular.module('landing', [

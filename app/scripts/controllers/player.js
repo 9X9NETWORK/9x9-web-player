@@ -40,8 +40,10 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
           if(episodes){
           //if(false){
+              console.log(1);
               episode = episodes.findByAttr("id", episodeId);
               episodeIndex = episodes.index;
+              console.log(episodeIndex);
               programs = new nn.utils.NnArray(episode.programs, false);
               channel.get().then(function(){
                   $scope.safeApply(update);
@@ -49,9 +51,10 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                   initListPosition();
               });
           }else{
+              console.log(2);
               channel.get().then(function(){
                 channel.loadEpisodes().then(function(){
-
+                      console.log(3);
                       episodes = channel.episodes;
                       sharedObjects.set('episodes', episodes);
                       episode = episodes.first();
@@ -67,10 +70,11 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     }
 
     var initListPosition = function(){
-
+      console.log("list pos");
       setTimeout(function(){
         var list = $(".episode-list");
         var item = list.find("li.is-playing");
+        console.log(item);
         var left = -item.position().left;
         list.css("left", left);
       }, 10);
