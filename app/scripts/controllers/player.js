@@ -42,7 +42,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
           //if(false){
               episode = episodes.findByAttr("id", episodeId);
               episodeIndex = episodes.index;
-              console.log(episodeIndex);
               programs = new nn.utils.NnArray(episode.programs, false);
               channel.get().then(function(){
                   $scope.safeApply(update);
@@ -73,7 +72,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     }
 
     var initListPosition = function(){
-      console.log("list pos:" + episodeIndex);
       setTimeout(function(){
         var list = $(".episode-list");
         var item = list.find("li.is-playing");
