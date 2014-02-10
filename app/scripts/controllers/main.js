@@ -6,14 +6,6 @@ ld.controller('MainCtrl', function ($scope, $stateParams, sharedObjects, $locati
     mso = search.mso;
   }
 
-  var getOs = function(){
-    if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-      return "is-ios";
-    }else if(navigator.userAgent.match(/mobile|android/)){
-      return "is-android";
-    }
-  }
-  $scope.osType =  getOs();
 
 	if($stateParams.channelId){
 		var cid = $stateParams.channelId;

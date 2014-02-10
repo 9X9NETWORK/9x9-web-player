@@ -46,6 +46,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
               channel.get().then(function(){
                   $scope.safeApply(update);
                   startPlay();
+                  initListPosition();
               });
           }else{
               channel.get().then(function(){
@@ -59,9 +60,20 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
                       $scope.safeApply(update);
                       startPlay();
+                      initListPosition();
                 });
               });
           }
+    }
+
+    var initListPosition = function(){
+
+      setTimeout(function(){
+        var list = $(".episode-list");
+        var item = list.find("li.is-playing");
+        var left = -item.position().left;
+        list.css("left", left);
+      }, 10);
     }
 
     var loadApi = function(){

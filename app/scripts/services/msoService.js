@@ -1,11 +1,12 @@
 ld.service("msoService", function($http){
 
-	var _d = $.Deferred();
 	var loaded = false;
 	this.get = function(){
 
+		var _d = $.Deferred();
+
 		if(loaded){
-			return self.data;
+			_d.resolve(data);
 		}else{
 			$http({
 			  	"method" : "get",

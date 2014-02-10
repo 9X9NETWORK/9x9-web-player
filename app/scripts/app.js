@@ -8,7 +8,21 @@ var search;
 
 mso = "cts";
 nn.global.mso = mso;
-
+$(document).ready(function(){
+    var getOs = function(){
+      console.log(navigator.userAgent);
+      if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+        return "is-ios";
+      }else if(navigator.userAgent.match(/mobile|android|Mobile|Android/)){
+        return "is-android";
+      }else{
+        return "";
+      }
+    }
+    var os = getOs();
+    console.log(os);
+    $("body").addClass(os);
+});
 var ld = angular.module('landing', [
   'ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 
   'landing.services', 'landing.filters', 'landing.directives'])
