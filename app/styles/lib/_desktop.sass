@@ -30,7 +30,7 @@ $desktop-large-font: 2.25rem
         padding-bottom: 0.25rem
 
     .episode-list-item
-        width: 7.3rem
+        width: 7rem
     .episode-list-wrap
         padding: 0.2rem 0 0 0
         overflow: hidden
@@ -63,6 +63,8 @@ $desktop-large-font: 2.25rem
 
         .app-item-mobile
             display: none
+
+
         .app-item-ios,.app-item-android
             background: url(../images/app-link-icon.png) no-repeat
             position: relative 
@@ -82,6 +84,14 @@ $desktop-large-font: 2.25rem
         .app-item-android 
             background-position: 0 -2rem 
             left: 14%
+    .is-ios,.is-android
+        .app-item-link-group
+            padding-top: 0.2rem
+            padding-bottom: 0.2rem
+            .app-item-mobile
+                display: block
+            .app-item-ios,.app-item-android
+                display: none
 
 
     .app-download-wrap
@@ -123,6 +133,7 @@ $desktop-large-font: 2.25rem
     //promote-programe
     .promote-wrap
         overflow: visible
+
 
     .promote-programe-wrap
         +bleed-x(100rem)
@@ -183,6 +194,8 @@ $desktop-large-font: 2.25rem
         .app-download-appstore,.app-download-googleplay
             //+span(3 of 6)
             display: inline-block
+    .is-ios .app-download-googleplay,.is-android .app-download-appstore
+        display: none
     .app-group-wrap
         .app-group-text
             font-size: $desktop-large-font
