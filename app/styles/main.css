@@ -215,17 +215,17 @@ body {
   margin-right: 0.5rem;
   cursor: pointer;
 }
-/* line 94, lib/_layout.sass */
+/* line 93, lib/_layout.sass */
 .episode-list-item .episode-detail {
   position: relative;
   display: block;
 }
-/* line 99, lib/_layout.sass */
+/* line 98, lib/_layout.sass */
 .episode-list-item .episode-preview {
   width: 100%;
   height: auto;
 }
-/* line 102, lib/_layout.sass */
+/* line 101, lib/_layout.sass */
 .episode-list-item .episode-name {
   display: block;
   position: absolute;
@@ -238,7 +238,7 @@ body {
   overflow: hidden;
 }
 
-/* line 115, lib/_layout.sass */
+/* line 114, lib/_layout.sass */
 .is-playing .episode-detail:before {
   content: "";
   display: block;
@@ -251,22 +251,22 @@ body {
   box-sizing: border-box;
   z-index: 10;
 }
-/* line 127, lib/_layout.sass */
+/* line 126, lib/_layout.sass */
 .is-playing .episode-name {
   display: none;
 }
 
-/* line 129, lib/_layout.sass */
+/* line 128, lib/_layout.sass */
 .player-device {
   position: relative;
 }
 
-/* line 131, lib/_layout.sass */
+/* line 130, lib/_layout.sass */
 .epsode-prev-button, .epsode-next-button {
   display: none;
 }
 
-/* line 136, lib/_layout.sass */
+/* line 135, lib/_layout.sass */
 .social-media-wrap {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -284,34 +284,34 @@ body {
   padding-bottom: 0.5rem;
 }
 
-/* line 145, lib/_layout.sass */
+/* line 144, lib/_layout.sass */
 .social-media-text {
   display: inline-block;
 }
 
-/* line 148, lib/_layout.sass */
+/* line 147, lib/_layout.sass */
 .social-media-list {
   display: inline-block;
 }
 
-/* line 152, lib/_layout.sass */
+/* line 151, lib/_layout.sass */
 .social-media-item {
   margin-left: 0.85rem;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 156, lib/_layout.sass */
+/* line 155, lib/_layout.sass */
 .social-media-item a {
   display: inline-block;
   width: 2rem;
   height: 2rem;
 }
-/* line 160, lib/_layout.sass */
+/* line 159, lib/_layout.sass */
 .social-media-item a img {
   width: 100%;
 }
 
-/* line 164, lib/_layout.sass */
+/* line 163, lib/_layout.sass */
 .app-download-wrap {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -327,49 +327,49 @@ body {
   background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
-/* line 171, lib/_layout.sass */
+/* line 170, lib/_layout.sass */
 .app-download-wrap .app-download-icon {
   width: 3.2rem;
   height: 3.2rem;
   float: left;
   margin-right: 1rem;
 }
-/* line 176, lib/_layout.sass */
+/* line 175, lib/_layout.sass */
 .app-download-wrap .app-download-icon img {
   width: 100%;
 }
-/* line 178, lib/_layout.sass */
+/* line 177, lib/_layout.sass */
 .app-download-wrap .app-name {
   font-size: 1.1;
   font-weight: bolder;
   line-height: 1.8;
 }
-/* line 182, lib/_layout.sass */
+/* line 181, lib/_layout.sass */
 .app-download-wrap .app-item-descript {
   display: none;
 }
 
-/* line 184, lib/_layout.sass */
+/* line 183, lib/_layout.sass */
 .app-download-appstore, .app-download-googleplay {
   margin: 1rem 1rem 0 1rem;
   text-align: center;
 }
-/* line 187, lib/_layout.sass */
+/* line 186, lib/_layout.sass */
 .app-download-appstore .app-button, .app-download-googleplay .app-button {
   display: inline-block;
   width: 11.875rem;
 }
-/* line 190, lib/_layout.sass */
+/* line 189, lib/_layout.sass */
 .app-download-appstore .app-button img, .app-download-googleplay .app-button img {
   width: 100%;
 }
 
-/* line 194, lib/_layout.sass */
+/* line 193, lib/_layout.sass */
 .is-ios .app-download-googleplay, .is-android .app-download-appstore {
   display: none;
 }
 
-/* line 199, lib/_layout.sass */
+/* line 198, lib/_layout.sass */
 .promote-wrap {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -381,12 +381,12 @@ body {
   color: white;
 }
 
-/* line 203, lib/_layout.sass */
+/* line 202, lib/_layout.sass */
 .promote-programe-wrap {
   background-color: #1d1d1d;
 }
 
-/* line 205, lib/_layout.sass */
+/* line 204, lib/_layout.sass */
 .promote-programe-text, .promote-programe-text-sub {
   text-align: center;
   padding: 1rem;
@@ -394,13 +394,13 @@ body {
   line-height: 1.5;
 }
 
-/* line 211, lib/_layout.sass */
+/* line 210, lib/_layout.sass */
 .promote-programe-list {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 214, lib/_layout.sass */
+/* line 213, lib/_layout.sass */
 .promote-programe-item {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -429,18 +429,18 @@ body {
   clear: none;
 }
 
-/* line 220, lib/_layout.sass */
+/* line 219, lib/_layout.sass */
 .promote-programe-img {
   border-radius: 7%;
   border: solid 0.2rem white;
   overflow: hidden;
 }
-/* line 226, lib/_layout.sass */
+/* line 225, lib/_layout.sass */
 .promote-programe-img img {
   width: 100%;
 }
 
-/* line 229, lib/_layout.sass */
+/* line 228, lib/_layout.sass */
 .promote-programe-name {
   text-align: center;
   display: block;
@@ -452,7 +452,7 @@ body {
   line-height: 1.8;
 }
 
-/* line 234, lib/_layout.sass */
+/* line 233, lib/_layout.sass */
 .promote-app-wrap {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -463,11 +463,11 @@ body {
   color: black;
 }
 
-/* line 240, lib/_layout.sass */
+/* line 239, lib/_layout.sass */
 .promote-content-wrap {
   position: relative;
 }
-/* line 243, lib/_layout.sass */
+/* line 242, lib/_layout.sass */
 .promote-content-wrap .program-gesture, .promote-content-wrap .episode-gesture {
   position: absolute;
   background-color: white;
@@ -478,16 +478,16 @@ body {
   -webkit-box-shadow: 0 0.3125rem 0 0 rgba(0, 0, 0, 0.6);
   box-shadow: 0 0.3125rem 0 0 rgba(0, 0, 0, 0.6);
 }
-/* line 251, lib/_layout.sass */
+/* line 250, lib/_layout.sass */
 .promote-content-wrap .program-gesture {
   display: none;
 }
-/* line 254, lib/_layout.sass */
+/* line 253, lib/_layout.sass */
 .promote-content-wrap .episode-gesture {
   display: none;
 }
 
-/* line 260, lib/_layout.sass */
+/* line 259, lib/_layout.sass */
 .promote-back-img {
   height: 20rem;
   width: 100%;
@@ -498,7 +498,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* line 271, lib/_layout.sass */
+/* line 270, lib/_layout.sass */
 .promote-app-text {
   text-align: center;
   padding: 1rem;
@@ -506,7 +506,7 @@ body {
   line-height: 1.5;
 }
 
-/* line 276, lib/_layout.sass */
+/* line 275, lib/_layout.sass */
 .promote-app-link-wrap {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -520,13 +520,13 @@ body {
   line-height: 1.5;
 }
 
-/* line 282, lib/_layout.sass */
+/* line 281, lib/_layout.sass */
 .promote-app-link-text {
   display: inline-block;
   padding-bottom: 1rem;
 }
 
-/* line 289, lib/_layout.sass */
+/* line 288, lib/_layout.sass */
 .app-group-wrap {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -542,7 +542,7 @@ body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-/* line 296, lib/_layout.sass */
+/* line 295, lib/_layout.sass */
 .app-group-wrap .app-group-text {
   font-size: 1.25rem;
   line-height: 1.5;
@@ -600,7 +600,7 @@ body {
   line-height: 1.5;
 }
 
-/* line 321, lib/_layout.sass */
+/* line 324, lib/_layout.sass */
 .app-item-link-group {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -617,16 +617,16 @@ body {
   border: solid 1px #f0871c;
   border-radius: 0.35rem;
 }
-/* line 330, lib/_layout.sass */
+/* line 333, lib/_layout.sass */
 .app-item-link-group a {
   text-decoration: none;
   color: #f0871c;
 }
-/* line 333, lib/_layout.sass */
+/* line 336, lib/_layout.sass */
 .app-item-link-group .app-item-mobile {
   display: block;
 }
-/* line 335, lib/_layout.sass */
+/* line 338, lib/_layout.sass */
 .app-item-link-group .app-item-ios, .app-item-link-group .app-item-android {
   display: none;
 }
@@ -736,9 +736,10 @@ body {
   }
   /* line 61, lib/_tablet.sass */
   .app-group-item .app-item-descript {
-    min-height: 3.3rem;
+    height: 3.3rem;
+    overflow: hidden;
   }
-  /* line 64, lib/_tablet.sass */
+  /* line 65, lib/_tablet.sass */
   .app-group-item .app-item-link {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -801,18 +802,34 @@ body {
     padding-bottom: 0.25rem;
   }
 
-  /* line 32, lib/_desktop.sass */
+  /* line 31, lib/_desktop.sass */
+  .episode-list {
+    position: absolute;
+  }
+  /* line 33, lib/_desktop.sass */
+  .is-ios .episode-list, .is-android .episode-list {
+    position: static;
+  }
+
+  /* line 36, lib/_desktop.sass */
   .episode-list-item {
     width: 7rem;
   }
 
-  /* line 34, lib/_desktop.sass */
+  /* line 38, lib/_desktop.sass */
   .episode-list-wrap {
     padding: 0.2rem 0 0 0;
     overflow: hidden;
+    position: relative;
+    height: 4.3rem;
+  }
+  /* line 43, lib/_desktop.sass */
+  .is-ios .episode-list-wrap, .is-android .episode-list-wrap {
+    position: static;
+    height: auto;
   }
 
-  /* line 38, lib/_desktop.sass */
+  /* line 47, lib/_desktop.sass */
   .epsode-prev-button, .epsode-next-button {
     display: block;
     position: absolute;
@@ -824,36 +841,36 @@ body {
     font-size: 5rem;
   }
 
-  /* line 48, lib/_desktop.sass */
+  /* line 57, lib/_desktop.sass */
   .epsode-prev-button {
     left: -1rem;
     background: url(../images/epsode-button.png) no-repeat 0 0;
   }
-  /* line 51, lib/_desktop.sass */
+  /* line 60, lib/_desktop.sass */
   .epsode-prev-button:hover, .epsode-prev-button:active {
     background-position: 0 -5.65rem;
   }
 
-  /* line 53, lib/_desktop.sass */
+  /* line 62, lib/_desktop.sass */
   .epsode-next-button {
     right: -1rem;
     background: url(../images/epsode-button.png) no-repeat 0 -11.15rem;
   }
-  /* line 56, lib/_desktop.sass */
+  /* line 65, lib/_desktop.sass */
   .epsode-next-button:hover, .epsode-next-button:active {
     background-position: 0 -16.75rem;
   }
 
-  /* line 59, lib/_desktop.sass */
+  /* line 68, lib/_desktop.sass */
   .app-item-link-group {
     padding-top: 0;
     padding-bottom: 0;
   }
-  /* line 64, lib/_desktop.sass */
+  /* line 73, lib/_desktop.sass */
   .app-item-link-group .app-item-mobile {
     display: none;
   }
-  /* line 68, lib/_desktop.sass */
+  /* line 77, lib/_desktop.sass */
   .app-item-link-group .app-item-ios, .app-item-link-group .app-item-android {
     background: url(../images/app-link-icon.png) no-repeat;
     position: relative;
@@ -861,12 +878,12 @@ body {
     width: 2rem;
     height: 2rem;
   }
-  /* line 74, lib/_desktop.sass */
+  /* line 83, lib/_desktop.sass */
   .app-item-link-group .app-item-ios {
     background-position: 0 0.3rem;
     left: -12%;
   }
-  /* line 77, lib/_desktop.sass */
+  /* line 86, lib/_desktop.sass */
   .app-item-link-group .app-item-ios:after {
     content: "";
     display: block;
@@ -875,27 +892,27 @@ body {
     height: 2rem;
     border-right: 1px #f0871c solid;
   }
-  /* line 84, lib/_desktop.sass */
+  /* line 93, lib/_desktop.sass */
   .app-item-link-group .app-item-android {
     background-position: 0 -2rem;
     left: 14%;
   }
 
-  /* line 88, lib/_desktop.sass */
+  /* line 97, lib/_desktop.sass */
   .is-ios .app-item-link-group, .is-android .app-item-link-group {
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
   }
-  /* line 91, lib/_desktop.sass */
+  /* line 100, lib/_desktop.sass */
   .is-ios .app-item-link-group .app-item-mobile, .is-android .app-item-link-group .app-item-mobile {
     display: block;
   }
-  /* line 93, lib/_desktop.sass */
+  /* line 102, lib/_desktop.sass */
   .is-ios .app-item-link-group .app-item-ios, .is-ios .app-item-link-group .app-item-android, .is-android .app-item-link-group .app-item-ios, .is-android .app-item-link-group .app-item-android {
     display: none;
   }
 
-  /* line 97, lib/_desktop.sass */
+  /* line 106, lib/_desktop.sass */
   .app-download-wrap {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -909,28 +926,28 @@ body {
     background-color: transparent;
     color: #555555;
   }
-  /* line 103, lib/_desktop.sass */
+  /* line 112, lib/_desktop.sass */
   .app-download-wrap .app-download-icon {
     width: 5.5rem;
     height: 5.5rem;
     float: none;
     margin-bottom: 1rem;
   }
-  /* line 108, lib/_desktop.sass */
+  /* line 117, lib/_desktop.sass */
   .app-download-wrap .app-name {
     font-size: 2.5rem;
   }
-  /* line 110, lib/_desktop.sass */
+  /* line 119, lib/_desktop.sass */
   .app-download-wrap .app-item-descript {
     display: block;
     margin-bottom: 1rem;
     line-height: 1.4;
   }
-  /* line 114, lib/_desktop.sass */
+  /* line 123, lib/_desktop.sass */
   .app-download-wrap .app-download-text {
     font-size: 1.25rem;
   }
-  /* line 118, lib/_desktop.sass */
+  /* line 127, lib/_desktop.sass */
   .app-download-wrap .app-download-appstore .app-button, .app-download-wrap .app-download-googleplay .app-button {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -941,7 +958,7 @@ body {
     padding-right: 4.16667%;
   }
 
-  /* line 122, lib/_desktop.sass */
+  /* line 131, lib/_desktop.sass */
   .social-media-wrap {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -953,22 +970,22 @@ body {
     border: none;
   }
 
-  /* line 125, lib/_desktop.sass */
+  /* line 134, lib/_desktop.sass */
   .social-media-text {
     font-size: 1rem;
   }
 
-  /* line 127, lib/_desktop.sass */
+  /* line 136, lib/_desktop.sass */
   .social-media-item {
     margin-left: 0.5rem;
   }
 
-  /* line 134, lib/_desktop.sass */
+  /* line 143, lib/_desktop.sass */
   .promote-wrap {
     overflow: visible;
   }
 
-  /* line 138, lib/_desktop.sass */
+  /* line 147, lib/_desktop.sass */
   .promote-programe-wrap {
     margin-right: -100rem;
     margin-left: -100rem;
@@ -977,17 +994,20 @@ body {
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
     padding-top: 6.25%;
     padding-bottom: 6.25%;
   }
-  /* line 144, lib/_desktop.sass */
+  /* line 155, lib/_desktop.sass */
   .promote-programe-wrap:after {
     content: "";
     display: block;
     clear: both;
   }
 
-  /* line 151, lib/_desktop.sass */
+  /* line 162, lib/_desktop.sass */
   .promote-programe-list {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -998,7 +1018,7 @@ body {
     padding-right: 1.5625%;
   }
 
-  /* line 153, lib/_desktop.sass */
+  /* line 164, lib/_desktop.sass */
   .promote-programe-text {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1013,23 +1033,26 @@ body {
     margin-bottom: 3.5rem;
   }
 
-  /* line 161, lib/_desktop.sass */
+  /* line 172, lib/_desktop.sass */
   .promote-content-wrap .program-gesture {
     top: calc(50% - 9rem);
     left: calc(50% - 2.5rem);
   }
-  /* line 164, lib/_desktop.sass */
+  /* line 175, lib/_desktop.sass */
   .promote-content-wrap .episode-gesture {
     top: calc(50% + 6.6rem);
     left: calc(50% - 9rem);
   }
 
-  /* line 167, lib/_desktop.sass */
+  /* line 178, lib/_desktop.sass */
   .promote-app-wrap {
     margin-right: -100rem;
     margin-left: -100rem;
     padding-right: 100rem;
     padding-left: 100rem;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
@@ -1040,7 +1063,7 @@ body {
     margin-top: 6.25%;
   }
 
-  /* line 173, lib/_desktop.sass */
+  /* line 186, lib/_desktop.sass */
   .promote-app-text {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1055,14 +1078,14 @@ body {
     z-index: 2;
   }
 
-  /* line 181, lib/_desktop.sass */
+  /* line 194, lib/_desktop.sass */
   .promote-programe-text-sub {
     color: #999999;
     text-align: left;
     font-size: 1.5rem;
   }
 
-  /* line 187, lib/_desktop.sass */
+  /* line 200, lib/_desktop.sass */
   .promote-back-img {
     height: 35rem;
     width: 100%;
@@ -1070,28 +1093,28 @@ body {
     background-size: contain;
   }
 
-  /* line 192, lib/_desktop.sass */
+  /* line 205, lib/_desktop.sass */
   .promote-app-link-wrap {
     text-align: center;
   }
-  /* line 194, lib/_desktop.sass */
+  /* line 207, lib/_desktop.sass */
   .promote-app-link-wrap .app-download-appstore, .promote-app-link-wrap .app-download-googleplay {
     display: inline-block;
   }
 
-  /* line 197, lib/_desktop.sass */
+  /* line 210, lib/_desktop.sass */
   .is-ios .app-download-googleplay, .is-android .app-download-appstore {
     display: none;
   }
 
-  /* line 200, lib/_desktop.sass */
+  /* line 213, lib/_desktop.sass */
   .app-group-wrap .app-group-text {
     font-size: 2.25rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
-  /* line 205, lib/_desktop.sass */
+  /* line 218, lib/_desktop.sass */
   .promote-app-link-text {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1102,13 +1125,13 @@ body {
     padding-right: 1.5625%;
   }
 
-  /* line 207, lib/_desktop.sass */
+  /* line 220, lib/_desktop.sass */
   .promote-app-link {
     width: 37.5%;
     display: inline-block;
   }
 
-  /* line 211, lib/_desktop.sass */
+  /* line 224, lib/_desktop.sass */
   .app-group-wrap {
     margin-right: -100rem;
     margin-left: -100rem;
@@ -1117,10 +1140,13 @@ body {
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
   }
 }
 @media (min-width: 70rem) {
-  /* line 219, lib/_desktop.sass */
+  /* line 232, lib/_desktop.sass */
   .app-download-wrap {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1131,7 +1157,7 @@ body {
     padding-right: 1.5625%;
   }
 
-  /* line 221, lib/_desktop.sass */
+  /* line 234, lib/_desktop.sass */
   .social-media-wrap {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1142,10 +1168,8 @@ body {
     padding-right: 1.5625%;
   }
 
-  /* line 223, lib/_desktop.sass */
+  /* line 236, lib/_desktop.sass */
   .social-media-item {
     margin-left: 1rem;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
