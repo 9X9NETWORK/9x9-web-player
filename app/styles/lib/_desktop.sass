@@ -28,12 +28,21 @@ $desktop-large-font: 2.25rem
     .playback-episode-src
         padding-top: 0.4rem
         padding-bottom: 0.25rem
+    .episode-list
+        position: absolute
+        .is-ios &,.is-android &
+            position: static
 
     .episode-list-item
         width: 7rem
     .episode-list-wrap
         padding: 0.2rem 0 0 0
         overflow: hidden
+        position: relative
+        height: 4.3rem
+        .is-ios &,.is-android &
+            position: static
+            height: auto
  
     .epsode-prev-button,.epsode-next-button
         display: block
@@ -137,6 +146,8 @@ $desktop-large-font: 2.25rem
 
     .promote-programe-wrap
         +bleed-x(100rem)
+        +box-sizing(content-box)
+        //width: auto
         padding-top: span(1)
         padding-bottom: span(1)
 
@@ -166,6 +177,8 @@ $desktop-large-font: 2.25rem
             left: calc(50% - 9rem)
     .promote-app-wrap
         +bleed-x(100rem)
+        //width: auto
+        +box-sizing(content-box)
         +background-image(linear-gradient(to top, #d5d5d5, #fff 24%))
         margin-top: span(1)
         
@@ -210,9 +223,9 @@ $desktop-large-font: 2.25rem
     //app-group
     .app-group-wrap
         +bleed-x(100rem)
+        +box-sizing(content-box)
 
-
-  
+        //width: auto
 
 
 +susy-breakpoint(70rem,16)
