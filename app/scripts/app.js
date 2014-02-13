@@ -8,6 +8,7 @@ var search;
 
 mso = "cts";
 nn.global.mso = mso;
+nn.global.os = "";
 $(document).ready(function(){
     var getOs = function(){
       //console.log(navigator.userAgent);
@@ -21,6 +22,7 @@ $(document).ready(function(){
     }
     var os = getOs();
     //console.log(os);
+    nn.global.os = os;
     $("body").addClass(os);
 });
 var ld = angular.module('landing', [

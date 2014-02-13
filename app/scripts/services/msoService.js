@@ -18,7 +18,6 @@ ld.service("msoService", function($http){
 				}
 				return obj;
 			}
-			console.error(csv);
 			return false;
 		}
 		if(loaded){

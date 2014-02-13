@@ -25,8 +25,8 @@
 		            <span class="episode-text">episodes</span>
 		    </div>
 
-		    <div class="episode-list-wrap" style="position:relative; height : 70px;">
-			    <ul class="episode-list" episode-list  style="position:absolute; left : 0; top : 0">
+		    <div class="episode-list-wrap" style="position:relative">
+			    <ul class="episode-list" episode-list  style="{{getListStyle()}}">
 			        <li ng-repeat="ep in episodes.array" ng-click="onEpisodeClick(ep.id)" class="episode-list-item {{$index === episodeIndex ? 'is-playing' : ''}}" ng-class="" >
 			        	<!-- ng-click="onEpisodeClick(episode.id)" -->
 			            <div class="episode-detail">
@@ -42,42 +42,39 @@
 
 		    <a href="" class="epsode-prev-button" ng-click="slidePrev()"></a>
 			<a href="" class="epsode-next-button" ng-click="slideNext()"></a>
-	</div>
+		</div>
 
 	</div>
 	<div class="app-download-wrap">
 		<div class="app-download-info">
-		<figure class="app-download-icon">
-			<img src="{{app.icon}}">
-		</figure>
-		<h1 class="app-name">{{app.name}}</h1>
-		<p class="app-item-descript">{{app.discription}}</div>
-		<p class="app-download-text">{{app.calltoaction}}</p>
+			<figure class="app-download-icon">
+				<img src="{{app.icon}}">
+			</figure>
+			<h1 class="app-name">{{app.name}}</h1>
+			<p class="app-item-descript">{{app.description}}</div>
+			<p class="app-download-text">{{app.calltoaction}}</p>
+			
+			<div class="app-download-appstore">
 
-		</div>
-
-		<div class="app-download-appstore">
-
-			<a href="{{app.ios}}" class="app-button">
-			   <img src="images/btn_app_store@x2.png">	
-		   </a>
-		</div>
+				<a href="{{app.ios}}" class="app-button">
+				   <img src="images/btn_app_store@x2.png">	
+			   </a>
+			</div>
 		<div class="app-download-googleplay">
-
 			<a href="{{app.android}}" class="app-button">
 			   <img src="images/btn_google_play@x2.png">	
-		   </a>
+		    </a>
 		</div>
-
 	</div>
+
 	<div ng-show="social.length > 0" class="social-media-wrap">
-	<h1 class="social-media-text">或造訪社群</h1>
-		<ul class="social-media-list">
-			<li ng-repeat="item in social" class="social-media-item"><a ng-href="{{item.url}}"><img ng-src="{{item.icon}}" alt=""></a></li>
-			<!-- <li class="social-media-item"><a href="#"><img src="images/social-media-fb.png" alt=""></a></li>
-			<li class="social-media-item"><a href="#"><img src="images/social-media-twitter.png" alt=""></a></li>
-			<li class="social-media-item"><a href="#"><img src="images/social-media-google.png" alt=""></a></li> -->
-		</ul>
+		<h1 class="social-media-text">或造訪社群</h1>
+			<ul class="social-media-list">
+				<li ng-repeat="item in social" class="social-media-item"><a ng-href="{{item.url}}"><img ng-src="{{item.icon}}" alt=""></a></li>
+				<!-- <li class="social-media-item"><a href="#"><img src="images/social-media-fb.png" alt=""></a></li>
+				<li class="social-media-item"><a href="#"><img src="images/social-media-twitter.png" alt=""></a></li>
+				<li class="social-media-item"><a href="#"><img src="images/social-media-google.png" alt=""></a></li> -->
+			</ul>
 		
 	</div>
 

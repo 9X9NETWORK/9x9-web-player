@@ -111,6 +111,13 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
        $(player).on("ended", onVideoEnd);
     }
 
+    $scope.getListStyle = function(){
+      //60 rem
+      return {
+        left : 0
+      }
+    }
+
     $scope.safeApply = function(fn) {
       var phase = this.$root.$$phase;
       if(phase == '$apply' || phase == '$digest') {
