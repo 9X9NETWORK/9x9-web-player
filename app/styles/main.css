@@ -1,97 +1,18 @@
 @charset "UTF-8";
-
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.0\.alpha\.16\/stylesheets\/compass\/reset\/_utilities\.scss;
-  }
-
-  line {
-    font-family: \000035;
-  }
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+/* line 5, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -100,198 +21,69 @@ video {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.0\.alpha\.16\/stylesheets\/compass\/reset\/_utilities\.scss;
-  }
-
-  line {
-    font-family: \0000322;
-  }
-}
-
+/* line 22, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.0\.alpha\.16\/stylesheets\/compass\/reset\/_utilities\.scss;
-  }
-
-  line {
-    font-family: \0000324;
-  }
-}
-
-ol,
-ul {
+/* line 24, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
   list-style: none;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.0\.alpha\.16\/stylesheets\/compass\/reset\/_utilities\.scss;
-  }
-
-  line {
-    font-family: \0000326;
-  }
-}
-
+/* line 26, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.0\.alpha\.16\/stylesheets\/compass\/reset\/_utilities\.scss;
-  }
-
-  line {
-    font-family: \0000328;
-  }
-}
-
-caption,
-th,
-td {
+/* line 28, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.0\.alpha\.16\/stylesheets\/compass\/reset\/_utilities\.scss;
-  }
-
-  line {
-    font-family: \0000330;
-  }
-}
-
-q,
-blockquote {
+/* line 30, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
   quotes: none;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.0\.alpha\.16\/stylesheets\/compass\/reset\/_utilities\.scss;
-  }
-
-  line {
-    font-family: \00003103;
-  }
-}
-
-q:before,
-q:after,
-blockquote:before,
-blockquote:after {
+/* line 103, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.0\.alpha\.16\/stylesheets\/compass\/reset\/_utilities\.scss;
-  }
-
-  line {
-    font-family: \0000332;
-  }
-}
-
+/* line 32, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.0\.alpha\.16\/stylesheets\/compass\/reset\/_utilities\.scss;
-  }
-
-  line {
-    font-family: \00003116;
-  }
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
+/* line 116, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \000032;
-  }
-}
-
+/* line 2, lib/_layout.sass */
 body {
   font-family: Arial, Helvetica, "Myriad Pro", "Hiragino Kaku Gothic Pro", "微軟正黑體", "Microsoft JhengHei", "Hiragino Sans GB", "Lihei Pro", "Droid Sans allback", Sans-serif;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \000037;
-  }
-}
-
+/* line 7, lib/_layout.sass */
 .l-main-container {
   *zoom: 1;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/susy-2\.0\.0\.beta\.3\/sass\/susy\/output\/float\/_clearfix\.scss;
-  }
-
-  line {
-    font-family: \0000310;
-  }
-}
-
+/* line 10, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/../output/float/_clearfix.scss */
 .l-main-container:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000312;
-  }
-}
-
+/* line 12, lib/_layout.sass */
 .player-wrap {
   color: white;
   background-color: #1d1d1d;
@@ -299,33 +91,16 @@ body {
   *zoom: 1;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000316;
-  }
-}
-
+/* line 16, lib/_layout.sass */
 .playback-player {
   height: 153px;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000319;
-  }
-}
-
+/* line 19, lib/_layout.sass */
 .playback-info {
   clear: both;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   float: left;
@@ -334,17 +109,7 @@ body {
   border-bottom: solid 1px black;
   background-color: #1d1d1d;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000323;
-  }
-}
-
+/* line 23, lib/_layout.sass */
 .playback-info .episode-name {
   font-size: 0.9375rem;
   line-height: 2;
@@ -355,36 +120,20 @@ body {
   text-overflow: ellipsis;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000328;
-  }
-}
-
+/* line 28, lib/_layout.sass */
 .episode-info-wrap {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   float: left;
   background-color: #1d1d1d;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000332;
-  }
-}
-
+/* line 32, lib/_layout.sass */
 .playback-episode-src {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 66.66667%;
   float: left;
@@ -393,80 +142,32 @@ body {
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000336;
-  }
-}
-
+/* line 36, lib/_layout.sass */
 .playback-episode-src .program-from {
   color: #777777;
   font-size: 0.8125rem;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000339;
-  }
-}
-
+/* line 39, lib/_layout.sass */
 .playback-episode-src .program-logo-small {
   display: inline-block;
   vertical-align: middle;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000344;
-  }
-}
-
+/* line 44, lib/_layout.sass */
 .playback-episode-src .program-logo-small img {
   width: 1.2rem;
   border-radius: 10%;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000347;
-  }
-}
-
+/* line 47, lib/_layout.sass */
 .playback-episode-src .program-name {
   font-size: 0.8125rem;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000349;
-  }
-}
-
+/* line 49, lib/_layout.sass */
 .playback-episode-count {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 33.33333%;
   float: left;
@@ -481,128 +182,50 @@ body {
   padding-bottom: 0.3rem;
   text-align: center;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000359;
-  }
-}
-
+/* line 59, lib/_layout.sass */
 .playback-episode-count .episode-number {
   color: white;
   font-size: 1rem;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000362;
-  }
-}
-
+/* line 62, lib/_layout.sass */
 .playback-episode-count .episode-text {
   font-size: 0.75rem;
   color: #5b5b5b;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000367;
-  }
-}
-
+/* line 67, lib/_layout.sass */
 .episode-list-wrap {
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0.2rem 0 0.8rem 0;
   -webkit-overflow-scrolling: touch;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000376;
-  }
-}
-
+/* line 76, lib/_layout.sass */
 .episode-list {
   white-space: nowrap;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000381;
-  }
-}
-
+/* line 81, lib/_layout.sass */
 .episode-list-item {
   display: inline-block;
   width: 7.8rem;
   margin-right: 0.5rem;
   cursor: pointer;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000394;
-  }
-}
-
+/* line 94, lib/_layout.sass */
 .episode-list-item .episode-detail {
   position: relative;
   display: block;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \0000399;
-  }
-}
-
+/* line 99, lib/_layout.sass */
 .episode-list-item .episode-preview {
   width: 100%;
   height: auto;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003102;
-  }
-}
-
+/* line 102, lib/_layout.sass */
 .episode-list-item .episode-name {
   display: block;
   position: absolute;
@@ -615,16 +238,7 @@ body {
   overflow: hidden;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003115;
-  }
-}
-
+/* line 115, lib/_layout.sass */
 .is-playing .episode-detail:before {
   content: "";
   display: block;
@@ -634,66 +248,28 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   z-index: 10;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003127;
-  }
-}
-
+/* line 127, lib/_layout.sass */
 .is-playing .episode-name {
   display: none;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003129;
-  }
-}
-
+/* line 129, lib/_layout.sass */
 .player-device {
   position: relative;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003131;
-  }
-}
-
-.epsode-prev-button,
-.epsode-next-button {
+/* line 131, lib/_layout.sass */
+.epsode-prev-button, .epsode-next-button {
   display: none;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003136;
-  }
-}
-
+/* line 136, lib/_layout.sass */
 .social-media-wrap {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   float: left;
@@ -708,92 +284,37 @@ body {
   padding-bottom: 0.5rem;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003145;
-  }
-}
-
+/* line 145, lib/_layout.sass */
 .social-media-text {
   display: inline-block;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003148;
-  }
-}
-
+/* line 148, lib/_layout.sass */
 .social-media-list {
   display: inline-block;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003152;
-  }
-}
-
+/* line 152, lib/_layout.sass */
 .social-media-item {
   margin-left: 0.85rem;
   display: inline-block;
   vertical-align: middle;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003156;
-  }
-}
-
+/* line 156, lib/_layout.sass */
 .social-media-item a {
   display: inline-block;
   width: 2rem;
   height: 2rem;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003160;
-  }
-}
-
+/* line 160, lib/_layout.sass */
 .social-media-item a img {
   width: 100%;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003164;
-  }
-}
-
+/* line 164, lib/_layout.sass */
 .app-download-wrap {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   float: left;
@@ -801,145 +322,57 @@ body {
   padding-right: 2.08333%;
   padding: 1rem;
   background-color: #ff8000;
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
   background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003171;
-  }
-}
-
+/* line 171, lib/_layout.sass */
 .app-download-wrap .app-download-icon {
   width: 3.2rem;
   height: 3.2rem;
   float: left;
   margin-right: 1rem;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003176;
-  }
-}
-
+/* line 176, lib/_layout.sass */
 .app-download-wrap .app-download-icon img {
   width: 100%;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003178;
-  }
-}
-
+/* line 178, lib/_layout.sass */
 .app-download-wrap .app-name {
   font-size: 1.1;
   font-weight: bolder;
   line-height: 1.8;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003182;
-  }
-}
-
+/* line 182, lib/_layout.sass */
 .app-download-wrap .app-item-descript {
   display: none;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003184;
-  }
-}
-
-.app-download-appstore,
-.app-download-googleplay {
+/* line 184, lib/_layout.sass */
+.app-download-appstore, .app-download-googleplay {
   margin: 1rem 1rem 0 1rem;
   text-align: center;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003187;
-  }
-}
-
-.app-download-appstore .app-button,
-.app-download-googleplay .app-button {
+/* line 187, lib/_layout.sass */
+.app-download-appstore .app-button, .app-download-googleplay .app-button {
   display: inline-block;
   width: 11.875rem;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003190;
-  }
-}
-
-.app-download-appstore .app-button img,
-.app-download-googleplay .app-button img {
+/* line 190, lib/_layout.sass */
+.app-download-appstore .app-button img, .app-download-googleplay .app-button img {
   width: 100%;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003194;
-  }
-}
-
-.is-ios .app-download-googleplay,
-.is-android .app-download-appstore {
+/* line 194, lib/_layout.sass */
+.is-ios .app-download-googleplay, .is-android .app-download-appstore {
   display: none;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003199;
-  }
-}
-
+/* line 199, lib/_layout.sass */
 .promote-wrap {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   float: left;
@@ -948,160 +381,66 @@ body {
   color: white;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003203;
-  }
-}
-
+/* line 203, lib/_layout.sass */
 .promote-programe-wrap {
   background-color: #1d1d1d;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003205;
-  }
-}
-
-.promote-programe-text,
-.promote-programe-text-sub {
+/* line 205, lib/_layout.sass */
+.promote-programe-text, .promote-programe-text-sub {
   text-align: center;
   padding: 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003211;
-  }
-}
-
+/* line 211, lib/_layout.sass */
 .promote-programe-list {
   overflow: hidden;
   *zoom: 1;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003214;
-  }
-}
-
+/* line 214, lib/_layout.sass */
 .promote-programe-item {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 33.33333%;
   float: left;
   padding-left: 2.08333%;
   padding-right: 2.08333%;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/susy-2\.0\.0\.beta\.3\/sass\/susy\/language\/susy\/_gallery\.scss;
-  }
-
-  line {
-    font-family: \0000363;
-  }
-}
-
+/* line 63, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/susy/_gallery.scss */
 .promote-programe-item:nth-child(3n + 1) {
   margin-left: 0;
   margin-right: -100%;
   clear: both;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/susy-2\.0\.0\.beta\.3\/sass\/susy\/language\/susy\/_gallery\.scss;
-  }
-
-  line {
-    font-family: \0000363;
-  }
-}
-
+/* line 63, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/susy/_gallery.scss */
 .promote-programe-item:nth-child(3n + 2) {
   margin-left: 33.33333%;
   margin-right: -100%;
   clear: none;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/susy-2\.0\.0\.beta\.3\/sass\/susy\/language\/susy\/_gallery\.scss;
-  }
-
-  line {
-    font-family: \0000363;
-  }
-}
-
+/* line 63, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/susy/_gallery.scss */
 .promote-programe-item:nth-child(3n + 3) {
   margin-left: 66.66667%;
   margin-right: -100%;
   clear: none;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003220;
-  }
-}
-
+/* line 220, lib/_layout.sass */
 .promote-programe-img {
   border-radius: 7%;
   border: solid 0.2rem white;
   overflow: hidden;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003226;
-  }
-}
-
+/* line 226, lib/_layout.sass */
 .promote-programe-img img {
   width: 100%;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003229;
-  }
-}
-
+/* line 229, lib/_layout.sass */
 .promote-programe-name {
   text-align: center;
   display: block;
@@ -1113,18 +452,10 @@ body {
   line-height: 1.8;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003234;
-  }
-}
-
+/* line 234, lib/_layout.sass */
 .promote-app-wrap {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   float: left;
@@ -1132,78 +463,31 @@ body {
   color: black;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003240;
-  }
-}
-
+/* line 240, lib/_layout.sass */
 .promote-content-wrap {
   position: relative;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003243;
-  }
-}
-
-.promote-content-wrap .program-gesture,
-.promote-content-wrap .episode-gesture {
+/* line 243, lib/_layout.sass */
+.promote-content-wrap .program-gesture, .promote-content-wrap .episode-gesture {
   position: absolute;
   background-color: white;
   border-radius: 0.25rem;
   padding: 0.5rem 1rem;
   color: #ff8309;
+  -moz-box-shadow: 0 0.3125rem 0 0 rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0.3125rem 0 0 rgba(0, 0, 0, 0.6);
   box-shadow: 0 0.3125rem 0 0 rgba(0, 0, 0, 0.6);
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003251;
-  }
-}
-
+/* line 251, lib/_layout.sass */
 .promote-content-wrap .program-gesture {
   display: none;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003254;
-  }
-}
-
+/* line 254, lib/_layout.sass */
 .promote-content-wrap .episode-gesture {
   display: none;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003260;
-  }
-}
-
+/* line 260, lib/_layout.sass */
 .promote-back-img {
   height: 20rem;
   width: 100%;
@@ -1214,16 +498,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003271;
-  }
-}
-
+/* line 271, lib/_layout.sass */
 .promote-app-text {
   text-align: center;
   padding: 1rem;
@@ -1231,18 +506,10 @@ body {
   line-height: 1.5;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003276;
-  }
-}
-
+/* line 276, lib/_layout.sass */
 .promote-app-link-wrap {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   float: left;
@@ -1253,33 +520,16 @@ body {
   line-height: 1.5;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003282;
-  }
-}
-
+/* line 282, lib/_layout.sass */
 .promote-app-link-text {
   display: inline-block;
   padding-bottom: 1rem;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003289;
-  }
-}
-
+/* line 289, lib/_layout.sass */
 .app-group-wrap {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   float: left;
@@ -1292,17 +542,7 @@ body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003296;
-  }
-}
-
+/* line 296, lib/_layout.sass */
 .app-group-wrap .app-group-text {
   font-size: 1.25rem;
   line-height: 1.5;
@@ -1310,68 +550,31 @@ body {
   margin-bottom: 1rem;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003301;
-  }
-}
-
+/* line 301, lib/_layout.sass */
 .app-group-item {
   overflow: hidden;
   *zoom: 1;
   margin-bottom: 0.8rem;
   border-bottom: 1px solid #444444;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003305;
-  }
-}
-
+/* line 305, lib/_layout.sass */
 .app-group-item .app-item-icon {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 16.66667%;
   float: left;
   padding-left: 2.08333%;
   padding-right: 2.08333%;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003307;
-  }
-}
-
+/* line 307, lib/_layout.sass */
 .app-group-item .app-item-icon img {
   width: 100%;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003309;
-  }
-}
-
+/* line 309, lib/_layout.sass */
 .app-group-item .app-name {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 58.33333%;
   float: left;
@@ -1383,19 +586,10 @@ body {
   height: 3.5rem;
   overflow: hidden;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003316;
-  }
-}
-
+/* line 316, lib/_layout.sass */
 .app-group-item .app-item-descript {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   float: left;
@@ -1406,18 +600,10 @@ body {
   line-height: 1.5;
 }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003321;
-  }
-}
-
+/* line 321, lib/_layout.sass */
 .app-item-link-group {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 25%;
   float: right;
@@ -1431,325 +617,131 @@ body {
   border: solid 1px #f0871c;
   border-radius: 0.35rem;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003330;
-  }
-}
-
+/* line 330, lib/_layout.sass */
 .app-item-link-group a {
   text-decoration: none;
   color: #f0871c;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003333;
-  }
-}
-
+/* line 333, lib/_layout.sass */
 .app-item-link-group .app-item-mobile {
   display: block;
 }
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_layout\.sass;
-  }
-
-  line {
-    font-family: \00003335;
-  }
-}
-
-.app-item-link-group .app-item-ios,
-.app-item-link-group .app-item-android {
+/* line 335, lib/_layout.sass */
+.app-item-link-group .app-item-ios, .app-item-link-group .app-item-android {
   display: none;
 }
 
 @media (min-width: 30rem) {
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \000032;
-    }
-}
-
+  /* line 2, lib/_tablet.sass */
   .playback-player {
     height: 20em;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \000034;
-    }
-}
-
+  /* line 4, lib/_tablet.sass */
   .playback-episode-count {
     width: 8rem;
     float: right;
     margin-right: 0.5rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \0000311;
-    }
-}
-
+  /* line 11, lib/_tablet.sass */
   .episode-list-item {
     width: 8.2rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \0000315;
-    }
-}
-
+  /* line 15, lib/_tablet.sass */
   .promote-back-img {
     background-size: contain;
   }
 }
-
 @media (min-width: 48rem) {
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \0000320;
-    }
-}
-
+  /* line 20, lib/_tablet.sass */
   .episode-list-item {
     width: 9.6rem;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \0000322;
-    }
-}
-
+  /* line 22, lib/_tablet.sass */
   .episode-list-item .episode-name {
     font-size: 0.8rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \0000325;
-    }
-}
-
+  /* line 25, lib/_tablet.sass */
   .app-download-info .app-download-icon {
     width: 4rem;
     height: 4rem;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \0000328;
-    }
-}
-
+  /* line 28, lib/_tablet.sass */
   .app-download-info .app-name {
     font-size: 1.8rem;
     line-height: 1.4;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \0000331;
-    }
-}
-
+  /* line 31, lib/_tablet.sass */
   .app-download-info .app-download-text {
     font-size: 1.3rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \0000334;
-    }
-}
-
+  /* line 34, lib/_tablet.sass */
   .app-download-wrap .app-download-icon {
     width: 4rem;
     height: 4rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \0000338;
-    }
-}
-
-  .promote-programe-text,
-  .promote-programe-text-sub {
+  /* line 38, lib/_tablet.sass */
+  .promote-programe-text, .promote-programe-text-sub {
     font-size: 1.5rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \0000340;
-    }
-}
-
+  /* line 40, lib/_tablet.sass */
   .promote-programe-list {
     padding-left: 7.8125%;
     padding-right: 7.8125%;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \0000344;
-    }
-}
-
-  .promote-app-text,
-  .promote-app-link-text {
+  /* line 44, lib/_tablet.sass */
+  .promote-app-text, .promote-app-link-text {
     font-size: 1.5rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \0000350;
-    }
-}
-
+  /* line 50, lib/_tablet.sass */
   .app-group-wrap .app-group-text {
     font-size: 1.5rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \0000352;
-    }
-}
-
+  /* line 52, lib/_tablet.sass */
   .app-group-item {
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 46.875%;
     float: left;
     margin-left: 0%;
     margin-right: 3.125%;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \0000356;
-    }
-}
-
+  /* line 57, lib/_tablet.sass */
   .app-group-item .app-item-icon {
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 20%;
     float: left;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \0000358;
-    }
-}
-
+  /* line 59, lib/_tablet.sass */
   .app-group-item .app-name {
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 53.33333%;
     float: left;
     padding-left: 3.33333%;
     padding-right: 3.33333%;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_tablet\.sass;
-    }
-
-    line {
-      font-family: \0000361;
-    }
-}
-
+  /* line 61, lib/_tablet.sass */
+  .app-group-item .app-item-descript {
+    min-height: 3.3rem;
+  }
+  /* line 64, lib/_tablet.sass */
   .app-group-item .app-item-link {
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 26.66667%;
     float: right;
@@ -1759,95 +751,40 @@ body {
     padding-bottom: 0.35rem;
   }
 }
-
 @media (min-width: 60rem) {
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \000035;
-    }
-}
-
-  html,
-  body {
+  /* line 5, lib/_desktop.sass */
+  html, body {
     overflow-x: hidden;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \000038;
-    }
-}
-
+  /* line 8, lib/_desktop.sass */
   body {
+    background-image: -moz-linear-gradient(top, #d9d9d9, #ededed 2%, #f5f5f5 4%, #ffffff 8%);
+    background-image: -o-linear-gradient(top, #d9d9d9, #ededed 2%, #f5f5f5 4%, #ffffff 8%);
     background-image: -webkit-linear-gradient(top, #d9d9d9, #ededed 2%, #f5f5f5 4%, #ffffff 8%);
     background-image: linear-gradient(to bottom, #d9d9d9, #ededed 2%, #f5f5f5 4%, #ffffff 8%);
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000311;
-    }
-}
-
+  /* line 11, lib/_desktop.sass */
   .l-main-container {
     *zoom: 1;
     max-width: 70rem;
     margin-left: auto;
     margin-right: auto;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/susy-2\.0\.0\.beta\.3\/sass\/susy\/output\/float\/_clearfix\.scss;
-    }
-
-    line {
-      font-family: \0000310;
-    }
-}
-
+  /* line 10, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/susy-2.0.0.beta.3/sass/susy/language/../output/float/_clearfix.scss */
   .l-main-container:after {
     content: " ";
     display: block;
     clear: both;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000316;
-    }
-}
-
+  /* line 16, lib/_desktop.sass */
   .player-wrap {
     background-color: transparent;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000319;
-    }
-}
-
+  /* line 19, lib/_desktop.sass */
   .player-device {
     width: 37.5rem;
     height: 35rem;
@@ -1855,66 +792,28 @@ body {
     margin-right: 2rem;
     background: url("../images/ipad-outline.png") no-repeat 0 100%;
     float: right;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000328;
-    }
-}
-
+  /* line 28, lib/_desktop.sass */
   .playback-episode-src {
     padding-top: 0.4rem;
     padding-bottom: 0.25rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000332;
-    }
-}
-
+  /* line 32, lib/_desktop.sass */
   .episode-list-item {
-    width: 7.3rem;
+    width: 7rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000334;
-    }
-}
-
+  /* line 34, lib/_desktop.sass */
   .episode-list-wrap {
     padding: 0.2rem 0 0 0;
     overflow: hidden;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000338;
-    }
-}
-
-  .epsode-prev-button,
-  .epsode-next-button {
+  /* line 38, lib/_desktop.sass */
+  .epsode-prev-button, .epsode-next-button {
     display: block;
     position: absolute;
     width: 3rem;
@@ -1925,139 +824,49 @@ body {
     font-size: 5rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000348;
-    }
-}
-
+  /* line 48, lib/_desktop.sass */
   .epsode-prev-button {
     left: -1rem;
     background: url(../images/epsode-button.png) no-repeat 0 0;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000351;
-    }
-}
-
-  .epsode-prev-button:hover,
-  .epsode-prev-button:active {
+  /* line 51, lib/_desktop.sass */
+  .epsode-prev-button:hover, .epsode-prev-button:active {
     background-position: 0 -5.65rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000353;
-    }
-}
-
+  /* line 53, lib/_desktop.sass */
   .epsode-next-button {
     right: -1rem;
     background: url(../images/epsode-button.png) no-repeat 0 -11.15rem;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000356;
-    }
-}
-
-  .epsode-next-button:hover,
-  .epsode-next-button:active {
+  /* line 56, lib/_desktop.sass */
+  .epsode-next-button:hover, .epsode-next-button:active {
     background-position: 0 -16.75rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000359;
-    }
-}
-
+  /* line 59, lib/_desktop.sass */
   .app-item-link-group {
     padding-top: 0;
     padding-bottom: 0;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000364;
-    }
-}
-
+  /* line 64, lib/_desktop.sass */
   .app-item-link-group .app-item-mobile {
     display: none;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000366;
-    }
-}
-
-  .app-item-link-group .app-item-ios,
-  .app-item-link-group .app-item-android {
+  /* line 68, lib/_desktop.sass */
+  .app-item-link-group .app-item-ios, .app-item-link-group .app-item-android {
     background: url(../images/app-link-icon.png) no-repeat;
     position: relative;
     display: inline-block;
     width: 2rem;
     height: 2rem;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000372;
-    }
-}
-
+  /* line 74, lib/_desktop.sass */
   .app-item-link-group .app-item-ios {
     background-position: 0 0.3rem;
     left: -12%;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000375;
-    }
-}
-
+  /* line 77, lib/_desktop.sass */
   .app-item-link-group .app-item-ios:after {
     content: "";
     display: block;
@@ -2066,34 +875,30 @@ body {
     height: 2rem;
     border-right: 1px #f0871c solid;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000382;
-    }
-}
-
+  /* line 84, lib/_desktop.sass */
   .app-item-link-group .app-item-android {
     background-position: 0 -2rem;
     left: 14%;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
+  /* line 88, lib/_desktop.sass */
+  .is-ios .app-item-link-group, .is-android .app-item-link-group {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+  /* line 91, lib/_desktop.sass */
+  .is-ios .app-item-link-group .app-item-mobile, .is-android .app-item-link-group .app-item-mobile {
+    display: block;
+  }
+  /* line 93, lib/_desktop.sass */
+  .is-ios .app-item-link-group .app-item-ios, .is-ios .app-item-link-group .app-item-android, .is-android .app-item-link-group .app-item-ios, .is-android .app-item-link-group .app-item-android {
+    display: none;
+  }
 
-    line {
-      font-family: \0000387;
-    }
-}
-
+  /* line 97, lib/_desktop.sass */
   .app-download-wrap {
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 31.25%;
     float: left;
@@ -2104,81 +909,31 @@ body {
     background-color: transparent;
     color: #555555;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000393;
-    }
-}
-
+  /* line 103, lib/_desktop.sass */
   .app-download-wrap .app-download-icon {
     width: 5.5rem;
     height: 5.5rem;
     float: none;
     margin-bottom: 1rem;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \0000398;
-    }
-}
-
+  /* line 108, lib/_desktop.sass */
   .app-download-wrap .app-name {
     font-size: 2.5rem;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003100;
-    }
-}
-
+  /* line 110, lib/_desktop.sass */
   .app-download-wrap .app-item-descript {
     display: block;
     margin-bottom: 1rem;
     line-height: 1.4;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003104;
-    }
-}
-
+  /* line 114, lib/_desktop.sass */
   .app-download-wrap .app-download-text {
     font-size: 1.25rem;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003108;
-    }
-}
-
-  .app-download-wrap .app-download-appstore .app-button,
-  .app-download-wrap .app-download-googleplay .app-button {
+  /* line 118, lib/_desktop.sass */
+  .app-download-wrap .app-download-appstore .app-button, .app-download-wrap .app-download-googleplay .app-button {
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 50%;
     float: left;
@@ -2186,18 +941,10 @@ body {
     padding-right: 4.16667%;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003112;
-    }
-}
-
+  /* line 122, lib/_desktop.sass */
   .social-media-wrap {
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 31.25%;
     float: left;
@@ -2206,97 +953,44 @@ body {
     border: none;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003115;
-    }
-}
-
+  /* line 125, lib/_desktop.sass */
   .social-media-text {
     font-size: 1rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003117;
-    }
-}
-
+  /* line 127, lib/_desktop.sass */
   .social-media-item {
     margin-left: 0.5rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003124;
-    }
-}
-
+  /* line 134, lib/_desktop.sass */
   .promote-wrap {
     overflow: visible;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003127;
-    }
-}
-
+  /* line 138, lib/_desktop.sass */
   .promote-programe-wrap {
     margin-right: -100rem;
     margin-left: -100rem;
     padding-right: 100rem;
     padding-left: 100rem;
     -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
     padding-top: 6.25%;
     padding-bottom: 6.25%;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003133;
-    }
-}
-
+  /* line 144, lib/_desktop.sass */
   .promote-programe-wrap:after {
     content: "";
     display: block;
     clear: both;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003140;
-    }
-}
-
+  /* line 151, lib/_desktop.sass */
   .promote-programe-list {
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 56.25%;
     float: left;
@@ -2304,18 +998,10 @@ body {
     padding-right: 1.5625%;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003142;
-    }
-}
-
+  /* line 153, lib/_desktop.sass */
   .promote-programe-text {
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 43.75%;
     float: right;
@@ -2327,74 +1013,37 @@ body {
     margin-bottom: 3.5rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003150;
-    }
-}
-
+  /* line 161, lib/_desktop.sass */
   .promote-content-wrap .program-gesture {
-    top: -webkit-calc(50% - 9rem);
     top: calc(50% - 9rem);
-    left: -webkit-calc(50% - 2.5rem);
     left: calc(50% - 2.5rem);
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003153;
-    }
-}
-
+  /* line 164, lib/_desktop.sass */
   .promote-content-wrap .episode-gesture {
-    top: -webkit-calc(50% + 6.6rem);
     top: calc(50% + 6.6rem);
-    left: -webkit-calc(50% - 9rem);
     left: calc(50% - 9rem);
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003156;
-    }
-}
-
+  /* line 167, lib/_desktop.sass */
   .promote-app-wrap {
     margin-right: -100rem;
     margin-left: -100rem;
     padding-right: 100rem;
     padding-left: 100rem;
     -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
+    background-image: -moz-linear-gradient(bottom, #d5d5d5, #ffffff 24%);
+    background-image: -o-linear-gradient(bottom, #d5d5d5, #ffffff 24%);
     background-image: -webkit-linear-gradient(bottom, #d5d5d5, #ffffff 24%);
     background-image: linear-gradient(to top, #d5d5d5, #ffffff 24%);
     margin-top: 6.25%;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003162;
-    }
-}
-
+  /* line 173, lib/_desktop.sass */
   .promote-app-text {
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 43.75%;
     float: left;
@@ -2406,32 +1055,14 @@ body {
     z-index: 2;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003170;
-    }
-}
-
+  /* line 181, lib/_desktop.sass */
   .promote-programe-text-sub {
     color: #999999;
     text-align: left;
     font-size: 1.5rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003176;
-    }
-}
-
+  /* line 187, lib/_desktop.sass */
   .promote-back-img {
     height: 35rem;
     width: 100%;
@@ -2439,63 +1070,31 @@ body {
     background-size: contain;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003181;
-    }
-}
-
+  /* line 192, lib/_desktop.sass */
   .promote-app-link-wrap {
     text-align: center;
   }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003183;
-    }
-}
-
-  .promote-app-link-wrap .app-download-appstore,
-  .promote-app-link-wrap .app-download-googleplay {
+  /* line 194, lib/_desktop.sass */
+  .promote-app-link-wrap .app-download-appstore, .promote-app-link-wrap .app-download-googleplay {
     display: inline-block;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
+  /* line 197, lib/_desktop.sass */
+  .is-ios .app-download-googleplay, .is-android .app-download-appstore {
+    display: none;
+  }
 
-    line {
-      font-family: \00003187;
-    }
-}
-
+  /* line 200, lib/_desktop.sass */
   .app-group-wrap .app-group-text {
     font-size: 2.25rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003192;
-    }
-}
-
+  /* line 205, lib/_desktop.sass */
   .promote-app-link-text {
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
     float: left;
@@ -2503,54 +1102,28 @@ body {
     padding-right: 1.5625%;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003194;
-    }
-}
-
+  /* line 207, lib/_desktop.sass */
   .promote-app-link {
     width: 37.5%;
     display: inline-block;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003198;
-    }
-}
-
+  /* line 211, lib/_desktop.sass */
   .app-group-wrap {
     margin-right: -100rem;
     margin-left: -100rem;
     padding-right: 100rem;
     padding-left: 100rem;
     -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
   }
 }
-
 @media (min-width: 70rem) {
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003206;
-    }
-}
-
+  /* line 219, lib/_desktop.sass */
   .app-download-wrap {
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 37.5%;
     float: left;
@@ -2558,18 +1131,10 @@ body {
     padding-right: 1.5625%;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003208;
-    }
-}
-
+  /* line 221, lib/_desktop.sass */
   .social-media-wrap {
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 37.5%;
     float: left;
@@ -2577,16 +1142,7 @@ body {
     padding-right: 1.5625%;
   }
 
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/C\:\/Users\/James\/Documents\/web-5\/app\/styles\/lib\/_desktop\.sass;
-    }
-
-    line {
-      font-family: \00003210;
-    }
-}
-
+  /* line 223, lib/_desktop.sass */
   .social-media-item {
     margin-left: 1rem;
   }
