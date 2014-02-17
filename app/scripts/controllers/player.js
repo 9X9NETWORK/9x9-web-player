@@ -20,63 +20,48 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     var channelId = $stateParams.channelId;
     var episodeId = $stateParams.episodeId;
-    var channel;
-    var episodes = sharedObjects.get("episodes");
-    var episode;
-    var programs;
-    var episodeIndex = 0;
+    var channel, episodes, episode, programs, episodeIndex;
+    var acct = document.location.host.match (/(dev|stage|alpha)/) ? 'UA-31930874-1' : 'UA-21595932-1';
 
-    if(sharedObjects.get("channel")){
-        channel = sharedObjects.get("channel");
-    }else{
-        channel = new nn.model.Channel(channelId);
-        sharedObjects.set('channel', channel);
+    var loadChannel = function(cid){
+        cid = "8846";
+        channelId = cid;
+        channel = new nn.model.Channel(cid);
+        channel.get().then(function(){
+            channel.loadEpisodes().then(onChannelLoaded);
+        });
     }
 
-    var init = function(){
-          
-          loadApi();
-          player  = new nn.Player("ytplayer-1", true);
+    var onChannelLoaded = function(){
 
-          if(episodes){
-          //if(false){
-              episode = episodes.findByAttr("id", episodeId);
-              episodeIndex = episodes.index;
-              programs = new nn.utils.NnArray(episode.programs, false);
-              channel.get().then(function(){
-                  $scope.safeApply(update);
-                  startPlay();
-                  initListPosition();
-              });
-          }else{
-              channel.get().then(function(){
-                channel.loadEpisodes().then(function(){
-                      episodes = channel.episodes;
-                      sharedObjects.set('episodes', episodes);
+      episodes = channel.episodes;
 
-                      if(episodeId){
-                        episode = episodes.findByAttr("id", episodeId);
-                        episodeIndex = episodes.index;
-                      }else{
-                        episode = episodes.first();
-                        episodeIndex = 0;
-                      }
-                      programs = new nn.utils.NnArray(episode.programs, false);
+      if($stateParams.episodeId){
+          episode = episodes.findByAttr("id", $stateParams.episodeId);
+          episodeIndex = episodes.index;
+      }else{
+          episode = episodes.first();
+          episodeIndex = 0;
+      }
 
-                      $scope.safeApply(update);
-                      startPlay();
-                      initListPosition();
-                });
-              });
-          }
+      var path = '/p' + channel.id + '/' + episode.id;
+      $location.path(path);
+
+      programs = new nn.utils.NnArray(episode.programs, false);
+      $scope.$apply(update);
+
+      startPlay();
+      initListPosition();
     }
 
     var initListPosition = function(){
       setTimeout(function(){
         var list = $(".episode-list");
         var item = list.find("li.is-playing");
-        var left = -item.position().left;
-        list.css("left", left);
+        if(item.length === 1){
+          var left = -item.position().left;
+          list.css("left", left);
+        }
       }, 10);
     }
 
@@ -103,13 +88,70 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     }
 
     var startPlay = function(){
-
        player.ready().then(function(){
           player.cueVideoById(programs.current().videoId);
        });
 
        $(player).on("ended", onVideoEnd);
     }
+
+    var init = function(){
+        if(!$stateParams.channelId){
+            var portal = new nn.model.Portal();
+            var set, setInfo, cid, channel;
+            portal.get().then(function(){
+                set = portal.first();
+                setInfo = new nn.model.Set(set.id);
+                setInfo.get().then(function(){
+                    cid = setInfo.channels.first().id;
+                    loadChannel(cid);
+                });
+            });        
+        }else{
+            loadChannel(cid);
+        }
+
+        loadApi();
+        player  = new nn.Player("ytplayer-1", true);
+    }
+
+    var GaReportView = function(name){
+      _gaq = [];
+      _gaq.push(['_setAccount', acct]);
+      _gaq.push(['_trackPageview', name]);
+      _ga();
+    }
+
+    var GaReportEvent = function(category, action, label, value){
+      _gaq = [];
+      _gaq.push(['_setAccount', acct]);
+      _gaq.push (['_trackEvent', category, action, label, value]);
+      _ga(); 
+    }
+
+    var initGA = function(){
+        GaReportView("webplayer");
+
+        $(".app-download-appstore a").click(function(){
+          GaReportEvent("install", "toDownload-android", mso);
+        });
+
+        $(".app-download-googleplay a").click(function(){
+          GaReportEvent("install", "toDownload-iOS", mso);
+        });
+
+        $(".social-media-list li a").click(function(){
+          var i = $(".social-media-list li a").index($(this));
+          GaReportEvent("promotion", "toLink" + (i+1), "toLink" + (i+1));
+        });
+
+        $(player).bind("stateChange", function(){
+            console.log(player.state);
+        })
+    }
+
+    init();
+    initGA();
 
     $scope.getListStyle = function(){
       //60 rem
@@ -130,8 +172,18 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     };
 
     $scope.onEpisodeClick = function(eid){
+
+        episode = episodes.findByAttr("id", eid);
+        episodeIndex = episodes.findIndex(episode);
+        programs = new nn.utils.NnArray(episode.programs, false);
+
         var path = '/p' + channelId + '/' + eid;
         $location.path(path);
+
+        $scope.safeApply(update);
+
+        startPlay();
+        initListPosition();
     }
 
     var list = $(".episode-list");
@@ -158,10 +210,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         }, 500);
         return false;
     }
-
-    init();
-
-
 });
 
 

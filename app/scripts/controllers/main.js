@@ -5,21 +5,21 @@ ld.controller('MainCtrl', function ($scope, $stateParams, sharedObjects, $locati
   if(search.mso){
     mso = search.mso;
   }
-
+    
 
 	if($stateParams.channelId){
 		var cid = $stateParams.channelId;
 		var channel = new nn.model.Channel(cid);
-    sharedObjects.set('currentChannel', channel);
-    channel.get().then(function(){
-        channel.loadEpisodes().then(function(){
-            var ep = channel.episodes.first();
-            var path = base + '/p' + cid + '/' + ep.id;
-            sharedObjects.set('episodes', channel.episodes);
-            $location.path(path);
-            $scope.$apply();
+        sharedObjects.set('channel', channel);
+        channel.get().then(function(){
+            channel.loadEpisodes().then(function(){
+                var ep = channel.episodes.first();
+                var path = base + '/p' + cid + '/' + ep.id;
+                sharedObjects.set('episodes', channel.episodes);
+                $location.path(path);
+                $scope.$apply();
+            });
         });
-    });
 	}else{
         var portal = new nn.model.Portal();
         var set, setInfo, cid, channel;
