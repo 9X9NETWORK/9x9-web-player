@@ -53,6 +53,8 @@ $desktop-large-font: 2.25rem
         text-decoration: none
         z-index: 10
         font-size: 5rem
+        .is-ios &,.is-android &
+            display: none
 
     .epsode-prev-button
         left: -1rem
@@ -184,7 +186,7 @@ $desktop-large-font: 2.25rem
         
 
     .promote-app-text
-        +span(7)
+        +span(8)
         font-size: $desktop-large-font
         text-align: left
         position: relative
@@ -209,6 +211,11 @@ $desktop-large-font: 2.25rem
             display: inline-block
     .is-ios .app-download-googleplay,.is-android .app-download-appstore
         display: none
+    //for center
+    .is-ios .app-download-wrap .app-download-appstore,.is-android .app-download-wrap .app-download-googleplay
+        .app-button
+            float: none
+    
     .app-group-wrap
         .app-group-text
             font-size: $desktop-large-font
