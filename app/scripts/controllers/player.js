@@ -22,6 +22,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     var episodeId = $stateParams.episodeId;
     var channel, episodes, episode, programs, episodeIndex;
     var acct = document.location.host.match (/(dev|stage|alpha)/) ? 'UA-31930874-1' : 'UA-21595932-1';
+    var watchedSec = 0, watchedInterval, _d = $.Deferred(), _d1 = $.Deferred();
 
     var loadChannel = function(cid){
         cid = "8846";
@@ -29,7 +30,9 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         channel = new nn.model.Channel(cid);
         channel.get().then(function(){
             channel.loadEpisodes().then(onChannelLoaded);
+            $("body").show();
         });
+        channel.watched = 0;
     }
 
     var onChannelLoaded = function(){
@@ -81,9 +84,15 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     var onVideoEnd = function(){
 
+        var path = '/p' + channel.id + '/' + episode.id;
+        var path1 = channel.name + "/" + episode.name;
         var rs = programs.next();
         if(rs !== false){
-            startPlay();
+            player.ready().then(function(){
+              player.cueVideoById(programs.current().videoId);
+           });
+        }else{
+          _d.resolve();
         }
     }
 
@@ -92,7 +101,35 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
           player.cueVideoById(programs.current().videoId);
        });
 
-       $(player).on("ended", onVideoEnd);
+       episode.watched = 0;
+       watchedSec = 0;
+
+       _d = $.Deferred();
+       $.when(_d).then(function(){
+          var path = '/p' + channel.id + '/' + episode.id;
+          var path1 = channel.name + "/" + episode.name;
+          if(episode.watched > 6){
+             GaReportEvent(path, "epWatched", path1, episode.watched);
+          }
+       });
+
+       $.when(_d1).then(function(){
+          var path = '/p' + channel.id;
+          GaReportEvent(path, "pgWatched", channel.name, channel.watched);
+       });
+
+       $(player).unbind();
+       $(player).bind("ended", onVideoEnd);
+       $(player).bind("stateChange", function(){
+            clearInterval(watchedInterval);
+            if(player.state === "playing"){
+              watchedInterval = setInterval(function(){
+                watchedSec++;
+                channel.watched++;
+                episode.watched++;
+              }, 1000);
+            }
+        });
     }
 
     var init = function(){
@@ -123,6 +160,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     }
 
     var GaReportEvent = function(category, action, label, value){
+      console.info(category, action, label, value);
       _gaq = [];
       _gaq.push(['_setAccount', acct]);
       _gaq.push (['_trackEvent', category, action, label, value]);
@@ -145,9 +183,12 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
           GaReportEvent("promotion", "toLink" + (i+1), "toLink" + (i+1));
         });
 
-        $(player).bind("stateChange", function(){
-            console.log(player.state);
-        })
+        window.onbeforeunload = function() {
+            console.log("unload");
+            _d.resolve();
+            _d1.resolve();
+            return "Are you sure you want to leave this page?";
+        };
     }
 
     init();
@@ -173,12 +214,16 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     $scope.onEpisodeClick = function(eid){
 
+        _d.resolve();
+
         episode = episodes.findByAttr("id", eid);
         episodeIndex = episodes.findIndex(episode);
         programs = new nn.utils.NnArray(episode.programs, false);
 
+
         var path = '/p' + channelId + '/' + eid;
         $location.path(path);
+        var path1 = channel.name + "/" + episode.name;
 
         $scope.safeApply(update);
 

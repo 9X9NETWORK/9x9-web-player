@@ -6,7 +6,7 @@ var player;
 var mso = nn.global.mso;
 var search;
 
-mso = "cts";
+//mso = "cts";
 nn.global.mso = mso;
 nn.global.os = "";
 $(document).ready(function(){

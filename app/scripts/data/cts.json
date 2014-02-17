@@ -55,16 +55,6 @@
         }
     ],
     "link": [
-        // {
-        //     "name": "MV不解釋 FLIPr",
-        //     "description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
-        //     "icon": "images/mv/app_icon.png"
-        // },
-        // {
-        //     "name": "關鍵評論網 FLIPr",
-        //     "description": "News worth knowing, voices worth sharing. 分享觀點從這開始。",
-        //     "icon": "images/app-group-icon-5.png"
-        // },
         {
             "name": "Good TV FLIPr",
             "description": "您是Good TV的忠實觀眾嗎？帶給人們信心、希望、與真愛的電視台，趕快來看。",
