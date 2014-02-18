@@ -137,9 +137,12 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
         var channelId, episodeId;
         var href = location.href.split("/");
+        console.log(href);
+
         if(href[href.length - 1] === ""){
           href.pop();
         }
+
         if(href[href.length - 1] !== "view"){
           episodeId = href[href.length - 1];
         }
@@ -148,7 +151,8 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         }
 
         console.log(channelId);
-        if(!channelId){
+        //if(!channelId){
+        if(true){  
             console.log(1);
             var portal = new nn.model.Portal();
             var set, setInfo, cid, channel;
