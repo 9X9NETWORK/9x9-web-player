@@ -21,11 +21,11 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     var channelId = $stateParams.channelId;
     var episodeId = $stateParams.episodeId;
     var channel, episodes, episode, programs, episodeIndex;
-    var acct = document.location.host.match (/(dev|stage|alpha)/) ? 'UA-31930874-1' : 'UA-21595932-1';
+    var acct = document.location.host.match (/(dev|stage|alpha)/) ? 'UA-31930874-1' : 'UA-47454448-1';
     var watchedSec = 0, watchedInterval, _d = $.Deferred(), _d1 = $.Deferred();
 
     var loadChannel = function(cid){
-        cid = "8846";
+        //cid = "8846";
         channelId = cid;
         channel = new nn.model.Channel(cid);
         channel.get().then(function(){
@@ -148,8 +148,8 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             loadChannel(cid);
         }
 
-        loadApi();
         player  = new nn.Player("ytplayer-1", true);
+        loadApi();
     }
 
     var GaReportView = function(name){
