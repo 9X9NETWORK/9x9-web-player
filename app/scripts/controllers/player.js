@@ -27,6 +27,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     var loadChannel = function(cid){
         //cid = "8846";
         channelId = cid;
+        console.log(cid);
         channel = new nn.model.Channel(cid);
         channel.get().then(function(){
             channel.loadEpisodes().then(onChannelLoaded);
@@ -133,19 +134,21 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     }
 
     var init = function(){
+        console.log($stateParams.channelId);
         if(!$stateParams.channelId){
+            console.log(1);
             var portal = new nn.model.Portal();
             var set, setInfo, cid, channel;
             portal.get().then(function(){
                 set = portal.first();
                 setInfo = new nn.model.Set(set.id);
                 setInfo.get().then(function(){
-                    cid = setInfo.channels.first().id;
+                    var cid = setInfo.channels.first().id;
                     loadChannel(cid);
                 });
             });        
         }else{
-            loadChannel(cid);
+            loadChannel($stateParams.channelId);
         }
 
         player  = new nn.Player("ytplayer-1", true);
