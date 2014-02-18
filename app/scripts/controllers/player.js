@@ -134,8 +134,21 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     }
 
     var init = function(){
-        console.log($stateParams.channelId);
-        if(!$stateParams.channelId){
+
+        var channelId, episodeId;
+        var href = location.href.split("/");
+        if(href[href.length - 1] === ""){
+          href.pop();
+        }
+        if(href[href.length - 1] !== "view"){
+          episodeId = href[href.length - 1];
+        }
+        if(href[href.length - 2] !== "view"){
+          channelId = href[href.length - 2];
+        }
+
+        console.log(channelId);
+        if(!channelId){
             console.log(1);
             var portal = new nn.model.Portal();
             var set, setInfo, cid, channel;
@@ -148,7 +161,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                 });
             });        
         }else{
-            loadChannel($stateParams.channelId);
+            loadChannel(channelId);
         }
 
         player  = new nn.Player("ytplayer-1", true);
