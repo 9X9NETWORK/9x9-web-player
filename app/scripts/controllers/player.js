@@ -97,9 +97,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     }
 
     var startPlay = function(){
-       console.log("start play");
        player.ready().then(function(){
-          console.log("player ready");
           player.cueVideoById(programs.current().videoId);
        });
 
