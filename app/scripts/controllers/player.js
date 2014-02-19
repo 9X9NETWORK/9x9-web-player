@@ -27,7 +27,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     var loadChannel = function(cid){
         //cid = "8846";
         channelId = cid;
-        console.log(cid);
         channel = new nn.model.Channel(cid);
         channel.get().then(function(){
             channel.loadEpisodes().then(onChannelLoaded);
@@ -98,7 +97,9 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     }
 
     var startPlay = function(){
+       console.log("start play");
        player.ready().then(function(){
+          console.log("player ready");
           player.cueVideoById(programs.current().videoId);
        });
 
@@ -137,22 +138,26 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
         var channelId, episodeId;
         var href = location.href.replace("http://", "").replace("https://", "");
-
+        var viewIndex = 0;
         href = href.split("/");
-        console.log(href);
-
         if(href[href.length - 1] === ""){
           href.pop();
         }
+        console.log(href);
 
-        if(href[href.length - 1] !== "view" && href.length > 3){
+        for(var i = 0; i<href.length; i++){
+          if(href[i] === "view"){
+            viewIndex = i;
+          }
+        }
+
+        if(viewIndex === href.length - 2){
+          channelId = href[href.length - 1].substr(1);
+        }else if(viewIndex === href.length - 3){
+          channelId = href[href.length - 2].substr(1);
           episodeId = href[href.length - 1].substr(1);
         }
-        if(href[href.length - 2] !== "view" && href.length > 2){
-          channelId = href[href.length - 2].substr(1);
-        }
 
-        console.log(channelId, episodeId);
         // $.routes.add('/view/p{cid:int}/e{eid:int}', function() {
         //     console.log(this.cid, this.eid);
         // });
