@@ -256,7 +256,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         $scope.safeApply(update);
 
         startPlay();
-        initListPosition();
+        //initListPosition();
     }
 
     var list = $(".episode-list");

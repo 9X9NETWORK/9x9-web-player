@@ -114,12 +114,12 @@
                 
                 <div class="app-download-appstore">
 
-                    <a href="{{app.ios}}" class="app-button">
+                    <a href="{{app.ios}}" target="_blank" class="app-button">
                        <img src="images/btn_app_store@x2.png">  
                    </a>
                 </div>
             <div class="app-download-googleplay">
-                <a href="{{app.android}}" class="app-button">
+                <a href="{{app.android}}" target="_blank" class="app-button">
                    <img src="images/btn_google_play@x2.png">    
                 </a>
             </div>
@@ -128,7 +128,8 @@
         <div ng-show="social.length > 0" class="social-media-wrap">
             <h1 class="social-media-text">或造訪社群</h1>
                 <ul class="social-media-list">
-                    <li ng-repeat="item in social" class="social-media-item"><a ng-href="{{item.url}}"><img ng-src="{{item.icon}}" alt=""></a></li>
+                    <li ng-repeat="item in social" class="social-media-item">
+                        <a ng-href="{{item.url}}" target="_blank"><img ng-src="{{item.icon}}" alt=""></a></li>
                     <!-- <li class="social-media-item"><a href="#"><img src="images/social-media-fb.png" alt=""></a></li>
                     <li class="social-media-item"><a href="#"><img src="images/social-media-twitter.png" alt=""></a></li>
                     <li class="social-media-item"><a href="#"><img src="images/social-media-google.png" alt=""></a></li> -->
