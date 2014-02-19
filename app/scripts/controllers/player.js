@@ -136,7 +136,9 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     var init = function(){
 
         var channelId, episodeId;
-        var href = location.href.split("/");
+        var href = location.href.replace("http://", "").replace("https://", "");
+
+        href = href.split("/");
         console.log(href);
 
         if(href[href.length - 1] === ""){
