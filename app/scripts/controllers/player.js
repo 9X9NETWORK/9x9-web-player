@@ -143,17 +143,20 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
           href.pop();
         }
 
-        if(href[href.length - 1] !== "view"){
+        if(href[href.length - 1] !== "view" && href.length > 3){
           episodeId = href[href.length - 1];
         }
-        if(href[href.length - 2] !== "view"){
+        if(href[href.length - 2] !== "view" && href.length > 2){
           channelId = href[href.length - 2];
         }
 
-        console.log(channelId);
+        console.log(channelId, episodeId);
+        $.routes.add('/view/p{cid:int}/e{eid:int}', function() {
+            console.log(this.cid, this.eid);
+        });
+
         //if(!channelId){
         if(true){  
-            console.log(1);
             var portal = new nn.model.Portal();
             var set, setInfo, cid, channel;
             portal.get().then(function(){
