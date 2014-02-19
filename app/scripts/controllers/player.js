@@ -144,10 +144,10 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         }
 
         if(href[href.length - 1] !== "view" && href.length > 3){
-          episodeId = href[href.length - 1].substr(0, 1);
+          episodeId = href[href.length - 1].substr(1);
         }
         if(href[href.length - 2] !== "view" && href.length > 2){
-          channelId = href[href.length - 2].substr(0, 1);
+          channelId = href[href.length - 2].substr(1);
         }
 
         console.log(channelId, episodeId);
