@@ -277,7 +277,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         list = $("ul.episode-list");
         left = list.position().left;
         left -= amount;
-        if(left < -list.width()) left = -list.width();
+        if(left < -list.width() + 516) left = -list.width()  + 516;
         list.animate({
           left : left
         }, 500);
