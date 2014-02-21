@@ -28,7 +28,7 @@ module.exports = function (grunt) {
       },
       compass: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['compass:server', 'autoprefixer']
+        tasks: ['compass:server', 'copy:server']
       },
       styles: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
@@ -170,7 +170,8 @@ module.exports = function (grunt) {
       },
       server: {
         options: {
-          debugInfo: true
+          debugInfo: false,
+          outputStyle: 'compressed'
         }
       }
     },
@@ -287,6 +288,12 @@ module.exports = function (grunt) {
         expand: true,
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
+        src: '{,*/}*.css'
+      },
+      server: {
+        expand: true,
+        cwd: '.tmp/styles/',
+        dest: '<%= yeoman.app %>/styles',
         src: '{,*/}*.css'
       }
     },

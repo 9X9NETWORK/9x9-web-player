@@ -2,8 +2,6 @@
 body
     font-family: $basic-font-family
     
-
-
 .l-main-container
     +container
     //+show-grid(overlay)
@@ -16,6 +14,9 @@ body
 .playback-player
     //iphone default
     height: 153px 
+    //android default
+    .is-android &
+        height: 213px
 .playback-info
     +full
     border-bottom: solid 1px #000
@@ -68,7 +69,7 @@ body
     width: 100%
     overflow-x: auto
     overflow-y: hidden
-    box-sizing: border-box
+    +box-sizing(border-box)
     padding: 0.2rem 0 0.8rem 0 
 
     //for mobile scrolling
@@ -120,7 +121,7 @@ body
         left: 0
         width: 100%
         height: 100%
-        box-sizing: border-box
+        +box-sizing(border-box)
         z-index: 10
 
     .episode-name
