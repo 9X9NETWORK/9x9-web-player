@@ -3,9 +3,7 @@
 //angular.module('landing', ['ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 'landing.services', 'landing.filters', 'landing.directives'])
 var getMso = function(){
   var path = location.hostname;
-  console.log(path);
   var mso = path.match(/^(.*)\.flipr\..*/);
-  console.log(mso);
   if(mso !== null){
     if(mso.length > 1){
       return mso[1];
@@ -17,6 +15,7 @@ var base = "/view/";
 var player;
 var mso = getMso();
 var search;
+var lang = "zh";
 nn.global.mso = mso;
 console.log(mso);
 $(document).ready(function(){

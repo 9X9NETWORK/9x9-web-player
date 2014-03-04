@@ -10,20 +10,20 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     // });
 
     msoService.get().then(function(data){
+        // console.log(data);
         $scope.app = data.app[0];
         $scope.social = data.social;
-        //console.log($scope.social);
-        //$scope.$apply();
-        //console.log($scope.promotionItems);
-        // console.log($scope.items);
+        if(data.app[0].playeronly === true){
+          $("body").addClass("playeronly")
+        }
     });
+    var acct = document.location.host.match (/(dev|stage|alpha)/) ? 'UA-31930874-1' : 'UA-47454448-1';
+    var watchedSec = 0, watchedInterval, _d = $.Deferred(), _d1 = $.Deferred();
 
     var channelId,
         episodeId,
-        channel, episodes, episode, programs, episodeIndex;
-
-    var acct = document.location.host.match (/(dev|stage|alpha)/) ? 'UA-31930874-1' : 'UA-47454448-1';
-    var watchedSec = 0, watchedInterval, _d = $.Deferred(), _d1 = $.Deferred();
+        channel, episodes, episode, programs, episodeIndex,
+        gaid;
 
     var loadChannel = function(cid){
         //cid = "8846";
@@ -179,7 +179,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         }
         if(channelId === null){
         //if(true){  
-            var portal = new nn.model.Portal();
+            var portal = new nn.model.Portal(mso, true, lang);
             var set, setInfo, cid, channel;
             portal.get().then(function(){
                 set = portal.first();
@@ -212,7 +212,11 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     }
 
     var initGA = function(){
+
+        acct = gaid || acct;
+
         GaReportView("webplayer");
+
         $(".app-download-appstore a").click(function(){
           console.info("download android");
           GaReportEvent("install", "toDownload-android", mso);
@@ -237,11 +241,22 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         };
     }
 
-    init();
+    $.get("/playerAPI/brandInfo?mso=" +mso, function(res){
+        //console.log(res);
+        var rs = res.match(/supported-region\s([a-zA-z]*)/);
+        if(rs !== null){
+            lang = rs[1]; 
+        }
+        rs = res.match(/ga\s([a-zA-z]*)/);
+        if(rs !== null){
+            gaid = rs[1]; 
+        }
+        init();
+    });
 
     setTimeout(function(){
       initGA();
-    }, 1500);
+    }, 1000);
 
     $scope.getListStyle = function(){
       //60 rem
