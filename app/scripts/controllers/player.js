@@ -18,15 +18,15 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         // console.log($scope.items);
     });
 
-    var channelId = $stateParams.channelId;
-    var episodeId = $stateParams.episodeId;
-    var channel, episodes, episode, programs, episodeIndex;
+    var channelId,
+        episodeId,
+        channel, episodes, episode, programs, episodeIndex;
+
     var acct = document.location.host.match (/(dev|stage|alpha)/) ? 'UA-31930874-1' : 'UA-47454448-1';
     var watchedSec = 0, watchedInterval, _d = $.Deferred(), _d1 = $.Deferred();
 
     var loadChannel = function(cid){
         //cid = "8846";
-        channelId = cid;
         channel = new nn.model.Channel(cid);
         channel.get().then(function(){
             channel.loadEpisodes().then(onChannelLoaded);
@@ -38,8 +38,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     var onChannelLoaded = function(){
 
       episodes = channel.episodes;
-
-      if($stateParams.episodeId){
+      if(episodeId){
           episode = episodes.findByAttr("id", $stateParams.episodeId);
           episodeIndex = episodes.index;
       }else{
@@ -51,7 +50,13 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
       $location.path(path);
 
       programs = new nn.utils.NnArray(episode.programs, false);
-      $scope.$apply(update);
+
+      $scope.channel = channel;
+      $scope.episodes = episodes;
+      $scope.episodeIndex = episodeIndex;
+      $scope.episode = episode;
+
+      $scope.$apply();
 
       startPlay();
       initListPosition();
@@ -134,8 +139,8 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     var init = function(){
 
-        var channelId, episodeId;
         var href = location.href.replace("http://", "").replace("https://", "");
+        /*
         var viewIndex = 0;
         href = href.split("/");
         if(href[href.length - 1] === ""){
@@ -155,12 +160,24 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
           channelId = href[href.length - 2].substr(1);
           episodeId = href[href.length - 1].substr(1);
         }
+        */
 
-        // $.routes.add('/view/p{cid:int}/e{eid:int}', function() {
-        //     console.log(this.cid, this.eid);
-        // });
+        channelId = href.match(/.*\/p([0-9]+)\//);
+        episodeId = href.match(/.*\/e([0-9]+)/);
 
-        if(!channelId){
+        if(episodeId !== null){
+            if(typeof episodeId === "object" && episodeId != null){
+                if(episodeId.length > 1){
+                  episodeId = episodeId[1];
+                }
+            }
+        }
+        if(typeof channelId === "object" && channelId != null){
+              if(channelId.length > 1){
+                  channelId = channelId[1];
+              }
+        }
+        if(channelId === null){
         //if(true){  
             var portal = new nn.model.Portal();
             var set, setInfo, cid, channel;
@@ -188,7 +205,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     }
 
     var GaReportEvent = function(category, action, label, value){
-      console.info(category, action, label, value);
       _gaq = [];
       _gaq.push(['_setAccount', acct]);
       _gaq.push (['_trackEvent', category, action, label, value]);
@@ -197,17 +213,19 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     var initGA = function(){
         GaReportView("webplayer");
-
         $(".app-download-appstore a").click(function(){
+          console.info("download android");
           GaReportEvent("install", "toDownload-android", mso);
         });
 
         $(".app-download-googleplay a").click(function(){
+          console.info("download ios");
           GaReportEvent("install", "toDownload-iOS", mso);
         });
 
         $(".social-media-list li a").click(function(){
           var i = $(".social-media-list li a").index($(this));
+          console.info("toLink" + (i+1));
           GaReportEvent("promotion", "toLink" + (i+1), "toLink" + (i+1));
         });
 
@@ -220,7 +238,10 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     }
 
     init();
-    initGA();
+
+    setTimeout(function(){
+      initGA();
+    }, 1500);
 
     $scope.getListStyle = function(){
       //60 rem

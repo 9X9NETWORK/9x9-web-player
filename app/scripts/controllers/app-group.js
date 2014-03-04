@@ -8,16 +8,15 @@ ld.controller('AppGroupCtrl', function ($scope, msoService){
 		// console.log($scope.items);
 	});
 	var getOs = function(){
-	  console.log(navigator.userAgent);
+	  // console.log(navigator.userAgent);
 	  if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
 	    return "ios";
 	  }else if(navigator.userAgent.match(/mobile|android|Mobile|Android/)){
 	    return "android";
 	  }else{
-	    return "unknown";
+	    return "web";
 	  }
 	}
 	var os = getOs();
 	$scope.os = os;
-	console.log(os);
 });
