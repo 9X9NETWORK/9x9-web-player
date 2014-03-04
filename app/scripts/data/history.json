@@ -1,0 +1,16 @@
+{
+    "app": [
+        {
+            "mso": "history.flipr.tv",
+            "name": "History on FLIPr Unofficial",
+            "icon": "images/history/icon_200x200.png",
+            "description": "Discover the latest videos from the channel History. You can also watch it continuously on the big screen with our brand new Chromecast support!",
+            "calltoaction": "FREE to donwload now!",
+            "ios": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.history",
+            "playeronly" : true
+        }
+    ]
+    
+    
+}

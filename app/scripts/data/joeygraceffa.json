@@ -1,0 +1,16 @@
+{
+    "app": [
+        {
+            "mso": "joeygraceffa.flipr.tv",
+            "name": "JoeyGraceffa FLIPr Unofficial",
+            "icon": "images/joeygraceffa/icon_200x200.png",
+            "description": "Discover the popular YouTuber Joey's new vlogs and old funnies on-the-go. You can also watch it continuously on the big screen with Chromecast!",
+            "calltoaction": "FREE to donwload now!",
+            "ios": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa",
+            "playeronly" : true
+        }
+    ]
+    
+    
+}

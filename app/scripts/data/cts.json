@@ -7,7 +7,8 @@
             "description": "本APP專為喜愛華視節目之觀眾設計，讓粉絲在各種螢幕上，隨時隨地，都能收看即時又精彩的節目！簡易直覺的操作，上下左右翻。就像在家中客廳看電視一樣的簡單。",
             "calltoaction": "立刻免費下載給你看更多！",
             "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
+            "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player",
+            "playeronly" : false
         }
     ],
     "social": [
