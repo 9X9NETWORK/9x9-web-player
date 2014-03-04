@@ -2,10 +2,10 @@
     "app": [
         {
             "mso": "collegehumor.flipr.tv",
-            "name": "CollegeHumor FLIPr Unofficial",
+            "name": "CollegeHumor on FLIPr Unofficial",
             "icon": "images/collegehumor/icon_200x200.png",
             "description": "Fill those 10-minute breaks with fresh hilarious videos. Watch it continuously on-the-go, or on the big screen with Chromecast support!",
-            "calltoaction": "FREE to donwload now!",
+            "calltoaction": "FREE to download now!",
             "ios": "",
             "android": "https://play.google.com/store/apps/details?id=tv.flipr.collegehumor",
             "playeronly" : true
