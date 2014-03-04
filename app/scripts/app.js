@@ -1,12 +1,22 @@
 'use strict';
 
 //angular.module('landing', ['ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 'landing.services', 'landing.filters', 'landing.directives'])
+var getMso = function(){
+  var path = location.hostname;
+  var mso = path.match(/.*(\/\/|www\.)(.*)\.flipr\..*/);
+  if(mso !== null){
+    if(mso.length > 2){
+      return mso[2];
+    }
+  }
+  return "9x9";
+}
 var base = "/view/";
 var player;
-var mso = nn.global.mso;
+var mso = getMso();
 var search;
-
 nn.global.mso = mso;
+console.log(mso);
 $(document).ready(function(){
     var getOs = function(){
       //console.log(navigator.userAgent);
