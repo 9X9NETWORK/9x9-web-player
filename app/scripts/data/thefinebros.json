@@ -2,10 +2,10 @@
     "app": [
         {
             "mso": "thefinebros.flipr.tv",
-            "name": "TheFineBros FLIPr Unofficial",
+            "name": "TheFineBros on FLIPr Unofficial",
             "icon": "images/thefinebros/icon_200x200.png",
             "description": "Discover the latest videos of Kids/Teens/Elders/YouTubers React and many others on-the-go, or on the big screen with Chromecast support!",
-            "calltoaction": "FREE to donwload now!",
+            "calltoaction": "FREE to download now!",
             "ios": "",
             "android": "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros",
             "playeronly" : true
