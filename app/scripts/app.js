@@ -3,10 +3,12 @@
 //angular.module('landing', ['ngCookies','ngResource','ngSanitize','ui.router','landing.controllers', 'landing.services', 'landing.filters', 'landing.directives'])
 var getMso = function(){
   var path = location.hostname;
-  var mso = path.match(/.*(\/\/|www\.)(.*)\.flipr\..*/);
+  console.log(path);
+  var mso = path.match(/^(.*)\.flipr\..*/);
+  console.log(mso);
   if(mso !== null){
-    if(mso.length > 2){
-      return mso[2];
+    if(mso.length > 1){
+      return mso[1];
     }
   }
   return "9x9";

@@ -25,7 +25,7 @@ ld.service("msoService", function($http){
 		}else{
 			$http({
 			  	"method" : "get",
-			  	"url" : "scripts/data/cts.json"
+			  	"url" : "scripts/data/" + mso + ".json"
 			})
 			.success(function(data){
 				//var brandInfo = parseBrandInfo(data);
