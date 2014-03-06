@@ -19,7 +19,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     });
     var acct = document.location.host.match (/(dev|stage|alpha)/) ? 'UA-31930874-1' : 'UA-47454448-1';
     var watchedSec = 0, watchedInterval, _d = $.Deferred(), _d1 = $.Deferred();
-
     var channelId,
         episodeId,
         channel, episodes, episode, programs, episodeIndex,
@@ -66,9 +65,29 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
       setTimeout(function(){
         var list = $(".episode-list");
         var item = list.find("li.is-playing");
+        var getOs = function(){
+          // console.log(navigator.userAgent);
+          if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+            return "ios";
+          }else if(navigator.userAgent.match(/mobile|android|Mobile|Android/)){
+            return "android";
+          }else{
+            return "web";
+          }
+        }
+        var os = getOs();
         if(item.length === 1){
           var left = -item.position().left;
           list.css("left", left);
+
+          if(os === "ios" || os === "android"){
+            // list.offset({
+            //   left : left
+            // });
+            list.each(function(i, e){
+                e.scrollLeft = left;
+            });
+          }
         }
       }, 10);
     }
@@ -186,6 +205,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                 setInfo = new nn.model.Set(set.id);
                 setInfo.get().then(function(){
                     var cid = setInfo.channels.first().id;
+                    channelId = cid;
                     loadChannel(cid);
                 });
             });        
