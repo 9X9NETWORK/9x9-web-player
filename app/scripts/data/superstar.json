@@ -1,0 +1,69 @@
+{
+    "app": [
+        {
+            "mso": "superstar.flipr.tv",
+            "name": "網路大明星 FLIPr",
+            "icon": "images/superstar/icon_200x200.png",
+            "description": "笑到噴飯的搞笑影片、萌到破表的幼兒寵物、超級實用的才藝教學和美妝分享。網路明星最新最夯的線上影片，盡在「網路大明星 FLIPr」！",
+            "calltoaction": "下載給你所有網路大明星！",
+            "ios": "",
+            "android": "",
+            "playeronly" : false
+        }
+    ],
+    "social": [
+      
+    ],
+    "promote": [
+        {
+            "name": "網路紅人蔡阿嘎",
+            "image": "images/superstar/cms-thumbnail-ratio-1.jpg"
+        },
+        {
+            "name": "搞笑團體這群人",
+            "image": "images/superstar/cms-thumbnail-ratio-2.jpg"
+        },
+        {
+            "name": "超人氣圓仔",
+            "image": "images/superstar/cms-thumbnail-ratio-3.jpg"
+        },
+        {
+            "name": "超萌喬喬",
+            "image": "images/superstar/cms-thumbnail-ratio-4.jpg"
+        },
+        {
+            "name": "馬叔叔搖滾彈吉他",
+            "image": "images/superstar/cms-thumbnail-ratio-5.jpg"
+        },
+        {
+            "name": "分手妹陳佩佩",
+            "image": "images/superstar/cms-thumbnail-ratio-6.jpg"
+        }
+    ],
+    "link": [
+        // {
+        //     "name": "MV不解釋 FLIPr",
+        //     "description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
+        //     "icon": "images/mv/app_icon.png"
+        // },
+        // {
+        //     "name": "關鍵評論網 FLIPr",
+        //     "description": "News worth knowing, voices worth sharing. 分享觀點從這開始。",
+        //     "icon": "images/app-group-icon-5.png"
+        // },
+        {
+            "name": "網路大明星 FLIPr",
+            "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
+            "icon": "images/superstar/icon_200x200.png",
+            "ios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv"
+        },
+        {
+            "name": "華視雲端網 FLIPr",
+            "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
+            "icon": "images/cts/app_icon.png",
+            "ios": "",
+            "android": ""
+        }
+    ]
+}
