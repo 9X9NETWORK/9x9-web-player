@@ -41,16 +41,6 @@
         }
     ],
     "link": [
-        // {
-        //     "name": "MV不解釋 FLIPr",
-        //     "description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
-        //     "icon": "images/mv/app_icon.png"
-        // },
-        // {
-        //     "name": "關鍵評論網 FLIPr",
-        //     "description": "News worth knowing, voices worth sharing. 分享觀點從這開始。",
-        //     "icon": "images/app-group-icon-5.png"
-        // },
         {
             "name": "網路大明星 FLIPr",
             "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
