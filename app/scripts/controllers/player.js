@@ -17,6 +17,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
           $("body").addClass("playeronly")
         }
     });
+
     var acct = document.location.host.match (/(dev|stage|alpha)/) ? 'UA-31930874-1' : 'UA-47454448-1';
     var watchedSec = 0, watchedInterval, _d = $.Deferred(), _d1 = $.Deferred();
     var channelId,
@@ -38,7 +39,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
       episodes = channel.episodes;
       if(episodeId){
-          episode = episodes.findByAttr("id", $stateParams.episodeId);
+          episode = episodes.findByAttr("id", episodeId);
           episodeIndex = episodes.index;
       }else{
           episode = episodes.first();
@@ -81,11 +82,8 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
           list.css("left", left);
 
           if(os === "ios" || os === "android"){
-            // list.offset({
-            //   left : left
-            // });
-            list.each(function(i, e){
-                e.scrollLeft = left;
+            list.offset({
+              left : left
             });
           }
         }
@@ -254,15 +252,13 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         });
 
         window.onbeforeunload = function() {
-            console.log("unload");
             _d.resolve();
             _d1.resolve();
             return "Are you sure you want to leave this page?";
         };
     }
 
-    $.get("/playerAPI/brandInfo?mso=" +mso, function(res){
-        //console.log(res);
+    $.get("/playerAPI/brandInfo?mso=" + mso, function(res){
         var rs = res.match(/supported-region\s([a-zA-z]*)/);
         if(rs !== null){
             lang = rs[1]; 

@@ -17,7 +17,6 @@ var mso = getMso();
 var search;
 var lang = "zh";
 nn.global.mso = mso;
-console.log(mso);
 $(document).ready(function(){
     var getOs = function(){
       //console.log(navigator.userAgent);
