@@ -82,6 +82,7 @@ body
 .episode-list-item
     display: inline-block
     width: 7.8rem
+    height: 4.375rem
     margin-right: 0.5rem
     cursor: pointer
    
@@ -184,7 +185,7 @@ body
     .app-item-descript
         display: none 
 .app-download-appstore,.app-download-googleplay    
-    margin: 1rem 1rem 0 1rem
+    margin: 0.5rem 1rem 0 1rem
     text-align: center
     .app-button
         display: inline-block
@@ -195,6 +196,14 @@ body
 
 .is-ios .app-download-googleplay,.is-android .app-download-appstore
     display: none
+.open-in-app
+    display: none
+    color: #fff
+    margin-top: 0.8rem
+    padding-bottom: 0.5rem
+    text-align: center
+    .is-ios &,.is-android &
+        display: block
 
 
 //
@@ -351,6 +360,18 @@ body
         display: block
     .app-item-ios,.app-item-android
         display: none
+    .comingsoon-text
+        font-size: 0.7rem
+        display: none
+    .is-ios &.lack-ios,.is-android &.lack-android
+        .app-item-mobile
+            cursor: default
+        .getit-text
+            display: none
+        .comingsoon-text
+            display: inline-block  
+            line-height: 1rem
+
 
 
     
