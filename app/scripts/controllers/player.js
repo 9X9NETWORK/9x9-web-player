@@ -39,7 +39,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
       episodes = channel.episodes;
       if(episodeId){
-          episode = episodes.findByAttr("id", episodeId);
+          episode = episodes.findByAttr("id", 'e' + episodeId);
           episodeIndex = episodes.index;
       }else{
           episode = episodes.first();
@@ -65,6 +65,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     var initListPosition = function(){
       setTimeout(function(){
         var list = $(".episode-list");
+        var wrap = $(".episode-list-wrap");
         var item = list.find("li.is-playing");
         var getOs = function(){
           // console.log(navigator.userAgent);
@@ -78,16 +79,29 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         }
         var os = getOs();
         if(item.length === 1){
-          var left = -item.position().left;
-          list.css("left", left);
+          var left = item.position().left;
+          if(os === "android"){
 
-          if(os === "ios" || os === "android"){
-            list.offset({
-              left : left
-            });
+            $(".episode-list-wrap").width($(window).width());
+            $(".episode-list").width(125 * episodes.length);
+
+            wrap.scrollLeft(left);
+
+          }else if(os === "ios"){
+
+            $(".episode-list-wrap").width($(window).width());
+            $(".episode-list").width(125 * episodes.length);
+
+            //** dirty fix the ios rendering problem
+            wrap.animate({scrollLeft : left}, 10);
+            $("body").animate({scrollTop:10}, 10);
+
+          }
+          else{
+            list.css("left", -left);
           }
         }
-      }, 10);
+      }, 1000);
     }
 
     var loadApi = function(){
@@ -157,27 +171,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     var init = function(){
 
         var href = location.href.replace("http://", "").replace("https://", "");
-        /*
-        var viewIndex = 0;
-        href = href.split("/");
-        if(href[href.length - 1] === ""){
-          href.pop();
-        }
-        console.log(href);
-
-        for(var i = 0; i<href.length; i++){
-          if(href[i] === "view"){
-            viewIndex = i;
-          }
-        }
-
-        if(viewIndex === href.length - 2){
-          channelId = href[href.length - 1].substr(1);
-        }else if(viewIndex === href.length - 3){
-          channelId = href[href.length - 2].substr(1);
-          episodeId = href[href.length - 1].substr(1);
-        }
-        */
 
         channelId = href.match(/.*\/p([0-9]+)\//);
         episodeId = href.match(/.*\/e([0-9]+)/);
@@ -231,7 +224,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     var initGA = function(){
 
-        acct = gaid || acct;
+        //console.log(acct);
 
         GaReportView("webplayer");
 
@@ -263,22 +256,16 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         if(rs !== null){
             lang = rs[1]; 
         }
-        rs = res.match(/ga\s([a-zA-z]*)/);
+        rs = res.match(/ga\s([a-zA-z\-0-9]*)/);
         if(rs !== null){
             gaid = rs[1]; 
+            acct = gaid;
         }
         init();
+        initGA();
     });
 
-    setTimeout(function(){
-      initGA();
-    }, 1000);
-
     $scope.getListStyle = function(){
-      //60 rem
-      return {
-        left : 0
-      }
     }
 
     $scope.safeApply = function(fn) {
