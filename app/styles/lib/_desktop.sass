@@ -36,6 +36,9 @@ $desktop-large-font: 2.25rem
 
     .episode-list-item
         width: 7rem
+        height: 3.9375rem
+        vertical-align: top
+
     .episode-list-wrap
         padding: 0.2rem 0 0 0
         overflow: hidden
@@ -100,6 +103,18 @@ $desktop-large-font: 2.25rem
         .app-item-android 
             background-position: 0 -2rem 
             left: 14%
+
+        &.lack-ios
+            .app-item-ios
+                background-position: 0 -4rem
+                cursor: default
+
+        &.lack-android
+            .app-item-android
+                background-position: 0 -6rem
+                cursor: default
+
+
     .is-ios,.is-android
         .app-item-link-group
             padding-top: 0.2rem
