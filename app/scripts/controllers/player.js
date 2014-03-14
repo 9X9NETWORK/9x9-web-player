@@ -10,9 +10,45 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     // });
 
     msoService.get().then(function(data){
-        // console.log(data);
+
         $scope.app = data.app[0];
         $scope.social = data.social;
+
+        setTimeout(function(){
+          var src;
+          if($scope.app.ios === ""){
+
+            src = $(".app-download-appstore img").eq(0).attr("src");
+            src = src.split(".")[0] + "_comingsoon.png";
+
+            $(".app-download-appstore img").attr("src", src);
+            $(".app-download-appstore a").click(function(){
+              return false;
+            });
+            
+            // $(".app-item-link-group").addClass("lack-ios");
+            // $(".app-item-link-group a").click(function(){
+            //   return false;
+            // });
+          }
+
+          if($scope.app.android === ""){
+
+            src = $(".app-download-googleplay img").eq(0).attr("src");
+            src = src.split(".")[0] + "_comingsoon.png";
+
+            $(".app-download-googleplay img").attr("src", src);
+             $(".app-download-googleplay a").click(function(){
+              return false;
+            });
+
+            // $(".app-item-link-group").addClass("lack-android");
+            // $(".app-item-link-group a").click(function(){
+            //   return false;
+            // });
+          }
+        }, 1000);
+
         if(data.app[0].playeronly === true){
           $("body").addClass("playeronly")
         }
