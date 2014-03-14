@@ -27,9 +27,9 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             });
             
             // $(".app-item-link-group").addClass("lack-ios");
-            // $(".app-item-link-group a").click(function(){
-            //   return false;
-            // });
+            $(".app-item-link-group.lack-ios a").click(function(){
+              return false;
+            });
           }
 
           if($scope.app.android === ""){
@@ -43,9 +43,9 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             });
 
             // $(".app-item-link-group").addClass("lack-android");
-            // $(".app-item-link-group a").click(function(){
-            //   return false;
-            // });
+            $(".app-item-link-group.lack-android a").click(function(){
+              return false;
+            });
           }
         }, 1000);
 
