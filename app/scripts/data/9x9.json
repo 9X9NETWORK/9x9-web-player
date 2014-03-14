@@ -1,0 +1,16 @@
+{
+    "app": [
+        {
+            "mso": "9x9.flipr.tv",
+            "name": "9x9.tv",
+            "icon": "images/9x9/icon_200x200.png",
+            "description": "Cast YouTube channels onto big screen with Chromecast! You can even remote it by finger flipping, or just immerse yourself in sets of well curated videos.",
+            "calltoaction": "FREE to download now!",
+            "ios": "https://itunes.apple.com/us/app/9x9.tv/id443352510?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tv.tv9x9.player",
+            "playeronly" : true
+        }
+    ]
+    
+    
+}

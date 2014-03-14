@@ -1,0 +1,16 @@
+{
+    "app": [
+        {
+            "mso": "ddtv.flipr.tv",
+            "name": "丁丁電視, Ding Ding TV",
+            "icon": "images/ddtv/icon_200x200.png",
+            "description": "丁丁電視是美國首創華語網絡電視、矽谷創新頻道及視頻製作公司。<br />Ding Ding TV is the first Chinese American Internet TV for Silicon Valley ",
+            "calltoaction": "FREE to download now!",
+            "ios": "https://itunes.apple.com/us/app/ding-ding-tv/id733144372?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tv.ddtv.player9x9tv",
+            "playeronly" : true
+        }
+    ]
+    
+    
+}
