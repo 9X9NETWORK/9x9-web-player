@@ -55,15 +55,15 @@
             "name": "網路大明星 FLIPr",
             "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
             "icon": "images/superstar/icon_200x200.png",
-            "ios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv"
-        },
-        {
-            "name": "華視雲端網 FLIPr",
-            "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
-            "icon": "images/cts/app_icon.png",
             "ios": "",
             "android": ""
+        },
+        {
+            "name": "華視 FLIPr",
+            "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
+            "icon": "images/cts/app_icon.png",
+            "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
         }
     ]
 }
