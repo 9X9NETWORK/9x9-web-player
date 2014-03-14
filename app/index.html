@@ -60,87 +60,91 @@
     <!-- Add your site or application content here -->
     <div class="l-main-container">
       <!-- <div ui-view="player"></div> -->
-      <div class="player-wrap" ng-controller="PlayerCtrl">
-        <div class="player-device">
-            <div class="playback-player">
-                <div id="ytplayer-1"></div>
-            </div>
-            <div class="playback-info">
-                <p class="episode-name">{{episode.name}}</p>
-                <!-- <p class="episode-last-updated">2 hours ago</p> -->
-                <!-- <ul class="playback-info-buttons">
-                    <li class="playback-info-share"><i class="icon-menu"></i></li>
-                    <li class="playback-info-favorite"><i class="icon-search"></i></li>
-                </ul> -->
+      <div class="player-view">
+          <div class="player-wrap" ng-controller="PlayerCtrl">
+            <div class="player-device">
+                <div class="playback-player">
+                    <div id="ytplayer-1"></div>
+                </div>
+
+                <div class="playback-info">
+                    <p class="episode-name">{{episode.name}}</p>
+                    <!-- <p class="episode-last-updated">2 hours ago</p> -->
+                    <!-- <ul class="playback-info-buttons">
+                        <li class="playback-info-share"><i class="icon-menu"></i></li>
+                        <li class="playback-info-favorite"><i class="icon-search"></i></li>
+                    </ul> -->
+                </div>
+
+                <div class="episode-info-wrap">
+                    <div class="playback-episode-src">
+                        <span class="program-from">from</span>
+                        <figure class="program-logo-small">
+                            <img ng-src="{{channel.images[0]}}" >
+                        </figure>
+                        <span class="program-name">{{channel.name}}</span>
+                    </div>
+                    <div class="playback-episode-count">
+                            <span class="episode-number">{{episodes.array.length}}</span>
+                            <span class="episode-text">episodes</span>
+                    </div>
+
+                    <div class="episode-list-wrap" style="position:relative">
+                        <ul class="episode-list" episode-list  style="{{getListStyle()}}">
+                            <li ng-repeat="ep in episodes.array" ng-click="onEpisodeClick(ep.id)" class="episode-list-item {{$index === episodeIndex ? 'is-playing' : ''}}" ng-class="" >
+                                <!-- ng-click="onEpisodeClick(episode.id)" -->
+                                <div class="episode-detail">
+                                    <img class="episode-preview" ng-src="{{ep.thumb}}" alt="{{ep.name}}">
+                                    
+                                    <!-- <div class=""> -->
+                                    <p class="episode-name">{{ep.name}}</p>
+                                    <!-- </div> -->
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="" class="epsode-prev-button" ng-click="slidePrev()"></a>
+                    <a href="" class="epsode-next-button" ng-click="slideNext()"></a>
+                </div>
+
             </div>
 
-            <div class="episode-info-wrap">
-                <div class="playback-episode-src">
-                    <span class="program-from">from</span>
-                    <figure class="program-logo-small">
-                        <img ng-src="{{channel.images[0]}}" >
+            <div class="app-download-wrap">
+                <div class="app-download-info">
+                    <figure class="app-download-icon">
+                        <img src="{{app.icon}}">
                     </figure>
-                    <span class="program-name">{{channel.name}}</span>
-                </div>
-                <div class="playback-episode-count">
-                        <span class="episode-number">{{episodes.array.length}}</span>
-                        <span class="episode-text">episodes</span>
-                </div>
+                    <h1 class="app-name">{{app.name}}</h1>
+                    <p class="app-item-descript">{{app.description}}</div>
+                    <p class="app-download-text">{{app.calltoaction}}</p>
+                    
+                    <div class="app-download-appstore">
 
-                <div class="episode-list-wrap" style="position:relative">
-                    <ul class="episode-list" episode-list  style="{{getListStyle()}}">
-                        <li ng-repeat="ep in episodes.array" ng-click="onEpisodeClick(ep.id)" class="episode-list-item {{$index === episodeIndex ? 'is-playing' : ''}}" ng-class="" >
-                            <!-- ng-click="onEpisodeClick(episode.id)" -->
-                            <div class="episode-detail">
-                                <img class="episode-preview" ng-src="{{ep.thumb}}" alt="{{ep.name}}">
-                                
-                                <!-- <div class=""> -->
-                                <p class="episode-name">{{ep.name}}</p>
-                                <!-- </div> -->
-                            </div>
-                        </li>
+                        <a href="{{app.ios}}" target="_blank" class="app-button">
+                           <img src="images/btn_app_store@x2.png">  
+                       </a>
+                    </div>
+                <div class="app-download-googleplay">
+                    <a href="{{app.android}}" target="_blank" class="app-button">
+                       <img src="images/btn_google_play@x2.png">    
+                    </a>
+                </div>
+            </div>
+
+            <div ng-show="social.length > 0" class="social-media-wrap">
+                <h1 class="social-media-text">或造訪社群</h1>
+                    <ul class="social-media-list">
+                        <li ng-repeat="item in social" class="social-media-item">
+                            <a ng-href="{{item.url}}" target="_blank"><img ng-src="{{item.icon}}" alt=""></a></li>
+                        <!-- <li class="social-media-item"><a href="#"><img src="images/social-media-fb.png" alt=""></a></li>
+                        <li class="social-media-item"><a href="#"><img src="images/social-media-twitter.png" alt=""></a></li>
+                        <li class="social-media-item"><a href="#"><img src="images/social-media-google.png" alt=""></a></li> -->
                     </ul>
-                </div>
-
-                <a href="" class="epsode-prev-button" ng-click="slidePrev()"></a>
-                <a href="" class="epsode-next-button" ng-click="slideNext()"></a>
-            </div>
-
-        </div>
-        <div class="app-download-wrap">
-            <div class="app-download-info">
-                <figure class="app-download-icon">
-                    <img src="{{app.icon}}">
-                </figure>
-                <h1 class="app-name">{{app.name}}</h1>
-                <p class="app-item-descript">{{app.description}}</div>
-                <p class="app-download-text">{{app.calltoaction}}</p>
                 
-                <div class="app-download-appstore">
-
-                    <a href="{{app.ios}}" target="_blank" class="app-button">
-                       <img src="images/btn_app_store@x2.png">  
-                   </a>
-                </div>
-            <div class="app-download-googleplay">
-                <a href="{{app.android}}" target="_blank" class="app-button">
-                   <img src="images/btn_google_play@x2.png">    
-                </a>
             </div>
-        </div>
 
-        <div ng-show="social.length > 0" class="social-media-wrap">
-            <h1 class="social-media-text">或造訪社群</h1>
-                <ul class="social-media-list">
-                    <li ng-repeat="item in social" class="social-media-item">
-                        <a ng-href="{{item.url}}" target="_blank"><img ng-src="{{item.icon}}" alt=""></a></li>
-                    <!-- <li class="social-media-item"><a href="#"><img src="images/social-media-fb.png" alt=""></a></li>
-                    <li class="social-media-item"><a href="#"><img src="images/social-media-twitter.png" alt=""></a></li>
-                    <li class="social-media-item"><a href="#"><img src="images/social-media-google.png" alt=""></a></li> -->
-                </ul>
-            
-        </div>
-
+          </div>
       </div>
       <div ui-view="promote"></div>
       <div ui-view="appGroup"></div>
