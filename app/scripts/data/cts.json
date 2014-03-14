@@ -2,7 +2,7 @@
     "app": [
         {
             "mso": "cts.9x9.tv",
-            "name": "華視雲端網 FLIPr",
+            "name": "華視 FLIPr",
             "icon": "images/cts/app_icon.png",
             "description": "本APP專為喜愛華視節目之觀眾設計，讓粉絲在各種螢幕上，隨時隨地，都能收看即時又精彩的節目！簡易直覺的操作，上下左右翻。就像在家中客廳看電視一樣的簡單。",
             "calltoaction": "立刻免費下載給你看更多！",
@@ -39,7 +39,7 @@
             "image": "images/cts/cms-thumbnail-ratio-2.jpg"
         },
         {
-            "name": "POWER星期天",
+            "name": "點燈",
             "image": "images/cts/cms-thumbnail-ratio-3.jpg"
         },
         {
@@ -67,11 +67,11 @@
         //     "icon": "images/app-group-icon-5.png"
         // },
         {
-            "name": "Good TV FLIPr",
-            "description": "您是Good TV的忠實觀眾嗎？帶給人們信心、希望、與真愛的電視台，趕快來看。",
-            "icon": "images/app_icon_goodtv_200x200.png",
-            "ios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv"
+            "name": "網路大明星 FLIPr",
+            "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
+            "icon": "images/superstar/icon_200x200.png",
+            "ios": "",
+            "android": ""
         },
         {
             "name": "華視雲端網 FLIPr",
