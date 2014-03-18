@@ -1,0 +1,86 @@
+{
+    "app": [
+        {
+            "mso": "echomusic.flipr.tv",
+            "name": "証聲音樂圖書館 FLIPr",
+            "icon": "images/echomusic/app_icon.png",
+            "description": "音樂像塊拼圖，總有屬於它的故事和適合的位置。証聲希望幫每個音符都找到它的家！有時簡單的一首歌，一點旋律或一個音符就能在無形中進入聽眾的心中。",
+            "calltoaction": "立刻免費下載給你看更多！",
+            "ios": "",
+            "android": "",
+            "playeronly" : false
+        }
+    ],
+    "social": [
+
+        {
+            "icon": "images/social-media-fb.png",
+            "url": "https://www.facebook.com/echomusiclibrary"
+        },
+        {
+            "icon": "images/echomusic/social-media-echomusic.png",
+            "url": "http://www.echomusic.com.tw/"
+        },
+        {
+            "icon": "images/social-media-kkbox.png",
+            "url": "http://kkbox.fm/4p0y2R"
+        },
+        {
+            "icon": "images/social-media-youtube.png",
+            "url": "https://www.youtube.com/user/SuperEchomusic"
+        }
+    ],
+    "promote": [ 
+
+        {
+            "name": "品味生活",
+            "image": "images/echomusic/cms-thumbnail-ratio-1.jpg"
+        },
+        {
+            "name": "運動派對的音樂筆記本",
+            "image": "images/echomusic/cms-thumbnail-ratio-2.jpg"
+        },
+        {
+            "name": "陳列在美術館的歌",
+            "image": "images/echomusic/cms-thumbnail-ratio-3.jpg"
+        },
+        {
+            "name": "我不在咖啡館，就是在往咖啡館的路上",
+            "image": "images/echomusic/cms-thumbnail-ratio-4.jpg"
+        },
+        {
+            "name": "古典音樂饗宴",
+            "image": "images/echomusic/cms-thumbnail-ratio-5.jpg"
+        },
+        {
+            "name": "ECHO MUSIC TOP 100",
+            "image": "images/echomusic/cms-thumbnail-ratio-6.jpg"
+        }
+    ],
+    "link": [
+        // {
+        //     "name": "MV不解釋 FLIPr",
+        //     "description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
+        //     "icon": "images/mv/app_icon.png"
+        // },
+        // {
+        //     "name": "關鍵評論網 FLIPr",
+        //     "description": "News worth knowing, voices worth sharing. 分享觀點從這開始。",
+        //     "icon": "images/app-group-icon-5.png"
+        // },
+        {
+            "name": "網路大明星 FLIPr",
+            "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
+            "icon": "images/superstar/icon_200x200.png",
+            "ios": "",
+            "android": ""
+        },
+        {
+            "name": "華視雲端網 FLIPr",
+            "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
+            "icon": "images/cts/app_icon.png",
+            "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
+        }
+    ]
+}

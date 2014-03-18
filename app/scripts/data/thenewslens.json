@@ -1,0 +1,90 @@
+{
+    "app": [
+        {
+            "mso": "thenewslens.flipr.tv",
+            "name": "關鍵評論網 FLIPr",
+            "icon": "images/thenewslens/app_icon.png",
+            "description": "每天傳送給讀者最精華最重要的數則影音新聞，短短77秒，輕鬆無負擔又可快速掌握國內外重點。拒絕腥羶色，只有你每天最該知道、影響你未來的趨勢觀察。",
+            "calltoaction": "立刻免費下載給你看更多！",
+            "ios": "",
+            "android": "",
+            "playeronly" : false
+        }
+    ],
+    "social": [
+        {
+            "icon": "images/thenewslens/social-media-tnl.png",
+            "url": "http://www.thenewslens.com/"
+        },
+        {
+            "icon": "images/social-media-fb.png",
+            "url": "https://www.facebook.com/TheNewsLens"
+        },
+        {
+            "icon": "images/social-media-twitter.png",
+            "url": "https://twitter.com/TheNewsLens"
+        },
+        {
+            "icon": "images/social-media-google.png",
+            "url": "https://plus.google.com/+TheNewsLens/posts"
+        },
+        {
+            "icon": "images/social-media-plurk.png",
+            "url": "http://www.plurk.com/TheNewsLens"
+        }
+    ],
+    "promote": [ 
+    
+
+        {
+            "name": "午間77秒",
+            "image": "images/thenewslens/cms-thumbnail-ratio-1.jpg"
+        },
+        {
+            "name": "晚間77秒",
+            "image": "images/thenewslens/cms-thumbnail-ratio-2.jpg"
+        },
+        {
+            "name": "國際",
+            "image": "images/thenewslens/cms-thumbnail-ratio-3.jpg"
+        },
+        {
+            "name": "政治",
+            "image": "images/thenewslens/cms-thumbnail-ratio-4.jpg"
+        },
+        {
+            "name": "財經",
+            "image": "images/thenewslens/cms-thumbnail-ratio-5.jpg"
+        },
+        {
+            "name": "人氣新聞",
+            "image": "images/thenewslens/cms-thumbnail-ratio-6.jpg"
+        }
+    ],
+    "link": [
+        // {
+        //     "name": "MV不解釋 FLIPr",
+        //     "description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
+        //     "icon": "images/mv/app_icon.png"
+        // },
+        // {
+        //     "name": "關鍵評論網 FLIPr",
+        //     "description": "News worth knowing, voices worth sharing. 分享觀點從這開始。",
+        //     "icon": "images/app-group-icon-5.png"
+        // },
+        {
+            "name": "網路大明星 FLIPr",
+            "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
+            "icon": "images/superstar/icon_200x200.png",
+            "ios": "",
+            "android": ""
+        },
+        {
+            "name": "華視雲端網 FLIPr",
+            "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
+            "icon": "images/cts/app_icon.png",
+            "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
+        }
+    ]
+}
