@@ -208,7 +208,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
         var href = location.href.replace("http://", "").replace("https://", "");
 
-        channelId = href.match(/.*\/p([0-9]+)\//);
+        channelId = href.match(/.*\/p([0-9]+)(\/|$)/);
         episodeId = href.match(/.*\/e([0-9]+)/);
 
         if(episodeId !== null){
