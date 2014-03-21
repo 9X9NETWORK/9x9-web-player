@@ -66,7 +66,7 @@
         {
             "name": "華視雲端網 FLIPr",
             "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
-            "icon": "images/echomusic/app_icon.png",
+            "icon": "images/cts/app_icon.png",
             "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
         },
