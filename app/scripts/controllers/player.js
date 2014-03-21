@@ -24,12 +24,12 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             $(".app-download-appstore img").attr("src", src);
             $(".app-download-appstore a").click(function(){
               return false;
-            });
+            }).removeAttr("href");
             
             // $(".app-item-link-group").addClass("lack-ios");
             $(".app-item-link-group.lack-ios a").click(function(){
               return false;
-            });
+            }).removeAttr("href");
           }
 
           if($scope.app.android === ""){
@@ -38,14 +38,14 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             src = src.split(".")[0] + "_comingsoon.png";
 
             $(".app-download-googleplay img").attr("src", src);
-             $(".app-download-googleplay a").click(function(){
+            $(".app-download-googleplay a").click(function(){
               return false;
-            });
+            }).removeAttr("href");
 
             // $(".app-item-link-group").addClass("lack-android");
             $(".app-item-link-group.lack-android a").click(function(){
               return false;
-            });
+            }).removeAttr("href");
           }
         }, 1000);
 

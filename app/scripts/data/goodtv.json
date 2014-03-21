@@ -1,0 +1,95 @@
+{
+    "app": [
+        {
+            "mso": "goodtv.9x9.tv",
+            "name": "GOOD TV FLIPr",
+            "icon": "images/goodtv/app_icon.png",
+            "description": "本APP專為喜愛GOOD TV之觀眾設計，讓粉絲在各種螢幕上，隨時隨地，都能收看即時又精彩的節目！簡易直覺的操作，上下左右翻，就像在家中客廳看電視一樣的簡單。",
+            "calltoaction": "立刻免費下載，好消息帶著走！",
+            "ios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv",
+            "playeronly" : false
+        }
+    ],
+    "social": [
+        {
+            "icon": "images/social-media-fb.png",
+            "url": "https://www.facebook.com/goodtv"
+        },
+        {
+            "icon": "images/social-media-google.png",
+            "url": "https://plus.google.com/112408150725302065226/posts"
+        },
+        {
+            "icon": "images/social-media-youtube.png",
+            "url": "http://www.youtube.com/goodtv"
+        },
+        {
+            "icon": "images/social_media_icon_goodtv.png",
+            "url": "http://www.goodtv.tv"
+        }
+    ],
+    "promote": [
+        {
+            "name": "真情部落格",
+            "image": "images/goodtv/cms-thumbnail-ratio-1.jpg"
+        },
+        {
+            "name": "每日音符",
+            "image": "images/goodtv/cms-thumbnail-ratio-2.jpg"
+        },
+        {
+            "name": "禱告大軍",
+            "image": "images/goodtv/cms-thumbnail-ratio-3.jpg"
+        },
+        {
+            "name": "幸福來敲門",
+            "image": "images/goodtv/cms-thumbnail-ratio-4.jpg"
+        },
+        {
+            "name": "空中主日學",
+            "image": "images/goodtv/cms-thumbnail-ratio-5.jpg"
+        },
+        {
+            "name": "烤箱讀書會",
+            "image": "images/goodtv/cms-thumbnail-ratio-6.jpg"
+        }
+    ],
+    "link": [
+        {
+            "name": "網路大明星 FLIPr",
+            "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
+            "icon": "images/superstar/icon_200x200.png",
+            "ios": "",
+            "android": ""
+        },
+        {
+            "name": "華視雲端網 FLIPr",
+            "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
+            "icon": "images/cts/app_icon.png",
+            "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
+        },
+        {
+            "name": "GOOD TV FLIPr",
+            "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
+            "icon": "images/goodtv/app_icon.png",
+            "ios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv"
+        },
+        {
+            "name": "關鍵評論網 FLIPr",
+            "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
+            "icon": "images/thenewslens/app_icon.png",
+            "ios": "",
+            "android": ""
+        },
+        {
+            "name": "証聲音樂圖書館 FLIPr",
+            "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
+            "icon": "images/echomusic/app_icon.png",
+            "ios": "",
+            "android": ""
+        }
+    ]
+}
