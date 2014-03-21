@@ -14,6 +14,10 @@
     "social": [
         {
             "icon": "images/social-media-fb.png",
+            "url": "http://www.thenewslens.com/"
+        },
+        {
+            "icon": "images/social-media-fb.png",
             "url": "https://www.facebook.com/thenewslens"
         },
         {
@@ -58,21 +62,21 @@
     "link": [
         {
             "name": "GOOD TV FLIPr",
-            "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
+            "description": "好消息電視台，是重視家庭價值、關懷社會與人心，帶給人們信心、希望、與真愛的電視台！",
             "icon": "images/goodtv/app_icon.png",
             "ios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv"
         },
         {
             "name": "關鍵評論網 FLIPr",
-            "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
+            "description": "News worth knowing, voices worth sharing 分享觀點從這開始",
             "icon": "images/thenewslens/app_icon.png",
             "ios": "",
             "android": ""
         },
         {
             "name": "証聲音樂圖書館 FLIPr",
-            "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
+            "description": "音樂就像一塊拼圖，總有屬於它的故事和適合的位置。証聲希望能幫每個音符都找到它的家！",
             "icon": "images/echomusic/app_icon.png",
             "ios": "",
             "android": ""
@@ -90,6 +94,6 @@
             "icon": "images/cts/app_icon.png",
             "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
-        }  
+        }        
     ]
 }

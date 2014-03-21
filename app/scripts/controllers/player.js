@@ -211,6 +211,8 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         channelId = href.match(/.*\/p([0-9]+)(\/|$)/);
         episodeId = href.match(/.*\/e([0-9]+)/);
 
+        console.log(channelId);
+
         if(episodeId !== null){
             if(typeof episodeId === "object" && episodeId != null){
                 if(episodeId.length > 1){
