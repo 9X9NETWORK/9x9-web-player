@@ -13,7 +13,7 @@
     ],
     "social": [
         {
-            "icon": "images/social-media-fb.png",
+            "icon": "images/social_media_icon_thenewslens.png",
             "url": "http://www.thenewslens.com/"
         },
         {
@@ -29,7 +29,7 @@
             "url": "https://plus.google.com/+TheNewsLens/posts"
         },
         {
-            "icon": "images/social-media-plurk.png",
+            "icon": "images/social_media_icon_plurk.png",
             "url": "http://www.plurk.com/TheNewsLens"
         }
     ],
