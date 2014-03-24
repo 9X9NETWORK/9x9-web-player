@@ -289,7 +289,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         };
     }
 
-    $.get("/playerAPI/brandInfo?mso=" + mso, function(res){
+    $.get("/playerAPI/brandInfo?mso=" + mso + "&os=web", function(res){
         var rs = res.match(/supported-region\s([a-zA-z]*)/);
         if(rs !== null){
             lang = rs[1]; 
