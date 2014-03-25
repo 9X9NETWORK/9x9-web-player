@@ -7,7 +7,7 @@
             "description": "每天傳送給讀者最精華最重要的數則影音新聞，短短77秒，輕鬆無負擔又可快速掌握國內外重點。拒絕腥羶色，只有你每天最該知道、影響你未來的趨勢觀察。",
             "calltoaction": "立刻免費下載給你看更多！",
             "ios": "",
-            "android": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens",
             "playeronly" : false
         }
     ],
