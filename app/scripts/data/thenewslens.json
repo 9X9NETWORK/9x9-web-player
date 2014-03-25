@@ -72,7 +72,7 @@
             "description": "News worth knowing, voices worth sharing 分享觀點從這開始",
             "icon": "images/thenewslens/app_icon.png",
             "ios": "",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens"
+            "android" : "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens"
         },
         {
             "name": "証聲音樂圖書館 FLIPr",
