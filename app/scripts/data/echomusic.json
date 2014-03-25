@@ -1,37 +1,35 @@
 {
     "app": [
         {
-            "mso": "echomusic.flipr.tv",
+            "mso": "echomusic.9x9.tv",
             "name": "証聲音樂圖書館 FLIPr",
             "icon": "images/echomusic/app_icon.png",
             "description": "音樂像塊拼圖，總有屬於它的故事和適合的位置。証聲希望幫每個音符都找到它的家！有時簡單的一首歌，一點旋律或一個音符就能在無形中進入聽眾的心中。",
-            "calltoaction": "立刻免費下載給你看更多！",
+            "calltoaction": "立刻免費下載翻更多！",
             "ios": "",
             "android": "",
             "playeronly" : false
         }
     ],
     "social": [
-
         {
             "icon": "images/social-media-fb.png",
-            "url": "https://www.facebook.com/echomusiclibrary"
+            "url": "https://www.facebook.com/echomusic"
         },
         {
-            "icon": "images/echomusic/social-media-echomusic.png",
+            "icon": "images/social_media_icon_echomusic.png",
             "url": "http://www.echomusic.com.tw/"
-        },
-        {
-            "icon": "images/social-media-kkbox.png",
-            "url": "http://kkbox.fm/4p0y2R"
         },
         {
             "icon": "images/social-media-youtube.png",
             "url": "https://www.youtube.com/user/SuperEchomusic"
+        },
+        {
+            "icon": "images/social_media_icon_kkbox.png",
+            "url": "http://kkbox.fm/4p0y2R"
         }
     ],
-    "promote": [ 
-
+    "promote": [
         {
             "name": "品味生活",
             "image": "images/echomusic/cms-thumbnail-ratio-1.jpg"
@@ -58,16 +56,27 @@
         }
     ],
     "link": [
-        // {
-        //     "name": "MV不解釋 FLIPr",
-        //     "description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
-        //     "icon": "images/mv/app_icon.png"
-        // },
-        // {
-        //     "name": "關鍵評論網 FLIPr",
-        //     "description": "News worth knowing, voices worth sharing. 分享觀點從這開始。",
-        //     "icon": "images/app-group-icon-5.png"
-        // },
+        {
+            "name": "GOOD TV FLIPr",
+            "description": "好消息電視台，是重視家庭價值、關懷社會與人心，帶給人們信心、希望、與真愛的電視台！",
+            "icon": "images/goodtv/app_icon.png",
+            "ios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv"
+        },
+        {
+            "name": "關鍵評論網 FLIPr",
+            "description": "News worth knowing, voices worth sharing 分享觀點從這開始",
+            "icon": "images/thenewslens/app_icon.png",
+            "ios": "",
+            "android": ""
+        },
+        {
+            "name": "証聲音樂圖書館 FLIPr",
+            "description": "音樂就像一塊拼圖，總有屬於它的故事和適合的位置。証聲希望能幫每個音符都找到它的家！",
+            "icon": "images/echomusic/app_icon.png",
+            "ios": "",
+            "android": ""
+        },
         {
             "name": "網路大明星 FLIPr",
             "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
@@ -81,6 +90,6 @@
             "icon": "images/cts/app_icon.png",
             "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
-        }
+        }        
     ]
 }
