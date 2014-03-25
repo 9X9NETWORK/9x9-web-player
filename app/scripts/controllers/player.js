@@ -132,6 +132,10 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             wrap.animate({scrollLeft : left}, 10);
             $("body").animate({scrollTop:10}, 10);
 
+            setTimeout(function(){
+              wrap.animate({scrollLeft : left}, 10);
+            }, 500);
+
           }
           else{
             list.css("left", -left);
