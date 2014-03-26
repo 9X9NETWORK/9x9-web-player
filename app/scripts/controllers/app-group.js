@@ -3,10 +3,8 @@
 ld.controller('AppGroupCtrl', function ($scope, msoService){
   	
 	msoService.get().then(function(data){
-		
-		$scope.$apply(function(){
-			$scope.items = data.link;
-		});
+
+		$scope.items = data.link;
 
 		for(var i = 0; i<data.link.length; i++){
 
@@ -14,7 +12,7 @@ ld.controller('AppGroupCtrl', function ($scope, msoService){
 				(function(num){
 					setTimeout(function(){
 						$("li.app-group-item").eq(num).find("a.app-item-ios").removeAttr("href");
-					},100);
+					},10);
 				})(i);
 			}
 
@@ -22,7 +20,7 @@ ld.controller('AppGroupCtrl', function ($scope, msoService){
 				(function(num){
 					setTimeout(function(){
 						$("li.app-group-item").eq(num).find("a.app-item-android").removeAttr("href");
-					},100);
+					},10);
 				})(i);
 			}
 		}

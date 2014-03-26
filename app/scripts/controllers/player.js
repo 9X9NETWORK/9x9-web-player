@@ -27,13 +27,13 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             }).removeAttr("href");
             
             // $(".app-item-link-group").addClass("lack-ios");
-            $(".app-item-link-group.lack-ios a").click(function(){
+            $(".app-item-link-group.lack-ios a.app-item-ios").click(function(){
               return false;
             }).removeAttr("href");
           }
 
-          if($scope.app.android === ""){
 
+          if($scope.app.android === ""){
             src = $(".app-download-googleplay img").eq(0).attr("src");
             src = src.split(".")[0] + "_comingsoon.png";
 
@@ -125,7 +125,17 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
           }else if(os === "ios"){
 
-            $(".episode-list-wrap").width($(window).width());
+            var w = $(".episode-list li").eq(0).width();
+            var onresize = function(e){
+              if($(window).width() < $(window).height()){
+                $(".episode-list-wrap").width($(window).width());
+              }else{
+                $(".episode-list-wrap").width(517);
+              }
+            }
+            $(window).resize(onresize);
+            onresize();
+
             $(".episode-list").width(125 * episodes.length);
 
             //** dirty fix the ios rendering problem
