@@ -116,6 +116,21 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         var os = getOs();
         if(item.length === 1){
           var left = item.position().left;
+          var onresize = function(e){
+              if($(window).width() < $(window).height()){
+                $(".episode-list-wrap").width($(window).width());
+              }else{
+                $(".episode-list-wrap").width($("#ytplayer-1").width());
+                /*
+                if($(".app-item-descript")){
+                  $(".episode-list-wrap").width(517);
+                }else{
+
+                }*/
+              }
+          }
+          $(window).resize(onresize);
+          onresize();
           if(os === "android"){
 
             $(".episode-list-wrap").width($(window).width());
@@ -124,17 +139,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             wrap.scrollLeft(left);
 
           }else if(os === "ios"){
-
-            var w = $(".episode-list li").eq(0).width();
-            var onresize = function(e){
-              if($(window).width() < $(window).height()){
-                $(".episode-list-wrap").width($(window).width());
-              }else{
-                $(".episode-list-wrap").width(517);
-              }
-            }
-            $(window).resize(onresize);
-            onresize();
 
             $(".episode-list").width(125 * episodes.length);
 
