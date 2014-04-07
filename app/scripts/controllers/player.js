@@ -63,9 +63,15 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     var loadChannel = function(cid){
         //cid = "8846";
+        console.log(episodeId);
         channel = new nn.model.Channel(cid);
         channel.get().then(function(){
-            channel.loadEpisodes().then(onChannelLoaded);
+            if(episodeId){
+              channel.loadEpisodes(episodeId).then(onChannelLoaded);
+              //channel.loadEpisodes().then(onChannelLoaded);
+            }else{
+              channel.loadEpisodes().then(onChannelLoaded);
+            }
             $("body").show();
         });
         channel.watched = 0;
@@ -229,8 +235,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         channelId = href.match(/.*\/p([0-9]+)(\/|$)/);
         episodeId = href.match(/.*\/e([0-9]+)/);
 
-        console.log(channelId);
-
         if(episodeId !== null){
             if(typeof episodeId === "object" && episodeId != null){
                 if(episodeId.length > 1){
@@ -243,6 +247,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                   channelId = channelId[1];
               }
         }
+        console.log(episodeId);
         if(channelId === null){
         //if(true){  
             var portal = new nn.model.Portal(mso, true, lang);
@@ -260,7 +265,16 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             loadChannel(channelId);
         }
 
-        player  = new nn.Player("ytplayer-1", true);
+        if($scope.app.playerControl){
+          if($scope.app.playerControl === false){
+            player  = new nn.Player("ytplayer-1", true, false);
+          }else{
+            player  = new nn.Player("ytplayer-1", true);
+          }
+        }else{
+          player  = new nn.Player("ytplayer-1", true);
+        }
+        
         loadApi();
     }
 

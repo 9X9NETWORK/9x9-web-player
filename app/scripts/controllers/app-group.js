@@ -12,7 +12,7 @@ ld.controller('AppGroupCtrl', function ($scope, msoService){
 				(function(num){
 					setTimeout(function(){
 						$("li.app-group-item").eq(num).find("a.app-item-ios").removeAttr("href");
-					},10);
+					},500);
 				})(i);
 			}
 
@@ -20,7 +20,7 @@ ld.controller('AppGroupCtrl', function ($scope, msoService){
 				(function(num){
 					setTimeout(function(){
 						$("li.app-group-item").eq(num).find("a.app-item-android").removeAttr("href");
-					},10);
+					},500);
 				})(i);
 			}
 		}

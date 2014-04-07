@@ -8,7 +8,8 @@
             "calltoaction": "立刻免費下載翻更多！",
             "ios": "",
             "android": "",
-            "playeronly" : false
+            "playeronly" : false,
+            "playerControl" : false
         }
     ],
     "social": [
