@@ -58,7 +58,7 @@
         {
             "name": "網路大明星 FLIPr",
             "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
-            "icon": "images/superstar/app_icon.png",
+            "icon": "images/superstar/icon_200x200.png",
             "ios": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
             "android": ""
         },
@@ -72,7 +72,7 @@
         {
             "name": "GOOD TV FLIPr",
             "description": "好消息電視台，是重視家庭價值、關懷社會與人心，帶給人們信心、希望、與真愛的電視台！",
-            "icon": "images/goodtv/icon_200x200.png",
+            "icon": "images/goodtv/app_icon.png",
             "ios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv"
         },
