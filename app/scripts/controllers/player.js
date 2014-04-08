@@ -16,8 +16,10 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
         setTimeout(function(){
           var src;
+          console.log($scope.app.ios);
           if($scope.app.ios === ""){
 
+            console.log(1);
             src = $(".app-download-appstore img").eq(0).attr("src");
             src = src.split(".")[0] + "_comingsoon.png";
 
