@@ -6,8 +6,8 @@
             "icon": "images/mv/app_icon.png",
             "description": "想收到最新最快的音樂MV和樂壇消息，卻厭倦打開網頁和搜尋的繁瑣過程，「MV不解釋」讓你隨時更新音樂情報，隨時讓你耳目一新！",
             "calltoaction": "擁有最fashion的MV廣播電台！",
-            "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player",
+            "ios": "",
+            "android": "",
             "playeronly" : false
         }
     ],
@@ -42,12 +42,30 @@
         {
             "name": "MV不解釋 FLIPr",
             "description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
-            "icon": "images/mv/app_icon.png"
+            "icon": "images/mv/icon_200x200.png",
+            "ios": "",
+            "android": ""
+        },
+        {
+            "name": "証聲音樂圖書館 FLIPr",
+            "description": "音樂就像一塊拼圖，總有屬於它的故事和適合的位置。証聲希望能幫每個音符都找到它的家！",
+            "icon": "images/echomusic/icon_200x200.png",
+            "ios": "",
+            "android": ""
+        },
+        {
+            "name": "網路大明星 FLIPr",
+            "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
+            "icon": "images/superstar/icon_200x200.png",
+            "ios": "",
+            "android": ""
         },
         {
             "name": "關鍵評論網 FLIPr",
             "description": "News worth knowing, voices worth sharing. 分享觀點從這開始。",
-            "icon": "images/app-group-icon-5.png"
+            "icon": "images/thenewslens/icon_200x200.png",
+            "ios": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens"
         },
         {
             "name": "Good TV FLIPr",
