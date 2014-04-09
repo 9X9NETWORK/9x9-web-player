@@ -14,10 +14,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         $scope.app = data.app[0];
         $scope.social = data.social;
 
-        if($scope.social.length > 0){
-          $(".playeronly .social-media-wrap").show();
-        }
-
         setTimeout(function(){
           var src;
           if($scope.app.ios === ""){
@@ -54,6 +50,11 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             }).removeAttr("href");
             */
           }
+
+          if($scope.social.length > 0){
+            $(".playeronly .social-media-wrap").css("display", "block");
+          }
+
         }, 1000);
 
         if(data.app[0].playeronly === true){
