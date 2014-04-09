@@ -21,6 +21,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             src = src.split(".")[0] + "_comingsoon.png";
 
             $(".app-download-appstore img").attr("src", src);
+            /*
             $(".app-download-appstore a").click(function(){
               return false;
             }).removeAttr("href");
@@ -29,6 +30,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             $(".app-item-link-group.lack-ios a.app-item-ios").click(function(){
               return false;
             }).removeAttr("href");
+            */
           }
 
 
@@ -37,6 +39,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             src = src.split(".")[0] + "_comingsoon.png";
 
             $(".app-download-googleplay img").attr("src", src);
+            /*
             $(".app-download-googleplay a").click(function(){
               return false;
             }).removeAttr("href");
@@ -45,6 +48,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             $(".app-item-link-group.lack-android a").click(function(){
               return false;
             }).removeAttr("href");
+            */
           }
         }, 1000);
 
@@ -263,7 +267,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             loadChannel(channelId);
         }
 
-        if($scope.app.playerControl){
+        if($scope.app.playerControl !== undefined){
           if($scope.app.playerControl === false){
             player  = new nn.Player("ytplayer-1", true, false);
           }else{
