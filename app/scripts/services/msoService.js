@@ -23,9 +23,15 @@ ld.service("msoService", function($http){
 		if(loaded){
 			_d.resolve(data);
 		}else{
+			var jsonName = mso;
+			if(mso === "9x9"){
+				if(navigator.language === "zh-TW" || navigator.language === "zh-CN"){
+					jsonName = mso + ".zh";
+				}
+			}
 			$http({
 			  	"method" : "get",
-			  	"url" : "scripts/data/" + mso + ".json"
+			  	"url" : "scripts/data/" + jsonName + ".json"
 			})
 			.success(function(data){
 				//var brandInfo = parseBrandInfo(data);
