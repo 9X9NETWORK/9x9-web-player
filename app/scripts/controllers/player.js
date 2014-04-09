@@ -66,7 +66,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     var loadChannel = function(cid){
         //cid = "8846";
-        console.log(episodeId);
         channel = new nn.model.Channel(cid);
         channel.get().then(function(){
             if(episodeId){
@@ -333,6 +332,14 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             gaid = rs[1]; 
             acct = gaid;
         }
+        if(mso === "9x9"){
+          if(navigator.language === "zh-TW" || navigator.language === "zh-CN"){
+            lang = "zh";
+          }else{
+            lang = "en";
+          }
+        }
+        console.log(lang);
         init();
         initGA();
     });
