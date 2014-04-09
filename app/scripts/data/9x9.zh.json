@@ -10,5 +10,15 @@
             "android": "https://play.google.com/store/apps/details?id=tv.tv9x9.player",
             "playeronly" : true
         }
+    ],
+    "social": [
+        {
+            "icon": "images/social-media-fb.png",
+            "url": "https://www.facebook.com/tw.9x9.tv"
+        },
+        {
+            "icon": "images/social_media_icon_9x9.png",
+            "url": "http://www.9x9.tv/zh/"
+        }
     ]
 }
