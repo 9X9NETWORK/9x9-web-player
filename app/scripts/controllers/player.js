@@ -14,6 +14,10 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         $scope.app = data.app[0];
         $scope.social = data.social;
 
+        if($scope.social.length > 0){
+          $(".playeronly .social-media-wrap").show();
+        }
+
         setTimeout(function(){
           var src;
           if($scope.app.ios === ""){
