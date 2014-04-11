@@ -6,7 +6,7 @@
             "icon": "images/networka/icon_200x200.png",
             "description": "Fill those 10-minute breaks with adrenaline-pumping stunts including skateboarding and much more on-the-go, or on the big screen with Chromecast! ",
             "calltoaction": "FREE to download now!",
-            "ios": "",
+            "ios": "https://itunes.apple.com/us/app/network-a-on-flipr-unoffical/id815184188?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tv.flipr.networka",
             "playeronly" : true
         }

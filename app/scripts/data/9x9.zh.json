@@ -1,0 +1,24 @@
+{
+    "app": [
+        {
+            "mso": "9x9.flipr.tv",
+            "name": "9x9.tv",
+            "icon": "images/9x9/icon_200x200.png",
+            "description": "蒐羅每日生活所需的大小主題線上影視節目，大至古今中外新聞政治，小至偶像寵物搞笑美食。9x9.tv是影視策展人的實驗園地，也是所有觀眾人人天天的精神食糧。沒事看看，利大於弊！",
+            "calltoaction": "立刻免費下載看更多！",
+            "ios": "https://itunes.apple.com/us/app/9x9.tv/id443352510?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tv.tv9x9.player",
+            "playeronly" : true
+        }
+    ],
+    "social": [
+        {
+            "icon": "images/social-media-fb.png",
+            "url": "https://www.facebook.com/tw.9x9.tv"
+        },
+        {
+            "icon": "images/social-media-icon-9x9.jpg",
+            "url": "http://www.9x9.tv/zh/"
+        }
+    ]
+}
