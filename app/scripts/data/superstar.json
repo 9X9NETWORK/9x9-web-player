@@ -7,7 +7,7 @@
             "description": "笑到噴飯的搞笑影片、萌到破表的幼兒寵物、超級實用的才藝教學和美妝分享。網路明星最新最夯的線上影片，盡在「網路大明星 FLIPr」！",
             "calltoaction": "下載給你所有網路大明星！",
             "ios": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
-            "android": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.superstar",
             "playeronly" : false
         }
     ],
@@ -60,7 +60,7 @@
             "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
             "icon": "images/superstar/icon_200x200.png",
             "ios": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
-            "android": ""
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.superstar"
         },
         {
             "name": "關鍵評論網 FLIPr",
