@@ -6,7 +6,7 @@
             "icon": "images/thenewslens/app_icon.png",
             "description": "每天傳送給讀者最精華最重要的數則影音新聞，短短77秒，輕鬆無負擔又可快速掌握國內外重點。拒絕腥羶色，只有你每天最該知道、影響你未來的趨勢觀察。",
             "calltoaction": "立刻免費下載給你看更多！",
-            "ios": "",
+            "ios": "https://itunes.apple.com/cn/app/guan-jian-ping-lun-wang-flipr/id842456259?l=en&mt=8",
             "android": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens",
             "playeronly" : false
         }
@@ -85,7 +85,7 @@
             "name": "關鍵評論網 FLIPr",
             "description": "News worth knowing, voices worth sharing 分享觀點從這開始",
             "icon": "images/thenewslens/icon_200x200.png",
-            "ios": "",
+            "ios": "https://itunes.apple.com/cn/app/guan-jian-ping-lun-wang-flipr/id842456259?l=en&mt=8",
             "android": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens"
         },
         {
