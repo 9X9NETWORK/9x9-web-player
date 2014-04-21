@@ -9,59 +9,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     // });
 
-    msoService.get().then(function(data){
-
-        $scope.app = data.app[0];
-        $scope.social = data.social;
-
-        setTimeout(function(){
-          var src;
-          if($scope.app.ios === ""){
-            src = $(".app-download-appstore img").eq(0).attr("src");
-            src = src.split(".")[0] + "_comingsoon.png";
-
-            $(".app-download-appstore img").attr("src", src);
-            /*
-            $(".app-download-appstore a").click(function(){
-              return false;
-            }).removeAttr("href");
-            
-            // $(".app-item-link-group").addClass("lack-ios");
-            $(".app-item-link-group.lack-ios a.app-item-ios").click(function(){
-              return false;
-            }).removeAttr("href");
-            */
-          }
-
-
-          if($scope.app.android === ""){
-            src = $(".app-download-googleplay img").eq(0).attr("src");
-            src = src.split(".")[0] + "_comingsoon.png";
-
-            $(".app-download-googleplay img").attr("src", src);
-            /*
-            $(".app-download-googleplay a").click(function(){
-              return false;
-            }).removeAttr("href");
-
-            // $(".app-item-link-group").addClass("lack-android");
-            $(".app-item-link-group.lack-android a").click(function(){
-              return false;
-            }).removeAttr("href");
-            */
-          }
-
-          if($scope.social.length > 0){
-            $(".playeronly .social-media-wrap").css("display", "block");
-          }
-
-        }, 1000);
-
-        if(data.app[0].playeronly === true){
-          $("body").addClass("playeronly")
-        }
-    });
-
     var acct = document.location.host.match (/(dev|stage|alpha)/) ? 'UA-31930874-1' : 'UA-47454448-1';
     var watchedSec = 0, watchedInterval, _d = $.Deferred(), _d1 = $.Deferred();
     var channelId,
@@ -345,8 +292,61 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
           }
         }
         console.log(lang);
-        init();
-        initGA();
+        msoService.get().then(function(data){
+
+            $scope.app = data.app[0];
+            $scope.social = data.social;
+
+            init();
+            initGA();
+            
+            setTimeout(function(){
+              var src;
+              if($scope.app.ios === ""){
+                src = $(".app-download-appstore img").eq(0).attr("src");
+                src = src.split(".")[0] + "_comingsoon.png";
+
+                $(".app-download-appstore img").attr("src", src);
+                /*
+                $(".app-download-appstore a").click(function(){
+                  return false;
+                }).removeAttr("href");
+                
+                // $(".app-item-link-group").addClass("lack-ios");
+                $(".app-item-link-group.lack-ios a.app-item-ios").click(function(){
+                  return false;
+                }).removeAttr("href");
+                */
+              }
+
+
+              if($scope.app.android === ""){
+                src = $(".app-download-googleplay img").eq(0).attr("src");
+                src = src.split(".")[0] + "_comingsoon.png";
+
+                $(".app-download-googleplay img").attr("src", src);
+                /*
+                $(".app-download-googleplay a").click(function(){
+                  return false;
+                }).removeAttr("href");
+
+                // $(".app-item-link-group").addClass("lack-android");
+                $(".app-item-link-group.lack-android a").click(function(){
+                  return false;
+                }).removeAttr("href");
+                */
+              }
+
+              if($scope.social.length > 0){
+                $(".playeronly .social-media-wrap").css("display", "block");
+              }
+
+            }, 1000);
+
+            if(data.app[0].playeronly === true){
+              $("body").addClass("playeronly")
+            }
+        });
     });
 
     $scope.getListStyle = function(){
