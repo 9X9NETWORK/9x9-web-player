@@ -61,6 +61,13 @@
     ],
     "link": [
         {
+            "name": "喇新聞 FLIPr",
+            "description": "茶餘飯後喇新聞，天下大事盡知曉。",
+            "icon": "images/news/icon_200x200.png",
+            "ios": "",
+            "android": ""
+        },
+        {
             "name": "MV不解釋 FLIPr",
             "description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
             "icon": "images/mv/icon_200x200.png",
@@ -79,7 +86,7 @@
             "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
             "icon": "images/superstar/icon_200x200.png",
             "ios": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
-            "android": ""
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.superstar"
         },
         {
             "name": "關鍵評論網 FLIPr",
@@ -101,6 +108,6 @@
             "icon": "images/cts/app_icon.png",
             "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
-        }        
+        }
     ]
 }
