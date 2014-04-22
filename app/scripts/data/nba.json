@@ -2,7 +2,7 @@
     "app": [
         {
             "mso": "nba.flipr.tv",
-            "name": "NBA on FLIPr Unofficial",
+            "name": "FLIPr - NBA Edition",
             "icon": "images/nba/icon_200x200.png",
             "description": "Simply flip and discover the latest NBA moments all in an immersive experience. Watch it continuously on the big screen with Chromecast support! ",
             "calltoaction": "FREE to download now!",
