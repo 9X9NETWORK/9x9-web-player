@@ -17,6 +17,18 @@ body
     //android default
     .is-android &
         height: 213px
+    .is-block-logo &
+        position: relative
+        &:after
+            content: ''
+            position: absolute
+            display: block
+            background-color: transparent
+            width: 6rem
+            height: 6rem
+            z-index: 10
+            bottom: 0
+            right: 0
 .playback-info
     +full
     border-bottom: solid 1px #000
