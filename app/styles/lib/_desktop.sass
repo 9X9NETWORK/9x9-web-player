@@ -30,6 +30,10 @@ $desktop-large-font: 2.25rem
     .playback-episode-src
         padding-top: 0.4rem
         padding-bottom: 0.25rem
+        .program-name
+            display: inline-block
+            max-width: 15.5rem
+            +ellipsis
     .episode-list
         position: absolute
         .is-ios &,.is-android &
@@ -159,7 +163,18 @@ $desktop-large-font: 2.25rem
     .social-media-item
         margin-left: 0.5rem
     
-
+    //function figure
+    .function-figure
+        +bleed-x(100rem)
+        +box-sizing(content-box)
+        //+clearfix
+        // &:after
+        //     content: ''
+        //     display: block
+        //     clear: both
+        // .figure-list
+        //     > li
+        //         +span(4 of 12)
 
 
     //promote-programe

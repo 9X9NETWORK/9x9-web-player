@@ -24,7 +24,14 @@
         background-size: contain
         height: 20rem
 
-
+    
++susy-breakpoint(36rem,16)
+    .function-figure
+        .figure-list
+            > li
+                +span(4 of 12)
+            img
+                width: 100%
 +susy-breakpoint(48rem,16)
     .episode-list-item
         width: 9.6rem
@@ -44,6 +51,11 @@
         .app-download-icon
             width: 4rem
             height: 4rem
+    .function-figure
+        .figure-list
+
+            img
+                width: auto
     //promote
     .promote-programe-text,.promote-programe-text-sub
         font-size: 1.5rem
