@@ -221,6 +221,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         if($scope.app.playerControl !== undefined){
           if($scope.app.playerControl === false){
             player  = new nn.Player("ytplayer-1", true, false);
+            $("body").addClass("no-player-control");
           }else{
             player  = new nn.Player("ytplayer-1", true);
           }
