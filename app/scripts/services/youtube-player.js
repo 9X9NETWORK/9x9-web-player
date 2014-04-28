@@ -30,7 +30,7 @@ angular.module('app.services')
                         videoId: id,
                         playerVars: {
                             autoplay: 1,
-                            controls: 1,
+                            controls: 0,
                             showinfo: 0,
                             wmode: 'transparent'
                         },

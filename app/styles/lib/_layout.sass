@@ -17,6 +17,18 @@ body
     //android default
     .is-android &
         height: 213px
+    .no-player-control &
+        position: relative
+        &:after
+            content: ''
+            position: absolute
+            display: block
+            background-color: transparent
+            width: 6rem
+            height: 6rem
+            z-index: 10
+            bottom: 0
+            right: 0
 .playback-info
     +full
     border-bottom: solid 1px #000
@@ -207,6 +219,27 @@ body
     text-align: center
     .is-ios &,.is-android &
         display: block
+//function
+.function-figure
+    +full
+    background-color: $basic-bgcolor
+    color: #fff
+    display: none
+    .playeronly &
+        display: block
+    .figure-list
+        > li
+            text-align: center
+            h3
+                font-size: 1.3rem 
+                margin-bottom: 0.5rem 
+            p
+                line-height: 1.2
+
+.function-title
+    font-size: 1.7rem
+    text-align: center
+    margin: 2rem auto 1rem  
 
 
 //
@@ -376,5 +409,43 @@ body
             line-height: 1rem
 
 
+.waring-wrap
+    //width: span(12 of 12)
+    +full
+    background-color: rgba(29,29,29,0.7)
+    color: #ff6c00
+    //padding: 0.3rem 0.5rem
+    padding-top: 0.3rem
+    padding-bottom: 0.3rem
+    position: absolute
+    z-index: 100
+    text-align: center
+    opacity: 0
+.is-old-android
+    .waring-wrap
+        +animationfull(fall-down 1.5s ease 2s)
+        opacity: 1
+
+
+
+
+
+
+//animate
+
++keyframes(fall-down)
+    0% 
+        opacity: 0
+        transform: translateY(-2000px)
+    
+    60% 
+        opacity: 1
+        transform: translateY(30px)
+    
+    80% 
+        transform: translateY(-10px)
+    
+    100% 
+        transform: translateY(0)
 
     
