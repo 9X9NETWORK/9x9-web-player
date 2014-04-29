@@ -186,7 +186,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
         var nua = navigator.userAgent;
         var is_android = ((nua.indexOf('Mozilla') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1) && !(nua.indexOf('Chrome') > -1));
-        is_android = true;
+        //is_android = true;
         if(is_android){
           $("body").addClass("is-old-android");
         }
@@ -299,6 +299,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             lang = "en";
           }
         }
+        $("body").addClass("is-" +lang);
         msoService.get().then(function(data){
 
             $scope.app = data.app[0];
