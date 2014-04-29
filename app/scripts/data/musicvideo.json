@@ -15,27 +15,33 @@
     "promote": [
         {
             "name": "華納音樂",
-            "image": "images/mv/cms-thumbnail-ratio-1.jpg"
+            "image": "images/mv/cms-thumbnail-ratio-1.jpg",
+            "link": "http://musicvideo.flipr.tv/view/p63"
         },
         {
             "name": "滾石唱片",
-            "image": "images/mv/cms-thumbnail-ratio-2.jpg"
+            "image": "images/mv/cms-thumbnail-ratio-2.jpg",
+            "link": "http://musicvideo.flipr.tv/view/p628"
         },
         {
             "name": "MBC KPOP",
-            "image": "images/mv/cms-thumbnail-ratio-3.jpg"
+            "image": "images/mv/cms-thumbnail-ratio-3.jpg",
+            "link": "http://musicvideo.flipr.tv/view/p13457"
         },
         {
             "name": "相信音樂",
-            "image": "images/mv/cms-thumbnail-ratio-4.jpg"
+            "image": "images/mv/cms-thumbnail-ratio-4.jpg",
+            "link": "http://musicvideo.flipr.tv/view/p32598"
         },        
         {
             "name": "Billboard.com",
-            "image": "images/mv/cms-thumbnail-ratio-5.jpg"
+            "image": "images/mv/cms-thumbnail-ratio-5.jpg",
+            "link": "http://musicvideo.flipr.tv/view/p430"
         },
         {
             "name": "VEVO",
-            "image": "images/mv/cms-thumbnail-ratio-6.jpg"
+            "image": "images/mv/cms-thumbnail-ratio-6.jpg",
+            "link": "http://musicvideo.flipr.tv/view/p625"
         }
     ],
     "link": [

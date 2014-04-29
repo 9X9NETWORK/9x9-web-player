@@ -32,27 +32,33 @@
     "promote": [
         {
             "name": "真情部落格",
-            "image": "images/goodtv/cms-thumbnail-ratio-1.jpg"
+            "image": "images/goodtv/cms-thumbnail-ratio-1.jpg",
+            "link":"http://goodtv.flipr.tv/view/p30428"
         },
         {
             "name": "每日音符",
-            "image": "images/goodtv/cms-thumbnail-ratio-2.jpg"
+            "image": "images/goodtv/cms-thumbnail-ratio-2.jpg",
+            "link":"http://goodtv.flipr.tv/view/p28794"
         },
         {
             "name": "禱告大軍",
-            "image": "images/goodtv/cms-thumbnail-ratio-3.jpg"
+            "image": "images/goodtv/cms-thumbnail-ratio-3.jpg",
+            "link":"http://goodtv.flipr.tv/view/p30956"
         },
         {
             "name": "幸福來敲門",
-            "image": "images/goodtv/cms-thumbnail-ratio-4.jpg"
+            "image": "images/goodtv/cms-thumbnail-ratio-4.jpg",
+            "link":"http://goodtv.flipr.tv/view/p30958"
         },
         {
             "name": "空中主日學",
-            "image": "images/goodtv/cms-thumbnail-ratio-5.jpg"
+            "image": "images/goodtv/cms-thumbnail-ratio-5.jpg",
+            "link":"http://goodtv.flipr.tv/view/p30954"
         },
         {
             "name": "烤箱讀書會",
-            "image": "images/goodtv/cms-thumbnail-ratio-6.jpg"
+            "image": "images/goodtv/cms-thumbnail-ratio-6.jpg",
+            "link":"http://goodtv.flipr.tv/view/p30955"
         }
     ],
     "link": [
