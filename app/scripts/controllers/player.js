@@ -184,6 +184,12 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     var init = function(){
 
+        var nua = navigator.userAgent;
+        var is_android = ((nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 &&     nua.indexOf('AppleWebKit') > -1) && !(nua.indexOf('Chrome') > -1));
+        if(is_android){
+          $("body").addClass("is-old-android");
+        }
+
         var href = location.href.replace("http://", "").replace("https://", "");
 
         channelId = href.match(/.*\/p([0-9]+)(\/|$)/);
@@ -292,7 +298,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             lang = "en";
           }
         }
-        console.log(lang);
         msoService.get().then(function(data){
 
             $scope.app = data.app[0];
