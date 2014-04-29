@@ -17,27 +17,33 @@
     "promote": [
         {
             "name": "網路紅人蔡阿嘎",
-            "image": "images/superstar/cms-thumbnail-ratio-1.jpg"
+            "image": "images/superstar/cms-thumbnail-ratio-1.jpg",
+            "link":"http://superstar.flipr.tv/view/p31024"
         },
         {
             "name": "搞笑團體這群人",
-            "image": "images/superstar/cms-thumbnail-ratio-2.jpg"
+            "image": "images/superstar/cms-thumbnail-ratio-2.jpg",
+            "link":"http://superstar.flipr.tv/view/p12709"
         },
         {
             "name": "超人氣圓仔",
-            "image": "images/superstar/cms-thumbnail-ratio-3.jpg"
+            "image": "images/superstar/cms-thumbnail-ratio-3.jpg",
+            "link":"http://superstar.flipr.tv/view/p32615"
         },
         {
             "name": "超萌喬喬",
-            "image": "images/superstar/cms-thumbnail-ratio-4.jpg"
+            "image": "images/superstar/cms-thumbnail-ratio-4.jpg",
+            "link":"http://superstar.flipr.tv/view/p12710"
         },
         {
             "name": "馬叔叔搖滾彈吉他",
-            "image": "images/superstar/cms-thumbnail-ratio-5.jpg"
+            "image": "images/superstar/cms-thumbnail-ratio-5.jpg",
+            "link":"http://superstar.flipr.tv/view/p4330"
         },
         {
             "name": "分手妹陳佩佩",
-            "image": "images/superstar/cms-thumbnail-ratio-6.jpg"
+            "image": "images/superstar/cms-thumbnail-ratio-6.jpg",
+            "link":"http://superstar.flipr.tv/view/p554"
         }
     ],
     "link": [

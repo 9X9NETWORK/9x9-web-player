@@ -107,6 +107,7 @@ body
     .episode-detail
         position: relative
         display: block
+        height: 100%
         
 
     .episode-preview
@@ -421,6 +422,10 @@ body
     z-index: 100
     text-align: center
     opacity: 0
+    strong
+        font-weight: bolder
+.is-en .waring-zh,.is-zh .waring-en
+    display: none
 .is-old-android
     .waring-wrap
         +animationfull(fall-down 1.5s ease 2s)

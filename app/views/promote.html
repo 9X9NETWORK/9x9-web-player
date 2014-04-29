@@ -7,10 +7,13 @@
 			<li class="promote-programe-item" ng-repeat="item in promotionItems">
 				<figure class="promote-programe-img">
 					<div class="thumb-inner-center">
-						<img ng-src="{{item.image}}">
+						<a href="{{item.link}}">
+							<img ng-src="{{item.image}}">
+						</a>
 					</div>
 				</figure>
 				<span class="promote-programe-name">{{item.name}}</span>
+
 			</li>
 		</ul>
 		<h1 class="promote-programe-text-sub">還有更多精彩節目等你來挖掘！</h1>		
