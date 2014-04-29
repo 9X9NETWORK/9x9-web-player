@@ -185,7 +185,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     var init = function(){
 
         var nua = navigator.userAgent;
-        var is_android = ((nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 &&     nua.indexOf('AppleWebKit') > -1) && !(nua.indexOf('Chrome') > -1));
+        var is_android = ((nua.indexOf('Mozilla') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1) && !(nua.indexOf('Chrome') > -1));
         if(is_android){
           $("body").addClass("is-old-android");
         }
