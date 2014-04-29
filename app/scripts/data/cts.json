@@ -6,7 +6,7 @@
             "icon": "images/cts/app_icon.png",
             "description": "本APP專為喜愛華視節目之觀眾設計，讓粉絲在各種螢幕上，隨時隨地，都能收看即時又精彩的節目！簡易直覺的操作，上下左右翻。就像在家中客廳看電視一樣的簡單。",
             "calltoaction": "立刻免費下載給你看更多！",
-            "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
+            "ios": "https://itunes.apple.com/tw/app/hua-shi-flipr/id623085456?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player",
             "playeronly" : false
         }
@@ -102,7 +102,7 @@
             "name": "華視 FLIPr",
             "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
             "icon": "images/cts/app_icon.png",
-            "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
+            "ios": "https://itunes.apple.com/tw/app/hua-shi-flipr/id623085456?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
         }
     ]
