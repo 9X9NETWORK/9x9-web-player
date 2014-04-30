@@ -19,15 +19,34 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     var loadChannel = function(cid){
         //cid = "8846";
         channel = new nn.model.Channel(cid);
-        channel.get().then(function(){
+        channel.get()
+        .then(function(){
             if(episodeId){
-              channel.loadEpisodes(episodeId).then(onChannelLoaded);
+              channel.loadEpisodes(episodeId).then(onChannelLoaded)
+              .fail(function(){
+                 $("body").addClass("episode-error");
+                 channel.loadEpisodes().then(onChannelLoaded);
+              });
               //channel.loadEpisodes().then(onChannelLoaded);
             }else{
               channel.loadEpisodes().then(onChannelLoaded);
             }
             $("body").show();
-        });
+        })
+        .fail(function(){
+          $("body").addClass("program-error");
+          var portal = new nn.model.Portal(mso, true, lang);
+            var set, setInfo, cid, channel;
+            portal.get().then(function(){
+                set = portal.first();
+                setInfo = new nn.model.Set(set.id);
+                setInfo.get().then(function(){
+                    var cid = setInfo.channels.first().id;
+                    channelId = cid;
+                    loadChannel(cid);
+                });
+            });
+          });
         channel.watched = 0;
     }
 
@@ -193,8 +212,8 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
         var href = location.href.replace("http://", "").replace("https://", "");
 
-        channelId = href.match(/.*\/p([0-9]+)(\/|$)/);
-        episodeId = href.match(/.*\/e([0-9]+)/);
+        channelId = href.match(/.*\/p([0-9a-zA-Z]+)(\/|$)/);
+        episodeId = href.match(/.*\/e([0-9a-zA-Z]+)/);
 
         if(episodeId !== null){
             if(typeof episodeId === "object" && episodeId != null){
