@@ -1,13 +1,8 @@
 'use strict';
 ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $location, $rootScope, msoService){
 
-    // var un = $rootScope.$on('$stateChangeStart', function (event) {
-    //     event.preventDefault();
-    //     un();
-    // });
-    // $scope.$on('$viewContentLoaded', function() {
-
-    // });
+    var un = $rootScope.$on('$stateChangeStart', function (event) {
+    });
 
     var acct = document.location.host.match (/(dev|stage|alpha)/) ? 'UA-31930874-1' : 'UA-47454448-1';
     var watchedSec = 0, watchedInterval, _d = $.Deferred(), _d1 = $.Deferred();

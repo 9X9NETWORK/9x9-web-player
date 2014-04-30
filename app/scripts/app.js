@@ -65,7 +65,6 @@ var ld = angular.module('landing', [
             }
           }
         });
-        
     }
 );
 
