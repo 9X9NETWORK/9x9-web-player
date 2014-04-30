@@ -61,7 +61,10 @@
     <div class="l-main-container">
       <!-- <div ui-view="player"></div> -->
       <div class="player-view">
-          <div class="waring-wrap"><span>Please use Firefox or Chrome for better experience!</span></div>  
+          <div class="waring-wrap">
+            <span class="waring-en">Please use <strong>Firefox</strong> or <strong>Chrome</strong> for better experience!</span>
+            <span class="waring-zh">請使用 <strong>Firefox</strong> 或 <strong>Chrome</strong> 瀏覽器以獲得更好的體驗 !</span>
+          </div>
           <div class="player-wrap" ng-controller="PlayerCtrl">
             <div class="player-device">
                 <div class="playback-player">
@@ -146,6 +149,34 @@
             </div>
 
           </div>
+          <div class="function-figure">
+                <h1 class="function-title">Enjoy Great Videos in 3 Easy Steps:</h1>
+
+                <ul class="figure-list">
+                    <li>
+                        <figure>
+                            <img src="images/about_banner_1_icon_1.png">
+                            <h3 >Cast</h3>
+                            <p  >Cast your favorite content<br /> to TV with Chromecast.</p>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/about_banner_1_icon_2.png">
+                            <h3  >Remote Control</h3>
+                            <p  >Flip on your mobile.<br /> Discover on your TV.</p>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/about_banner_1_icon_3.png">
+                            <h3  >Play &amp; Interact</h3>
+                            <p  >Interact with content<br /> and play your way.</p>
+                        </figure>
+                    </li>
+                </ul>
+
+            </div>
       </div>
       <div ui-view="promote"></div>
       <div ui-view="appGroup"></div>

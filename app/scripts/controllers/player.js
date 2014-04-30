@@ -292,7 +292,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         window.onbeforeunload = function() {
             _d.resolve();
             _d1.resolve();
-            return "Are you sure you want to leave this page?";
+            //return "Are you sure you want to leave this page?";
         };
     }
 
@@ -329,12 +329,13 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                 src = src.split(".")[0] + "_comingsoon.png";
 
                 $(".app-download-appstore img").attr("src", src);
-                /*
-                $(".app-download-appstore a").click(function(){
+
+                $(".app-download-appstore>a, .app-download-googleplay>a").click(function(){
                   return false;
                 }).removeAttr("href");
                 
                 // $(".app-item-link-group").addClass("lack-ios");
+                /*
                 $(".app-item-link-group.lack-ios a.app-item-ios").click(function(){
                   return false;
                 }).removeAttr("href");
@@ -347,10 +348,10 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                 src = src.split(".")[0] + "_comingsoon.png";
 
                 $(".app-download-googleplay img").attr("src", src);
-                /*
                 $(".app-download-googleplay a").click(function(){
                   return false;
                 }).removeAttr("href");
+                /*
 
                 // $(".app-item-link-group").addClass("lack-android");
                 $(".app-item-link-group.lack-android a").click(function(){
