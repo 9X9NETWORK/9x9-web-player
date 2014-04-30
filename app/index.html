@@ -35,10 +35,10 @@
     <meta itemprop="description" content="{{meta_description}}">
     <meta itemprop="image" content="{{meta_thumbnail}}"><!-- google+ requires thumbnail size at least 125px -->
     
-    <base id="base" href="/view/">
+    <base id="base" href="">
     <script type="text/javascript">
-        // var debugging = location.href.indexOf("dev6") !== -1;
-        // document.getElementById("base").href = debugging ? "/lab/web5.x/" : "/view/";
+        var debugging = location.href.indexOf("dev6") !== -1;
+        document.getElementById("base").href = debugging ? "/lab/web5.x/" : "/view/";
     </script>
     <!-- <base href="/view/"> -->
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -150,7 +150,9 @@
       <div ui-view="promote"></div>
       <div ui-view="appGroup"></div>
     </div>
-    <div ui-view></div>
+    <div ng-include="view/promote.html" ng-controller="PromoteCtrl"></div>
+    <div ng-include="view/app_group.html" ng-controller="AppGroupCtrl"></div>
+    <!-- <div ui-view></div> -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>

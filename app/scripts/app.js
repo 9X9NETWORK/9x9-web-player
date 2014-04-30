@@ -50,6 +50,7 @@ var ld = angular.module('landing', [
       $locationProvider.html5Mode(true);
       $urlRouterProvider.when("", "/");
 
+      /*
       $stateProvider
         .state("watchEpisode", {
           url: "/p{channelId}/{episodeId}",
@@ -64,6 +65,7 @@ var ld = angular.module('landing', [
             }
           }
         });
+        */
     }
 );
 
