@@ -1,69 +1,47 @@
 {
     "app": [
         {
-            "mso": "fcu.flipr.tv",
-            "name": "逢甲影音 FLIPr",
-            "icon": "images/fcu/app_icon.png",
-            "description": "「逢甲影音」跳脫傳統教學模式，提供熱愛學習的您，跨越時間、地點、空間的多螢幕互動體驗！暢快地上下左右翻翻逛逛，一起來享受無所不在的學習雲！",
-            "calltoaction": "立刻免費下載，給你看更多！",
+            "mso": "magazine.flipr.tv",
+            "name": "影音雜誌 FLIPr",
+            "icon": "images/magazine/app_icon.png",
+            "description": "網羅各大雜誌影音：商場職涯、流行時尚、生活休閒、親子健康、汽車車壇，多元內容一次滿足你各種視野。每日嗑雜誌， 天天長知識。",
+            "calltoaction": "立刻下載成為雜誌通！",
             "ios": "",
             "android": "",
             "playeronly" : false,
             "playerControl" : ""
         }
     ],
-    "social": [
-        {
-            "icon": "images/fcu/social-media-a.png",
-            "url": "http://www.fcu.edu.tw/wSite/mp?mp=1"
-        },
-        {
-            "icon": "images/fcu/social-media-b.png",
-            "url": "http://www.genedu.fcu.edu.tw/"
-        },
-        {
-            "icon": "images/social-media-fb.png",
-            "url": "https://www.facebook.com/FengChia.1961?fref=ts"
-        },
-        {
-            "icon": "images/fcu/social-media-d.png",
-            "url": "http://web.lib.fcu.edu.tw/library/"
-        },
-        {
-            "icon": "images/fcu/social-media-e.png",
-            "url": "http://www.tv.fcu.edu.tw/"
-        }
-    ],
     "promote": [
         {
-            "name": "認識大學頻道 ",
-            "image": "images/fcu/cms-thumbnail-ratio-1.jpg",
-            "link": "http://fcu.flipr.tv/view/p32974"
+            "name": "天下雜誌",
+            "image": "images/magazine/cms-thumbnail-ratio-1.jpg",
+            "link": "http://magazine.flipr.tv/view/p29838"
         },
         {
-            "name": "校況簡介",
-            "image": "images/fcu/cms-thumbnail-ratio-2.jpg",
-            "link": "http://fcu.flipr.tv/view/p32830"
+            "name": "設計家",
+            "image": "images/magazine/cms-thumbnail-ratio-2.jpg",
+            "link": "http://magazine.flipr.tv/view/p29853"
         },
         {
-            "name": "逢甲 i talk",
-            "image": "images/fcu/cms-thumbnail-ratio-3.jpg",
-            "link": "http://fcu.flipr.tv/view/p32694"
+            "name": "VOGUE",
+            "image": "images/magazine/cms-thumbnail-ratio-3.jpg",
+            "link": "http://magazine.flipr.tv/view/p4278"
         },
         {
-            "name": "逢甲大學磨課師 ",
-            "image": "images/fcu/cms-thumbnail-ratio-4.jpg",
-            "link": "http://fcu.flipr.tv/view/p32975"
+            "name": "媽媽寶寶",
+            "image": "images/magazine/cms-thumbnail-ratio-4.jpg",
+            "link": "http://magazine.flipr.tv/view/p29855"
         },
         {
-            "name": "逢甲經典流傳影音",
-            "image": "images/fcu/cms-thumbnail-ratio-5.jpg",
-            "link": "http://fcu.flipr.tv/view/p32698"
+            "name": "世界電影",
+            "image": "images/magazine/cms-thumbnail-ratio-5.jpg",
+            "link": "http://magazine.flipr.tv/view/p32998"
         },
         {
-            "name": "計程車創新學院",
-            "image": "images/fcu/cms-thumbnail-ratio-6.jpg",
-            "link": "http://fcu.flipr.tv/view/p32700"
+            "name": "GO 車誌",
+            "image": "images/magazine/cms-thumbnail-ratio-6.jpg",
+            "link": "http://magazine.flipr.tv/view/p183"
         }
     ],
     "link": [
