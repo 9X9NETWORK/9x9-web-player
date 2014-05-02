@@ -7,7 +7,7 @@
             "description": "笑到噴飯的搞笑影片、萌到破表的幼兒寵物、超級實用的才藝教學和美妝分享。網路明星最新最夯的線上影片，盡在「網路大明星 FLIPr」！",
             "calltoaction": "下載給你所有網路大明星！",
             "ios": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
-            "android": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.superstar",
             "playeronly" : false
         }
     ],
@@ -48,6 +48,13 @@
     ],
     "link": [
         {
+            "name": "喇新聞 FLIPr",
+            "description": "茶餘飯後喇新聞，天下大事盡知曉。",
+            "icon": "images/news/icon_200x200.png",
+            "ios": "https://itunes.apple.com/tw/app/la-xin-wen-flipr/id865752513?l=zh&mt=8",
+            "android": ""
+        },
+        {
             "name": "MV不解釋 FLIPr",
             "description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
             "icon": "images/mv/icon_200x200.png",
@@ -66,13 +73,13 @@
             "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
             "icon": "images/superstar/icon_200x200.png",
             "ios": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
-            "android": ""
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.superstar"
         },
         {
             "name": "關鍵評論網 FLIPr",
             "description": "News worth knowing, voices worth sharing 分享觀點從這開始",
             "icon": "images/thenewslens/icon_200x200.png",
-            "ios": "",
+            "ios": "https://itunes.apple.com/cn/app/guan-jian-ping-lun-wang-flipr/id842456259?l=en&mt=8",
             "android": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens"
         },
         {
@@ -86,7 +93,7 @@
             "name": "華視 FLIPr",
             "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
             "icon": "images/cts/app_icon.png",
-            "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
+            "ios": "https://itunes.apple.com/tw/app/hua-shi-flipr/id623085456?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
         }
     ]
