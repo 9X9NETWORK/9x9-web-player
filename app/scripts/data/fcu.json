@@ -1,0 +1,120 @@
+{
+    "app": [
+        {
+            "mso": "fcu.flipr.tv",
+            "name": "逢甲影音 FLIPr",
+            "icon": "images/fcu/app_icon.png",
+            "description": "「逢甲影音」跳脫傳統教學模式，提供熱愛學習的您，跨越時間、地點、空間的多螢幕互動體驗！暢快地上下左右翻翻逛逛，一起來享受無所不在的學習雲！",
+            "calltoaction": "立刻免費下載翻更多！",
+            "ios": "",
+            "android": "",
+            "playeronly" : false,
+            "playerControl" : false
+        }
+    ],
+    "social": [
+        {
+            "icon": "images/fcu/social-media-a.png",
+            "url": "http://www.fcu.edu.tw/wSite/mp?mp=1"
+        },
+        {
+            "icon": "images/fcu/social-media-b.png",
+            "url": "http://www.genedu.fcu.edu.tw/"
+        },
+        {
+            "icon": "images/social-media-fb.png",
+            "url": "https://www.facebook.com/FengChia.1961?fref=ts"
+        },
+        {
+            "icon": "images/fcu/social-media-d.png",
+            "url": "http://web.lib.fcu.edu.tw/library/"
+        },
+        {
+            "icon": "images/fcu/social-media-e.png",
+            "url": "http://www.tv.fcu.edu.tw/"
+        }
+    ],
+    "promote": [
+        {
+            "name": "認識大學頻道 ",
+            "image": "images/fcu/cms-thumbnail-ratio-1.jpg",
+            "link": "http://fcu.flipr.tv/view/p32974"
+        },
+        {
+            "name": "校況簡介",
+            "image": "images/fcu/cms-thumbnail-ratio-2.jpg",
+            "link": "http://fcu.flipr.tv/view/p32830"
+        },
+        {
+            "name": "逢甲 i talk",
+            "image": "images/fcu/cms-thumbnail-ratio-3.jpg",
+            "link": "http://fcu.flipr.tv/view/p32694"
+        },
+        {
+            "name": "逢甲大學磨課師 ",
+            "image": "images/fcu/cms-thumbnail-ratio-4.jpg",
+            "link": "http://fcu.flipr.tv/view/p32975"
+        },
+        {
+            "name": "逢甲經典流傳影音",
+            "image": "images/fcu/cms-thumbnail-ratio-5.jpg",
+            "link": "http://fcu.flipr.tv/view/p32698"
+        },
+        {
+            "name": "計程車創新學院",
+            "image": "images/fcu/cms-thumbnail-ratio-6.jpg",
+            "link": "http://fcu.flipr.tv/view/p32700"
+        }
+    ],
+    "link": [
+        {
+            "name": "喇新聞 FLIPr",
+            "description": "茶餘飯後喇新聞，天下大事盡知曉。",
+            "icon": "images/news/icon_200x200.png",
+            "ios": "https://itunes.apple.com/tw/app/la-xin-wen-flipr/id865752513?l=zh&mt=8",
+            "android": ""
+        },
+        {
+            "name": "MV不解釋 FLIPr",
+            "description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
+            "icon": "images/mv/icon_200x200.png",
+            "ios": "",
+            "android": ""
+        },
+        {
+            "name": "証聲音樂圖書館 FLIPr",
+            "description": "音樂就像一塊拼圖，總有屬於它的故事和適合的位置。証聲希望能幫每個音符都找到它的家！",
+            "icon": "images/echomusic/app_icon.png",
+            "ios": "",
+            "android": ""
+        },
+        {
+            "name": "網路大明星 FLIPr",
+            "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
+            "icon": "images/superstar/icon_200x200.png",
+            "ios": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.superstar"
+        },
+        {
+            "name": "關鍵評論網 FLIPr",
+            "description": "News worth knowing, voices worth sharing 分享觀點從這開始",
+            "icon": "images/thenewslens/icon_200x200.png",
+            "ios": "https://itunes.apple.com/cn/app/guan-jian-ping-lun-wang-flipr/id842456259?l=en&mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens"
+        },
+        {
+            "name": "GOOD TV FLIPr",
+            "description": "好消息電視台，是重視家庭價值、關懷社會與人心，帶給人們信心、希望、與真愛的電視台！",
+            "icon": "images/goodtv/app_icon.png",
+            "ios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv"
+        },
+        {
+            "name": "華視 FLIPr",
+            "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
+            "icon": "images/cts/app_icon.png",
+            "ios": "https://itunes.apple.com/tw/app/hua-shi-flipr/id623085456?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
+        }
+    ]
+}
