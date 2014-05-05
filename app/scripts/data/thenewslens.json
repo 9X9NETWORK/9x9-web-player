@@ -71,7 +71,7 @@
             "description": "茶餘飯後喇新聞，天下大事盡知曉。",
             "icon": "images/news/icon_200x200.png",
             "ios": "",
-            "android": ""
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.news"
         },
         {
             "name": "MV不解釋 FLIPr",
