@@ -7,7 +7,7 @@
             "description": "網羅各大影音新聞，多元內容一次給你各種觀點。茶餘飯後喇新聞，天下大事盡知曉。不管你是藍的、綠的、黑的、黃的...，你要的新聞就在這裡。",
             "calltoaction": "立刻下載全民一起喇新聞！",
             "ios": "https://itunes.apple.com/tw/app/la-xin-wen-flipr/id865752513?l=zh&mt=8",
-            "android": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.news",
             "playeronly" : false
         }
     ],
@@ -50,7 +50,7 @@
             "description": "茶餘飯後喇新聞，天下大事盡知曉。",
             "icon": "images/news/icon_200x200.png",
             "ios": "https://itunes.apple.com/tw/app/la-xin-wen-flipr/id865752513?l=zh&mt=8",
-            "android": ""
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.news"
         },
         {
             "name": "MV不解釋 FLIPr",
