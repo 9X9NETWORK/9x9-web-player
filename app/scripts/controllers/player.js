@@ -330,7 +330,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
                 $(".app-download-appstore img").attr("src", src);
 
-                $(".app-download-appstore>a, .app-download-googleplay>a").click(function(){
+                $(".app-download-appstore>a").click(function(){
                   return false;
                 }).removeAttr("href");
                 
