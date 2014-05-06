@@ -76,7 +76,7 @@
             "description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
             "icon": "images/mv/icon_200x200.png",
             "ios": "",
-            "android": ""
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo"
         },
         {
             "name": "証聲音樂圖書館 FLIPr",
