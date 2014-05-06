@@ -1,69 +1,51 @@
 {
     "app": [
         {
-            "mso": "cts.9x9.tv",
-            "name": "華視 FLIPr",
-            "icon": "images/cts/app_icon.png",
-            "description": "本APP專為喜愛華視節目之觀眾設計，讓粉絲在各種螢幕上，隨時隨地，都能收看即時又精彩的節目！簡易直覺的操作，上下左右翻。就像在家中客廳看電視一樣的簡單。",
-            "calltoaction": "立刻免費下載給你看更多！",
-            "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player",
-            "playeronly" : false
-        }
-    ],
-    "social": [
-        {
-            "icon": "images/social-media-fb.png",
-            "url": "https://www.facebook.com/TBSCTS"
-        },
-        {
-            "icon": "images/social-media-google.png",
-            "url": "https://plus.google.com/111035766158749236867/posts"
-        },
-        {
-            "icon": "images/social-media-youtube.png",
-            "url": "http://www.youtube.com/user/TBSCTS"
-        },
-        {
-            "icon": "images/social_media_icon_cts.png",
-            "url": "http://www.cts.com.tw/ "
+            "mso": "magazine.flipr.tv",
+            "name": "影音雜誌 FLIPr",
+            "icon": "images/magazine/app_icon.png",
+            "description": "網羅各大雜誌影音：商場職涯、流行時尚、生活休閒、親子健康、汽車車壇，多元內容一次滿足你各種視野。每日嗑雜誌， 天天長知識。",
+            "calltoaction": "立刻下載成為雜誌通！",
+            "ios": "",
+            "android": "",
+            "playeronly" : false,
+            "playerControl" : ""
         }
     ],
     "promote": [
         {
-            "name": "華視新聞",
-            "image": "images/cts/cms-thumbnail-ratio-1.jpg",
-            "link": "http://cts.flipr.tv/view/p30916"
+            "name": "天下雜誌",
+            "image": "images/magazine/cms-thumbnail-ratio-1.jpg",
+            "link": "http://magazine.flipr.tv/view/p29838"
         },
         {
-            "name": "華視新聞雜誌",
-            "image": "images/cts/cms-thumbnail-ratio-2.jpg",
-            "link": "http://cts.flipr.tv/view/p32534"
+            "name": "設計家",
+            "image": "images/magazine/cms-thumbnail-ratio-2.jpg",
+            "link": "http://magazine.flipr.tv/view/p29853"
         },
         {
-            "name": "點燈",
-            "image": "images/cts/cms-thumbnail-ratio-3.jpg",
-            "link": "http://cts.flipr.tv/view/p31013"
+            "name": "VOGUE",
+            "image": "images/magazine/cms-thumbnail-ratio-3.jpg",
+            "link": "http://magazine.flipr.tv/view/p4278"
         },
         {
-            "name": "天才衝衝衝",
-            "image": "images/cts/cms-thumbnail-ratio-4.jpg",
-            "link": "http://cts.flipr.tv/view/p30950"
+            "name": "媽媽寶寶",
+            "image": "images/magazine/cms-thumbnail-ratio-4.jpg",
+            "link": "http://magazine.flipr.tv/view/p29855"
         },
         {
-            "name": "圓夢廚房",
-            "image": "images/cts/cms-thumbnail-ratio-5.jpg",
-            "link": "http://cts.flipr.tv/view/p32537"
+            "name": "世界電影",
+            "image": "images/magazine/cms-thumbnail-ratio-5.jpg",
+            "link": "http://magazine.flipr.tv/view/p32998"
         },
         {
-            "name": "我們的那首歌",
-            "image": "images/cts/cms-thumbnail-ratio-6.jpg",
-            "link": "http://cts.flipr.tv/view/p27600"
+            "name": "GO 車誌",
+            "image": "images/magazine/cms-thumbnail-ratio-6.jpg",
+            "link": "http://magazine.flipr.tv/view/p183"
         }
     ],
     "link": [
         {
-
             "name": "喇新聞 FLIPr",
             "description": "茶餘飯後喇新聞，天下大事盡知曉。",
             "icon": "images/news/icon_200x200.png",
@@ -71,7 +53,6 @@
             "android": ""
         },
         {
-
             "name": "MV不解釋 FLIPr",
             "description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
             "icon": "images/mv/icon_200x200.png",
@@ -90,13 +71,13 @@
             "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
             "icon": "images/superstar/icon_200x200.png",
             "ios": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
-            "android": ""
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.superstar"
         },
         {
             "name": "關鍵評論網 FLIPr",
             "description": "News worth knowing, voices worth sharing 分享觀點從這開始",
             "icon": "images/thenewslens/icon_200x200.png",
-            "ios": "",
+            "ios": "https://itunes.apple.com/cn/app/guan-jian-ping-lun-wang-flipr/id842456259?l=en&mt=8",
             "android": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens"
         },
         {
@@ -110,7 +91,7 @@
             "name": "華視 FLIPr",
             "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
             "icon": "images/cts/app_icon.png",
-            "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
+            "ios": "https://itunes.apple.com/tw/app/hua-shi-flipr/id623085456?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
         }
     ]

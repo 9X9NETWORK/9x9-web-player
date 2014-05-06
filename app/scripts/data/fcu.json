@@ -1,69 +1,73 @@
 {
     "app": [
         {
-            "mso": "cts.9x9.tv",
-            "name": "華視 FLIPr",
-            "icon": "images/cts/app_icon.png",
-            "description": "本APP專為喜愛華視節目之觀眾設計，讓粉絲在各種螢幕上，隨時隨地，都能收看即時又精彩的節目！簡易直覺的操作，上下左右翻。就像在家中客廳看電視一樣的簡單。",
-            "calltoaction": "立刻免費下載給你看更多！",
-            "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player",
-            "playeronly" : false
+            "mso": "fcu.flipr.tv",
+            "name": "逢甲影音 FLIPr",
+            "icon": "images/fcu/app_icon.png",
+            "description": "「逢甲影音」跳脫傳統教學模式，提供熱愛學習的您，跨越時間、地點、空間的多螢幕互動體驗！暢快地上下左右翻翻逛逛，一起來享受無所不在的學習雲！",
+            "calltoaction": "立刻免費下載，給你看更多！",
+            "ios": "",
+            "android": "",
+            "playeronly" : false,
+            "playerControl" : ""
         }
     ],
     "social": [
         {
+            "icon": "images/fcu/social-media-a.png",
+            "url": "http://www.fcu.edu.tw/wSite/mp?mp=1"
+        },
+        {
+            "icon": "images/fcu/social-media-b.png",
+            "url": "http://www.genedu.fcu.edu.tw/"
+        },
+        {
             "icon": "images/social-media-fb.png",
-            "url": "https://www.facebook.com/TBSCTS"
+            "url": "https://www.facebook.com/FengChia.1961?fref=ts"
         },
         {
-            "icon": "images/social-media-google.png",
-            "url": "https://plus.google.com/111035766158749236867/posts"
+            "icon": "images/fcu/social-media-d.png",
+            "url": "http://web.lib.fcu.edu.tw/library/"
         },
         {
-            "icon": "images/social-media-youtube.png",
-            "url": "http://www.youtube.com/user/TBSCTS"
-        },
-        {
-            "icon": "images/social_media_icon_cts.png",
-            "url": "http://www.cts.com.tw/ "
+            "icon": "images/fcu/social-media-e.png",
+            "url": "http://www.tv.fcu.edu.tw/"
         }
     ],
     "promote": [
         {
-            "name": "華視新聞",
-            "image": "images/cts/cms-thumbnail-ratio-1.jpg",
-            "link": "http://cts.flipr.tv/view/p30916"
+            "name": "認識大學頻道 ",
+            "image": "images/fcu/cms-thumbnail-ratio-1.jpg",
+            "link": "http://fcu.flipr.tv/view/p32974"
         },
         {
-            "name": "華視新聞雜誌",
-            "image": "images/cts/cms-thumbnail-ratio-2.jpg",
-            "link": "http://cts.flipr.tv/view/p32534"
+            "name": "校況簡介",
+            "image": "images/fcu/cms-thumbnail-ratio-2.jpg",
+            "link": "http://fcu.flipr.tv/view/p32830"
         },
         {
-            "name": "點燈",
-            "image": "images/cts/cms-thumbnail-ratio-3.jpg",
-            "link": "http://cts.flipr.tv/view/p31013"
+            "name": "逢甲 i talk",
+            "image": "images/fcu/cms-thumbnail-ratio-3.jpg",
+            "link": "http://fcu.flipr.tv/view/p32694"
         },
         {
-            "name": "天才衝衝衝",
-            "image": "images/cts/cms-thumbnail-ratio-4.jpg",
-            "link": "http://cts.flipr.tv/view/p30950"
+            "name": "逢甲大學磨課師 ",
+            "image": "images/fcu/cms-thumbnail-ratio-4.jpg",
+            "link": "http://fcu.flipr.tv/view/p32975"
         },
         {
-            "name": "圓夢廚房",
-            "image": "images/cts/cms-thumbnail-ratio-5.jpg",
-            "link": "http://cts.flipr.tv/view/p32537"
+            "name": "逢甲經典流傳影音",
+            "image": "images/fcu/cms-thumbnail-ratio-5.jpg",
+            "link": "http://fcu.flipr.tv/view/p32698"
         },
         {
-            "name": "我們的那首歌",
-            "image": "images/cts/cms-thumbnail-ratio-6.jpg",
-            "link": "http://cts.flipr.tv/view/p27600"
+            "name": "計程車創新學院",
+            "image": "images/fcu/cms-thumbnail-ratio-6.jpg",
+            "link": "http://fcu.flipr.tv/view/p32700"
         }
     ],
     "link": [
         {
-
             "name": "喇新聞 FLIPr",
             "description": "茶餘飯後喇新聞，天下大事盡知曉。",
             "icon": "images/news/icon_200x200.png",
@@ -71,7 +75,6 @@
             "android": ""
         },
         {
-
             "name": "MV不解釋 FLIPr",
             "description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
             "icon": "images/mv/icon_200x200.png",
@@ -90,13 +93,13 @@
             "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
             "icon": "images/superstar/icon_200x200.png",
             "ios": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
-            "android": ""
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.superstar"
         },
         {
             "name": "關鍵評論網 FLIPr",
             "description": "News worth knowing, voices worth sharing 分享觀點從這開始",
             "icon": "images/thenewslens/icon_200x200.png",
-            "ios": "",
+            "ios": "https://itunes.apple.com/cn/app/guan-jian-ping-lun-wang-flipr/id842456259?l=en&mt=8",
             "android": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens"
         },
         {
@@ -110,7 +113,7 @@
             "name": "華視 FLIPr",
             "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
             "icon": "images/cts/app_icon.png",
-            "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
+            "ios": "https://itunes.apple.com/tw/app/hua-shi-flipr/id623085456?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
         }
     ]
