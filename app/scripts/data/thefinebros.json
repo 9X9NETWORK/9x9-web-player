@@ -6,7 +6,7 @@
             "icon": "images/thefinebros/icon_200x200.png",
             "description": "Discover the latest videos of Kids/Teens/Elders/YouTubers React and many others on-the-go, or on the big screen with Chromecast support!",
             "calltoaction": "FREE to download now!",
-            "ios": "",
+            "ios": "https://itunes.apple.com/us/app/flipr-the-fine-bros-edition/id872233879?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros",
             "playeronly" : true
         }

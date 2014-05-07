@@ -11,7 +11,7 @@
             "name": "MV不解釋 FLIPr",
             "description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
             "icon": "images/mv/icon_200x200.png",
-            "ios": "",
+            "ios": "https://itunes.apple.com/tw/app/mv-bu-jie-shi-flipr/id860501633?l=zh&mt=8",
             "android": "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo"
         },
         {
@@ -51,6 +51,103 @@
         }
     ],
     "en" : [
+
+         {
+
+            "name": "Crash Course on FLIPr Unofficial",
+            "icon": "images/crashcourse/icon_200x200.png",
+            "description": "This app enables you to watch fun, educational videos from John & Hank Green's YouTube channel on-the-go, or on the big screen with Chromecast!",
+            "ios": "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse"
+        },
+        {
+
+            "name": "Network A on FLIPr Unofficial",
+            "icon": "images/networka/icon_200x200.png",
+            "description": "Fill those 10-minute breaks with adrenaline-pumping stunts including skateboarding and much more on-the-go, or on the big screen with Chromecast! ",
+            "ios": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.networka"
+        },
+        
+        {
+
+            "name": "CollegeHumor on FLIPr Unofficial",
+            "icon": "images/collegehumor/icon_200x200.png",
+            "description": "Fill those 10-minute breaks with fresh hilarious videos. Watch it continuously on-the-go, or on the big screen with Chromecast support!",
+            "ios": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.collegehumor"
+        },
+        {
+
+            "name": "Smosh on FLIPr Unofficial",
+            "icon": "images/smosh/icon_200x200.png",
+            "description": "Discover Anthony Padilla & Ian Hecox’s latest funnies on-the-go. This app can also help you watch it on the big screen with Chromecast support!",
+            "ios": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.smosh"
+        },
+         {
+
+            "name": "Shane on FLIPr Unofficial",
+            "icon": "images/shane/icon_200x200.png",
+            "description": "Discover the latest vlogs from actor, musician, comedian, and video maker - Shane Dawson! Watch it on the big screen with Chromecast support!",
+            "ios": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.shane"
+        },
+
+         {
+
+            "name": "TheFineBros on FLIPr Unofficial",
+            "icon": "images/thefinebros/icon_200x200.png",
+            "description": "Discover the latest videos of Kids/Teens/Elders/YouTubers React and many others on-the-go, or on the big screen with Chromecast support!",
+            "ios": "https://itunes.apple.com/us/app/flipr-the-fine-bros-edition/id872233879?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros"
+        },
+        
+        
+        {
+
+            "name": "NBA on FLIPr Unofficial",
+            "icon": "images/nba/icon_200x200.png",
+            "description": "Simply flip and discover the latest NBA moments all in an immersive experience. Watch it continuously on the big screen with Chromecast support! ",
+            "ios": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.nba"
+        },
+        {
+
+            "name": "History on FLIPr Unofficial",
+            "icon": "images/history/icon_200x200.png",
+            "description": "Discover the latest videos from the channel History. You can also watch it continuously on the big screen with our brand new Chromecast support!",
+            "ios": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.history"
+        },
+        
+       
+        {
+
+            "name": "SpinninRec on FLIPr Unofficial",
+            "icon": "images/spinninrec/icon_200x200.png",
+            "description": "Stay up to date with the latest electronic dance music from Spinnin’ Record! Take the music with you, or watch it on big screen with Chromecast!",
+            "ios": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.spinninrec"
+        },
+       
+        
+        {
+
+            "name": "JoeyGraceffa on FLIPr Unofficial",
+            "icon": "images/joeygraceffa/icon_200x200.png",
+            "description": "Discover the popular YouTuber Joey's new vlogs and old funnies on-the-go. You can also watch it continuously on the big screen with Chromecast!",
+            "ios": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa"
+        },
+        {
+
+            "name": "丁丁電視, Ding Ding TV",
+            "icon": "images/ddtv/icon_200x200.png",
+            "description": "丁丁電視是美國首創華語網絡電視、矽谷創新頻道及視頻製作公司。Ding Ding TV is the first Chinese American Internet TV for Silicon Valley ",
+            "ios": "https://itunes.apple.com/us/app/ding-ding-tv/id733144372?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tv.ddtv.player9x9tv"
+        }
     	
     ]
 }
