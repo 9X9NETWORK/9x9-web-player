@@ -6,7 +6,7 @@
             "icon": "images/mv/app_icon.png",
             "description": "想收到最新最快的音樂MV和樂壇消息，卻厭倦打開網頁和搜尋的繁瑣過程，「MV不解釋」讓你隨時更新音樂情報，隨時讓你耳目一新！",
             "calltoaction": "擁有最fashion的MV廣播電台！",
-            "ios": "",
+            "ios": "https://itunes.apple.com/tw/app/mv-bu-jie-shi-flipr/id860501633?l=zh&mt=8",
             "android": "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo",
             "playeronly" : false
         }
