@@ -35,9 +35,15 @@ ld.service("msoService", function($http){
 			})
 			.success(function(data){
 				//var brandInfo = parseBrandInfo(data);
-				self.data = data;
-				_d.resolve(data);
-				loaded = true;
+				$http({
+					"method" : "get",
+					"url" : "scripts/data/links.json"
+				}).success(function(linksData){
+					self.data = data;
+					self.data.link = linksData.zh;
+					_d.resolve(self.data);
+					loaded = true;
+				}).error();
 			})
 			.error();
 		}
