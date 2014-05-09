@@ -1,6 +1,20 @@
 {
 	"zh": [
         {
+            "name": "癮雜誌 FLIPr",
+            "description": "每日嗑雜誌，天天長知識。",
+            "icon": "images/magazine/app_icon.png",
+            "ios": "",
+            "android": ""
+        },
+        {
+            "name": "逢甲影音 FLIPr",
+            "description": "逢甲大學新媒體，帶給全球創新價值，更是您無所不在的學習雲！",
+            "icon": "images/fcu/app_icon.png",
+            "ios": "https://itunes.apple.com/tw/app/feng-jia-ying-yin-flipr/id723980669?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tw.edu.fcu.player9x9tv"
+        },
+        {
             "name": "喇新聞 FLIPr",
             "description": "茶餘飯後喇新聞，天下大事盡知曉。",
             "icon": "images/news/icon_200x200.png",
@@ -15,7 +29,7 @@
             "android": "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo"
         },
         {
-            "name": "証聲音樂圖書館 FLIPr",
+            "name": "音樂圖書館 FLIPr",
             "description": "音樂就像一塊拼圖，總有屬於它的故事和適合的位置。証聲希望能幫每個音符都找到它的家！",
             "icon": "images/echomusic/app_icon.png",
             "ios": "",
@@ -32,14 +46,14 @@
             "name": "關鍵評論網 FLIPr",
             "description": "News worth knowing, voices worth sharing 分享觀點從這開始",
             "icon": "images/thenewslens/icon_200x200.png",
-            "ios": "https://itunes.apple.com/cn/app/guan-jian-ping-lun-wang-flipr/id842456259?l=en&mt=8",
+            "ios": "https://itunes.apple.com/tw/app/guan-jian-ping-lun-wang-flipr/id842456259?l=en&mt=8",
             "android": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens"
         },
         {
             "name": "GOOD TV FLIPr",
             "description": "好消息電視台，是重視家庭價值、關懷社會與人心，帶給人們信心、希望、與真愛的電視台！",
             "icon": "images/goodtv/app_icon.png",
-            "ios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
+            "ios": "https://itunes.apple.com/tw/app/good-tv-flipr/id737001290?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv"
         },
         {
