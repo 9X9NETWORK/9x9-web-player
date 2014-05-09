@@ -6,7 +6,7 @@
             "icon": "images/goodtv/app_icon.png",
             "description": "本APP專為喜愛GOOD TV之觀眾設計，讓粉絲在各種螢幕上，隨時隨地，都能收看即時又精彩的節目！簡易直覺的操作，上下左右翻，就像在家中客廳看電視一樣的簡單。",
             "calltoaction": "立刻免費下載，好消息帶著走！",
-            "ios": "https://itunes.apple.com/ca/app/good-tv-flipr/id737001290?mt=8",
+            "ios": "https://itunes.apple.com/tw/app/good-tv-flipr/id737001290?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv",
             "playeronly" : false
         }

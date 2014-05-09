@@ -6,8 +6,8 @@
             "icon": "images/fcu/app_icon.png",
             "description": "「逢甲影音」跳脫傳統教學模式，提供熱愛學習的您，跨越時間、地點、空間的多螢幕互動體驗！暢快地上下左右翻翻逛逛，一起來享受無所不在的學習雲！",
             "calltoaction": "立刻免費下載，給你看更多！",
-            "ios": "",
-            "android": "",
+            "ios": "https://itunes.apple.com/tw/app/feng-jia-ying-yin-flipr/id723980669?mt=8",
+            "android": "https://play.google.com/store/apps/details?id=tw.edu.fcu.player9x9tv",
             "playeronly" : false,
             "playerControl" : ""
         }
