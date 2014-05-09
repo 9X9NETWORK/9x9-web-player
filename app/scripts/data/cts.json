@@ -90,13 +90,13 @@
             "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
             "icon": "images/superstar/icon_200x200.png",
             "ios": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
-            "android": ""
+            "android": "https://www.google.com/url?q=https://play.google.com/store/apps/details%3Fid%3Dtv.flipr.superstar&usd=2&usg=ALhdy2-X_wPk0LF9xi9iSzNWrxWFv4DfQw"
         },
         {
             "name": "關鍵評論網 FLIPr",
             "description": "News worth knowing, voices worth sharing 分享觀點從這開始",
             "icon": "images/thenewslens/icon_200x200.png",
-            "ios": "",
+            "ios": "https://itunes.apple.com/cn/app/guan-jian-ping-lun-wang-flipr/id842456259?l=en&mt=8",
             "android": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens"
         },
         {
