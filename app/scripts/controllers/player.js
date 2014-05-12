@@ -59,17 +59,34 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
       var path = '/p' + channel.id + '/' + episode.id;
       $location.path(path);
 
-      programs = new nn.utils.NnArray(episode.programs, false);
+      var ep1 = episodes.first();
+      var url1 = ep1.url1[0].split(";")[0];
+      if(url1.indexOf("m3u8") !== -1){
+        //live streaming channel
 
-      $scope.channel = channel;
-      $scope.episodes = episodes;
-      $scope.episodeIndex = episodeIndex;
-      $scope.episode = episode;
+              $("#ytplayer-1").hide();
+              $("#hls-video").show();
+              $("#hls-video source").attr("src", url1);
+              videojs.options.flash.swf = 'videojs/video-js.swf';
+              // initialize the player
+              var player = videojs('hls-video');
 
-      $scope.$apply();
+              // initialize the plugin
+              player.hls(url1);
+              player.play();
+      }else{
+          programs = new nn.utils.NnArray(episode.programs, false);
 
-      startPlay();
-      initListPosition();
+          $scope.channel = channel;
+          $scope.episodes = episodes;
+          $scope.episodeIndex = episodeIndex;
+          $scope.episode = episode;
+
+          $scope.$apply();
+
+          startPlay();
+          initListPosition();
+      }
     }
 
     var initListPosition = function(){
