@@ -68,7 +68,21 @@
           <div class="player-wrap" ng-controller="PlayerCtrl">
             <div class="player-device">
                 <div class="playback-player">
+
                     <div id="ytplayer-1"></div>
+
+                    <video id="hls-video"
+                         style="display:none"
+                         class="video-js vjs-default-skin"
+                         height="100%"
+                         width="100%"
+                         autoplay
+                         controls>
+                    <source
+                       src=""
+                       type="application/x-mpegURL">
+                    </video>
+
                 </div>
 
                 <div class="playback-info">
@@ -223,6 +237,7 @@
         <script src="https://9x9ui.s3.amazonaws.com/playerlib/nn.landing/controllers/app-group.js"></script>
         <script src="scripts/services/shared-objects.js"></script>
         <script src="scripts/services/msoService.js"></script>
+        <script src="videojs/videojs-hls-all.js"></script>
         <!-- <script src="scripts/services/youtube-player.js"></script>-->
         <!-- endbuild -->
 </body>

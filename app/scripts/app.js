@@ -6,7 +6,8 @@ var getMso = function(){
   var mso = path.match(/^(.*)\.(flipr|9x9)\..*/);
   if(mso !== null){
     if(mso.length > 1){
-      if(mso[1] === "www" || mso[1] === "dev6") return "9x9";
+      if(mso[1] === "www") return "9x9";
+      if(mso[1] === "dev6") return "cts";
       return mso[1];
     }
   }
