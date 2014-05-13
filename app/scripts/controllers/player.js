@@ -57,7 +57,9 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
       }
 
       var path = '/p' + channel.id + '/' + episode.id;
-      $location.path(path);
+      $rootScope.$apply(function() {
+        $location.path(path);
+      });
 
       var ep1 = episodes.first();
       var url1 = ep1.url1[0].split(";")[0];

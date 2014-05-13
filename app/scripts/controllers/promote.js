@@ -1,8 +1,9 @@
 'use strict';
 ld.controller('PromoteCtrl', function ($scope, $http, msoService){
     //$scope.awesomeThings = ['HTML5 Boilerplate','AngularJS','Karma'];
-
+    console.log("promo");
     msoService.get().then(function(data){
+        console.log(data);
         $scope.promotionItems = data.promote;
         $scope.social = data.social;
         $scope.app = data.app[0];
