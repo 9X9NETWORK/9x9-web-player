@@ -63,6 +63,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
       var ep1 = episodes.first();
       var url1 = ep1.url1[0].split(";")[0];
+
       if(url1.indexOf("m3u8") !== -1){
         //live streaming channel
 
@@ -200,6 +201,16 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
        player.ready().then(function(){
           player.cueVideoById(programs.current().videoId);
        });
+
+       var openInAppLink;
+       if(mso === "9x9"){
+            openInAppLink = "flipr://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
+        }else{
+            openInAppLink = "flipr-" + mso + "://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
+        }
+        $scope.$apply(function(){
+          $scope.openInAppLink = openInAppLink;
+        });
 
        episode.watched = 0;
        watchedSec = 0;
