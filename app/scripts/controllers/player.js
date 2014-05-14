@@ -70,6 +70,26 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
               $("#ytplayer-1").hide();
               $("#hls-video").show();
 
+
+              programs = new nn.utils.NnArray(episode.programs, false);
+
+              $scope.channel = channel;
+              $scope.episodes = episodes;
+              $scope.episodeIndex = episodeIndex;
+              $scope.episode = episode;
+              
+              $(".open-in-app").hide();
+
+              var openInAppLink;
+              if(mso === "9x9"){
+                  openInAppLink = "flipr://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
+              }else{
+                  openInAppLink = "flipr-" + mso + "://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
+              }
+              $scope.openInAppLink = openInAppLink;
+              $scope.$apply();
+
+
               var player;
 
               /**
@@ -203,6 +223,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
        });
 
        var openInAppLink;
+       $(".open-in-app").hide();
        if(mso === "9x9"){
             openInAppLink = "flipr://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
         }else{
