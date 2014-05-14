@@ -14,6 +14,7 @@ angular.module('app.controllers').
     var lastSelected=0;
     var episodeId = $stateParams.episodeId;
     console.log('episodeId=',episodeId);
+    //$scope.shareOpen= false;
 
 
     videoData.async().then(function(data){

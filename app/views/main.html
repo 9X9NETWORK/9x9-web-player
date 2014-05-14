@@ -1,3 +1,4 @@
+
 <div class="waring-wrap">
     <span class="waring-en">Please use <strong>Firefox</strong> or <strong>Chrome</strong> for better experience!</span>
     <span class="waring-zh">請使用 <strong>Firefox</strong> 或 <strong>Chrome</strong> 瀏覽器以獲得更好的體驗 !</span>
@@ -10,8 +11,15 @@
         </div>
         <div class="playback-info">
             <p class="episode-name">Vice The Japanese Love Industry (Teaser) It show time!!!</p>
-
+            <div class="share-button-group" ng-class="{'is-open': shareOpen}">
+                <ul class="share-button-list">
+                    <li class="share-button-item"><a href="#" class="share-icon" ng-click="shareOpen =! shareOpen"></a></li>
+                    <li class="share-button-item"><a href="" class="share-icon-fb"></a></li>
+                    <li class="share-button-item"><a href="" class="share-icon-link"></a></li>
+                </ul>  
+            </div>
         </div>
+        
 
         <div class="episode-info-wrap">
             <div class="playback-episode-src">

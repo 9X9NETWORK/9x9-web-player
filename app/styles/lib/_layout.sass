@@ -33,10 +33,51 @@ body
     +full
     border-bottom: solid 1px #000
     background-color: $basic-bgcolor
+    height: 2rem
+    position: relative
     .episode-name
+        +span(10 of 12 first)
         font-size: $large-font
         line-height: 2
         +ellipsis
+.share-button-group
+    position: absolute
+    right: 0.5rem        
+    border-radius: 20rem
+    padding: 0 0.2rem 0.5rem
+    max-height: 1.6rem
+    overflow: hidden
+    +single-transition(all, 0.3s, ease-out)
+    
+    &.is-open
+        padding: 0.5rem 0.2rem
+        background-color: rgba(#000,0.5)
+        border: solid 1px #999
+        z-index: 20
+        max-height: 7.2rem
+
+
+
+
+.share-button-item
+    display: block
+    margin-bottom: 0.6rem 
+    a
+        width: 2.1rem
+        
+        display: block
+    &:last-of-type
+        margin-bottom: 0
+.share-icon
+    background: transparent url('../images/share-icon.png') no-repeat 0 0
+    height: 1.8rem
+.share-icon-fb
+    background: transparent url('../images/share-icon-fb.png') no-repeat 0 0
+    height: 2rem
+.share-icon-link
+    background: transparent url('../images/share-icon-link.png') no-repeat 0 0
+    height: 2rem
+
 
 .episode-info-wrap
     +span(12 nest)
