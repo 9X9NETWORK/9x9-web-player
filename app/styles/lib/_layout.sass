@@ -260,6 +260,17 @@ body
     margin-top: 0.8rem
     padding-bottom: 0.5rem
     text-align: center
+    position: relative
+    &:before
+        content: ''
+        width: 0
+        height: 0
+        border-top: 8px solid transparent
+        border-left: 8px solid #fff
+        border-bottom: 8px solid transparent
+        position: absolute
+        margin-left: -0.8rem 
+
     .is-ios &,.is-android &
         display: block
 //function
