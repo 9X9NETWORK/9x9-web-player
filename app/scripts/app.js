@@ -20,6 +20,9 @@ angular.module('landing', ['ngCookies','ngResource','ngSanitize','ui.router','ap
 
     }
 ])
+.run(function() {
+    FastClick.attach(document.body);
+ })
 .config(function($locationProvider,$stateProvider, $urlRouterProvider){
       //$locationProvider.html5Mode(true);
       $urlRouterProvider.otherwise('/');
