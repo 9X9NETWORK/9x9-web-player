@@ -88,6 +88,13 @@
 
                 <div class="playback-info">
                     <p class="episode-name">{{episode.name}}</p>
+                    <div class="share-button-group" ng-class="{'is-open': shareOpen}">
+                        <ul class="share-button-list">
+                            <li class="share-button-item"><a href="" class="share-icon" ng-click="shareOpen =! shareOpen"></a></li>
+                            <li class="share-button-item"><a href="" class="share-icon-fb"></a></li>
+                            <li class="share-button-item"><a href="" class="share-icon-link"></a></li>
+                        </ul>  
+                    </div>
                     <!-- <p class="episode-last-updated">2 hours ago</p> -->
                     <!-- <ul class="playback-info-buttons">
                         <li class="playback-info-share"><i class="icon-menu"></i></li>
