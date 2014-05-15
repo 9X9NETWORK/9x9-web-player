@@ -62,9 +62,12 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
       });
 
       var ep1 = episodes.first();
-      var url1 = ep1.url1[0].split(";")[0];
+      var url1;
+      if(ep1.url1){
+        url1 = ep1.url1[0].split(";")[0];
+      }
 
-      if(url1.indexOf("m3u8") !== -1){
+      if(url1 && url1.indexOf("m3u8") !== -1){
         //live streaming channel
 
               $("#ytplayer-1").hide();
@@ -78,7 +81,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
               $scope.episodeIndex = episodeIndex;
               $scope.episode = episode;
               
-              $(".open-in-app").hide();
+              //$(".open-in-app").hide();
 
               var openInAppLink;
               if(mso === "9x9"){
@@ -86,8 +89,9 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
               }else{
                   openInAppLink = "flipr-" + mso + "://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
               }
-              $scope.openInAppLink = openInAppLink;
-              $scope.$apply();
+              $("#openInAppLink").click(function(){
+                document.location = openInAppLink;
+              });
 
 
               var player;
@@ -223,14 +227,15 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
        });
 
        var openInAppLink;
-       $(".open-in-app").hide();
+       //$(".open-in-app").hide();
        if(mso === "9x9"){
             openInAppLink = "flipr://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
         }else{
             openInAppLink = "flipr-" + mso + "://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
         }
-        $scope.$apply(function(){
-          $scope.openInAppLink = openInAppLink;
+
+        $("#openInAppLink").click(function(){
+          location.href = openInAppLink;
         });
 
        episode.watched = 0;
@@ -429,7 +434,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                 */
               }
 
-              if($scope.social.length > 0){
+              if($scope.social && $scope.social.length > 0){
                 $(".playeronly .social-media-wrap").css("display", "block");
               }
 
