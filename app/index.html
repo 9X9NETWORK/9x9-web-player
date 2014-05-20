@@ -37,6 +37,7 @@
     
     <base id="base" href="">
     <script type="text/javascript">
+
         var debugging = location.href.indexOf("dev6") !== -1;
         document.getElementById("base").href = debugging ? "/lab/web5.x/" : "/view/";
     </script>
@@ -91,8 +92,8 @@
                     <div class="share-button-group" ng-class="{'is-open': shareOpen}">
                         <ul class="share-button-list">
                             <li class="share-button-item"><a href="" class="share-icon" ng-click="shareOpen =! shareOpen"></a></li>
-                            <li class="share-button-item"><a href="" class="share-icon-fb"></a></li>
-                            <li class="share-button-item"><a href="" class="share-icon-link"></a></li>
+                            <li class="share-button-item"><a href="" ng-click="shareToFb()" class="share-icon-fb"></a></li>
+                            <li class="share-button-item"><a id="btn-clipboard" href="" class="share-icon-link"></a></li>
                         </ul>  
                     </div>
                     <!-- <p class="episode-last-updated">2 hours ago</p> -->
@@ -211,7 +212,6 @@
     <!-- <div ng-include="views/promote.html" ng-controller="PromoteCtrl"></div>
     <div ng-include="views/app_group.html" ng-controller="AppGroupCtrl"></div> -->
     <div ui-view></div>
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -221,6 +221,7 @@
 
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
+
     </script>
    
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -244,13 +245,14 @@
         <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <!-- <script src="scripts/controllers/main.js"></script> -->
         <script src="https://9x9ui.s3.amazonaws.com/playerlib/nn.landing/controllers/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
         <script src="https://9x9ui.s3.amazonaws.com/playerlib/nn.landing/controllers/player.js"></script>
         <script src="https://9x9ui.s3.amazonaws.com/playerlib/nn.landing/controllers/promote.js"></script>
         <script src="https://9x9ui.s3.amazonaws.com/playerlib/nn.landing/controllers/app-group.js"></script>
         <script src="scripts/services/shared-objects.js"></script>
         <script src="scripts/services/msoService.js"></script>
+        <script src="scripts/ZeroClipboard.js"></script>
         <script src="videojs/videojs-hls-all.js"></script>
         <!-- <script src="scripts/services/youtube-player.js"></script>-->
         <!-- endbuild -->

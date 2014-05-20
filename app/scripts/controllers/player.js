@@ -81,7 +81,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
               $scope.episodeIndex = episodeIndex;
               $scope.episode = episode;
               
-              //$(".open-in-app").hide();
+              $(".is-ios, .is-android").find(".open-in-app").show();
 
               var openInAppLink;
               if(mso === "9x9"){
@@ -89,8 +89,8 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
               }else{
                   openInAppLink = "flipr-" + mso + "://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
               }
-              $("#openInAppLink").click(function(){
-                document.location = openInAppLink;
+              $(".is-ios, .is-android").find(".app-download-wrap > a").click(function(){
+                location.href = openInAppLink;
               });
 
 
@@ -227,14 +227,14 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
        });
 
        var openInAppLink;
-       //$(".open-in-app").hide();
+       $(".is-ios, .is-android").find(".open-in-app").show();
        if(mso === "9x9"){
-            openInAppLink = "flipr://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
+            openInAppLink = "flipr://flipr.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
         }else{
-            openInAppLink = "flipr-" + mso + "://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
+            openInAppLink = "flipr-" + mso + "://flipr.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
         }
 
-        $("#openInAppLink").click(function(){
+        $(".is-ios, .is-android").find(".app-download-wrap > a").click(function(){
           location.href = openInAppLink;
         });
 
@@ -267,8 +267,22 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
               }, 1000);
             }
         });
+
+       //update copy to clipboard data
+       $("#btn-clipboard").attr("data-clipboard-text", location.href);
     }
 
+    var initClipboard = function(){
+        var client = new ZeroClipboard(document.getElementById("btn-clipboard"));
+        $("#btn-clipboard").attr("data-clipboard-text", location.href);
+        // console.log(client);
+        client.on( "ready", function( readyEvent ) {
+          alert( "copied" );
+          client.on( "aftercopy", function( event ) {
+             //alert("Copied text to clipboard: " + event.data["text/plain"] );
+          });
+        });
+    }
     var init = function(){
 
         var nua = navigator.userAgent;
@@ -324,6 +338,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         }
         
         loadApi();
+        initClipboard();
     }
 
     var GaReportView = function(name){
@@ -479,6 +494,17 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         //initListPosition();
     }
 
+    $scope.shareToFb = function(){
+      var url = location.href;
+      console.log(url);
+      FB.ui({
+        method: 'share',
+        href: url,
+      }, function(response){
+        console.log(response);
+      });
+    }
+
     var list = $(".episode-list");
     var left = 0;
     var amount = 250;
@@ -503,6 +529,8 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         }, 500);
         return false;
     }
+
+    $(".open-in-app").hide();
 });
 
 
