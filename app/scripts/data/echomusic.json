@@ -7,7 +7,7 @@
             "description": "音樂像塊拼圖，總有屬於它的故事和適合的位置。証聲希望幫每個音符都找到它的家！有時簡單的一首歌，一點旋律或一個音符就能在無形中進入聽眾的心中。",
             "calltoaction": "立刻免費下載翻更多！",
             "ios": "",
-            "android": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.echomusic",
             "playeronly" : false,
             "playerControl" : false
         }
@@ -19,7 +19,7 @@
         },
         {
             "icon": "images/social_media_icon_echomusic.png",
-            "url": "http://www.echomusic.com.tw/"
+            "url": "http://www.echomusicpg.com/taiwan/tc"
         },
         {
             "icon": "images/social-media-youtube.png",
