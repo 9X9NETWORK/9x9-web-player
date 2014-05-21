@@ -224,6 +224,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     var startPlay = function(){
        player.ready().then(function(){
           player.cueVideoById(programs.current().videoId);
+          console.log(programs.current().videoId);
        });
 
        var openInAppLink;
@@ -277,8 +278,11 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         $("#btn-clipboard").attr("data-clipboard-text", location.href);
         // console.log(client);
         client.on( "ready", function( readyEvent ) {
-          alert( "copied" );
           client.on( "aftercopy", function( event ) {
+              alert( "Link Copied!" );
+              $scope.$apply(function(){
+                $scope.shareOpen = false;
+              });
              //alert("Copied text to clipboard: " + event.data["text/plain"] );
           });
         });
@@ -385,11 +389,17 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         };
     }
 
+    var facebook_clientid;
     $.get("/playerAPI/brandInfo?mso=" + mso + "&os=web", function(res){
         var rs = res.match(/supported-region\s([a-zA-z]*)/);
         if(rs !== null){
             lang = rs[1]; 
         }
+        
+        facebook_clientid = res.split("facebook-clientid\t")[1].split("\n")[0];
+        console.log(facebook_clientid);
+        initFB();
+
         rs = res.match(/ga\s([a-zA-z\-0-9]*)/);
         if(rs !== null){
             gaid = rs[1]; 
@@ -494,13 +504,33 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         //initListPosition();
     }
 
+    var initFB = function(){
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : facebook_clientid,
+          xfbml      : true,
+          version    : 'v2.0'
+        });
+      };
+
+      (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    }
     $scope.shareToFb = function(){
       var url = location.href;
-      console.log(url);
+      // console.log(url);
       FB.ui({
         method: 'share',
         href: url,
       }, function(response){
+        $scope.$apply(function(){
+          $scope.shareOpen = false;
+        });
         console.log(response);
       });
     }
