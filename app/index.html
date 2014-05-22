@@ -34,10 +34,15 @@
     <meta itemprop="name" content="{{meta_title}}">
     <meta itemprop="description" content="{{meta_description}}">
     <meta itemprop="image" content="{{meta_thumbnail}}"><!-- google+ requires thumbnail size at least 125px -->
-    
+    <script>
+        var _query = location.href;
+        console.log(_query);
+        _query = _query.split("?");
+        _query = _query.length > 1 ? '?' + _query[1] : "";
+        console.log(_query);
+    </script>
     <base id="base" href="">
     <script type="text/javascript">
-
         var debugging = location.href.indexOf("dev6") !== -1;
         document.getElementById("base").href = debugging ? "/lab/web5.x/" : "/view/";
     </script>
