@@ -270,10 +270,11 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         });
 
        //update copy to clipboard data
-       $("#btn-clipboard").attr("data-clipboard-text", location.href);
+       //$("#btn-clipboard").attr("data-clipboard-text", location.href);
     }
 
     var initClipboard = function(){
+        return;
         var client = new ZeroClipboard(document.getElementById("btn-clipboard"));
         $("#btn-clipboard").attr("data-clipboard-text", location.href);
         // console.log(client);
@@ -343,6 +344,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         
         loadApi();
         initClipboard();
+        initTwitter();
     }
 
     var GaReportView = function(name){
@@ -397,7 +399,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         }
         
         facebook_clientid = res.split("facebook-clientid\t")[1].split("\n")[0];
-        console.log(facebook_clientid);
         initFB();
 
         rs = res.match(/ga\s([a-zA-z\-0-9]*)/);
@@ -521,6 +522,25 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
            fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     }
+
+    var initTwitter = function(){
+      $('#btn-twitter').click(function(event) {
+        var width  = 575,
+            height = 400,
+            left   = ($(window).width()  - width)  / 2,
+            top    = ($(window).height() - height) / 2,
+            url    = this.href,
+            opts   = 'status=1' +
+                     ',width='  + width  +
+                     ',height=' + height +
+                     ',top='    + top    +
+                     ',left='   + left;
+        
+        window.open(url, 'twitter', opts);
+        return false;
+      });
+    }
+
     $scope.shareToFb = function(){
       var url = location.href;
       // console.log(url);
