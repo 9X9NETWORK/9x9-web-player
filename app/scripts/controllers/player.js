@@ -537,6 +537,9 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                      ',left='   + left;
         
         window.open(url, 'twitter', opts);
+        $scope.$apply(function(){
+          $scope.shareOpen = false;
+        });
         return false;
       });
     }
