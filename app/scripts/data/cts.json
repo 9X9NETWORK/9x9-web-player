@@ -6,8 +6,16 @@
             "icon": "images/cts/app_icon.png",
             "description": "本APP專為喜愛華視節目之觀眾設計，讓粉絲在各種螢幕上，隨時隨地，都能收看即時又精彩的節目！簡易直覺的操作，上下左右翻。就像在家中客廳看電視一樣的簡單。",
             "calltoaction": "立刻免費下載給你看更多！",
-            "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player",
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/hua-shi-flipr/id623085456?mt=8",
+                "landing": "http://ad.apps.fm/Rf4gaozELf9-tOQ52oo_tvE7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA6lL9g6acrtNCuo_QbZ-sAVxLRzmm9ifNXr3YZhgurjgs",
+                "officesite": "http://ad.apps.fm/X-W2O-5Dso_-ww54Mal4cPE7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA6VvP96wEV1eVbHYC_iHdtTDBIhbQHqlQE3-cjSPqKQtk"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tw.com.cts.player",
+                "landing": "http://ad.apps.fm/B-Vm5zlWoEm62t1tfDT4GV5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfbq0znJlzKjEljmDwpvhcIgMLJmbKTge2R8rbg0OHrgmuq2tPqScBnyk3Z1IKehSE7hJK2jGFzGVqzFtNu91KiA",
+                "officesite": "http://ad.apps.fm/2GGgAuZG77JfARZasyLc6F5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfbq0znJlzKjEljmDwpvhcImtXN7I_3nK2yD6iKMABs-rQQCIo95FB8EVpL0RLiOe3"
+                },
             "playeronly" : false
         }
     ],

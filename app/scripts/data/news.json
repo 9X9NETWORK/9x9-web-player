@@ -6,8 +6,16 @@
             "icon": "images/news/icon_200x200.png",
             "description": "網羅各大影音新聞，多元內容一次給你各種觀點。茶餘飯後喇新聞，天下大事盡知曉。不管你是藍的、綠的、黑的、黃的...，你要的新聞就在這裡。",
             "calltoaction": "立刻下載全民一起喇新聞！",
-            "ios": "https://itunes.apple.com/tw/app/la-xin-wen-flipr/id865752513?l=zh&mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.news",
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/la-xin-wen-flipr/id865752513?l=zh&mt=8",
+                "landing": "http://ad.apps.fm/XWQDpNUlRKRrmEmsYFZvtfE7og6fuV2oOMeOQdRqrE1lpOk14o7l5UESNgy7Lc2XY8ug3HwYezpqtHhCSmq5wCzk1feOsekVddc_n_6oAuY",
+                "officesite": "http://ad.apps.fm/1QgeysaV4rXdabSj1CFP5vE7og6fuV2oOMeOQdRqrE1lpOk14o7l5UESNgy7Lc2XJVN3A6JfSQmi-bbAvCCc9kHg_l0slQAJcQPJk68wLf0"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.news",
+                "landing": "http://ad.apps.fm/yBwhgdPHBNodylbasNgXKV5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfVT3SZlHuQKnB1G8prEI3dy5wJQDYtXpvztYi86xsS-N9-vcHxy9ovdBiY7O7OyFI",
+                "officesite": "http://ad.apps.fm/U261KuBu3hesyviGKSJO8V5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfVT3SZlHuQKnB1G8prEI3dxw6bjDDn86SbauFxAC785rYXCFwiYkGtkmQpGIS742Y"
+                },
             "playeronly" : false
         }
     ],

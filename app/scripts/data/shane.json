@@ -6,8 +6,12 @@
             "icon": "images/shane/icon_200x200.png",
             "description": "Discover the latest vlogs from actor, musician, comedian, and video maker - Shane Dawson! Watch it on the big screen with Chromecast support!",
             "calltoaction": "FREE to download now!",
-            "ios": "",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.shane",
+            "ios": {},
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.shane",
+                "landing": "",
+                "officesite": ""
+                },
             "playeronly" : true
         }
     ]
