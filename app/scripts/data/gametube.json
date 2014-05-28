@@ -1,0 +1,50 @@
+{
+    "app": [
+        {
+            "mso": "gametube.flipr.tv",
+            "name": "GameTube FLIPr",
+            "icon": "images/gametube/app_icon.png",
+            "description": "電玩影音新流感。同步收納超熱「電玩新知」、超夯「實戰」、超酷「名家」！電玩宅速配、新電玩快打、電玩瘋、精選熱門遊戲、電玩咖、電玩爆爆 ... 等！",
+            "calltoaction": "立刻免費下載，給你看更多！",
+            "ios": "",
+            "android": "https://play.google.com/store/apps/details?id=tv.flipr.gametube",
+            "playeronly" : false,
+            "playerControl" : ""
+        }
+    ],
+    "promote": [
+        {
+            "name": "電玩宅速配",
+            "image": "images/gametube/cms-thumbnail-ratio-1.png",
+            "link": "http://gametube.flipr.tv/view/p33156"
+        },
+        {
+            "name": "新電玩快打",
+            "image": "images/gametube/cms-thumbnail-ratio-2.png",
+            "link": "http://gametube.flipr.tv/view/p33635"
+        },
+        {
+            "name": "電玩瘋",
+            "image": "images/gametube/cms-thumbnail-ratio-3.png",
+            "link": "http://gametube.flipr.tv/view/p33700"
+        },
+        {
+            "name": "精選熱門遊戲",
+            "image": "images/gametube/cms-thumbnail-ratio-4.png",
+            "link": "http://gametube.flipr.tv/view/p33618"
+        },
+        {
+            "name": "電玩咖",
+            "image": "images/gametube/cms-thumbnail-ratio-5.png",
+            "link": "http://gametube.flipr.tv/view/p33662"
+        },
+        {
+            "name": "電玩爆爆",
+            "image": "images/gametube/cms-thumbnail-ratio-6.png",
+            "link": "http://gametube.flipr.tv/view/p33164"
+        }
+    ],
+    "link": [
+        
+    ]
+}
