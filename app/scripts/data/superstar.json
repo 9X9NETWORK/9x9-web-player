@@ -6,8 +6,16 @@
             "icon": "images/superstar/icon_200x200.png",
             "description": "笑到噴飯的搞笑影片、萌到破表的幼兒寵物、超級實用的才藝教學和美妝分享。網路明星最新最夯的線上影片，盡在「網路大明星 FLIPr」！",
             "calltoaction": "下載給你所有網路大明星！",
-            "ios": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.superstar",
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
+                "landing": "http://ad.apps.fm/yRkzxD3_UxuS0of3NVE_4PE7og6fuV2oOMeOQdRqrE1EIMw4p98flYb4oZm9NR8rHCFe8P0kRZ5d8idjRy-cI8siWmKub9njD5xOzXjkW9Y",
+                "officesite": "http://ad.apps.fm/Z58sjg0RuO039ttqYWNMGvE7og6fuV2oOMeOQdRqrE1EIMw4p98flYb4oZm9NR8rVvP96wEV1eVbHYC_iHdtTMgIe1O_yoFcMepFqBuyDp8"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.superstar",
+                "landing": "http://ad.apps.fm/TZI_uAPQny4y-X4ZPg2W-V5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfKgz2t2EZGErg3zm5ooZ8p-PDZaiI_lxHkhJkVJ6orEwOhyglzW2wlvWynKtGv5IP8JhqAqeN3clMovLAs7D3ig",
+                "officesite": "http://ad.apps.fm/XUZ-nYJyHEejfAsOTH5cdl5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfKgz2t2EZGErg3zm5ooZ8pyMVz4jR9PNLkinGwYarpi9iwlpnrK5HUcP2dgqRWM3Y0EBbbxphpu_GHoB5DVgsXw"
+                },
             "playeronly" : false
         }
     ],

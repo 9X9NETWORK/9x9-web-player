@@ -6,8 +6,16 @@
             "icon": "images/thenewslens/app_icon.png",
             "description": "每天傳送給讀者最精華最重要的數則影音新聞，短短77秒，輕鬆無負擔又可快速掌握國內外重點。拒絕腥羶色，只有你每天最該知道、影響你未來的趨勢觀察。",
             "calltoaction": "立刻免費下載給你看更多！",
-            "ios": "https://itunes.apple.com/tw/app/guan-jian-ping-lun-wang-flipr/id842456259?l=en&mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens",
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/guan-jian-ping-lun-wang-flipr/id842456259?l=en&mt=8",
+                "landing": "http://ad.apps.fm/TRRv14qxzxhbPkcp8tWRyvE7og6fuV2oOMeOQdRqrE17dr3TrSeTGxJRr9klqMmNHCFe8P0kRZ5d8idjRy-cI5UDbniPT04DURRXliAwEH4",
+                "officesite": "http://ad.apps.fm/0Lx_BKmbzeRnoSeGpwp1pPE7og6fuV2oOMeOQdRqrE17dr3TrSeTGxJRr9klqMmNeXlmkGm-NfmhfAc-ByGo3qddRHgIKWjzHsZ4XhkhX0E"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens",
+                "landing": "http://ad.apps.fm/fEzZK5VhWaSIQ2lk8bnySV5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfcVrX7Je-GblmQV-LIi0LT-i7oWbpIPISe3xw-bWx6qDuezh8TMDKoz_0qRclAvLX",
+                "officesite": "http://ad.apps.fm/bauHhZcOypIaDvUzWUJbwl5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfcVrX7Je-GblmQV-LIi0LT92yizYLCZx8IKZxNgcPGlJ0mp3pMN5mbfB2wGHoB683"
+                },
             "playeronly" : false
         }
     ],

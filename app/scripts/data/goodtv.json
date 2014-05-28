@@ -6,8 +6,16 @@
             "icon": "images/goodtv/app_icon.png",
             "description": "本APP專為喜愛GOOD TV之觀眾設計，讓粉絲在各種螢幕上，隨時隨地，都能收看即時又精彩的節目！簡易直覺的操作，上下左右翻，就像在家中客廳看電視一樣的簡單。",
             "calltoaction": "立刻免費下載，好消息帶著走！",
-            "ios": "https://itunes.apple.com/tw/app/good-tv-flipr/id737001290?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv",
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/good-tv-flipr/id737001290?mt=8",
+                "landing": "http://ad.apps.fm/gYKE-oQG90zhXwMLkRt1fPE7og6fuV2oOMeOQdRqrE0QIshyz0mi8ejNrjqhlWbXlL9g6acrtNCuo_QbZ-sAV4z2pVqQTfx9fOvKtvFsqnA",
+                "officesite": "http://ad.apps.fm/BMr5kJ4aXfDq3IWLoHXTb_E7og6fuV2oOMeOQdRqrE0QIshyz0mi8ejNrjqhlWbXVvP96wEV1eVbHYC_iHdtTBK-rAtWpu8Ok00KWc0WDsw"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv",
+                "landing": "http://ad.apps.fm/n9zK0Su04cvuV1NTi0xfqheia0_LQpFNtXyI_RYvuCG0_vCLxUoHxV88BZc6OnBN09bcWPlnj3_yxzZFd7me6jQUUVBwXDYs9QmvZ_tpqbo",
+                "officesite": "http://ad.apps.fm/dVjx0VzttQs3Pe5NcXmWsl5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfGkvGklG3pneD_B5uDg1ZHyMpx6pSXuECzSuXz9oWyljAg1siTCSX7biCEMoWORp0WiAqhcOHk3-NummfZ-aLcw"
+                },
             "playeronly" : false
         }
     ],

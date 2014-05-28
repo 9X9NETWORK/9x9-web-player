@@ -1,76 +1,145 @@
 {
 	"zh": [
         {
+            "id" : "gametube",
+            "name": "GameTube FLIPr",
+            "description": "電玩影音新流感。同步收納超熱「電玩新知」、超夯「實戰」、超酷「名家」！",
+            "icon": "images/gametube/app_icon.png",
+            "ios": {},
+            "android": {}
+        },
+        {
             "id" : "magazine",
             "name": "癮雜誌 FLIPr",
             "description": "每日嗑雜誌，天天長知識。",
             "icon": "images/magazine/app_icon.png",
-            "ios": "",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.magazine"
+            "ios": {},
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.magazine",
+                "landing": "http://ad.apps.fm/huaojoZk_gGL8l3EPyOJZF5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYforegh12eTejqhhX-dpLhQyQreKsOL8Jfw6wrJClRk-hH8UEZLuckEFbMSY1T2mpu0EBbbxphpu_GHoB5DVgsXw",
+                "officesite": "http://ad.apps.fm/jpiAHJXovttzUSZLDLt9i15KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYforegh12eTejqhhX-dpLhQ2ITHNl4qbyzaflebUVlQfoNrl_IB0YgfhfBsI4i3G_d"
+                }
         },
         {
             "id" : "fcu",
             "name": "逢甲影音 FLIPr",
             "description": "逢甲大學新媒體，帶給全球創新價值，更是您無所不在的學習雲！",
             "icon": "images/fcu/app_icon.png",
-            "ios": "https://itunes.apple.com/tw/app/feng-jia-ying-yin-flipr/id723980669?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tw.edu.fcu.player9x9tv"
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/feng-jia-ying-yin-flipr/id723980669?mt=8",
+                "landing": "http://ad.apps.fm/TRRv14qxzxhbPkcp8tWRyvE7og6fuV2oOMeOQdRqrE17dr3TrSeTGxJRr9klqMmNHCFe8P0kRZ5d8idjRy-cI5UDbniPT04DURRXliAwEH4",
+                "officesite": "http://ad.apps.fm/0Lx_BKmbzeRnoSeGpwp1pPE7og6fuV2oOMeOQdRqrE17dr3TrSeTGxJRr9klqMmNeXlmkGm-NfmhfAc-ByGo3qddRHgIKWjzHsZ4XhkhX0E"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tw.edu.fcu.player9x9tv",
+                "landing": "http://ad.apps.fm/fEzZK5VhWaSIQ2lk8bnySV5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfcVrX7Je-GblmQV-LIi0LT-i7oWbpIPISe3xw-bWx6qDuezh8TMDKoz_0qRclAvLX",
+                "officesite": "http://ad.apps.fm/bauHhZcOypIaDvUzWUJbwl5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfcVrX7Je-GblmQV-LIi0LT92yizYLCZx8IKZxNgcPGlJ0mp3pMN5mbfB2wGHoB683"
+                }
         },
         {
             "id" : "news",
             "name": "喇新聞 FLIPr",
             "description": "茶餘飯後喇新聞，天下大事盡知曉。",
             "icon": "images/news/icon_200x200.png",
-            "ios": "https://itunes.apple.com/tw/app/la-xin-wen-flipr/id865752513?l=zh&mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.news"
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/la-xin-wen-flipr/id865752513?l=zh&mt=8",
+                "landing": "http://ad.apps.fm/XWQDpNUlRKRrmEmsYFZvtfE7og6fuV2oOMeOQdRqrE1lpOk14o7l5UESNgy7Lc2XY8ug3HwYezpqtHhCSmq5wCzk1feOsekVddc_n_6oAuY",
+                "officesite": "http://ad.apps.fm/1QgeysaV4rXdabSj1CFP5vE7og6fuV2oOMeOQdRqrE1lpOk14o7l5UESNgy7Lc2XJVN3A6JfSQmi-bbAvCCc9kHg_l0slQAJcQPJk68wLf0"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.news",
+                "landing": "http://ad.apps.fm/yBwhgdPHBNodylbasNgXKV5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfVT3SZlHuQKnB1G8prEI3dy5wJQDYtXpvztYi86xsS-N9-vcHxy9ovdBiY7O7OyFI",
+                "officesite": "http://ad.apps.fm/U261KuBu3hesyviGKSJO8V5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfVT3SZlHuQKnB1G8prEI3dxw6bjDDn86SbauFxAC785rYXCFwiYkGtkmQpGIS742Y"
+                }
         },
         {
             "id" : "musicvideo",
             "name": "MV不解釋 FLIPr",
             "description": "網羅YouTube超過萬首音樂MV，一指翻閱，簡單上手，輕鬆站在MV最前線！",
             "icon": "images/mv/icon_200x200.png",
-            "ios": "https://itunes.apple.com/tw/app/mv-bu-jie-shi-flipr/id860501633?l=zh&mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo"
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/mv-bu-jie-shi-flipr/id860501633?l=zh&mt=8",
+                "landing": "http://ad.apps.fm/7B3Fd_uOvLsROb0GWi68ZPE7og6fuV2oOMeOQdRqrE3jLvTSqTRdsoIeUIhJ1HlKlL9g6acrtNCuo_QbZ-sAV6aNppwnzA3DlR1KPZ9_E10",
+                "officesite": "http://ad.apps.fm/tJaveXhdNRs_7ftW7yc8nvE7og6fuV2oOMeOQdRqrE3jLvTSqTRdsoIeUIhJ1HlKVvP96wEV1eVbHYC_iHdtTKrxR2YuEc69v8IE39KiXts"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo",
+                "landing": "http://ad.apps.fm/xpteNwJrL4Za2Uvd1TW-Wl5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYforegh12eTejqhhX-dpLhQ-iCE505MWbysJosEkcdDiFpwAI90-F2O3OIehOTkz400PyLBA8KXuU_Ji9swdMrkg",
+                "officesite": "http://ad.apps.fm/aVgUzVQqtR4wNXEvGm78315KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYforegh12eTejqhhX-dpLhQxJYCmWiY8O37NrORPQs-4QtJ3jT5r16lT0BLQqYF7wn8JhqAqeN3clMovLAs7D3ig"
+                }
         },
         {
             "id" : "echomusic",
             "name": "音樂圖書館 FLIPr",
             "description": "音樂就像一塊拼圖，總有屬於它的故事和適合的位置。証聲希望能幫每個音符都找到它的家！",
             "icon": "images/echomusic/app_icon.png",
-            "ios": "",
-            "android": ""
+            "ios": {},
+            "android": {}
         },
         {
             "id" : "superstar",
             "name": "網路大明星 FLIPr",
             "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
             "icon": "images/superstar/icon_200x200.png",
-            "ios": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.superstar"
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
+                "landing": "http://ad.apps.fm/yRkzxD3_UxuS0of3NVE_4PE7og6fuV2oOMeOQdRqrE1EIMw4p98flYb4oZm9NR8rHCFe8P0kRZ5d8idjRy-cI8siWmKub9njD5xOzXjkW9Y",
+                "officesite": "http://ad.apps.fm/Z58sjg0RuO039ttqYWNMGvE7og6fuV2oOMeOQdRqrE1EIMw4p98flYb4oZm9NR8rVvP96wEV1eVbHYC_iHdtTMgIe1O_yoFcMepFqBuyDp8"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.superstar",
+                "landing": "http://ad.apps.fm/TZI_uAPQny4y-X4ZPg2W-V5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfKgz2t2EZGErg3zm5ooZ8p-PDZaiI_lxHkhJkVJ6orEwOhyglzW2wlvWynKtGv5IP8JhqAqeN3clMovLAs7D3ig",
+                "officesite": "http://ad.apps.fm/XUZ-nYJyHEejfAsOTH5cdl5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfKgz2t2EZGErg3zm5ooZ8pyMVz4jR9PNLkinGwYarpi9iwlpnrK5HUcP2dgqRWM3Y0EBbbxphpu_GHoB5DVgsXw"
+                }
         },
         {
             "id" : "thenewslens",
             "name": "關鍵評論網 FLIPr",
             "description": "News worth knowing, voices worth sharing 分享觀點從這開始",
             "icon": "images/thenewslens/icon_200x200.png",
-            "ios": "https://itunes.apple.com/tw/app/guan-jian-ping-lun-wang-flipr/id842456259?l=en&mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens"
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/guan-jian-ping-lun-wang-flipr/id842456259?l=en&mt=8",
+                "landing": "http://ad.apps.fm/TRRv14qxzxhbPkcp8tWRyvE7og6fuV2oOMeOQdRqrE17dr3TrSeTGxJRr9klqMmNHCFe8P0kRZ5d8idjRy-cI5UDbniPT04DURRXliAwEH4",
+                "officesite": "http://ad.apps.fm/0Lx_BKmbzeRnoSeGpwp1pPE7og6fuV2oOMeOQdRqrE17dr3TrSeTGxJRr9klqMmNeXlmkGm-NfmhfAc-ByGo3qddRHgIKWjzHsZ4XhkhX0E"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens",
+                "landing": "http://ad.apps.fm/fEzZK5VhWaSIQ2lk8bnySV5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfcVrX7Je-GblmQV-LIi0LT-i7oWbpIPISe3xw-bWx6qDuezh8TMDKoz_0qRclAvLX",
+                "officesite": "http://ad.apps.fm/bauHhZcOypIaDvUzWUJbwl5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfcVrX7Je-GblmQV-LIi0LT92yizYLCZx8IKZxNgcPGlJ0mp3pMN5mbfB2wGHoB683"
+
+                }
         },
         {
             "id" : "goodtv",
             "name": "GOOD TV FLIPr",
             "description": "好消息電視台，是重視家庭價值、關懷社會與人心，帶給人們信心、希望、與真愛的電視台！",
             "icon": "images/goodtv/app_icon.png",
-            "ios": "https://itunes.apple.com/tw/app/good-tv-flipr/id737001290?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv"
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/good-tv-flipr/id737001290?mt=8",
+                "landing": "http://ad.apps.fm/gYKE-oQG90zhXwMLkRt1fPE7og6fuV2oOMeOQdRqrE0QIshyz0mi8ejNrjqhlWbXlL9g6acrtNCuo_QbZ-sAV4z2pVqQTfx9fOvKtvFsqnA",
+                "officesite": "http://ad.apps.fm/BMr5kJ4aXfDq3IWLoHXTb_E7og6fuV2oOMeOQdRqrE0QIshyz0mi8ejNrjqhlWbXVvP96wEV1eVbHYC_iHdtTBK-rAtWpu8Ok00KWc0WDsw"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv",
+                "landing": "http://ad.apps.fm/n9zK0Su04cvuV1NTi0xfqheia0_LQpFNtXyI_RYvuCG0_vCLxUoHxV88BZc6OnBN09bcWPlnj3_yxzZFd7me6jQUUVBwXDYs9QmvZ_tpqbo",
+                "officesite": "http://ad.apps.fm/dVjx0VzttQs3Pe5NcXmWsl5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfGkvGklG3pneD_B5uDg1ZHyMpx6pSXuECzSuXz9oWyljAg1siTCSX7biCEMoWORp0WiAqhcOHk3-NummfZ-aLcw"
+                }
         },
         {
             "id" : "cts",
             "name": "華視 FLIPr",
             "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
             "icon": "images/cts/app_icon.png",
-            "ios": "https://itunes.apple.com/tw/app/hua-shi-flipr/id623085456?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/hua-shi-flipr/id623085456?mt=8",
+                "landing": "http://ad.apps.fm/Rf4gaozELf9-tOQ52oo_tvE7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA6lL9g6acrtNCuo_QbZ-sAVxLRzmm9ifNXr3YZhgurjgs",
+                "officesite": "http://ad.apps.fm/X-W2O-5Dso_-ww54Mal4cPE7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA6VvP96wEV1eVbHYC_iHdtTDBIhbQHqlQE3-cjSPqKQtk"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tw.com.cts.player",
+                "landing": "http://ad.apps.fm/B-Vm5zlWoEm62t1tfDT4GV5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfbq0znJlzKjEljmDwpvhcIgMLJmbKTge2R8rbg0OHrgmuq2tPqScBnyk3Z1IKehSE7hJK2jGFzGVqzFtNu91KiA",
+                "officesite": "http://ad.apps.fm/2GGgAuZG77JfARZasyLc6F5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfbq0znJlzKjEljmDwpvhcImtXN7I_3nK2yD6iKMABs-rQQCIo95FB8EVpL0RLiOe3"
+                }
         }
     ],
     "en" : [
@@ -80,41 +149,72 @@
             "name": "Crash Course on FLIPr Unofficial",
             "icon": "images/crashcourse/icon_200x200.png",
             "description": "This app enables you to watch fun, educational videos from John & Hank Green's YouTube channel on-the-go, or on the big screen with Chromecast!",
-            "ios": "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse"
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8",
+                "landing": "",
+                "officesite": ""
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
+                "landing": "",
+                "officesite": ""
+                }
         },
         {
             "id" : "networka",
             "name": "Network A on FLIPr Unofficial",
             "icon": "images/networka/icon_200x200.png",
             "description": "Fill those 10-minute breaks with adrenaline-pumping stunts including skateboarding and much more on-the-go, or on the big screen with Chromecast! ",
-            "ios": "",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.networka"
+            "ios": {
+                "origin": "https://itunes.apple.com/us/app/network-a-on-flipr-unoffical/id815184188?mt=8",
+                "landing": "",
+                "officesite": ""
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.networka",
+                "landing": "",
+                "officesite": ""
+                }
         },
         
         {
+
             "id" : "collegehumor",
             "name": "CollegeHumor on FLIPr Unofficial",
             "icon": "images/collegehumor/icon_200x200.png",
             "description": "Fill those 10-minute breaks with fresh hilarious videos. Watch it continuously on-the-go, or on the big screen with Chromecast support!",
-            "ios": "",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.collegehumor"
+            "ios": {},
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.collegehumor",
+                "landing": "",
+                "officesite": ""
+            }
+            
         },
         {
             "id" : "smosh",
             "name": "Smosh on FLIPr Unofficial",
             "icon": "images/smosh/icon_200x200.png",
             "description": "Discover Anthony Padilla & Ian Hecox’s latest funnies on-the-go. This app can also help you watch it on the big screen with Chromecast support!",
-            "ios": "",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.smosh"
+            "ios": {},
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.smosh",
+                "landing": "",
+                "officesite": ""
+            }
+            
         },
          {
             "id" : "shane",
             "name": "Shane on FLIPr Unofficial",
             "icon": "images/shane/icon_200x200.png",
             "description": "Discover the latest vlogs from actor, musician, comedian, and video maker - Shane Dawson! Watch it on the big screen with Chromecast support!",
-            "ios": "",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.shane"
+            "ios": {},
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.shane",
+                "landing": "",
+                "officesite": ""
+                }
         },
 
          {
@@ -122,48 +222,86 @@
             "name": "TheFineBros on FLIPr Unofficial",
             "icon": "images/thefinebros/icon_200x200.png",
             "description": "Discover the latest videos of Kids/Teens/Elders/YouTubers React and many others on-the-go, or on the big screen with Chromecast support!",
-            "ios": "https://itunes.apple.com/us/app/flipr-the-fine-bros-edition/id872233879?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros"
+            "ios": {
+                "origin": "https://itunes.apple.com/us/app/flipr-the-fine-bros-edition/id872233879?mt=8",
+                "landing": "",
+                "officesite": ""
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros",
+                "landing": "",
+                "officesite": ""
+                }
         },
+        
+        
         {
             "id" : "nba",
             "name": "NBA on FLIPr Unofficial",
             "icon": "images/nba/icon_200x200.png",
             "description": "Simply flip and discover the latest NBA moments all in an immersive experience. Watch it continuously on the big screen with Chromecast support! ",
-            "ios": "",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.nba"
+            "ios": {},
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.nba",
+                "landing": "",
+                "officesite": ""
+                }
         },
         {
             "id" : "history",
             "name": "History on FLIPr Unofficial",
             "icon": "images/history/icon_200x200.png",
             "description": "Discover the latest videos from the channel History. You can also watch it continuously on the big screen with our brand new Chromecast support!",
-            "ios": "",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.history"
+            "ios": {},
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.history",
+                "landing": "",
+                "officesite": ""
+                }
         },
+        
+       
         {
             "id" : "spinninrec",
             "name": "SpinninRec on FLIPr Unofficial",
             "icon": "images/spinninrec/icon_200x200.png",
             "description": "Stay up to date with the latest electronic dance music from Spinnin’ Record! Take the music with you, or watch it on big screen with Chromecast!",
-            "ios": "",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.spinninrec"
+            "ios": {},
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.spinninrec",
+                "landing": "",
+                "officesite": ""
+                }
         },
+       
+        
         {
             "id" : "joeygraceffa",
             "name": "JoeyGraceffa on FLIPr Unofficial",
             "icon": "images/joeygraceffa/icon_200x200.png",
             "description": "Discover the popular YouTuber Joey's new vlogs and old funnies on-the-go. You can also watch it continuously on the big screen with Chromecast!",
-            "ios": "",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa"
+            "ios": {},
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa",
+                "landing": "",
+                "officesite": ""
+                }
         },
         {
             "id" : "ddtv",
             "name": "丁丁電視, Ding Ding TV",
             "icon": "images/ddtv/icon_200x200.png",
             "description": "丁丁電視是美國首創華語網絡電視、矽谷創新頻道及視頻製作公司。Ding Ding TV is the first Chinese American Internet TV for Silicon Valley ",
-            "ios": "https://itunes.apple.com/us/app/ding-ding-tv/id733144372?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.ddtv.player9x9tv"
+            "ios": {
+                "origin": "https://itunes.apple.com/us/app/ding-ding-tv/id733144372?mt=8",
+                "landing": "",
+                "officesite": ""
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.ddtv.player9x9tv",
+                "landing": "",
+                "officesite": ""
+                }
         }
     	
     ]
