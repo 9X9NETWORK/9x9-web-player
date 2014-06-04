@@ -73,8 +73,16 @@
             "name": "音樂圖書館 FLIPr",
             "description": "音樂就像一塊拼圖，總有屬於它的故事和適合的位置。証聲希望能幫每個音符都找到它的家！",
             "icon": "images/echomusic/app_icon.png",
-            "ios": {},
-            "android": {}
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/yin-le-tu-shu-guan-flipr/id877500176?mt=8",
+                "landing": "http://ad.apps.fm/4bMr3MTznkdSJVaNO8mwNfE7og6fuV2oOMeOQdRqrE18fGu7de6cdMfaNSit75EuHCFe8P0kRZ5d8idjRy-cI5ewO0d7hw5iI3dkDH6ybl8",
+                "officesite": "http://ad.apps.fm/KQcQnN08Cfxc_LrCG44BtfE7og6fuV2oOMeOQdRqrE18fGu7de6cdMfaNSit75EueXlmkGm-NfmhfAc-ByGo3kHWzUz1XMCa1nkrdeFr9o8"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.echomusic",
+                "landing": "http://ad.apps.fm/otFUkhregJUKQmrlULQQI15KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYf3u9ccYZkrqpVDsUYOYGn-LdlTh4eHAunqqa2yGqI8yT4VzjmQ-_okhpaKj8SjBA8",
+                "officesite": "http://ad.apps.fm/nYlxZ5Ve8WSFbJ3GuOIM_15KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYf3u9ccYZkrqpVDsUYOYGn-Ho-87KsRHgFbXvjQWjrxUkt07HtXjYVjFbwDmyrIUE"
+                }
         },
         {
             "id" : "superstar",
