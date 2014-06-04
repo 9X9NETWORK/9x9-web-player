@@ -423,7 +423,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             
             setTimeout(function(){
               var src;
-              if($scope.app.ios === ""){
+              if($scope.app.ios.landing === ""){
                 src = $(".app-download-appstore img").eq(0).attr("src");
                 src = src.split(".")[0] + "_comingsoon.png";
 
@@ -442,7 +442,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
               }
 
 
-              if($scope.app.android === ""){
+              if($scope.app.android.landing === ""){
                 src = $(".app-download-googleplay img").eq(0).attr("src");
                 src = src.split(".")[0] + "_comingsoon.png";
 

@@ -1,7 +1,5 @@
 'use strict';
-<<<<<<< HEAD
 ld.controller('MainCtrl', function ($scope, $stateParams, sharedObjects, $location){
-=======
 angular.module('app.controllers').
  controller('MainCtrl', function (
 	  $scope,
@@ -54,7 +52,6 @@ angular.module('app.controllers').
 
 
     };
->>>>>>> feature/ui-rwd
 
   search = $location.search();
   if(search.mso){
