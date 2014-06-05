@@ -376,8 +376,8 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
           GaReportEvent("install", "toDownload-iOS", mso);
         });
 
-        $(".social-media-list li a").click(function(){
-          var i = $(".social-media-list li a").index($(this));
+        $("body").on("click", ".social-media-list li a", function(){
+          // var i = $(".social-media-list li a").index($(this));
           // console.info("toLink" + (i+1));
           //GaReportEvent("promotion", "toLink" + (i+1), "toLink" + (i+1));
           GaReportEvent("promotion", $(this).attr("href"), "");
@@ -400,6 +400,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
         $("body").on("click", ".app-group-item", function(){
             GaReportEvent("install", "toDownloadOthers", $(this).attr("data-name"));
+            // return false;
         });
 
         window.onbeforeunload = function() {
