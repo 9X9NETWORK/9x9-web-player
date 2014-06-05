@@ -6,7 +6,11 @@
             "icon": "images/magazine/app_icon.png",
             "description": "網羅各大雜誌影音：商場職涯、流行時尚、生活休閒、親子健康、汽車車壇，多元內容一次滿足你各種視野。每日嗑雜誌， 天天長知識。",
             "calltoaction": "立刻下載成為雜誌通！",
-            "ios": {},
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/yin-za-zhi-flipr/id875762042?l=zh&ls=1&mt=8",
+                "landing": "http://ad.apps.fm/mcN2h9DPwg-3H8JLV9EjTvE7og6fuV2oOMeOQdRqrE2Sr9A2q4PzleThNW_NvOPTlL9g6acrtNCuo_QbZ-sAV4XKDjMwdEmfvpCGMyygG1I",
+                "officesite": "http://ad.apps.fm/fAlsFqyHst0ggm7eTM1XGvE7og6fuV2oOMeOQdRqrE2Sr9A2q4PzleThNW_NvOPTMAJSarys8Cvoueuj7mwSEhZgev3OTGDgG_Ov5HLSwiU"
+                },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.magazine",
                 "landing": "http://ad.apps.fm/huaojoZk_gGL8l3EPyOJZF5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYforegh12eTejqhhX-dpLhQyQreKsOL8Jfw6wrJClRk-hH8UEZLuckEFbMSY1T2mpu0EBbbxphpu_GHoB5DVgsXw",
