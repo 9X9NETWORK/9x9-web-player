@@ -378,9 +378,28 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
         $(".social-media-list li a").click(function(){
           var i = $(".social-media-list li a").index($(this));
-          console.info("toLink" + (i+1));
+          // console.info("toLink" + (i+1));
           //GaReportEvent("promotion", "toLink" + (i+1), "toLink" + (i+1));
-          GaReportEvent("promotion", "toLink" + (i+1), $(this).attr("href"));
+          GaReportEvent("promotion", $(this).attr("href"), "");
+        });
+
+        $(".share-icon-fb").click(function(){
+            GaReportEvent("share", "shareFB", "");
+        });
+
+        $("#btn-twitter").click(function(){
+            GaReportEvent("share", "shareTwitter", "");
+        });
+
+        $("body").on("click", ".promote-programe-item", function(){
+              var label = $(this).attr("data-name");
+              GaReportEvent("promotion", $(this).find("a").attr("href"), label);
+              // console.log($(this).find("a").attr("href"));
+              // return false;
+        });
+
+        $("body").on("click", ".app-group-item", function(){
+            GaReportEvent("install", "toDownloadOthers", $(this).attr("data-name"));
         });
 
         window.onbeforeunload = function() {

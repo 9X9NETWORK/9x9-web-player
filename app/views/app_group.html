@@ -1,7 +1,7 @@
 <div class="app-group-wrap">
     <h1 class="app-group-text">更多推薦的影音App</h1>
     <ul class="app-group-list">
-        <li ng-repeat="item in items" class="app-group-item">
+        <li ng-repeat="item in items" class="app-group-item" data-name="{{item.name}}">
             <figure class="app-item-icon">
                 <img ng-src="{{item.icon}}">
             </figure>
