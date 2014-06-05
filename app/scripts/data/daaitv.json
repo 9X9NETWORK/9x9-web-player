@@ -1,0 +1,68 @@
+{
+    "app": [
+        {
+            "mso": "daaitv.flipr.tv",
+            "name": "大愛 FLIPr",
+            "icon": "images/daaitv/app_icon.png",
+            "description": "「大愛讓世界亮起來」。優質節目－戲劇、新聞、慈善、教育、醫療、人文類內容都在「大愛 FLIPr」",
+            "calltoaction": "下載擁有適合全家人的內容！",
+            "ios": {
+                "origin" : "",
+                "landing" : "",
+                "officesite" : ""
+            },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.daai",
+                "landing": "",
+                "officesite": ""
+                },
+            "playeronly" : false,
+            "playerControl" : ""
+        }
+    ],
+    "social": [
+        {
+            "icon": "images/ddaitv/social-media-aaditv.png",
+            "url": "http://www.daai.tv"
+        },
+        {
+            "icon": "images/social-media-fb.png",
+            "url": "https://www.facebook.com/DaAiT"
+        }
+    ],
+    "promote": [
+        {
+            "name": "證嚴法師說故事",
+            "image": "images/daaitv/cms-thumbnail-ratio-1.png",
+            "link": "http://daaitv.flipr.tv/view/p33357"
+        },
+        {
+            "name": "大愛醫生館",
+            "image": "images/daaitv/cms-thumbnail-ratio-2.png",
+            "link": "http://daaitv.flipr.tv/view/p33224"
+        },
+        {
+            "name": "唐朝小栗子",
+            "image": "images/daaitv/cms-thumbnail-ratio-3.png",
+            "link": "http://daaitv.flipr.tv/view/p33220"
+        },
+        {
+            "name": "人間菩提",
+            "image": "images/daaitv/cms-thumbnail-ratio-4.png",
+            "link": "http://daaitv.flipr.tv/view/p33212"
+        },
+        {
+            "name": "現代心素派",
+            "image": "images/daaitv/cms-thumbnail-ratio-5.png",
+            "link": "http://daaitv.flipr.tv/view/p33222"
+        },
+        {
+            "name": "呼叫妙博士",
+            "image": "images/daaitv/cms-thumbnail-ratio-6.png",
+            "link": "http://daaitv.flipr.tv/view/p33219"
+        }
+    ],
+    "link": [
+        
+    ]
+}
