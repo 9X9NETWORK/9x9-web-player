@@ -7,13 +7,23 @@
             "icon": "images/daaitv/app_icon.png",
             "ios": {
                 "origin": "https://itunes.apple.com/us/app/da-ai-flipr/id883943412?l=zh&ls=1&mt=8",
-                "landing": "http://ad.apps.fm/1hfQFfo20fh-IZhIzNPwwvE7og6fuV2oOMeOQdRqrE1A3ZLVeJFEAYTkWS55kwqkDnYUpLL92S_Je3WilV_w1tgER5pfoaqoaehGGKkrwZU",
+                "landing": ["http://ad.apps.fm/Rch3Wez3UEGF48iim4nO5_E7og6fuV2oOMeOQdRqrE1A3ZLVeJFEAYTkWS55kwqk4YswQiBMICDRCVOki5eczNBAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/1hfQFfo20fh-IZhIzNPwwvE7og6fuV2oOMeOQdRqrE1A3ZLVeJFEAYTkWS55kwqkDnYUpLL92S_Je3WilV_w1tgER5pfoaqoaehGGKkrwZU"
+                           ],
                 "officesite": "http://ad.apps.fm/u-H8ed8IT8O8dPbL4H3VefE7og6fuV2oOMeOQdRqrE1A3ZLVeJFEAYTkWS55kwqkI69Tk9EESVdYe0uh6JhJPvCYagKnjd3JTKLywLOw94o"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.daai",
-                "landing": "https://play.google.com/store/apps/details?id=tv.flipr.daaitv&referrer=utm_source=landing&utm_campaign=suggested",
-                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.daaitv&referrer=utm_source=promo&utm_campaign=fliprtv"
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.daaitv&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.daaitv&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.daaitv&referrer=utm_source=promo&utm_campaign=fliprtv",
+                "market":[
+                          "market://details?id=tv.flipr.daaitv&referrer=utm_source=landing&utm_campaign=direct",
+                          "market://details?id=tv.flipr.daaitv&referrer=utm_source=landing&utm_campaign=suggested"
+                         ]
                 }
         },
         {
@@ -23,13 +33,23 @@
             "icon": "images/gametube/app_icon.png",
             "ios": {
                 "origin" : "https://itunes.apple.com/tw/app/gametube-flipr/id883096715?l=zh&ls=1&mt=8",
-                "landing" : "http://ad.apps.fm/sqvbduApdxmF-QL-IEwsUvE7og6fuV2oOMeOQdRqrE3gLGq59cm7895sW7VqNUNglZpEj3cpYhjwjH4lGZat4tBAW28aYabvxh6AeQ1YLF8",
+                "landing" : [
+                              "http://ad.apps.fm/sqvbduApdxmF-QL-IEwsUvE7og6fuV2oOMeOQdRqrE3gLGq59cm7895sW7VqNUNglZpEj3cpYhjwjH4lGZat4tBAW28aYabvxh6AeQ1YLF8",
+                              ""
+                            ],
                 "officesite" : "http://ad.apps.fm/6SjzYh0FL4w5xJyDkj89dvE7og6fuV2oOMeOQdRqrE3gLGq59cm7895sW7VqNUNg_Eq28AXRCk7Pc5K3J4PoI_CYagKnjd3JTKLywLOw94o"
             },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.gametube",
-                "landing": "https://play.google.com/store/apps/details?id=tv.flipr.gametube&referrer=utm_source=landing&utm_campaign=direct",
-                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.gametube&referrer=utm_source=promo&utm_campaign=fliprtv"
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.gametube&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.gametube&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.gametube&referrer=utm_source=promo&utm_campaign=fliprtv",
+                "market":[
+                            "market://details?id=tv.flipr.gametube&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.flipr.gametube&referrer=utm_source=landing&utm_campaign=suggested"
+                        ]
             }
         },
         {
@@ -39,15 +59,27 @@
             "icon": "images/magazine/app_icon.png",
             "ios": {
                 "origin": "https://itunes.apple.com/tw/app/yin-za-zhi-flipr/id875762042?l=zh&ls=1&mt=8",
-                "landing": "http://ad.apps.fm/mcN2h9DPwg-3H8JLV9EjTvE7og6fuV2oOMeOQdRqrE2Sr9A2q4PzleThNW_NvOPTlL9g6acrtNCuo_QbZ-sAV4XKDjMwdEmfvpCGMyygG1I",
-                "officesite": "http://ad.apps.fm/fAlsFqyHst0ggm7eTM1XGvE7og6fuV2oOMeOQdRqrE2Sr9A2q4PzleThNW_NvOPTMAJSarys8Cvoueuj7mwSEhZgev3OTGDgG_Ov5HLSwiU"
+                "landing": [
+                            "http://ad.apps.fm/VS1R596Bp2SZdHHUC8aeqfE7og6fuV2oOMeOQdRqrE2Sr9A2q4PzleThNW_NvOPT-4zBOFp26Mne6BLjS--UM9BAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/i5nKtO2pe5asfNMEVq0yLPE7og6fuV2oOMeOQdRqrE2Sr9A2q4PzleThNW_NvOPTDnYUpLL92S_Je3WilV_w1sGlyAGUG3Cd5DM4iIVJfQg"
+                            ],
+                "officesite": "http://ad.apps.fm/pX_K3R6DX7-1Bl-wl5cL5_E7og6fuV2oOMeOQdRqrE2Sr9A2q4PzleThNW_NvOPTg2HrgUBxxN5xn9HUSV02ofCYagKnjd3JTKLywLOw94o"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.magazine",
-                "landing": "http://ad.apps.fm/huaojoZk_gGL8l3EPyOJZF5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYforegh12eTejqhhX-dpLhQyQreKsOL8Jfw6wrJClRk-hH8UEZLuckEFbMSY1T2mpu0EBbbxphpu_GHoB5DVgsXw",
-                "officesite": "http://ad.apps.fm/jpiAHJXovttzUSZLDLt9i15KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYforegh12eTejqhhX-dpLhQ2ITHNl4qbyzaflebUVlQfoNrl_IB0YgfhfBsI4i3G_d"
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.magazine&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.magazine&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.magazine&referrer=utm_source=promo&utm_campaign=fliprtv",
+                "market": [
+                           "market://details?id=tv.flipr.magazine&referrer=utm_source=landing&utm_campaign=direct",
+                           "market://details?id=tv.flipr.magazine&referrer=utm_source=landing&utm_campaign=suggested"
+                           ]
                 }
         },
+
+        
         {
             "id" : "fcu",
             "name": "逢甲影音 FLIPr",
@@ -55,13 +87,24 @@
             "icon": "images/fcu/app_icon.png",
             "ios": {
                 "origin": "https://itunes.apple.com/tw/app/feng-jia-ying-yin-flipr/id723980669?mt=8",
-                "landing": "http://ad.apps.fm/TRRv14qxzxhbPkcp8tWRyvE7og6fuV2oOMeOQdRqrE17dr3TrSeTGxJRr9klqMmNHCFe8P0kRZ5d8idjRy-cI5UDbniPT04DURRXliAwEH4",
-                "officesite": "http://ad.apps.fm/0Lx_BKmbzeRnoSeGpwp1pPE7og6fuV2oOMeOQdRqrE17dr3TrSeTGxJRr9klqMmNeXlmkGm-NfmhfAc-ByGo3qddRHgIKWjzHsZ4XhkhX0E"
+                "landing": [
+                            "http://ad.apps.fm/OqC1wqBSFtGLCeQszc7q6PE7og6fuV2oOMeOQdRqrE3XlspZJPnNoODmxE9xwEhdAgpEnmeKHT0-Hx7vFu3gJ9BAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/L6_A9MvV7PadiSCzuhBbcvE7og6fuV2oOMeOQdRqrE3XlspZJPnNoODmxE9xwEhdDnYUpLL92S_Je3WilV_w1jmB8RqBcrt41HsJ6xYgsxM"
+                            ],
+                "officesite": "http://ad.apps.fm/Kvnt6NM7CO85RS703R7sH_E7og6fuV2oOMeOQdRqrE3XlspZJPnNoODmxE9xwEhdjD4VfE4gkyvhFtFLwu4soPCYagKnjd3JTKLywLOw94o"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tw.edu.fcu.player9x9tv",
-                "landing": "http://ad.apps.fm/fEzZK5VhWaSIQ2lk8bnySV5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfcVrX7Je-GblmQV-LIi0LT-i7oWbpIPISe3xw-bWx6qDuezh8TMDKoz_0qRclAvLX",
-                "officesite": "http://ad.apps.fm/bauHhZcOypIaDvUzWUJbwl5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfcVrX7Je-GblmQV-LIi0LT92yizYLCZx8IKZxNgcPGlJ0mp3pMN5mbfB2wGHoB683"
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tw.edu.fcu.player9x9tv&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tw.edu.fcu.player9x9tv&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tw.edu.fcu.player9x9tv&referrer=utm_source=promo&utm_campaign=fliprtv",
+                "market": [
+                            "market://details?id=tw.edu.fcu.player9x9tv&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tw.edu.fcu.player9x9tv&referrer=utm_source=landing&utm_campaign=suggested"
+                            
+                          ]
                 }
         },
         {
@@ -71,13 +114,23 @@
             "icon": "images/news/icon_200x200.png",
             "ios": {
                 "origin": "https://itunes.apple.com/tw/app/la-xin-wen-flipr/id865752513?l=zh&mt=8",
-                "landing": "http://ad.apps.fm/XWQDpNUlRKRrmEmsYFZvtfE7og6fuV2oOMeOQdRqrE1lpOk14o7l5UESNgy7Lc2XY8ug3HwYezpqtHhCSmq5wCzk1feOsekVddc_n_6oAuY",
-                "officesite": "http://ad.apps.fm/1QgeysaV4rXdabSj1CFP5vE7og6fuV2oOMeOQdRqrE1lpOk14o7l5UESNgy7Lc2XJVN3A6JfSQmi-bbAvCCc9kHg_l0slQAJcQPJk68wLf0"
+                "landing": [
+                            "http://ad.apps.fm/M9-ikUF-VQf9LbbotqIBdvE7og6fuV2oOMeOQdRqrE1lpOk14o7l5UESNgy7Lc2Xt8wCd2zGlnar8EOyszNTqdBAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/AyJ8UFTbJL-al_MUmRntTvE7og6fuV2oOMeOQdRqrE1lpOk14o7l5UESNgy7Lc2XDnYUpLL92S_Je3WilV_w1q7HsakfYu08EXleAjgn1QE"
+                            ],
+                "officesite": "http://ad.apps.fm/vq-8NKByy8AcOBQfnEXM2vE7og6fuV2oOMeOQdRqrE1lpOk14o7l5UESNgy7Lc2Xh0dGsxxnyRnahLkpmSMzEfCYagKnjd3JTKLywLOw94o"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.news",
-                "landing": "http://ad.apps.fm/yBwhgdPHBNodylbasNgXKV5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfVT3SZlHuQKnB1G8prEI3dy5wJQDYtXpvztYi86xsS-N9-vcHxy9ovdBiY7O7OyFI",
-                "officesite": "http://ad.apps.fm/U261KuBu3hesyviGKSJO8V5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfVT3SZlHuQKnB1G8prEI3dxw6bjDDn86SbauFxAC785rYXCFwiYkGtkmQpGIS742Y"
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.news&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.news&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.news&referrer=utm_source=promo&utm_campaign=fliprtv",
+                "market":[
+                            "market://details?id=tv.flipr.news&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.flipr.news&referrer=utm_source=landing&utm_campaign=suggested"
+                        ]
                 }
         },
         {
@@ -87,13 +140,23 @@
             "icon": "images/mv/icon_200x200.png",
             "ios": {
                 "origin": "https://itunes.apple.com/tw/app/mv-bu-jie-shi-flipr/id860501633?l=zh&mt=8",
-                "landing": "http://ad.apps.fm/7B3Fd_uOvLsROb0GWi68ZPE7og6fuV2oOMeOQdRqrE3jLvTSqTRdsoIeUIhJ1HlKlL9g6acrtNCuo_QbZ-sAV6aNppwnzA3DlR1KPZ9_E10",
-                "officesite": "http://ad.apps.fm/tJaveXhdNRs_7ftW7yc8nvE7og6fuV2oOMeOQdRqrE3jLvTSqTRdsoIeUIhJ1HlKVvP96wEV1eVbHYC_iHdtTKrxR2YuEc69v8IE39KiXts"
+                "landing": [
+                            "http://ad.apps.fm/TOLrZyRt9MwEZHPc-cGEvfE7og6fuV2oOMeOQdRqrE3jLvTSqTRdsoIeUIhJ1HlKtKbQiNtJMFtfaBHYxuznH9BAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/-bJ1UcUk9jaAFaWD2uuLDvE7og6fuV2oOMeOQdRqrE3jLvTSqTRdsoIeUIhJ1HlKDnYUpLL92S_Je3WilV_w1nV6E3ZeHDqYeqxzZLoK5QI"
+                            ],
+                "officesite": "http://ad.apps.fm/GtP-8BPuojgVi4AeBGPX0fE7og6fuV2oOMeOQdRqrE3jLvTSqTRdsoIeUIhJ1HlK-pgWUris5Os4UV4aT_bVsfCYagKnjd3JTKLywLOw94o"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo",
-                "landing": "http://ad.apps.fm/xpteNwJrL4Za2Uvd1TW-Wl5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYforegh12eTejqhhX-dpLhQ-iCE505MWbysJosEkcdDiFpwAI90-F2O3OIehOTkz400PyLBA8KXuU_Ji9swdMrkg",
-                "officesite": "http://ad.apps.fm/aVgUzVQqtR4wNXEvGm78315KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYforegh12eTejqhhX-dpLhQxJYCmWiY8O37NrORPQs-4QtJ3jT5r16lT0BLQqYF7wn8JhqAqeN3clMovLAs7D3ig"
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo&referrer=utm_source=landing&utm_campaign=fliprtv",
+                "market":[
+                            "market://details?id=tv.flipr.musicvideo&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.flipr.musicvideo&referrer=utm_source=landing&utm_campaign=suggested"
+                          ]
                 }
         },
         {
@@ -103,13 +166,24 @@
             "icon": "images/echomusic/app_icon.png",
             "ios": {
                 "origin": "https://itunes.apple.com/tw/app/yin-le-tu-shu-guan-flipr/id877500176?mt=8",
-                "landing": "http://ad.apps.fm/4bMr3MTznkdSJVaNO8mwNfE7og6fuV2oOMeOQdRqrE18fGu7de6cdMfaNSit75EuHCFe8P0kRZ5d8idjRy-cI5ewO0d7hw5iI3dkDH6ybl8",
-                "officesite": "http://ad.apps.fm/KQcQnN08Cfxc_LrCG44BtfE7og6fuV2oOMeOQdRqrE18fGu7de6cdMfaNSit75EueXlmkGm-NfmhfAc-ByGo3kHWzUz1XMCa1nkrdeFr9o8"
+                "landing": [
+                            "http://ad.apps.fm/_GLUi1CCO2nK6xUCtfS97vE7og6fuV2oOMeOQdRqrE18fGu7de6cdMfaNSit75EuOqKMit1qCOYxidXuQpqpQNBAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/isFEuUXE8bAGSaUiF3QNqvE7og6fuV2oOMeOQdRqrE18fGu7de6cdMfaNSit75EuDnYUpLL92S_Je3WilV_w1jaEkpBKCCDYs1d1nKRlqWo"
+                            ],
+                "officesite": "http://ad.apps.fm/TbST0XPSI2T4eZ6YOtK6LvE7og6fuV2oOMeOQdRqrE18fGu7de6cdMfaNSit75Euu4zbHvJLmVh2uydeh2kBDPCYagKnjd3JTKLywLOw94o"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.echomusic",
-                "landing": "http://ad.apps.fm/otFUkhregJUKQmrlULQQI15KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYf3u9ccYZkrqpVDsUYOYGn-LdlTh4eHAunqqa2yGqI8yT4VzjmQ-_okhpaKj8SjBA8",
-                "officesite": "http://ad.apps.fm/nYlxZ5Ve8WSFbJ3GuOIM_15KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYf3u9ccYZkrqpVDsUYOYGn-Ho-87KsRHgFbXvjQWjrxUkt07HtXjYVjFbwDmyrIUE"
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.echomusic&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.echomusic&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.echomusic&referrer=utm_source=landing&utm_campaign=fliprtv",
+                "market":[
+                            "market://details?id=tv.flipr.echomusic&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.flipr.echomusic&referrer=utm_source=landing&utm_campaign=suggested"
+
+                        ]
                 }
         },
         {
@@ -119,13 +193,23 @@
             "icon": "images/superstar/icon_200x200.png",
             "ios": {
                 "origin": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
-                "landing": "http://ad.apps.fm/yRkzxD3_UxuS0of3NVE_4PE7og6fuV2oOMeOQdRqrE1EIMw4p98flYb4oZm9NR8rHCFe8P0kRZ5d8idjRy-cI8siWmKub9njD5xOzXjkW9Y",
-                "officesite": "http://ad.apps.fm/Z58sjg0RuO039ttqYWNMGvE7og6fuV2oOMeOQdRqrE1EIMw4p98flYb4oZm9NR8rVvP96wEV1eVbHYC_iHdtTMgIe1O_yoFcMepFqBuyDp8"
+                "landing": [
+                            "http://ad.apps.fm/YZDInjoKwSXs4jT3xJYOffE7og6fuV2oOMeOQdRqrE1EIMw4p98flYb4oZm9NR8rVZFXyi8TSjGbaeFUTVXFVNBAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/HKGTTI46_90J9t2Xh2FZW_E7og6fuV2oOMeOQdRqrE1EIMw4p98flYb4oZm9NR8rDnYUpLL92S_Je3WilV_w1oW-mX8mU9Zf0tZ3o_kDow4"
+                            ],
+                "officesite": "http://ad.apps.fm/2uylsGJwUpdiedvEwplWzvE7og6fuV2oOMeOQdRqrE1EIMw4p98flYb4oZm9NR8r6X6agu75zOkXVeTlibcgH_CYagKnjd3JTKLywLOw94o"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.superstar",
-                "landing": "http://ad.apps.fm/TZI_uAPQny4y-X4ZPg2W-V5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfKgz2t2EZGErg3zm5ooZ8p-PDZaiI_lxHkhJkVJ6orEwOhyglzW2wlvWynKtGv5IP8JhqAqeN3clMovLAs7D3ig",
-                "officesite": "http://ad.apps.fm/XUZ-nYJyHEejfAsOTH5cdl5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfKgz2t2EZGErg3zm5ooZ8pyMVz4jR9PNLkinGwYarpi9iwlpnrK5HUcP2dgqRWM3Y0EBbbxphpu_GHoB5DVgsXw"
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.superstar&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.superstar&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.superstar&referrer=utm_source=landing&utm_campaign=fliprtv",
+                "market":[
+                            "market://details?id=tv.flipr.superstar&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.flipr.superstar&referrer=utm_source=landing&utm_campaign=suggested"
+                        ]
                 }
         },
         {
@@ -135,13 +219,23 @@
             "icon": "images/thenewslens/icon_200x200.png",
             "ios": {
                 "origin": "https://itunes.apple.com/tw/app/guan-jian-ping-lun-wang-flipr/id842456259?l=en&mt=8",
-                "landing": "http://ad.apps.fm/TRRv14qxzxhbPkcp8tWRyvE7og6fuV2oOMeOQdRqrE17dr3TrSeTGxJRr9klqMmNHCFe8P0kRZ5d8idjRy-cI5UDbniPT04DURRXliAwEH4",
-                "officesite": "http://ad.apps.fm/0Lx_BKmbzeRnoSeGpwp1pPE7og6fuV2oOMeOQdRqrE17dr3TrSeTGxJRr9klqMmNeXlmkGm-NfmhfAc-ByGo3qddRHgIKWjzHsZ4XhkhX0E"
+                "landing": [
+                            "http://ad.apps.fm/0Hk2UK3nfeLpUeYFLeUJLfE7og6fuV2oOMeOQdRqrE17dr3TrSeTGxJRr9klqMmNS1O4HFytl4QI_rQPFhps4NBAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/cppjVGyP9P8Bpb3pf6IA2fE7og6fuV2oOMeOQdRqrE17dr3TrSeTGxJRr9klqMmNDnYUpLL92S_Je3WilV_w1lXyrDlqb5INYuiO_MIc3p8"
+                            ],
+                "officesite": "http://ad.apps.fm/QtSpSLrTPpuPiE1w5t5nZPE7og6fuV2oOMeOQdRqrE17dr3TrSeTGxJRr9klqMmN44SN11tLenZTo82MsBrLrfCYagKnjd3JTKLywLOw94o"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens",
-                "landing": "http://ad.apps.fm/fEzZK5VhWaSIQ2lk8bnySV5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfcVrX7Je-GblmQV-LIi0LT-i7oWbpIPISe3xw-bWx6qDuezh8TMDKoz_0qRclAvLX",
-                "officesite": "http://ad.apps.fm/bauHhZcOypIaDvUzWUJbwl5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfcVrX7Je-GblmQV-LIi0LT92yizYLCZx8IKZxNgcPGlJ0mp3pMN5mbfB2wGHoB683"
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens&referrer=utm_source=landing&utm_campaign=suggested",
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens&referrer=utm_source=landing&utm_campaign=fliprtv",
+                "market":[
+                            "market://details?id=tv.flipr.thenewslens&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.flipr.thenewslens&referrer=utm_source=landing&utm_campaign=suggested"
+                        ]
 
                 }
         },
@@ -152,13 +246,23 @@
             "icon": "images/goodtv/app_icon.png",
             "ios": {
                 "origin": "https://itunes.apple.com/tw/app/good-tv-flipr/id737001290?mt=8",
-                "landing": "http://ad.apps.fm/gYKE-oQG90zhXwMLkRt1fPE7og6fuV2oOMeOQdRqrE0QIshyz0mi8ejNrjqhlWbXlL9g6acrtNCuo_QbZ-sAV4z2pVqQTfx9fOvKtvFsqnA",
-                "officesite": "http://ad.apps.fm/BMr5kJ4aXfDq3IWLoHXTb_E7og6fuV2oOMeOQdRqrE0QIshyz0mi8ejNrjqhlWbXVvP96wEV1eVbHYC_iHdtTBK-rAtWpu8Ok00KWc0WDsw"
+                "landing": [
+                            "http://ad.apps.fm/CqkOUTqKyY6mPIvheR0z3PE7og6fuV2oOMeOQdRqrE0QIshyz0mi8ejNrjqhlWbXhuL_qIRERJAXyFXR4QEKcNBAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/-f-_HGxl9dSI8U6LkDt9t_E7og6fuV2oOMeOQdRqrE0QIshyz0mi8ejNrjqhlWbXDnYUpLL92S_Je3WilV_w1mjM_91ZtrAv88glV1iQP3w"
+                            ],
+                "officesite": "http://ad.apps.fm/5xo4kJc2NTT68nKjMcWVIfE7og6fuV2oOMeOQdRqrE0QIshyz0mi8ejNrjqhlWbXLhEHe85KiMexzblOfitwbvCYagKnjd3JTKLywLOw94o"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv",
-                "landing": "http://ad.apps.fm/n9zK0Su04cvuV1NTi0xfqheia0_LQpFNtXyI_RYvuCG0_vCLxUoHxV88BZc6OnBN09bcWPlnj3_yxzZFd7me6jQUUVBwXDYs9QmvZ_tpqbo",
-                "officesite": "http://ad.apps.fm/dVjx0VzttQs3Pe5NcXmWsl5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfGkvGklG3pneD_B5uDg1ZHyMpx6pSXuECzSuXz9oWyljAg1siTCSX7biCEMoWORp0WiAqhcOHk3-NummfZ-aLcw"
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv&referrer=utm_source=landing&utm_campaign=suggested" 
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv&referrer=utm_source=landing&utm_campaign=fliprtv",
+                "market": [
+                            "market://details?id=tv.goodtv.player9x9tv&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.goodtv.player9x9tv&referrer=utm_source=landing&utm_campaign=suggested"
+                            ]
                 }
         },
         {
@@ -168,13 +272,23 @@
             "icon": "images/cts/app_icon.png",
             "ios": {
                 "origin": "https://itunes.apple.com/tw/app/hua-shi-flipr/id623085456?mt=8",
-                "landing": "http://ad.apps.fm/Rf4gaozELf9-tOQ52oo_tvE7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA6lL9g6acrtNCuo_QbZ-sAVxLRzmm9ifNXr3YZhgurjgs",
-                "officesite": "http://ad.apps.fm/X-W2O-5Dso_-ww54Mal4cPE7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA6VvP96wEV1eVbHYC_iHdtTDBIhbQHqlQE3-cjSPqKQtk"
+                "landing": [
+                            "http://ad.apps.fm/gfO6vRLxZdRx95nB1ljqa_E7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA6hjSomApoaTYaF4wadplZXtBAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/ODgY873LgCinr7WhdnC3lPE7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA6DnYUpLL92S_Je3WilV_w1q9-VA-dEpbP_UAE52sdVBk"
+                            ],
+                "officesite": "http://ad.apps.fm/Wddiym7fFKNSlMBx3sJV7vE7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA69dznz128Nwe4rm8OPgiAZfCYagKnjd3JTKLywLOw94o"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tw.com.cts.player",
-                "landing": "http://ad.apps.fm/B-Vm5zlWoEm62t1tfDT4GV5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfbq0znJlzKjEljmDwpvhcIgMLJmbKTge2R8rbg0OHrgmuq2tPqScBnyk3Z1IKehSE7hJK2jGFzGVqzFtNu91KiA",
-                "officesite": "http://ad.apps.fm/2GGgAuZG77JfARZasyLc6F5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfbq0znJlzKjEljmDwpvhcImtXN7I_3nK2yD6iKMABs-rQQCIo95FB8EVpL0RLiOe3"
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tw.com.cts.player&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tw.com.cts.player&referrer=utm_source=landing&utm_campaign=suggested"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tw.com.cts.player&referrer=utm_source=landing&utm_campaign=fliprtv",
+                "market":[
+                            "market://details?id=tw.com.cts.player&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tw.com.cts.player&referrer=utm_source=landing&utm_campaign=suggested"
+                        ]
                 }
         }
     ],
@@ -187,57 +301,80 @@
             "description": "This app enables you to watch fun, educational videos from John & Hank Green's YouTube channel on-the-go, or on the big screen with Chromecast!",
             "ios": {
                 "origin": "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8",
+                            "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse"
+                        ]
                 }
+
         },
         {
             "id" : "networka",
             "name": "Network A on FLIPr Unofficial",
             "icon": "images/networka/icon_200x200.png",
             "description": "Fill those 10-minute breaks with adrenaline-pumping stunts including skateboarding and much more on-the-go, or on the big screen with Chromecast! ",
-            "ios": {
+             "ios": {
                 "origin": "https://itunes.apple.com/us/app/network-a-on-flipr-unoffical/id815184188?mt=8",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://itunes.apple.com/us/app/network-a-on-flipr-unoffical/id815184188?mt=8",
+                            "https://itunes.apple.com/us/app/network-a-on-flipr-unoffical/id815184188?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/us/app/network-a-on-flipr-unoffical/id815184188?mt=8"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.networka",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.networka",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.networka"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.networka",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.networka",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.networka"
+                        ]
                 }
+
         },
         
-        {
 
-            "id" : "collegehumor",
-            "name": "CollegeHumor on FLIPr Unofficial",
-            "icon": "images/collegehumor/icon_200x200.png",
-            "description": "Fill those 10-minute breaks with fresh hilarious videos. Watch it continuously on-the-go, or on the big screen with Chromecast support!",
-            "ios": {},
-            "android": {
-                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.collegehumor",
-                "landing": "",
-                "officesite": ""
-            }
-            
-        },
         {
             "id" : "smosh",
             "name": "Smosh on FLIPr Unofficial",
             "icon": "images/smosh/icon_200x200.png",
             "description": "Discover Anthony Padilla & Ian Hecox’s latest funnies on-the-go. This app can also help you watch it on the big screen with Chromecast support!",
-            "ios": {},
+             "ios": {
+                "origin": "https://itunes.apple.com/us/app/smosh-on-flipr-unofficial/id862863892?mt=8",
+                "landing": [
+                            "https://itunes.apple.com/us/app/smosh-on-flipr-unofficial/id862863892?mt=8",
+                            "https://itunes.apple.com/us/app/smosh-on-flipr-unofficial/id862863892?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/us/app/smosh-on-flipr-unofficial/id862863892?mt=8"
+                },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.smosh",
-                "landing": "",
-                "officesite": ""
-            }
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.smosh",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.smosh"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.smosh",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.smosh",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.smosh"
+                        ]
+                }
             
         },
          {
@@ -245,11 +382,19 @@
             "name": "Shane on FLIPr Unofficial",
             "icon": "images/shane/icon_200x200.png",
             "description": "Discover the latest vlogs from actor, musician, comedian, and video maker - Shane Dawson! Watch it on the big screen with Chromecast support!",
-            "ios": {},
+             "ios": {
+                },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.shane",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.shane",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.shane"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.shane",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.shane",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.shane"
+                        ]
                 }
         },
 
@@ -260,55 +405,29 @@
             "description": "Discover the latest videos of Kids/Teens/Elders/YouTubers React and many others on-the-go, or on the big screen with Chromecast support!",
             "ios": {
                 "origin": "https://itunes.apple.com/us/app/flipr-the-fine-bros-edition/id872233879?mt=8",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://itunes.apple.com/us/app/flipr-the-fine-bros-edition/id872233879?mt=8",
+                            "https://itunes.apple.com/us/app/flipr-the-fine-bros-edition/id872233879?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/us/app/flipr-the-fine-bros-edition/id872233879?mt=8"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros"
+                        ]
                 }
+
         },
         
         
-        {
-            "id" : "nba",
-            "name": "NBA on FLIPr Unofficial",
-            "icon": "images/nba/icon_200x200.png",
-            "description": "Simply flip and discover the latest NBA moments all in an immersive experience. Watch it continuously on the big screen with Chromecast support! ",
-            "ios": {},
-            "android": {
-                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.nba",
-                "landing": "",
-                "officesite": ""
-                }
-        },
-        {
-            "id" : "history",
-            "name": "History on FLIPr Unofficial",
-            "icon": "images/history/icon_200x200.png",
-            "description": "Discover the latest videos from the channel History. You can also watch it continuously on the big screen with our brand new Chromecast support!",
-            "ios": {},
-            "android": {
-                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.history",
-                "landing": "",
-                "officesite": ""
-                }
-        },
-        
-       
-        {
-            "id" : "spinninrec",
-            "name": "SpinninRec on FLIPr Unofficial",
-            "icon": "images/spinninrec/icon_200x200.png",
-            "description": "Stay up to date with the latest electronic dance music from Spinnin’ Record! Take the music with you, or watch it on big screen with Chromecast!",
-            "ios": {},
-            "android": {
-                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.spinninrec",
-                "landing": "",
-                "officesite": ""
-                }
-        },
+      
        
         
         {
@@ -317,15 +436,26 @@
             "icon": "images/joeygraceffa/icon_200x200.png",
             "description": "Discover the popular YouTuber Joey's new vlogs and old funnies on-the-go. You can also watch it continuously on the big screen with Chromecast!",
             "ios": {
-                "origin" : "https://itunes.apple.com/tw/app/flipr-joey-graceffa-edition/id859604311?mt=8",
-                "landing" : "",
-                "officesite" : ""
-            },
+                "origin": "https://itunes.apple.com/tw/app/flipr-joey-graceffa-edition/id859604311?mt=8",
+                "landing": [
+                            "https://itunes.apple.com/tw/app/flipr-joey-graceffa-edition/id859604311?mt=8",
+                            "https://itunes.apple.com/tw/app/flipr-joey-graceffa-edition/id859604311?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/tw/app/flipr-joey-graceffa-edition/id859604311?mt=8"
+                },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa"
+                        ]
                 }
+
         },
         {
             "id" : "ddtv",
@@ -334,14 +464,25 @@
             "description": "丁丁電視是美國首創華語網絡電視、矽谷創新頻道及視頻製作公司。Ding Ding TV is the first Chinese American Internet TV for Silicon Valley ",
             "ios": {
                 "origin": "https://itunes.apple.com/us/app/ding-ding-tv/id733144372?mt=8",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://itunes.apple.com/us/app/ding-ding-tv/id733144372?mt=8",
+                            "https://itunes.apple.com/us/app/ding-ding-tv/id733144372?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/us/app/ding-ding-tv/id733144372?mt=8"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.ddtv.player9x9tv",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.ddtv.player9x9tv",
+                            "https://play.google.com/store/apps/details?id=tv.ddtv.player9x9tv"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.ddtv.player9x9tv",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.ddtv.player9x9tv",
+                            "https://play.google.com/store/apps/details?id=tv.ddtv.player9x9tv"
+                        ]
                 }
+
         }
     	
     ]

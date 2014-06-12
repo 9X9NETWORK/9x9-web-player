@@ -6,8 +6,26 @@
             "icon": "images/9x9/icon_200x200.png",
             "description": "蒐羅每日生活所需的大小主題線上影視節目，大至古今中外新聞政治，小至偶像寵物搞笑美食。9x9.tv是影視策展人的實驗園地，也是所有觀眾人人天天的精神食糧。沒事看看，利大於弊！",
             "calltoaction": "立刻免費下載看更多！",
-            "ios": "https://itunes.apple.com/us/app/9x9.tv/id443352510?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.tv9x9.player",
+            "ios": {
+                "origin": "https://itunes.apple.com/us/app/9x9.tv/id443352510?mt=8",
+                "landing": [
+                            "https://itunes.apple.com/us/app/9x9.tv/id443352510?mt=8",
+                            "https://itunes.apple.com/us/app/9x9.tv/id443352510?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/us/app/9x9.tv/id443352510?mt=8"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.tv9x9.player",
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.tv9x9.player",
+                            "https://play.google.com/store/apps/details?id=tv.tv9x9.player"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.tv9x9.player",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.tv9x9.player",
+                            "https://play.google.com/store/apps/details?id=tv.tv9x9.player"
+                        ]
+                },
             "playeronly" : true
         }
     ],

@@ -6,8 +6,26 @@
             "icon": "images/9x9/icon_200x200.png",
             "description": "Cast YouTube channels onto big screen with Chromecast! You can even remote it by finger flipping, or just immerse yourself in sets of well curated videos.",
             "calltoaction": "FREE to download now!",
-            "ios": "https://itunes.apple.com/us/app/9x9.tv/id443352510?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.tv9x9.player",
+            "ios": {
+                "origin": "https://itunes.apple.com/us/app/9x9.tv/id443352510?mt=8",
+                "landing": [
+                            "https://itunes.apple.com/us/app/9x9.tv/id443352510?mt=8",
+                            "https://itunes.apple.com/us/app/9x9.tv/id443352510?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/us/app/9x9.tv/id443352510?mt=8"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.tv9x9.player",
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.tv9x9.player",
+                            "https://play.google.com/store/apps/details?id=tv.tv9x9.player"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.tv9x9.player",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.tv9x9.player",
+                            "https://play.google.com/store/apps/details?id=tv.tv9x9.player"
+                        ]
+                },
             "playeronly" : true
         }
     ]

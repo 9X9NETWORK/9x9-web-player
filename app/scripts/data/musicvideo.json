@@ -8,13 +8,23 @@
             "calltoaction": "擁有最fashion的MV廣播電台！",
             "ios": {
                 "origin": "https://itunes.apple.com/tw/app/mv-bu-jie-shi-flipr/id860501633?l=zh&mt=8",
-                "landing": "http://ad.apps.fm/7B3Fd_uOvLsROb0GWi68ZPE7og6fuV2oOMeOQdRqrE3jLvTSqTRdsoIeUIhJ1HlKlL9g6acrtNCuo_QbZ-sAV6aNppwnzA3DlR1KPZ9_E10",
-                "officesite": "http://ad.apps.fm/tJaveXhdNRs_7ftW7yc8nvE7og6fuV2oOMeOQdRqrE3jLvTSqTRdsoIeUIhJ1HlKVvP96wEV1eVbHYC_iHdtTKrxR2YuEc69v8IE39KiXts"
+                "landing": [
+                            "http://ad.apps.fm/TOLrZyRt9MwEZHPc-cGEvfE7og6fuV2oOMeOQdRqrE3jLvTSqTRdsoIeUIhJ1HlKtKbQiNtJMFtfaBHYxuznH9BAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/-bJ1UcUk9jaAFaWD2uuLDvE7og6fuV2oOMeOQdRqrE3jLvTSqTRdsoIeUIhJ1HlKDnYUpLL92S_Je3WilV_w1nV6E3ZeHDqYeqxzZLoK5QI"
+                            ],
+                "officesite": "http://ad.apps.fm/GtP-8BPuojgVi4AeBGPX0fE7og6fuV2oOMeOQdRqrE3jLvTSqTRdsoIeUIhJ1HlK-pgWUris5Os4UV4aT_bVsfCYagKnjd3JTKLywLOw94o"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo",
-                "landing": "http://ad.apps.fm/xpteNwJrL4Za2Uvd1TW-Wl5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYforegh12eTejqhhX-dpLhQ-iCE505MWbysJosEkcdDiFpwAI90-F2O3OIehOTkz400PyLBA8KXuU_Ji9swdMrkg",
-                "officesite": "http://ad.apps.fm/aVgUzVQqtR4wNXEvGm78315KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYforegh12eTejqhhX-dpLhQxJYCmWiY8O37NrORPQs-4QtJ3jT5r16lT0BLQqYF7wn8JhqAqeN3clMovLAs7D3ig"
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo&referrer=utm_source=landing&utm_campaign=fliprtv",
+                "market":[
+                            "market://details?id=tv.flipr.musicvideo&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.flipr.musicvideo&referrer=utm_source=landing&utm_campaign=suggested"
+                          ]
                 },
             "playeronly" : false
         }

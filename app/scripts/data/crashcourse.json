@@ -8,13 +8,23 @@
             "calltoaction": "FREE to download now!",
             "ios": {
                 "origin": "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8",
+                            "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse"
+                        ]
                 },
             "playeronly" : true
         }

@@ -8,13 +8,23 @@
             "calltoaction": "FREE to download now!",
             "ios": {
                 "origin": "https://itunes.apple.com/us/app/network-a-on-flipr-unoffical/id815184188?mt=8",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://itunes.apple.com/us/app/network-a-on-flipr-unoffical/id815184188?mt=8",
+                            "https://itunes.apple.com/us/app/network-a-on-flipr-unoffical/id815184188?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/us/app/network-a-on-flipr-unoffical/id815184188?mt=8"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.networka",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.networka",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.networka"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.networka",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.networka",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.networka"
+                        ]
                 },
             "playeronly" : true
         }
