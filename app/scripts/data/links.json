@@ -301,57 +301,80 @@
             "description": "This app enables you to watch fun, educational videos from John & Hank Green's YouTube channel on-the-go, or on the big screen with Chromecast!",
             "ios": {
                 "origin": "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8",
+                            "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse"
+                        ]
                 }
+
         },
         {
             "id" : "networka",
             "name": "Network A on FLIPr Unofficial",
             "icon": "images/networka/icon_200x200.png",
             "description": "Fill those 10-minute breaks with adrenaline-pumping stunts including skateboarding and much more on-the-go, or on the big screen with Chromecast! ",
-            "ios": {
+             "ios": {
                 "origin": "https://itunes.apple.com/us/app/network-a-on-flipr-unoffical/id815184188?mt=8",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://itunes.apple.com/us/app/network-a-on-flipr-unoffical/id815184188?mt=8",
+                            "https://itunes.apple.com/us/app/network-a-on-flipr-unoffical/id815184188?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/us/app/network-a-on-flipr-unoffical/id815184188?mt=8"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.networka",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.networka",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.networka"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.networka",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.networka",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.networka"
+                        ]
                 }
+
         },
         
-        {
 
-            "id" : "collegehumor",
-            "name": "CollegeHumor on FLIPr Unofficial",
-            "icon": "images/collegehumor/icon_200x200.png",
-            "description": "Fill those 10-minute breaks with fresh hilarious videos. Watch it continuously on-the-go, or on the big screen with Chromecast support!",
-            "ios": {},
-            "android": {
-                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.collegehumor",
-                "landing": "",
-                "officesite": ""
-            }
-            
-        },
         {
             "id" : "smosh",
             "name": "Smosh on FLIPr Unofficial",
             "icon": "images/smosh/icon_200x200.png",
             "description": "Discover Anthony Padilla & Ian Hecox’s latest funnies on-the-go. This app can also help you watch it on the big screen with Chromecast support!",
-            "ios": {},
+             "ios": {
+                "origin": "https://itunes.apple.com/us/app/smosh-on-flipr-unofficial/id862863892?mt=8",
+                "landing": [
+                            "https://itunes.apple.com/us/app/smosh-on-flipr-unofficial/id862863892?mt=8",
+                            "https://itunes.apple.com/us/app/smosh-on-flipr-unofficial/id862863892?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/us/app/smosh-on-flipr-unofficial/id862863892?mt=8"
+                },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.smosh",
-                "landing": "",
-                "officesite": ""
-            }
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.smosh",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.smosh"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.smosh",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.smosh",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.smosh"
+                        ]
+                }
             
         },
          {
@@ -359,11 +382,19 @@
             "name": "Shane on FLIPr Unofficial",
             "icon": "images/shane/icon_200x200.png",
             "description": "Discover the latest vlogs from actor, musician, comedian, and video maker - Shane Dawson! Watch it on the big screen with Chromecast support!",
-            "ios": {},
+             "ios": {
+                },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.shane",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.shane",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.shane"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.shane",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.shane",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.shane"
+                        ]
                 }
         },
 
@@ -374,55 +405,29 @@
             "description": "Discover the latest videos of Kids/Teens/Elders/YouTubers React and many others on-the-go, or on the big screen with Chromecast support!",
             "ios": {
                 "origin": "https://itunes.apple.com/us/app/flipr-the-fine-bros-edition/id872233879?mt=8",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://itunes.apple.com/us/app/flipr-the-fine-bros-edition/id872233879?mt=8",
+                            "https://itunes.apple.com/us/app/flipr-the-fine-bros-edition/id872233879?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/us/app/flipr-the-fine-bros-edition/id872233879?mt=8"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros"
+                        ]
                 }
+
         },
         
         
-        {
-            "id" : "nba",
-            "name": "NBA on FLIPr Unofficial",
-            "icon": "images/nba/icon_200x200.png",
-            "description": "Simply flip and discover the latest NBA moments all in an immersive experience. Watch it continuously on the big screen with Chromecast support! ",
-            "ios": {},
-            "android": {
-                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.nba",
-                "landing": "",
-                "officesite": ""
-                }
-        },
-        {
-            "id" : "history",
-            "name": "History on FLIPr Unofficial",
-            "icon": "images/history/icon_200x200.png",
-            "description": "Discover the latest videos from the channel History. You can also watch it continuously on the big screen with our brand new Chromecast support!",
-            "ios": {},
-            "android": {
-                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.history",
-                "landing": "",
-                "officesite": ""
-                }
-        },
-        
-       
-        {
-            "id" : "spinninrec",
-            "name": "SpinninRec on FLIPr Unofficial",
-            "icon": "images/spinninrec/icon_200x200.png",
-            "description": "Stay up to date with the latest electronic dance music from Spinnin’ Record! Take the music with you, or watch it on big screen with Chromecast!",
-            "ios": {},
-            "android": {
-                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.spinninrec",
-                "landing": "",
-                "officesite": ""
-                }
-        },
+      
        
         
         {
@@ -431,15 +436,26 @@
             "icon": "images/joeygraceffa/icon_200x200.png",
             "description": "Discover the popular YouTuber Joey's new vlogs and old funnies on-the-go. You can also watch it continuously on the big screen with Chromecast!",
             "ios": {
-                "origin" : "https://itunes.apple.com/tw/app/flipr-joey-graceffa-edition/id859604311?mt=8",
-                "landing" : "",
-                "officesite" : ""
-            },
+                "origin": "https://itunes.apple.com/tw/app/flipr-joey-graceffa-edition/id859604311?mt=8",
+                "landing": [
+                            "https://itunes.apple.com/tw/app/flipr-joey-graceffa-edition/id859604311?mt=8",
+                            "https://itunes.apple.com/tw/app/flipr-joey-graceffa-edition/id859604311?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/tw/app/flipr-joey-graceffa-edition/id859604311?mt=8"
+                },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa"
+                        ]
                 }
+
         },
         {
             "id" : "ddtv",
@@ -448,14 +464,25 @@
             "description": "丁丁電視是美國首創華語網絡電視、矽谷創新頻道及視頻製作公司。Ding Ding TV is the first Chinese American Internet TV for Silicon Valley ",
             "ios": {
                 "origin": "https://itunes.apple.com/us/app/ding-ding-tv/id733144372?mt=8",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://itunes.apple.com/us/app/ding-ding-tv/id733144372?mt=8",
+                            "https://itunes.apple.com/us/app/ding-ding-tv/id733144372?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/us/app/ding-ding-tv/id733144372?mt=8"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.ddtv.player9x9tv",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.ddtv.player9x9tv",
+                            "https://play.google.com/store/apps/details?id=tv.ddtv.player9x9tv"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.ddtv.player9x9tv",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.ddtv.player9x9tv",
+                            "https://play.google.com/store/apps/details?id=tv.ddtv.player9x9tv"
+                        ]
                 }
+
         }
     	
     ]

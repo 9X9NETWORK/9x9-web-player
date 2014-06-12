@@ -8,13 +8,23 @@
             "calltoaction": "FREE to download now!",
             "ios": {
                 "origin": "https://itunes.apple.com/us/app/flipr-the-fine-bros-edition/id872233879?mt=8",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://itunes.apple.com/us/app/flipr-the-fine-bros-edition/id872233879?mt=8",
+                            "https://itunes.apple.com/us/app/flipr-the-fine-bros-edition/id872233879?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/us/app/flipr-the-fine-bros-edition/id872233879?mt=8"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.thefinebros"
+                        ]
                 },
             "playeronly" : true
         }

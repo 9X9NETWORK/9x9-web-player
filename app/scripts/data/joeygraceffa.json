@@ -7,14 +7,24 @@
             "description": "Discover the popular YouTuber Joey's new vlogs and old funnies on-the-go. You can also watch it continuously on the big screen with Chromecast!",
             "calltoaction": "FREE to download now!",
             "ios": {
-                "origin" : "https://itunes.apple.com/tw/app/flipr-joey-graceffa-edition/id859604311?mt=8",
-                "landing" : "",
-                "officesite" : ""
-            },
+                "origin": "https://itunes.apple.com/tw/app/flipr-joey-graceffa-edition/id859604311?mt=8",
+                "landing": [
+                            "https://itunes.apple.com/tw/app/flipr-joey-graceffa-edition/id859604311?mt=8",
+                            "https://itunes.apple.com/tw/app/flipr-joey-graceffa-edition/id859604311?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/tw/app/flipr-joey-graceffa-edition/id859604311?mt=8"
+                },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa",
-                "landing": "",
-                "officesite": ""
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.joeygraceffa"
+                        ]
                 },
             "playeronly" : true
         }

@@ -6,12 +6,26 @@
             "icon": "images/smosh/icon_200x200.png",
             "description": "Discover Anthony Padilla & Ian Hecox’s latest funnies on-the-go. This app can also help you watch it on the big screen with Chromecast support!",
             "calltoaction": "FREE to download now!",
-            "ios": {},
+            "ios": {
+                "origin": "https://itunes.apple.com/us/app/smosh-on-flipr-unofficial/id862863892?mt=8",
+                "landing": [
+                            "https://itunes.apple.com/us/app/smosh-on-flipr-unofficial/id862863892?mt=8",
+                            "https://itunes.apple.com/us/app/smosh-on-flipr-unofficial/id862863892?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/us/app/smosh-on-flipr-unofficial/id862863892?mt=8"
+                },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.smosh",
-                "landing": "",
-                "officesite": ""
-            },
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.smosh",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.smosh"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.smosh",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.smosh",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.smosh"
+                        ]
+                },
             "playeronly" : true
         }
     ]
