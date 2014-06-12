@@ -11,7 +11,6 @@ ld.controller('AppGroupCtrl', function ($scope, msoService){
 
 				if(data.link[i].ios == "" || jQuery.isEmptyObject(data.link[i].ios)){
 					(function(num){
-						console.log($("li.app-group-item").eq(num).find("a.app-item-ios"));
 						setTimeout(function(){
 							var $item = $("li.app-group-item").eq(num);
 							$item.find(".app-item-link-group").addClass("lack-ios");
