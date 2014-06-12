@@ -14,7 +14,6 @@ ld.controller('PromoteCtrl', function ($scope, $http, msoService){
     msoService.get().then(function(data){
         $scope.promotionItems = data.promote;
         $scope.social = data.social;
-        $scope.app = data.app[0];
         
         var os = getOs();
         if(os === "is-android"){
@@ -23,6 +22,7 @@ ld.controller('PromoteCtrl', function ($scope, $http, msoService){
         if(os === "is-ios"){
             $scope.isIos = true;
         }
+        $scope.app = data.app[0];
         //$scope.$apply();
         //console.log($scope.promotionItems);
         // console.log($scope.items);
