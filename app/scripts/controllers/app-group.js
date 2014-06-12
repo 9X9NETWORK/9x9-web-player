@@ -9,18 +9,23 @@ ld.controller('AppGroupCtrl', function ($scope, msoService){
 		if(data.link){
 			for(var i = 0; i<data.link.length; i++){
 
-				if(data.link[i].ios == ""){
+				if(data.link[i].ios == "" || jQuery.isEmptyObject(data.link[i].ios)){
 					(function(num){
+						console.log($("li.app-group-item").eq(num).find("a.app-item-ios"));
 						setTimeout(function(){
-							$("li.app-group-item").eq(num).find("a.app-item-ios").removeAttr("href");
+							var $item = $("li.app-group-item").eq(num);
+							$item.find(".app-item-link-group").addClass("lack-ios");
+							$item.find("a.app-item-ios").removeAttr("href");
 						},800);
 					})(i);
 				}
 
-				if(data.link[i].android == ""){
+				if(data.link[i].android == "" || jQuery.isEmptyObject(data.link[i].android)){
 					(function(num){
 						setTimeout(function(){
-							$("li.app-group-item").eq(num).find("a.app-item-android").removeAttr("href");
+							var $item = $("li.app-group-item").eq(num);
+							$item.find(".app-item-link-group").addClass("lack-android");
+							$item.find("a.app-item-android").removeAttr("href");
 						},800);
 					})(i);
 				}
