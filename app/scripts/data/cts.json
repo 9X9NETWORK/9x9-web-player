@@ -8,13 +8,23 @@
             "calltoaction": "立刻免費下載給你看更多！",
             "ios": {
                 "origin": "https://itunes.apple.com/tw/app/hua-shi-flipr/id623085456?mt=8",
-                "landing": "http://ad.apps.fm/Rf4gaozELf9-tOQ52oo_tvE7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA6lL9g6acrtNCuo_QbZ-sAVxLRzmm9ifNXr3YZhgurjgs",
-                "officesite": "http://ad.apps.fm/X-W2O-5Dso_-ww54Mal4cPE7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA6VvP96wEV1eVbHYC_iHdtTDBIhbQHqlQE3-cjSPqKQtk"
+                "landing": [
+                            "http://ad.apps.fm/gfO6vRLxZdRx95nB1ljqa_E7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA6hjSomApoaTYaF4wadplZXtBAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/ODgY873LgCinr7WhdnC3lPE7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA6DnYUpLL92S_Je3WilV_w1q9-VA-dEpbP_UAE52sdVBk"
+                            ],
+                "officesite": "http://ad.apps.fm/Wddiym7fFKNSlMBx3sJV7vE7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA69dznz128Nwe4rm8OPgiAZfCYagKnjd3JTKLywLOw94o"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tw.com.cts.player",
-                "landing": "http://ad.apps.fm/B-Vm5zlWoEm62t1tfDT4GV5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfbq0znJlzKjEljmDwpvhcIgMLJmbKTge2R8rbg0OHrgmuq2tPqScBnyk3Z1IKehSE7hJK2jGFzGVqzFtNu91KiA",
-                "officesite": "http://ad.apps.fm/2GGgAuZG77JfARZasyLc6F5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfbq0znJlzKjEljmDwpvhcImtXN7I_3nK2yD6iKMABs-rQQCIo95FB8EVpL0RLiOe3"
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tw.com.cts.player&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tw.com.cts.player&referrer=utm_source=landing&utm_campaign=suggested"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tw.com.cts.player&referrer=utm_source=landing&utm_campaign=fliprtv",
+                "market":[
+                            "market://details?id=tw.com.cts.player&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tw.com.cts.player&referrer=utm_source=landing&utm_campaign=suggested"
+                        ]
                 },
             "playeronly" : false
         }

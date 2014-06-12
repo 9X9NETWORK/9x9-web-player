@@ -8,13 +8,23 @@
             "calltoaction": "立刻免費下載，好消息帶著走！",
             "ios": {
                 "origin": "https://itunes.apple.com/tw/app/good-tv-flipr/id737001290?mt=8",
-                "landing": "http://ad.apps.fm/gYKE-oQG90zhXwMLkRt1fPE7og6fuV2oOMeOQdRqrE0QIshyz0mi8ejNrjqhlWbXlL9g6acrtNCuo_QbZ-sAV4z2pVqQTfx9fOvKtvFsqnA",
-                "officesite": "http://ad.apps.fm/BMr5kJ4aXfDq3IWLoHXTb_E7og6fuV2oOMeOQdRqrE0QIshyz0mi8ejNrjqhlWbXVvP96wEV1eVbHYC_iHdtTBK-rAtWpu8Ok00KWc0WDsw"
+                "landing": [
+                            "http://ad.apps.fm/CqkOUTqKyY6mPIvheR0z3PE7og6fuV2oOMeOQdRqrE0QIshyz0mi8ejNrjqhlWbXhuL_qIRERJAXyFXR4QEKcNBAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/-f-_HGxl9dSI8U6LkDt9t_E7og6fuV2oOMeOQdRqrE0QIshyz0mi8ejNrjqhlWbXDnYUpLL92S_Je3WilV_w1mjM_91ZtrAv88glV1iQP3w"
+                            ],
+                "officesite": "http://ad.apps.fm/5xo4kJc2NTT68nKjMcWVIfE7og6fuV2oOMeOQdRqrE0QIshyz0mi8ejNrjqhlWbXLhEHe85KiMexzblOfitwbvCYagKnjd3JTKLywLOw94o"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv",
-                "landing": "http://ad.apps.fm/n9zK0Su04cvuV1NTi0xfqheia0_LQpFNtXyI_RYvuCG0_vCLxUoHxV88BZc6OnBN09bcWPlnj3_yxzZFd7me6jQUUVBwXDYs9QmvZ_tpqbo",
-                "officesite": "http://ad.apps.fm/dVjx0VzttQs3Pe5NcXmWsl5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfGkvGklG3pneD_B5uDg1ZHyMpx6pSXuECzSuXz9oWyljAg1siTCSX7biCEMoWORp0WiAqhcOHk3-NummfZ-aLcw"
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv&referrer=utm_source=landing&utm_campaign=suggested" 
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.goodtv.player9x9tv&referrer=utm_source=landing&utm_campaign=fliprtv",
+                "market": [
+                            "market://details?id=tv.goodtv.player9x9tv&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.goodtv.player9x9tv&referrer=utm_source=landing&utm_campaign=suggested"
+                            ]
                 },
             "playeronly" : false
         }

@@ -8,13 +8,24 @@
             "calltoaction": "立刻免費下載，給你看更多！",
             "ios": {
                 "origin": "https://itunes.apple.com/tw/app/feng-jia-ying-yin-flipr/id723980669?mt=8",
-                "landing": "http://ad.apps.fm/TRRv14qxzxhbPkcp8tWRyvE7og6fuV2oOMeOQdRqrE17dr3TrSeTGxJRr9klqMmNHCFe8P0kRZ5d8idjRy-cI5UDbniPT04DURRXliAwEH4",
-                "officesite": "http://ad.apps.fm/0Lx_BKmbzeRnoSeGpwp1pPE7og6fuV2oOMeOQdRqrE17dr3TrSeTGxJRr9klqMmNeXlmkGm-NfmhfAc-ByGo3qddRHgIKWjzHsZ4XhkhX0E"
+                "landing": [
+                            "http://ad.apps.fm/OqC1wqBSFtGLCeQszc7q6PE7og6fuV2oOMeOQdRqrE3XlspZJPnNoODmxE9xwEhdAgpEnmeKHT0-Hx7vFu3gJ9BAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/L6_A9MvV7PadiSCzuhBbcvE7og6fuV2oOMeOQdRqrE3XlspZJPnNoODmxE9xwEhdDnYUpLL92S_Je3WilV_w1jmB8RqBcrt41HsJ6xYgsxM"
+                            ],
+                "officesite": "http://ad.apps.fm/Kvnt6NM7CO85RS703R7sH_E7og6fuV2oOMeOQdRqrE3XlspZJPnNoODmxE9xwEhdjD4VfE4gkyvhFtFLwu4soPCYagKnjd3JTKLywLOw94o"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tw.edu.fcu.player9x9tv",
-                "landing": "http://ad.apps.fm/fEzZK5VhWaSIQ2lk8bnySV5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfcVrX7Je-GblmQV-LIi0LT-i7oWbpIPISe3xw-bWx6qDuezh8TMDKoz_0qRclAvLX",
-                "officesite": "http://ad.apps.fm/bauHhZcOypIaDvUzWUJbwl5KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfcVrX7Je-GblmQV-LIi0LT92yizYLCZx8IKZxNgcPGlJ0mp3pMN5mbfB2wGHoB683"
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tw.edu.fcu.player9x9tv&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tw.edu.fcu.player9x9tv&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tw.edu.fcu.player9x9tv&referrer=utm_source=promo&utm_campaign=fliprtv",
+                "market": [
+                            "market://details?id=tw.edu.fcu.player9x9tv&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tw.edu.fcu.player9x9tv&referrer=utm_source=landing&utm_campaign=suggested"
+                            
+                          ]
                 },
             "playeronly" : false,
             "playerControl" : ""

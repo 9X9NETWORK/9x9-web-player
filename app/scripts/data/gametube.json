@@ -8,14 +8,24 @@
             "calltoaction": "立刻免費下載，給你看更多！",
             "ios": {
                 "origin" : "https://itunes.apple.com/tw/app/gametube-flipr/id883096715?l=zh&ls=1&mt=8",
-                "landing" : "http://ad.apps.fm/sqvbduApdxmF-QL-IEwsUvE7og6fuV2oOMeOQdRqrE3gLGq59cm7895sW7VqNUNglZpEj3cpYhjwjH4lGZat4tBAW28aYabvxh6AeQ1YLF8",
+                "landing" : [
+                              "http://ad.apps.fm/sqvbduApdxmF-QL-IEwsUvE7og6fuV2oOMeOQdRqrE3gLGq59cm7895sW7VqNUNglZpEj3cpYhjwjH4lGZat4tBAW28aYabvxh6AeQ1YLF8",
+                              ""
+                            ],
                 "officesite" : "http://ad.apps.fm/6SjzYh0FL4w5xJyDkj89dvE7og6fuV2oOMeOQdRqrE3gLGq59cm7895sW7VqNUNg_Eq28AXRCk7Pc5K3J4PoI_CYagKnjd3JTKLywLOw94o"
             },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.gametube",
-                "landing": "https://play.google.com/store/apps/details?id=tv.flipr.gametube&referrer=utm_source=landing&utm_campaign=direct",
-                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.gametube&referrer=utm_source=promo&utm_campaign=fliprtv"
-                },
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.gametube&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.gametube&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.gametube&referrer=utm_source=promo&utm_campaign=fliprtv",
+                "market":[
+                            "market://details?id=tv.flipr.gametube&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.flipr.gametube&referrer=utm_source=landing&utm_campaign=suggested"
+                        ]
+            },
             "playeronly" : false,
             "playerControl" : ""
         }
