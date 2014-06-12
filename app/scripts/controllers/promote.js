@@ -1,10 +1,28 @@
 'use strict';
 ld.controller('PromoteCtrl', function ($scope, $http, msoService){
     //$scope.awesomeThings = ['HTML5 Boilerplate','AngularJS','Karma'];
+    var getOs = function(){
+      //console.log(navigator.userAgent);
+      if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+        return "is-ios";
+      }else if(navigator.userAgent.match(/mobile|android|Mobile|Android/)){
+        return "is-android";
+      }else{
+        return "";
+      }
+    }
     msoService.get().then(function(data){
         $scope.promotionItems = data.promote;
         $scope.social = data.social;
         $scope.app = data.app[0];
+        
+        var os = getOs();
+        if(os === "is-android"){
+            $scope.isAndroid = true;
+        }
+        if(os === "is-ios"){
+            $scope.isIos = true;
+        }
         //$scope.$apply();
         //console.log($scope.promotionItems);
         // console.log($scope.items);
