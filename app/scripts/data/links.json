@@ -1,12 +1,36 @@
 {
 	"zh": [
         {
+            "id" : "daaitv",
+            "name": "大愛 FLIPr",
+            "description": "「大愛讓世界亮起來」",
+            "icon": "images/daaitv/app_icon.png",
+            "ios": {
+                "origin": "https://itunes.apple.com/us/app/da-ai-flipr/id883943412?l=zh&ls=1&mt=8",
+                "landing": "http://ad.apps.fm/1hfQFfo20fh-IZhIzNPwwvE7og6fuV2oOMeOQdRqrE1A3ZLVeJFEAYTkWS55kwqkDnYUpLL92S_Je3WilV_w1tgER5pfoaqoaehGGKkrwZU",
+                "officesite": "http://ad.apps.fm/u-H8ed8IT8O8dPbL4H3VefE7og6fuV2oOMeOQdRqrE1A3ZLVeJFEAYTkWS55kwqkI69Tk9EESVdYe0uh6JhJPvCYagKnjd3JTKLywLOw94o"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.daai",
+                "landing": "https://play.google.com/store/apps/details?id=tv.flipr.daaitv&referrer=utm_source=landing&utm_campaign=suggested",
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.daaitv&referrer=utm_source=promo&utm_campaign=fliprtv"
+                }
+        },
+        {
             "id" : "gametube",
             "name": "GameTube FLIPr",
             "description": "電玩影音新流感。同步收納超熱「電玩新知」、超夯「實戰」、超酷「名家」！",
             "icon": "images/gametube/app_icon.png",
-            "ios": {},
-            "android": {}
+            "ios": {
+                "origin" : "https://itunes.apple.com/tw/app/gametube-flipr/id883096715?l=zh&ls=1&mt=8",
+                "landing" : "http://ad.apps.fm/sqvbduApdxmF-QL-IEwsUvE7og6fuV2oOMeOQdRqrE3gLGq59cm7895sW7VqNUNglZpEj3cpYhjwjH4lGZat4tBAW28aYabvxh6AeQ1YLF8",
+                "officesite" : "http://ad.apps.fm/6SjzYh0FL4w5xJyDkj89dvE7og6fuV2oOMeOQdRqrE3gLGq59cm7895sW7VqNUNg_Eq28AXRCk7Pc5K3J4PoI_CYagKnjd3JTKLywLOw94o"
+            },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.gametube",
+                "landing": "https://play.google.com/store/apps/details?id=tv.flipr.gametube&referrer=utm_source=landing&utm_campaign=direct",
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.gametube&referrer=utm_source=promo&utm_campaign=fliprtv"
+            }
         },
         {
             "id" : "magazine",

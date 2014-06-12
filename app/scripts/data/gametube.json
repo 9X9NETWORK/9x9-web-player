@@ -7,14 +7,14 @@
             "description": "電玩影音新流感。同步收納超熱「電玩新知」、超夯「實戰」、超酷「名家」！電玩宅速配、新電玩快打、電玩瘋、精選熱門遊戲、電玩咖、電玩爆爆 ... 等！",
             "calltoaction": "立刻免費下載，給你看更多！",
             "ios": {
-                "origin" : "",
-                "landing" : "",
-                "officesite" : ""
+                "origin" : "https://itunes.apple.com/tw/app/gametube-flipr/id883096715?l=zh&ls=1&mt=8",
+                "landing" : "http://ad.apps.fm/sqvbduApdxmF-QL-IEwsUvE7og6fuV2oOMeOQdRqrE3gLGq59cm7895sW7VqNUNglZpEj3cpYhjwjH4lGZat4tBAW28aYabvxh6AeQ1YLF8",
+                "officesite" : "http://ad.apps.fm/6SjzYh0FL4w5xJyDkj89dvE7og6fuV2oOMeOQdRqrE3gLGq59cm7895sW7VqNUNg_Eq28AXRCk7Pc5K3J4PoI_CYagKnjd3JTKLywLOw94o"
             },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.gametube",
-                "landing": "",
-                "officesite": ""
+                "landing": "https://play.google.com/store/apps/details?id=tv.flipr.gametube&referrer=utm_source=landing&utm_campaign=direct",
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.gametube&referrer=utm_source=promo&utm_campaign=fliprtv"
                 },
             "playeronly" : false,
             "playerControl" : ""

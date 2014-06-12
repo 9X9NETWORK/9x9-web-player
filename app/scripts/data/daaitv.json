@@ -6,15 +6,15 @@
             "icon": "images/daaitv/app_icon.png",
             "description": "「大愛讓世界亮起來」。優質節目－戲劇、新聞、慈善、教育、醫療、人文類內容都在「大愛 FLIPr」",
             "calltoaction": "下載擁有適合全家人的內容！",
-            "ios": {
-                "origin" : "",
-                "landing" : "",
-                "officesite" : ""
-            },
+             "ios": {
+                "origin": "https://itunes.apple.com/us/app/da-ai-flipr/id883943412?l=zh&ls=1&mt=8",
+                "landing": "http://ad.apps.fm/1hfQFfo20fh-IZhIzNPwwvE7og6fuV2oOMeOQdRqrE1A3ZLVeJFEAYTkWS55kwqkDnYUpLL92S_Je3WilV_w1tgER5pfoaqoaehGGKkrwZU",
+                "officesite": "http://ad.apps.fm/u-H8ed8IT8O8dPbL4H3VefE7og6fuV2oOMeOQdRqrE1A3ZLVeJFEAYTkWS55kwqkI69Tk9EESVdYe0uh6JhJPvCYagKnjd3JTKLywLOw94o"
+                },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.daai",
-                "landing": "",
-                "officesite": ""
+                "landing": "https://play.google.com/store/apps/details?id=tv.flipr.daaitv&referrer=utm_source=landing&utm_campaign=suggested",
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.daaitv&referrer=utm_source=promo&utm_campaign=fliprtv"
                 },
             "playeronly" : false,
             "playerControl" : ""
