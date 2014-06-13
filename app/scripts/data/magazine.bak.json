@@ -1,39 +1,66 @@
 {
     "app": [
         {
-            "mso": "superstar.flipr.tv",
-            "name": "網路大明星 FLIPr",
-            "icon": "images/superstar/icon_200x200.png",
-            "description": "笑到噴飯的搞笑影片、萌到破表的幼兒寵物、超級實用的才藝教學和美妝分享。網路明星最新最夯的線上影片，盡在「網路大明星 FLIPr」！",
-            "calltoaction": "下載給你所有網路大明星！",
+            "mso": "magazine.flipr.tv",
+            "name": "癮雜誌 FLIPr",
+            "icon": "images/magazine/app_icon.png",
+            "description": "網羅各大雜誌影音：商場職涯、流行時尚、生活休閒、親子健康、汽車車壇，多元內容一次滿足你各種視野。每日嗑雜誌， 天天長知識。",
+            "calltoaction": "立刻下載成為雜誌通！",
             "ios": {
-                "origin": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
+                "origin": "https://itunes.apple.com/tw/app/yin-za-zhi-flipr/id875762042?l=zh&ls=1&mt=8",
                 "landing": [
-                            "http://ad.apps.fm/YZDInjoKwSXs4jT3xJYOffE7og6fuV2oOMeOQdRqrE1EIMw4p98flYb4oZm9NR8rVZFXyi8TSjGbaeFUTVXFVNBAW28aYabvxh6AeQ1YLF8",
-                            "http://ad.apps.fm/HKGTTI46_90J9t2Xh2FZW_E7og6fuV2oOMeOQdRqrE1EIMw4p98flYb4oZm9NR8rDnYUpLL92S_Je3WilV_w1oW-mX8mU9Zf0tZ3o_kDow4"
+                            "http://ad.apps.fm/VS1R596Bp2SZdHHUC8aeqfE7og6fuV2oOMeOQdRqrE2Sr9A2q4PzleThNW_NvOPT-4zBOFp26Mne6BLjS--UM9BAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/i5nKtO2pe5asfNMEVq0yLPE7og6fuV2oOMeOQdRqrE2Sr9A2q4PzleThNW_NvOPTDnYUpLL92S_Je3WilV_w1sGlyAGUG3Cd5DM4iIVJfQg"
                             ],
-                "officesite": "http://ad.apps.fm/2uylsGJwUpdiedvEwplWzvE7og6fuV2oOMeOQdRqrE1EIMw4p98flYb4oZm9NR8r6X6agu75zOkXVeTlibcgH_CYagKnjd3JTKLywLOw94o"
+                "officesite": "http://ad.apps.fm/pX_K3R6DX7-1Bl-wl5cL5_E7og6fuV2oOMeOQdRqrE2Sr9A2q4PzleThNW_NvOPTg2HrgUBxxN5xn9HUSV02ofCYagKnjd3JTKLywLOw94o"
                 },
             "android": {
-                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.superstar",
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.magazine",
                 "landing": [
-                            "https://play.google.com/store/apps/details?id=tv.flipr.superstar&referrer=utm_source=landing&utm_campaign=direct",
-                            "https://play.google.com/store/apps/details?id=tv.flipr.superstar&referrer=utm_source=landing&utm_campaign=suggested"
+                            "https://play.google.com/store/apps/details?id=tv.flipr.magazine&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.magazine&referrer=utm_source=landing&utm_campaign=suggested"
                             ],
-                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.superstar&referrer=utm_source=landing&utm_campaign=fliprtv",
-                "market":[
-                            "market://details?id=tv.flipr.superstar&referrer=utm_source=landing&utm_campaign=direct",
-                            "market://details?id=tv.flipr.superstar&referrer=utm_source=landing&utm_campaign=suggested"
-                        ]
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.magazine&referrer=utm_source=promo&utm_campaign=fliprtv",
+                "market": [
+                           "market://details?id=tv.flipr.magazine&referrer=utm_source=landing&utm_campaign=direct",
+                           "market://details?id=tv.flipr.magazine&referrer=utm_source=landing&utm_campaign=suggested"
+                           ]
                 },
-            "playeronly" : false
+            "playeronly" : false,
+            "playerControl" : ""
         }
     ],
-    "social": [
-      
-    ],
     "promote": [
-       
+        {
+            "name": "天下雜誌",
+            "image": "images/magazine/cms-thumbnail-ratio-1.jpg",
+            "link": "http://magazine.flipr.tv/view/p29838"
+        },
+        {
+            "name": "設計家",
+            "image": "images/magazine/cms-thumbnail-ratio-2.jpg",
+            "link": "http://magazine.flipr.tv/view/p29853"
+        },
+        {
+            "name": "VOGUE",
+            "image": "images/magazine/cms-thumbnail-ratio-3.jpg",
+            "link": "http://magazine.flipr.tv/view/p4278"
+        },
+        {
+            "name": "媽媽寶寶",
+            "image": "images/magazine/cms-thumbnail-ratio-4.jpg",
+            "link": "http://magazine.flipr.tv/view/p29855"
+        },
+        {
+            "name": "世界電影",
+            "image": "images/magazine/cms-thumbnail-ratio-5.jpg",
+            "link": "http://magazine.flipr.tv/view/p32998"
+        },
+        {
+            "name": "GO 車誌",
+            "image": "images/magazine/cms-thumbnail-ratio-6.jpg",
+            "link": "http://magazine.flipr.tv/view/p183"
+        }
     ],
     "link": [
         {

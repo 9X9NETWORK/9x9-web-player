@@ -1,39 +1,66 @@
 {
     "app": [
         {
-            "mso": "superstar.flipr.tv",
-            "name": "網路大明星 FLIPr",
-            "icon": "images/superstar/icon_200x200.png",
-            "description": "笑到噴飯的搞笑影片、萌到破表的幼兒寵物、超級實用的才藝教學和美妝分享。網路明星最新最夯的線上影片，盡在「網路大明星 FLIPr」！",
-            "calltoaction": "下載給你所有網路大明星！",
+            "mso": "musicvideo.flipr.tv",
+            "name": "MV不解釋 FLIPr",
+            "icon": "images/mv/app_icon.png",
+            "description": "想收到最新最快的音樂MV和樂壇消息，卻厭倦打開網頁和搜尋的繁瑣過程，「MV不解釋」讓你隨時更新音樂情報，隨時讓你耳目一新！",
+            "calltoaction": "擁有最fashion的MV廣播電台！",
             "ios": {
-                "origin": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
+                "origin": "https://itunes.apple.com/tw/app/mv-bu-jie-shi-flipr/id860501633?l=zh&mt=8",
                 "landing": [
-                            "http://ad.apps.fm/YZDInjoKwSXs4jT3xJYOffE7og6fuV2oOMeOQdRqrE1EIMw4p98flYb4oZm9NR8rVZFXyi8TSjGbaeFUTVXFVNBAW28aYabvxh6AeQ1YLF8",
-                            "http://ad.apps.fm/HKGTTI46_90J9t2Xh2FZW_E7og6fuV2oOMeOQdRqrE1EIMw4p98flYb4oZm9NR8rDnYUpLL92S_Je3WilV_w1oW-mX8mU9Zf0tZ3o_kDow4"
+                            "http://ad.apps.fm/TOLrZyRt9MwEZHPc-cGEvfE7og6fuV2oOMeOQdRqrE3jLvTSqTRdsoIeUIhJ1HlKtKbQiNtJMFtfaBHYxuznH9BAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/-bJ1UcUk9jaAFaWD2uuLDvE7og6fuV2oOMeOQdRqrE3jLvTSqTRdsoIeUIhJ1HlKDnYUpLL92S_Je3WilV_w1nV6E3ZeHDqYeqxzZLoK5QI"
                             ],
-                "officesite": "http://ad.apps.fm/2uylsGJwUpdiedvEwplWzvE7og6fuV2oOMeOQdRqrE1EIMw4p98flYb4oZm9NR8r6X6agu75zOkXVeTlibcgH_CYagKnjd3JTKLywLOw94o"
+                "officesite": "http://ad.apps.fm/GtP-8BPuojgVi4AeBGPX0fE7og6fuV2oOMeOQdRqrE3jLvTSqTRdsoIeUIhJ1HlK-pgWUris5Os4UV4aT_bVsfCYagKnjd3JTKLywLOw94o"
                 },
             "android": {
-                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.superstar",
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo",
                 "landing": [
-                            "https://play.google.com/store/apps/details?id=tv.flipr.superstar&referrer=utm_source=landing&utm_campaign=direct",
-                            "https://play.google.com/store/apps/details?id=tv.flipr.superstar&referrer=utm_source=landing&utm_campaign=suggested"
+                            "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo&referrer=utm_source=landing&utm_campaign=suggested"
                             ],
-                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.superstar&referrer=utm_source=landing&utm_campaign=fliprtv",
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.musicvideo&referrer=utm_source=landing&utm_campaign=fliprtv",
                 "market":[
-                            "market://details?id=tv.flipr.superstar&referrer=utm_source=landing&utm_campaign=direct",
-                            "market://details?id=tv.flipr.superstar&referrer=utm_source=landing&utm_campaign=suggested"
-                        ]
+                            "market://details?id=tv.flipr.musicvideo&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.flipr.musicvideo&referrer=utm_source=landing&utm_campaign=suggested"
+                          ]
                 },
             "playeronly" : false
         }
     ],
-    "social": [
-      
-    ],
+    "social": [],
     "promote": [
-       
+        {
+            "name": "華納音樂",
+            "image": "images/mv/cms-thumbnail-ratio-1.jpg",
+            "link": "http://musicvideo.flipr.tv/view/p63"
+        },
+        {
+            "name": "滾石唱片",
+            "image": "images/mv/cms-thumbnail-ratio-2.jpg",
+            "link": "http://musicvideo.flipr.tv/view/p628"
+        },
+        {
+            "name": "MBC KPOP",
+            "image": "images/mv/cms-thumbnail-ratio-3.jpg",
+            "link": "http://musicvideo.flipr.tv/view/p13457"
+        },
+        {
+            "name": "相信音樂",
+            "image": "images/mv/cms-thumbnail-ratio-4.jpg",
+            "link": "http://musicvideo.flipr.tv/view/p32598"
+        },        
+        {
+            "name": "Billboard.com",
+            "image": "images/mv/cms-thumbnail-ratio-5.jpg",
+            "link": "http://musicvideo.flipr.tv/view/p430"
+        },
+        {
+            "name": "VEVO",
+            "image": "images/mv/cms-thumbnail-ratio-6.jpg",
+            "link": "http://musicvideo.flipr.tv/view/p625"
+        }
     ],
     "link": [
         {

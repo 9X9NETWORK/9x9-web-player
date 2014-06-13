@@ -31,7 +31,36 @@
         }
     ],
     "promote": [
-       
+        {
+            "name": "電玩宅速配",
+            "image": "images/gametube/cms-thumbnail-ratio-1.png",
+            "link": "http://gametube.flipr.tv/view/p33156"
+        },
+        {
+            "name": "新電玩快打",
+            "image": "images/gametube/cms-thumbnail-ratio-2.png",
+            "link": "http://gametube.flipr.tv/view/p33635"
+        },
+        {
+            "name": "電玩瘋",
+            "image": "images/gametube/cms-thumbnail-ratio-3.png",
+            "link": "http://gametube.flipr.tv/view/p33700"
+        },
+        {
+            "name": "精選熱門遊戲",
+            "image": "images/gametube/cms-thumbnail-ratio-4.png",
+            "link": "http://gametube.flipr.tv/view/p33618"
+        },
+        {
+            "name": "電玩咖",
+            "image": "images/gametube/cms-thumbnail-ratio-5.png",
+            "link": "http://gametube.flipr.tv/view/p33662"
+        },
+        {
+            "name": "電玩爆爆",
+            "image": "images/gametube/cms-thumbnail-ratio-6.png",
+            "link": "http://gametube.flipr.tv/view/p33164"
+        }
     ],
     "link": [
         

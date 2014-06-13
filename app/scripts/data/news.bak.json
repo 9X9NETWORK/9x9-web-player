@@ -29,9 +29,40 @@
             "playeronly" : false
         }
     ],
-    "social": [],
-    "promote": [
+    "social": [
       
+    ],
+    "promote": [
+        {
+            "name": "新聞挖挖挖",
+            "image": "images/news/cms-thumbnail-ratio-1.jpg",
+            "link": "http://news.flipr.tv/view/p32681"
+        },
+        {
+            "name": "獨立特派員",
+            "image": "images/news/cms-thumbnail-ratio-2.jpg",
+            "link": "http://news.flipr.tv/view/p32658"
+        },
+        {
+            "name": "夢想街57號",
+            "image": "images/news/cms-thumbnail-ratio-3.jpg",
+            "link": "http://news.flipr.tv/view/p32688"
+        },
+        {
+            "name": "BBC News",
+            "image": "images/news/cms-thumbnail-ratio-4.jpg",
+            "link": "http://news.flipr.tv/view/p32744"
+        },
+        {
+            "name": "中國真相新聞",
+            "image": "images/news/cms-thumbnail-ratio-5.jpg",
+            "link": "http://news.flipr.tv/view/p32648"
+        },
+        {
+            "name": "MBC韓國新聞",
+            "image": "images/news/cms-thumbnail-ratio-6.jpg",
+            "link": "http://news.flipr.tv/view/p32760"
+        }
     ],
     "link": [
         {
@@ -60,13 +91,13 @@
             "description": "千奇百怪的網路名人一籮筐。想走在潮流尖端，還沒下載「網路大明星 FLIPr」你就太弱了！",
             "icon": "images/superstar/icon_200x200.png",
             "ios": "https://itunes.apple.com/tw/app/wang-lu-da-ming-xing-flipr/id840776687?mt=8",
-            "android": "https://play.google.com/store/apps/details?id=tv.flipr.superstar"
+            "android": ""
         },
         {
             "name": "關鍵評論網 FLIPr",
             "description": "News worth knowing, voices worth sharing 分享觀點從這開始",
             "icon": "images/thenewslens/icon_200x200.png",
-            "ios": "https://itunes.apple.com/cn/app/guan-jian-ping-lun-wang-flipr/id842456259?l=en&mt=8",
+            "ios": "",
             "android": "https://play.google.com/store/apps/details?id=tv.flipr.thenewslens"
         },
         {
@@ -80,7 +111,7 @@
             "name": "華視 FLIPr",
             "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
             "icon": "images/cts/app_icon.png",
-            "ios": "https://itunes.apple.com/tw/app/hua-shi-flipr/id623085456?mt=8",
+            "ios": "https://itunes.apple.com/ca/app/wei-dian-ying-jie-hua-shi/id623085456?mt=8",
             "android": "https://play.google.com/store/apps/details?id=tw.com.cts.player"
         }
     ]
