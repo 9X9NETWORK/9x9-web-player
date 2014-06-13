@@ -23,6 +23,9 @@ ld.controller('PromoteCtrl', function ($scope, $http, msoService){
             $scope.isIos = true;
         }
         $scope.app = data.app[0];
+        if(data.promote.length === 0){
+            $("div.promote-programe-wrap, div.promote-app-wrap").hide();
+        }
         //$scope.$apply();
         //console.log($scope.promotionItems);
         // console.log($scope.items);
