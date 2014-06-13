@@ -31,36 +31,7 @@
         }
     ],
     "promote": [
-        {
-            "name": "天下雜誌",
-            "image": "images/magazine/cms-thumbnail-ratio-1.jpg",
-            "link": "http://magazine.flipr.tv/view/p29838"
-        },
-        {
-            "name": "設計家",
-            "image": "images/magazine/cms-thumbnail-ratio-2.jpg",
-            "link": "http://magazine.flipr.tv/view/p29853"
-        },
-        {
-            "name": "VOGUE",
-            "image": "images/magazine/cms-thumbnail-ratio-3.jpg",
-            "link": "http://magazine.flipr.tv/view/p4278"
-        },
-        {
-            "name": "媽媽寶寶",
-            "image": "images/magazine/cms-thumbnail-ratio-4.jpg",
-            "link": "http://magazine.flipr.tv/view/p29855"
-        },
-        {
-            "name": "世界電影",
-            "image": "images/magazine/cms-thumbnail-ratio-5.jpg",
-            "link": "http://magazine.flipr.tv/view/p32998"
-        },
-        {
-            "name": "GO 車誌",
-            "image": "images/magazine/cms-thumbnail-ratio-6.jpg",
-            "link": "http://magazine.flipr.tv/view/p183"
-        }
+       
     ],
     "link": [
         {
