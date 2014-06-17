@@ -85,12 +85,14 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
               
               $(".is-ios, .is-android").find(".open-in-app").show();
 
-              var openInAppLink;
-              if(mso === "9x9"){
-                  openInAppLink = "flipr://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
-              }else{
-                  openInAppLink = "flipr-" + mso + "://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
-              }
+              var openInAppLink = "flipr://" + location.href;
+              // $("#openInAppLink").html(openInAppLink);
+
+              // if(mso === "9x9"){
+              //     openInAppLink = "flipr://9x9.tv/view/p" + channel.id + "/p" + episode.id;
+              // }else{
+              //     openInAppLink = "flipr-" + mso + "://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
+              // }
               $(".is-ios, .is-android").find(".app-download-wrap > a").click(function(){
                 location.href = openInAppLink;
               });
