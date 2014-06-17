@@ -85,7 +85,8 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
               
               $(".is-ios, .is-android").find(".open-in-app").show();
 
-              var openInAppLink = "flipr://" + location.href;
+              var openInAppLink = "flipr-" + mso + "://" + location.href.replace("http://", "").replace("#/", "");
+              console.log(openInAppLink);
               // $("#openInAppLink").html(openInAppLink);
 
               // if(mso === "9x9"){
@@ -93,9 +94,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
               // }else{
               //     openInAppLink = "flipr-" + mso + "://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
               // }
-              $(".is-ios, .is-android").find(".app-download-wrap > a").click(function(){
-                location.href = openInAppLink;
-              });
+              $(".is-ios, .is-android").find("#openInAppLink").attr("href", openInAppLink);
 
 
               var player;
@@ -228,17 +227,15 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
           console.log(programs.current().videoId);
        });
 
-       var openInAppLink;
-       $(".is-ios, .is-android").find(".open-in-app").show();
-       if(mso === "9x9"){
-            openInAppLink = "flipr://flipr.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
-        }else{
-            openInAppLink = "flipr-" + mso + "://flipr.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
-        }
+       var openInAppLink = "flipr-" + mso + "://" + location.href.replace("http://", "").replace("#/", "");
+       console.log(openInAppLink);
+       $(".is-ios, .is-android").find("#openInAppLink").show().attr("href", openInAppLink);
+       // if(mso === "9x9"){
+       //      openInAppLink = "flipr://flipr.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
+       //  }else{
+       //      openInAppLink = "flipr-" + mso + "://flipr.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
+       //  }
 
-        $(".is-ios, .is-android").find(".app-download-wrap > a").click(function(){
-          location.href = openInAppLink;
-        });
 
        episode.watched = 0;
        watchedSec = 0;
