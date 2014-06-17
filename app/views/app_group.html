@@ -8,7 +8,7 @@
             <div class="app-name">{{item.name}}</div>
             <div class="app-item-link-group {{item.ios == '' ? 'lack-ios' : ''}} {{item.android == '' ? 'lack-android' : ''}}">
 
-                <a href="{{os === 'ios' ? item.ios : item.android}}" target="_blank" class="app-item-mobile">
+                <a href="{{os === 'ios' ? item.ios.landing[1] : item.android.market[1]}}" target="_blank" class="app-item-mobile">
                     <span class="getit-text">GET IT</span>
                     <span class="comingsoon-text">COMING SOON</span>
                 </a>
