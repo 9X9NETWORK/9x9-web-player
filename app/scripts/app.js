@@ -66,7 +66,7 @@ var ld = angular.module('landing', [
 
       $locationProvider.html5Mode(true);
       $urlRouterProvider.when("", "/");
-      $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension|flipr-.*):/);
+      $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension|flipr-.*|market):/);
       
       $stateProvider
         .state("watchEpisode", {
