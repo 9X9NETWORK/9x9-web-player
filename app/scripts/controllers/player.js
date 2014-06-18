@@ -132,22 +132,22 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
           initListPosition();
       }
     }
+    var getOs = function(){
+      // console.log(navigator.userAgent);
+      if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+        return "ios";
+      }else if(navigator.userAgent.match(/mobile|android|Mobile|Android/)){
+        return "android";
+      }else{
+        return "web";
+      }
+    }
 
     var initListPosition = function(){
       setTimeout(function(){
         var list = $(".episode-list");
         var wrap = $(".episode-list-wrap");
         var item = list.find("li.is-playing");
-        var getOs = function(){
-          // console.log(navigator.userAgent);
-          if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-            return "ios";
-          }else if(navigator.userAgent.match(/mobile|android|Mobile|Android/)){
-            return "android";
-          }else{
-            return "web";
-          }
-        }
         var os = getOs();
         if(item.length === 1){
           var left = item.position().left;
@@ -436,6 +436,14 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
             $scope.app = data.app[0];
             $scope.social = data.social;
+
+            var os = getOs();
+            if(os === "android"){
+                $scope.isAndroid = true;
+            }
+            if(os === "ios"){
+                $scope.isIos = true;
+            }
 
             init();
             initGA();

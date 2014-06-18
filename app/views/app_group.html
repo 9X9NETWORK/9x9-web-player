@@ -14,7 +14,7 @@
                 </a>
 
                 <a href="{{item.ios.landing[1]}}" class="app-item-ios"  target="_blank"></a>
-                <a href="{{item.android.market[1]}}" class="app-item-android"  target="_blank"></a>
+                <a href="{{os === 'web' ? item.android.landing[1] : item.android.market[1]}}" class="app-item-android"  target="_blank"></a>
 
             </div>
 
