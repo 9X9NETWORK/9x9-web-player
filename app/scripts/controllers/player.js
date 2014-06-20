@@ -68,6 +68,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         url1 = url1[0].split(";")[0];
       }
 
+      console.log(url1);
       if(url1 && url1.indexOf("m3u8") !== -1){
         //live streaming channel
 
@@ -228,7 +229,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
        });
 
        var openInAppLink = "flipr-" + mso + "://" + location.href.replace("http://", "").replace("#/", "");
-       console.log(openInAppLink);
        $(".is-ios, .is-android").find("#openInAppLink").show().attr("href", openInAppLink);
        // if(mso === "9x9"){
        //      openInAppLink = "flipr://flipr.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
