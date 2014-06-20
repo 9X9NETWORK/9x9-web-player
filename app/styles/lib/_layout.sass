@@ -95,6 +95,8 @@ body
 .playback-episode-src
     +span(8 of 12 first)
     line-height: 2em 
+    +ellipsis
+
     //this for ui
 
     .program-from
@@ -110,6 +112,7 @@ body
             border-radius: 10%
     .program-name
         +adjust-font-size-to($small-font)
+        //+ellipsis
 .playback-episode-count
     +span(4)
     +pull(0.25)
@@ -345,6 +348,9 @@ body
     border-radius: 7%
     border: solid 0.2rem #fff
     overflow: hidden
+    a
+        display: block
+        line-height: 0
 
     img
         width: 100%

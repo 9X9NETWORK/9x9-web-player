@@ -28,8 +28,8 @@ $desktop-large-font: 36px
         +box-sizing(border-box)
            
     .playback-episode-src
-        padding-top: 0.25rem
-        padding-bottom: 0.25rem
+        // padding-top: 0.25rem
+        // padding-bottom: 0.25rem
         .program-name
             display: inline-block
             max-width: 15.5rem
@@ -237,6 +237,8 @@ $desktop-large-font: 36px
         text-align: left
         position: relative
         z-index: 2
+        margin-top: 0 
+
 
 
     .promote-programe-text-sub
@@ -297,12 +299,15 @@ $desktop-large-font: 36px
         position: relative
         z-index: 20
 
+
     
+
 +susy-breakpoint(70rem,16)
     html
-        overflow: inherit
+        overflow-y: visible
 
-
+    
+    
     .app-download-wrap
         +span(6 first)
     .social-media-wrap
