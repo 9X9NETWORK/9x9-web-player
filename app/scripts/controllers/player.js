@@ -68,7 +68,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         url1 = url1[0].split(";")[0];
       }
 
-      console.log(url1);
       if(url1 && url1.indexOf("m3u8") !== -1){
         //live streaming channel
 
@@ -84,10 +83,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
               $scope.episode = episode;
               $scope.$apply();
               
-              $(".is-ios, .is-android").find(".open-in-app").show();
-
-              var openInAppLink = "flipr-" + mso + "://" + location.href.replace("http://", "").replace("#/", "");
-              console.log(openInAppLink);
               // $("#openInAppLink").html(openInAppLink);
 
               // if(mso === "9x9"){
@@ -95,7 +90,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
               // }else{
               //     openInAppLink = "flipr-" + mso + "://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
               // }
-              $(".is-ios, .is-android").find("#openInAppLink").attr("href", openInAppLink);
+             // $(".is-ios, .is-android").find("#openInAppLink").attr("href", openInAppLink);
 
 
               var player;
@@ -132,6 +127,20 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
           startPlay();
           initListPosition();
       }
+
+      //** set watch in app link
+      setTimeout(function(){
+
+            //** for android
+            var openInAppLink = "flipr-" + mso + "://" + location.href.replace("http://", "").replace("#/", "");
+            $(".is-android").find("#openInAppLink").show().attr("href", openInAppLink);
+
+            //** for ios
+            openInAppLink = "flipr-" + mso + "://" + mso + ".9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
+            $(".is-ios").find("#openInAppLink").show().attr("href", openInAppLink);
+            //$(".is-ios, .is-android").find("#openInAppLink").show().attr("href", openInAppLink);
+      }, 200);
+
     }
     var getOs = function(){
       // console.log(navigator.userAgent);
@@ -223,19 +232,11 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     }
 
     var startPlay = function(){
+
        player.ready().then(function(){
           player.cueVideoById(programs.current().videoId);
           console.log(programs.current().videoId);
        });
-
-       var openInAppLink = "flipr-" + mso + "://" + location.href.replace("http://", "").replace("#/", "");
-       $(".is-ios, .is-android").find("#openInAppLink").show().attr("href", openInAppLink);
-       // if(mso === "9x9"){
-       //      openInAppLink = "flipr://flipr.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
-       //  }else{
-       //      openInAppLink = "flipr-" + mso + "://flipr.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
-       //  }
-
 
        episode.watched = 0;
        watchedSec = 0;
@@ -286,6 +287,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
           });
         });
     }
+
     var init = function(){
 
         var nua = navigator.userAgent;
@@ -526,6 +528,16 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         var path1 = channel.name + "/" + episode.name;
 
         $scope.safeApply(update);
+
+        setTimeout(function(){
+              //** for android
+              var openInAppLink = "flipr-" + mso + "://" + location.href.replace("http://", "").replace("#/", "");
+              $(".is-android").find("#openInAppLink").show().attr("href", openInAppLink);
+
+              //** for ios
+              openInAppLink = "flipr-" + mso + "://" + mso + ".9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
+              $(".is-ios").find("#openInAppLink").show().attr("href", openInAppLink);
+        }, 200);
 
         startPlay();
         //initListPosition();
