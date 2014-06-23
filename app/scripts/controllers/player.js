@@ -514,6 +514,14 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
       }
     };
 
+    $scope.getChThumb = function(img){
+      if(typeof img === 'string'){
+        return img;
+      }else if(typeof img === 'array'){
+        return img[0];
+      }
+    }
+
     $scope.onEpisodeClick = function(eid){
 
         _d.resolve();

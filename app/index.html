@@ -112,7 +112,7 @@
                     <div class="playback-episode-src">
                         <span class="program-from">from</span>
                         <figure class="program-logo-small">
-                            <img ng-src="{{typeof channel.images === 'string' ? channel.images : channel.images[0]}}" >
+                            <img ng-src="getChThumb(channel.images)" >
                         </figure>
                         <span class="program-name">{{channel.name}}</span>
                     </div>
