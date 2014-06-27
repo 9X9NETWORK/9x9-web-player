@@ -52,6 +52,33 @@
                         ]
             }
         },
+
+        {
+            "id" : "magazine",
+            "name": "癮雜誌 FLIPr",
+            "description": "每日嗑雜誌，天天長知識。",
+            "icon": "images/magazine/app_icon.png",
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/yin-za-zhi-flipr/id875762042?l=zh&ls=1&mt=8",
+                "landing": [
+                            "http://ad.apps.fm/VS1R596Bp2SZdHHUC8aeqfE7og6fuV2oOMeOQdRqrE2Sr9A2q4PzleThNW_NvOPT-4zBOFp26Mne6BLjS--UM9BAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/i5nKtO2pe5asfNMEVq0yLPE7og6fuV2oOMeOQdRqrE2Sr9A2q4PzleThNW_NvOPTDnYUpLL92S_Je3WilV_w1sGlyAGUG3Cd5DM4iIVJfQg"
+                            ],
+                "officesite": "http://ad.apps.fm/pX_K3R6DX7-1Bl-wl5cL5_E7og6fuV2oOMeOQdRqrE2Sr9A2q4PzleThNW_NvOPTg2HrgUBxxN5xn9HUSV02ofCYagKnjd3JTKLywLOw94o"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.magazine",
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.magazine&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.magazine&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.magazine&referrer=utm_source=promo&utm_campaign=fliprtv",
+                "market": [
+                           "market://details?id=tv.flipr.magazine&referrer=utm_source=landing&utm_campaign=direct",
+                           "market://details?id=tv.flipr.magazine&referrer=utm_source=landing&utm_campaign=suggested"
+                           ]
+                }
+        },
              
         {
             "id" : "fcu",
