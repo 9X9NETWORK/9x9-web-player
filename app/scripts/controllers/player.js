@@ -418,6 +418,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             lang = rs[1]; 
         }
         
+        console.log(rs);
         facebook_clientid = res.split("facebook-clientid\t")[1].split("\n")[0];
         initFB();
 
