@@ -64,9 +64,34 @@ var ld = angular.module('landing', [
 )
 .config(function($stateProvider, $urlRouterProvider, $locationProvider, $compileProvider){
 
-      $locationProvider.html5Mode(true);
-      $urlRouterProvider.when("", "/");
-      $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension|flipr-.*|market):/);
+      if(false){
+
+      }else{
+          $locationProvider.html5Mode(true);
+          $urlRouterProvider.when("", "/");
+          $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension|flipr-.*|market):/);
+      }
+
+
+      // $.browser.msie = /msie/.test(navigator.userAgent.toLowerCase());
+      // var ie = (function(){
+      //     var undef,
+      //         v = 3,
+      //         div = document.createElement('div'),
+      //         all = div.getElementsByTagName('i');
+
+      //     while (
+      //         div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',
+      //         all[0]
+      //     );
+
+      //     return v > 4 ? v : undef;
+
+      // }());
+
+
+      // console.log($.browser.msie);
+      // console.log(ie);
       
       $stateProvider
         .state("watchEpisode", {

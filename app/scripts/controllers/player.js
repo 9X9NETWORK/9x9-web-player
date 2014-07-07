@@ -136,7 +136,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             $(".is-android").find("#openInAppLink").show().attr("href", openInAppLink);
 
             //** for ios
-            openInAppLink = "flipr-" + mso + "://" + mso + ".9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
+            openInAppLink = "flipr-" + mso + "://" + mso + ".9x9.tv/view?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
             $(".is-ios").find("#openInAppLink").show().attr("href", openInAppLink);
             //$(".is-ios, .is-android").find("#openInAppLink").show().attr("href", openInAppLink);
       }, 200);
@@ -544,7 +544,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
               $(".is-android").find("#openInAppLink").show().attr("href", openInAppLink);
 
               //** for ios
-              openInAppLink = "flipr-" + mso + "://" + mso + ".9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
+              openInAppLink = "flipr-" + mso + "://" + mso + ".9x9.tv/view?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
               $(".is-ios").find("#openInAppLink").show().attr("href", openInAppLink);
         }, 200);
 
