@@ -348,24 +348,35 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     }
 
     var GaReportView = function(name){
-      _gaq = [];
-      _gaq.push(['_setAccount', acct]);
-      _gaq.push(['_trackPageview', name]);
-      _ga();
+      // _gaq = [];
+      // _gaq.push(['_setAccount', acct]);
+      // _gaq.push(['_trackPageview', name]);
+      // _ga();
+      console.log('send', 'pageview', name, acct);
+      ga('send', 'pageview', name);
     }
 
     var GaReportEvent = function(category, action, label, value){
-      _gaq = [];
-      _gaq.push(['_setAccount', acct]);
-      _gaq.push (['_trackEvent', category, action, label, value]);
-      _ga(); 
+      // _gaq = [];
+      // _gaq.push(['_setAccount', acct]);
+      // _gaq.push (['_trackEvent', category, , label, value]);
+      // _ga(); 
+      console.log('send', 'event', category, action, label, value, acct);
+      ga('send', 'event', category, action, label, value);
     }
 
     var initGA = function(){
 
-        //console.log(acct);
+        return;
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        GaReportView("webplayer");
+        console.log('create:' + acct);
+        ga('create', acct, 'cts.9x9.tv'); 
+
+        //GaReportView("webplayer");
 
         $(".app-download-appstore a").click(function(){
           console.info("download android");

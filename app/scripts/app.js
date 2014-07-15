@@ -64,7 +64,7 @@ var ld = angular.module('landing', [
 )
 .config(function($stateProvider, $urlRouterProvider, $locationProvider, $compileProvider){
 
-      if(false){
+      if ($('html').hasClass('lt-ie10')){
 
       }else{
           $locationProvider.html5Mode(true);
@@ -114,16 +114,3 @@ angular.module('landing.controllers', []);
 angular.module('landing.services', []);
 angular.module('landing.filters', []);
 angular.module('landing.directives', []);
-
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-var _gaq = [];
-var _ga = function(){
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-}
