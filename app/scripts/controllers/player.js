@@ -47,6 +47,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     var onChannelLoaded = function(){
 
+      console.log(channel);
       episodes = channel.episodes;
       if(episodeId){
           episode = episodes.findByAttr("id", 'e' + episodeId);
@@ -67,6 +68,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         url1 = $.type(ep1.url1) === "array" ? ep1.url1 : [ep1.url1];
         url1 = url1[0].split(";")[0];
       }
+
 
       if(url1 && url1.indexOf("m3u8") !== -1){
         //live streaming channel
@@ -117,6 +119,14 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
       }else{
           programs = new nn.utils.NnArray(episode.programs, false);
 
+          if(episode.state === 'processing'){
+            if(typeof channel.images === "string"){
+              episode.thumb = channel.images;
+            }else if(typeof channel.images === "array"){
+              episode.thumb = channel.images[0];
+            }
+          }
+
           $scope.channel = channel;
           $scope.episodes = episodes;
           $scope.episodeIndex = episodeIndex;
@@ -142,23 +152,12 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
       }, 200);
 
     }
-    var getOs = function(){
-      // console.log(navigator.userAgent);
-      if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-        return "ios";
-      }else if(navigator.userAgent.match(/mobile|android|Mobile|Android/)){
-        return "android";
-      }else{
-        return "web";
-      }
-    }
 
     var initListPosition = function(){
       setTimeout(function(){
         var list = $(".episode-list");
         var wrap = $(".episode-list-wrap");
         var item = list.find("li.is-playing");
-        var os = getOs();
         if(item.length === 1){
           var left = item.position().left;
           var onresize = function(e){
@@ -216,7 +215,8 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         $scope.episodeIndex = episodeIndex;
         $scope.episode = episode;
     }
-
+    var getOs=function(){if(navigator.userAgent.match(/(iPod|iPhone|iPad)/)){return"ios"}else if(navigator.userAgent.match(/mobile|android|Mobile|Android/)){return"android"}else{return"web"}}
+    var os = getOs();
     var onVideoEnd = function(){
 
         var path = '/p' + channel.id + '/' + episode.id;
@@ -224,7 +224,11 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         var rs = programs.next();
         if(rs !== false){
             player.ready().then(function(){
-              player.cueVideoById(programs.current().videoId);
+              if(os === "ios"){
+                player.cueVideoById(programs.current().videoId);
+              }else{
+                player.loadVideoById(programs.current().videoId);
+              }
            });
         }else{
           _d.resolve();
@@ -234,8 +238,11 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     var startPlay = function(){
 
        player.ready().then(function(){
-          player.cueVideoById(programs.current().videoId);
-          console.log(programs.current().videoId);
+          if(os === "ios"){
+            player.cueVideoById(programs.current().videoId);
+          }else{
+            player.loadVideoById(programs.current().videoId);
+          }
        });
 
        episode.watched = 0;
@@ -367,16 +374,15 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     var initGA = function(){
 
-        return;
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
         console.log('create:' + acct);
-        ga('create', acct, 'cts.9x9.tv'); 
+        ga('create', acct, 'auto'); 
 
-        //GaReportView("webplayer");
+        GaReportView("webplayer");
 
         $(".app-download-appstore a").click(function(){
           console.info("download android");
@@ -451,7 +457,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             $scope.app = data.app[0];
             $scope.social = data.social;
 
-            var os = getOs();
             if(os === "android"){
                 $scope.isAndroid = true;
             }
