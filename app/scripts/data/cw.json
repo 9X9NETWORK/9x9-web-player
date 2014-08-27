@@ -1,0 +1,84 @@
+{
+    "app": [
+        {
+            "mso": "cw.flipr.tv",
+            "name": "天下影音 FLIPr",
+            "icon": "images/cw/icon_200x200.png",
+            "description": "天下影音，華人媒體最權威影像平台。從職場、趨勢、教育、健康生、財經、管理、科技、創意，提升觀眾學習、創新、競爭、整合、美學、健康等能力。",
+            "calltoaction": "立即下載隨時掌握天下最新新聞",
+            "ios": {
+                "origin": "",
+                "landing": [
+                            "",
+                            ""
+                            ],
+                "officesite": ""
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.cw",
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.cw&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.cw&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.cw&referrer=utm_source=landing&utm_campaign=fliprtv",
+                "market":[
+                            "market://details?id=tv.flipr.cw&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.flipr.cw&referrer=utm_source=landing&utm_campaign=suggested"
+                        ]
+                },
+            "playeronly" : false
+        }
+    ],
+    "social": [
+        {
+            "icon": "images/social-media-fb.png",
+            "url": "https://www.facebook.com/cwgroup"
+        },
+        {
+            "icon": "images/social-media-google.png",
+            "url": "https://plus.google.com/+%E5%A4%A9%E4%B8%8B%E9%9B%9C%E8%AA%8C/posts"
+        },
+        {
+            "icon": "images/social-media-weibo.png",
+            "url": "http://weibo.com/cwgroup?sudaref=www.cw.com.tw"
+        },
+        {
+            "icon": "images/social-media-youtube.png",
+            "url": "http://www.youtube.com/cwtv "
+        }
+      
+    ],
+    "promote": [
+       {
+            "name": "破解新聞",
+            "image": "images/cw/cms-thumbnail-ratio-1.jpg",
+            "link": ""
+        },
+        {
+            "name": "專題報導",
+            "image": "images/cw/cms-thumbnail-ratio-2.jpg",
+            "link": ""
+        },
+        {
+            "name": "名人專訪",
+            "image": "images/cw/cms-thumbnail-ratio-3.jpg",
+            "link": ""
+        },
+        {
+            "name": "國際現場",
+            "image": "images/cw/cms-thumbnail-ratio-4.jpg",
+            "link": ""
+        },
+        {
+            "name": "總編輯書選",
+            "image": "images/cw/cms-thumbnail-ratio-5.jpg",
+            "link": ""
+        },
+        {
+            "name": "微笑台灣319鄉",
+            "image": "images/cw/cms-thumbnail-ratio-6.jpg",
+            "link": ""
+        }
+       
+    ]
+}
