@@ -4,7 +4,7 @@
             "id" : "cw",
             "name": "天下影音 FLIPr",
             "description": "天下影音，華人媒體最權威影像平台",
-            "icon": "images/daaitv/app_icon.png",
+            "icon": "images/cw/icon_200x200.png",
             "ios": {
                 "origin": "",
                 "landing": [
