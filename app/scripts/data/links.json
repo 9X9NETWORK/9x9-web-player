@@ -1,6 +1,32 @@
 {
 	"zh": [
         {
+            "id" : "cw",
+            "name": "天下影音 FLIPr",
+            "description": "天下影音，華人媒體最權威影像平台",
+            "icon": "images/daaitv/app_icon.png",
+            "ios": {
+                "origin": "",
+                "landing": [
+                            "",
+                            ""
+                            ],
+                "officesite": ""
+            },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.cw",
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.cw&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.cw&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.cw&referrer=utm_source=landing&utm_campaign=fliprtv",
+                "market":[
+                            "market://details?id=tv.flipr.cw&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.flipr.cw&referrer=utm_source=landing&utm_campaign=suggested"
+                        ]
+            }
+        },
+        {
             "id" : "daaitv",
             "name": "大愛 FLIPr",
             "description": "「大愛讓世界亮起來」",
