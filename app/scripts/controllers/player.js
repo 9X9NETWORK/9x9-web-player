@@ -49,14 +49,15 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
       console.log(channel);
       episodes = channel.episodes;
+
       if(episodeId){
-          episode = episodes.findByAttr("id", 'e' + episodeId);
+          episode = episodes.findByAttr("id", episodeId);
           episodeIndex = episodes.index;
       }else{
           episode = episodes.first();
           episodeIndex = 0;
       }
-
+      console.log(episode);
       var path = '/p' + channel.id + '/' + episode.id;
       $rootScope.$apply(function() {
         $location.path(path);
@@ -305,14 +306,25 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         }
 
         var href = location.href.replace("http://", "").replace("https://", "");
-
+        var isYtEp = false;
         channelId = href.match(/.*\/p([0-9a-zA-Z]+)(\/|$)/);
         episodeId = href.match(/.*\/e([0-9a-zA-Z]+)/);
+        if(episodeId === null){
+            episodeId = href.match(/.*\/yt([0-9a-zA-Z_]+)/);
+            if(episodeId !== null){
+                isYtEp = true;
+            }
+        }
 
         if(episodeId !== null){
             if(typeof episodeId === "object" && episodeId != null){
                 if(episodeId.length > 1){
                   episodeId = episodeId[1];
+                  if(isYtEp){
+                    episodeId = 'yt' + episodeId;
+                  }else{
+                    episodeId = 'e' + episodeId;
+                  }
                 }
             }
         }
