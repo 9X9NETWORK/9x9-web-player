@@ -290,33 +290,8 @@
                             "market://details?id=tv.goodtv.player9x9tv&referrer=utm_source=landing&utm_campaign=suggested"
                             ]
                 }
-        },
-        {
-            "id" : "cts",
-            "name": "華視 FLIPr",
-            "description": "記憶中的老朋友，老三台「華視」創新APP。現在就來翻！給您驚奇無限。",
-            "icon": "images/cts/app_icon.png",
-            "ios": {
-                "origin": "https://itunes.apple.com/tw/app/hua-shi-flipr/id623085456?mt=8",
-                "landing": [
-                            "http://ad.apps.fm/gfO6vRLxZdRx95nB1ljqa_E7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA6hjSomApoaTYaF4wadplZXtBAW28aYabvxh6AeQ1YLF8",
-                            "http://ad.apps.fm/ODgY873LgCinr7WhdnC3lPE7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA6DnYUpLL92S_Je3WilV_w1q9-VA-dEpbP_UAE52sdVBk"
-                            ],
-                "officesite": "http://ad.apps.fm/Wddiym7fFKNSlMBx3sJV7vE7og6fuV2oOMeOQdRqrE3mueV0-i-xUDRi1YSROdA69dznz128Nwe4rm8OPgiAZfCYagKnjd3JTKLywLOw94o"
-                },
-            "android": {
-                "origin": "https://play.google.com/store/apps/details?id=tw.com.cts.player",
-                "landing": [
-                            "https://play.google.com/store/apps/details?id=tw.com.cts.player&referrer=utm_source=landing&utm_campaign=direct",
-                            "https://play.google.com/store/apps/details?id=tw.com.cts.player&referrer=utm_source=landing&utm_campaign=suggested"
-                        ],
-                "officesite": "https://play.google.com/store/apps/details?id=tw.com.cts.player&referrer=utm_source=promo&utm_campaign=fliprtv",
-                "market":[
-                            "market://details?id=tw.com.cts.player&referrer=utm_source=landing&utm_campaign=direct",
-                            "market://details?id=tw.com.cts.player&referrer=utm_source=landing&utm_campaign=suggested"
-                        ]
-                }
         }
+
     ],
     "en" : [
 
