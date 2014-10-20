@@ -7,12 +7,12 @@
             "description": "天下影音，華人媒體最權威影像平台。從職場、趨勢、教育、健康生、財經、管理、科技、創意，提升觀眾學習、創新、競爭、整合、美學、健康等能力。",
             "calltoaction": "立即下載隨時掌握天下最新新聞",
             "ios": {
-                "origin": "",
+                "origin": "https://itunes.apple.com/us/app/tian-xia-ying-yin-flipr/id898168335?l=zh&ls=1&mt=8",
                 "landing": [
-                            "",
-                            ""
+                            "http://ad.apps.fm/sqvbduApdxmF-QL-IEwsUvE7og6fuV2oOMeOQdRqrE3gLGq59cm7895sW7VqNUNglZpEj3cpYhjwjH4lGZat4tBAW28aYabvxh6AeQ1YLF8",
+                            "http://ad.apps.fm/E_iJJvx9oIiB3vJGm-qvFvE7og6fuV2oOMeOQdRqrE3gLGq59cm7895sW7VqNUNgDnYUpLL92S_Je3WilV_w1sbVhxMni-0jjbAiLJEzYs8"
                             ],
-                "officesite": ""
+                "officesite": "http://ad.apps.fm/6SjzYh0FL4w5xJyDkj89dvE7og6fuV2oOMeOQdRqrE3gLGq59cm7895sW7VqNUNg_Eq28AXRCk7Pc5K3J4PoI_CYagKnjd3JTKLywLOw94o"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.cw",
