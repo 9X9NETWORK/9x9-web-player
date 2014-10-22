@@ -1,0 +1,34 @@
+{
+    "app": [
+        {
+            "mso": "test2.flipr.tv",
+            "name": "FLIPr  - Test2",
+            "icon": "images/crashcourse/icon_200x200.png",
+            "description": "This app enables you to watch fun, educational videos from John & Hank Green's YouTube channel on-the-go, or on the big screen with Chromecast!",
+            "calltoaction": "FREE to download now!",
+            "ios": {
+                "origin": "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8",
+                "landing": [
+                            "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8",
+                            "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/tw/app/crash-course-on-flipr-unoffical/id806472110?mt=8"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.crashcourse"
+                        ]
+                },
+            "playeronly" : true
+        }
+    ]
+    
+    
+}
