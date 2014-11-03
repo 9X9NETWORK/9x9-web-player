@@ -47,36 +47,35 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     var onChannelLoaded = function(){
 
-      console.log(channel);
       episodes = channel.episodes;
 
+      console.log(episodeId);
       if(episodeId){
           episode = episodes.findByAttr("id", episodeId);
+          console.log(episode);
           episodeIndex = episodes.index;
+          console.log(episodeIndex);
       }else{
           episode = episodes.first();
           episodeIndex = 0;
       }
-      console.log(episode);
       var path = '/p' + channel.id + '/' + episode.id;
       $rootScope.$apply(function() {
         $location.path(path);
       });
 
-      var ep1 = episodes.first();
+      var ep1 = episode;
       var url1;
       if(ep1.url1){
         url1 = $.type(ep1.url1) === "array" ? ep1.url1 : [ep1.url1];
         url1 = url1[0].split(";")[0];
       }
 
-
       if(url1 && url1.indexOf("m3u8") !== -1){
         //live streaming channel
 
               $("#ytplayer-1").hide();
               $("#hls-video").show();
-
 
               programs = new nn.utils.NnArray(episode.programs, false);
 
@@ -117,7 +116,45 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                   player.hls(url1);
                   player.play();
               }
-      }else{
+      }else if(url1.indexOf("vimeo.com/") > -1){
+
+         var vid = url1.split("vimeo.com/")[1].split(";")[0];
+         $.get("/playerAPI/getVimeoDirectUrl?url=" + encodeURIComponent("http://vimeo.com/" + vid), function(rs){
+               var rs = rs.split("--\n");
+               if(rs[0].charAt(0) === "0"){
+
+                  var url = rs[1].split("\t")[1];
+                  console.log(url);
+
+                  $("#ytplayer-1").hide();
+                  $("#hls-video").show();
+
+                  $scope.channel = channel;
+                  $scope.episodes = episodes;
+                  $scope.episodeIndex = episodeIndex;
+                  $scope.episode = episode;
+                  $scope.$apply();
+                  
+                  // $("#openInAppLink").html(openInAppLink);
+
+                  // if(mso === "9x9"){
+                  //     openInAppLink = "flipr://9x9.tv/view/p" + channel.id + "/p" + episode.id;
+                  // }else{
+                  //     openInAppLink = "flipr-" + mso + "://9x9.tv?mso=" + mso + "&ch=" + channel.id + "&ep=" + episode.id;
+                  // }
+                 // $(".is-ios, .is-android").find("#openInAppLink").attr("href", openInAppLink);
+
+
+                  var player;
+                  player = document.getElementById("hls-video");
+                  $("#hls-video source").attr("src", url);
+                  player.src = url;
+                  player.play();
+
+               }
+         });
+      }
+      else{
           programs = new nn.utils.NnArray(episode.programs, false);
 
           if(episode.state === 'processing'){
@@ -238,14 +275,51 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
     var startPlay = function(){
 
-       player.ready().then(function(){
-          if(os === "ios"){
-            player.cueVideoById(programs.current().videoId);
-          }else{
-            player.loadVideoById(programs.current().videoId);
-          }
-       });
+       if(programs.length() === 0){
 
+          $("#ytplayer-1").hide();
+          $("#hls-video").show();
+
+          try{
+            player.stopVideo();
+          }catch(e){};
+
+          var url1 = $.type(episode.url1) === "array" ? episode.url1 : [episode.url1];
+          url1 = url1[0].split(";")[0];
+          if(url1.indexOf("vimeo.com") > -1){
+               var vid = url1.split("vimeo.com/")[1].split(";")[0];
+               $.get("/playerAPI/getVimeoDirectUrl?url=" + encodeURIComponent("http://vimeo.com/" + vid), function(rs){
+                     var rs = rs.split("--\n");
+                     if(rs[0].charAt(0) === "0"){
+
+                        var url = rs[1].split("\t")[1];
+                        console.log(url);
+
+                        $scope.episodeIndex = episodeIndex;
+                        $scope.episode = episode;
+                        $scope.$apply();
+                        
+                        var player;
+                        player = document.getElementById("hls-video");
+                        $("#hls-video source").attr("src", url);
+                        player.src = url;
+                        player.play();
+
+                     }
+               });
+          }
+       }else{
+          $("#ytplayer-1").show();
+          $("#hls-video").hide();
+
+          player.ready().then(function(){
+            if(os === "ios"){
+              player.cueVideoById(programs.current().videoId);
+            }else{
+              player.loadVideoById(programs.current().videoId);
+            }
+         });
+       }
        episode.watched = 0;
        watchedSec = 0;
 
