@@ -7,10 +7,14 @@
             "description": "荔枝TV FLIPr，由灣區小荔嚴選內容，彙集各大英語、華語主流媒體，覆蓋各大中英文主流媒體、時事聚焦、深度評論、娛樂時尚、熱播影視、當紅綜藝。",
             "calltoaction": "立刻免費下載看更多！",
             "ios": {
-               
+                    "origin": "",
+                    "landing": "",
+                    "officesite": ""
                 },
             "android": {
-               
+                    "origin": "",
+                    "landing": "",
+                    "officesite": ""
                 },
             "playeronly" : true
         }
