@@ -573,22 +573,32 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                 */
               }
 
+              if($scope.app.android.landing){
+                
+                if($scope.app.android.landing[0] === ""){
+                  src = $(".app-download-googleplay img").eq(0).attr("src");
+                  src = src.split(".")[0] + "_comingsoon.png";
 
-              if($scope.app.android.landing[0] === ""){
-                src = $(".app-download-googleplay img").eq(0).attr("src");
-                src = src.split(".")[0] + "_comingsoon.png";
+                  $(".app-download-googleplay img").attr("src", src);
+                  $(".app-download-googleplay a").click(function(){
+                    return false;
+                  }).removeAttr("href");
+                  /*
 
-                $(".app-download-googleplay img").attr("src", src);
-                $(".app-download-googleplay a").click(function(){
-                  return false;
-                }).removeAttr("href");
-                /*
+                  // $(".app-item-link-group").addClass("lack-android");
+                  $(".app-item-link-group.lack-android a").click(function(){
+                    return false;
+                  }).removeAttr("href");
+                  */
+                }
+              }else{
+                  src = $(".app-download-googleplay img").eq(0).attr("src");
+                  src = src.split(".")[0] + "_comingsoon.png";
 
-                // $(".app-item-link-group").addClass("lack-android");
-                $(".app-item-link-group.lack-android a").click(function(){
-                  return false;
-                }).removeAttr("href");
-                */
+                  $(".app-download-googleplay img").attr("src", src);
+                  $(".app-download-googleplay a").click(function(){
+                    return false;
+                  }).removeAttr("href");
               }
 
               if($scope.social && $scope.social.length > 0){
