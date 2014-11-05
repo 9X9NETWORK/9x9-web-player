@@ -555,7 +555,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             
             setTimeout(function(){
               var src;
-              if($scope.app.ios.landing[0]  === ""){
+              if($scope.app.ios.landing[0]  === "" || $scope.app.ios.landing.length === 0){
                 src = $(".app-download-appstore img").eq(0).attr("src");
                 src = src.split(".")[0] + "_comingsoon.png";
 
@@ -573,9 +573,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                 */
               }
 
-              if($scope.app.android.landing){
-
-                if($scope.app.android.landing[0] === ""){
+              if($scope.app.android.landing[0] === "" || $scope.app.android.landing.length === 0){
                   src = $(".app-download-googleplay img").eq(0).attr("src");
                   src = src.split(".")[0] + "_comingsoon.png";
 
@@ -591,7 +589,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                   }).removeAttr("href");
                   */
                 }
-              }
 
               if($scope.social && $scope.social.length > 0){
                 $(".playeronly .social-media-wrap").css("display", "block");
@@ -735,6 +732,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
     }
 
     $(".open-in-app").hide();
+    $("body").delay(3000).show();
 });
 
 
