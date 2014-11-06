@@ -49,12 +49,9 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
 
       episodes = channel.episodes;
 
-      console.log(episodeId);
       if(episodeId){
           episode = episodes.findByAttr("id", episodeId);
-          console.log(episode);
           episodeIndex = episodes.index;
-          console.log(episodeIndex);
       }else{
           episode = episodes.first();
           episodeIndex = 0;
@@ -116,7 +113,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                   player.hls(url1);
                   player.play();
               }
-      }else if(url1.indexOf("vimeo.com/") > -1){
+      }else if(url1 && url1.indexOf("vimeo.com/") > -1){
 
          var vid = url1.split("vimeo.com/")[1].split(";")[0];
          $.get("/playerAPI/getVimeoDirectUrl?url=" + encodeURIComponent("http://vimeo.com/" + vid), function(rs){
@@ -124,7 +121,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                if(rs[0].charAt(0) === "0"){
 
                   var url = rs[1].split("\t")[1];
-                  console.log(url);
 
                   $("#ytplayer-1").hide();
                   $("#hls-video").show();
@@ -530,13 +526,14 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             gaid = rs[1]; 
             acct = gaid;
         }
-        if(mso === "9x9"){
-          if(navigator.language === "zh-TW" || navigator.language === "zh-CN"){
-            lang = "zh";
-          }else{
-            lang = "en";
-          }
-        }
+        // if(mso === "9x9"){
+        //   if(navigator.language === "zh-TW" || navigator.language === "zh-CN"){
+        //     lang = "zh";
+        //   }else{
+        //     lang = "en";
+        //   }
+        // }
+        console.log(lang);
         $("body").addClass("is-" +lang);
         msoService.get().then(function(data){
 
