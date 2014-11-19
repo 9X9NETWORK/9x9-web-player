@@ -269,6 +269,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
         }
     }
 
+    var isFirstPlay = true;
     var startPlay = function(){
 
        if(programs.length() === 0){
@@ -312,7 +313,12 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             if(os === "ios"){
               player.cueVideoById(programs.current().videoId);
             }else{
-              player.loadVideoById(programs.current().videoId);
+              if(isFirstPlay){
+                player.cueVideoById(programs.current().videoId);
+                isFirstPlay = false;
+              }else{
+                player.loadVideoById(programs.current().videoId);
+              }
             }
          });
        }
