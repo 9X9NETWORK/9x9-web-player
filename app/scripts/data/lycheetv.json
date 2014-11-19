@@ -4,13 +4,27 @@
             "mso": "lycheetv.flipr.tv",
             "name": "荔枝TV",
             "icon": "images/lycheetv/icon_200x200.png",
-            "description": "荔枝TV FLIPr，由灣區小荔嚴選內容，彙集各大英語、華語主流媒體，覆蓋各大中英文主流媒體、時事聚焦、深度評論、娛樂時尚、熱播影視、當紅綜藝。",
+            "description": "小荔期待和大家一起看看節目，聊聊天。精選中港臺優質節目，每日同步更新。輕鬆聊，快樂看，與您相伴每一刻。",
             "calltoaction": "立刻免費下載看更多！",
             "ios": {
-               
+                "origin": "https://itunes.apple.com/us/app/li-zhi-tv-hua-ren-dian-shi-flipr/id938371765?l=zh&ls=1&mt=8",
+                "landing": [
+                            "https://itunes.apple.com/us/app/li-zhi-tv-hua-ren-dian-shi-flipr/id938371765?l=zh&ls=1&mt=8",
+                            "https://itunes.apple.com/us/app/li-zhi-tv-hua-ren-dian-shi-flipr/id938371765?l=zh&ls=1&mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/us/app/li-zhi-tv-hua-ren-dian-shi-flipr/id938371765?l=zh&ls=1&mt=8"
                 },
             "android": {
-               
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.lycheetv&hl=en",
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.lycheetv&hl=en",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.lycheetv&hl=en"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.lycheetv&hl=en",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.lycheetv&hl=en",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.lycheetv&hl=en"
+                        ]
                 },
             "playeronly" : true
         }
