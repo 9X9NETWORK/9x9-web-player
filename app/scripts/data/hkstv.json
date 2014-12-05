@@ -1,0 +1,88 @@
+{
+    "app": [
+        {
+            "mso": "hkstv.flipr.tv",
+            "name": "香港衛視 FLIPr",
+            "icon": "images/hkstv/icon_200x200.png",
+            "description": "香港衛視的特色，是能夠以熟練駕馭中文的外籍主播、主持人，以西方習慣的敘述方式，報導全球新聞，介紹中華文化。延伸兩岸，融入世界，給您全球觀點。",
+            "calltoaction": "立刻免費下載給你看更多！",
+            "ios": {
+                "origin": "",
+                "landing": [
+                            "",
+                            ""
+                            ],
+                "officesite": ""
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.hkstv",
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.hkstv&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.hkstv&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.hkstv&referrer=utm_source=landing&utm_campaign=fliprtv",
+                "market":[
+                            "market://details?id=tv.flipr.hkstv&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.flipr.hkstv&referrer=utm_source=landing&utm_campaign=suggested"
+                        ]
+                },
+            "playeronly" : false
+        }
+    ],
+    "social": [
+        {
+            "icon": "images/hkstv/01social-hktv.png",
+            "url": "http://www.hkstv.tv/"
+        },
+        {
+            "icon": "images/hkstv/02social-hktv-tw.png",
+            "url": "http://www.hkstv.com.tw/"
+        },
+        {
+            "icon": "images/social-media-fb.png",
+            "url": "https://www.facebook.com/taiwan.hkstv"
+        },
+        {
+            "icon": "images/social-media-youtube.png",
+            "url": "https://www.youtube.com/user/HKSTVTaiwan"
+        },
+        {
+            "icon": "images/social-media-youku.png",
+            "url": "http://i.youku.com/TTT2014"
+        }
+      
+    ],
+    "promote": [
+       {
+            "name": "台灣新聞",
+            "image": "images/hkstv/cms-thumbnail-ratio-1.jpg",
+            "link": ""
+        },
+        {
+            "name": "哈台灣",
+            "image": "images/hkstv/cms-thumbnail-ratio-2.jpg",
+            "link": ""
+        },
+        {
+            "name": "名人講吧",
+            "image": "images/hkstv/cms-thumbnail-ratio-3.jpg",
+            "link": ""
+        },
+        {
+            "name": "宗月評論",
+            "image": "images/hkstv/cms-thumbnail-ratio-4.jpg",
+            "link": ""
+        },
+        {
+            "name": "健康講堂",
+            "image": "images/hkstv/cms-thumbnail-ratio-5.jpg",
+            "link": ""
+        },
+        {
+            "name": "微影片",
+            "image": "images/hkstv/cms-thumbnail-ratio-6.jpg",
+            "link": ""
+        }
+       
+    ]
+}

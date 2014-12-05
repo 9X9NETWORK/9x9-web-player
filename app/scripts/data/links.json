@@ -1,6 +1,33 @@
 {
 	"zh": [
         {
+            "id": "hkstv",
+            "name": "香港衛視 FLIPr",
+            "icon": "images/hkstv/icon_200x200.png",
+            "description": "香港衛視的特色，是能夠以熟練駕馭中文的外籍主播、主持人，以西方習慣的敘述方式，報導全球新聞，介紹中華文化。延伸兩岸，融入世界，給您全球觀點。",
+            "calltoaction": "立刻免費下載給你看更多！",
+            "ios": {
+                "origin": "",
+                "landing": [
+                            "",
+                            ""
+                            ],
+                "officesite": ""
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.hkstv",
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.hkstv&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.hkstv&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.hkstv&referrer=utm_source=landing&utm_campaign=fliprtv",
+                "market":[
+                            "market://details?id=tv.flipr.hkstv&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.flipr.hkstv&referrer=utm_source=landing&utm_campaign=suggested"
+                        ]
+                }            
+        },
+        {
             "id" : "cw",
             "name": "天下影音 FLIPr",
             "description": "天下影音，華人媒體最權威影像平台",
@@ -294,8 +321,35 @@
 
     ],
     "en" : [
+        {
+            "id": "lycheetv",
+            "name": "荔枝TV",
+            "icon": "images/lycheetv/icon_200x200.png",
+            "description": "小荔期待和大家一起看看節目，聊聊天。精選中港臺優質節目，每日同步更新。輕鬆聊，快樂看，與您相伴每一刻。",
+            "calltoaction": "立刻免費下載看更多！",
+            "ios": {
+                "origin": "https://itunes.apple.com/us/app/li-zhi-tv-hua-ren-dian-shi-flipr/id938371765?l=zh&ls=1&mt=8",
+                "landing": [
+                            "https://itunes.apple.com/us/app/li-zhi-tv-hua-ren-dian-shi-flipr/id938371765?l=zh&ls=1&mt=8",
+                            "https://itunes.apple.com/us/app/li-zhi-tv-hua-ren-dian-shi-flipr/id938371765?l=zh&ls=1&mt=8"
+                            ],
+                "officesite": "https://itunes.apple.com/us/app/li-zhi-tv-hua-ren-dian-shi-flipr/id938371765?l=zh&ls=1&mt=8"
+                },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.lycheetv&hl=en",
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.lycheetv&hl=en",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.lycheetv&hl=en"
+                        ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.lycheetv&hl=en",
+                "market":[
+                            "https://play.google.com/store/apps/details?id=tv.flipr.lycheetv&hl=en",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.lycheetv&hl=en"
+                        ]
+                }
+        },
 
-         {
+        {
             "id" : "crashcourse",
             "name": "Crash Course on FLIPr Unofficial",
             "icon": "images/crashcourse/icon_200x200.png",
