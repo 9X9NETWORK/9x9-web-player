@@ -7,12 +7,12 @@
             "description": "香港衛視的特色，是能夠以熟練駕馭中文的外籍主播、主持人，以西方習慣的敘述方式，報導全球新聞，介紹中華文化。延伸兩岸，融入世界，給您全球觀點。",
             "calltoaction": "立刻免費下載給你看更多！",
             "ios": {
-                "origin": "",
+                "origin": "https://itunes.apple.com/app/id948200607?mt=8&",
                 "landing": [
-                            "",
-                            ""
+                            "http://ad.apps.fm/LfF3cMEbuUUvbHOxsNn_bPE7og6fuV2oOMeOQdRqrE0FWZ19dqbtnS1j_ZDv0pp6wM_QYN6G73UMGHAX9T25evCYagKnjd3JTKLywLOw94o",
+                            "http://ad.apps.fm/iDhCMXLNLPi3G3xHuRu8bPE7og6fuV2oOMeOQdRqrE0FWZ19dqbtnS1j_ZDv0pp6DnYUpLL92S_Je3WilV_w1hmn3N-9tTrMtbynRfP8iVc"
                             ],
-                "officesite": ""
+                "officesite": "http://ad.apps.fm/rR6-6J9GZN_8NX2QB6iaYPE7og6fuV2oOMeOQdRqrE0FWZ19dqbtnS1j_ZDv0pp6zx6jTWFhCfKekUkAkLBGieLmZdPOcw8KmZqWpyf4zjc"
                 },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.hkstv",
