@@ -1,10 +1,32 @@
 {
 	"zh": [
         {
+            "id": "portico",
+            "name": "杰德影音 FLIPr",
+            "icon": "images/portico/icon_200x200.png",
+            "description": "杰德影音，數位 fun 映。",
+            "calltoaction": "立刻免費下載給你看更多！",
+            "ios": {
+               
+            },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.portico",
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.portico&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.portico&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.portico&referrer=utm_source=landing&utm_campaign=fliprtv",
+                "market":[
+                            "market://details?id=tv.flipr.portico&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.flipr.portico&referrer=utm_source=landing&utm_campaign=suggested"
+                        ]
+                }            
+        },
+        {
             "id": "hkstv",
             "name": "香港衛視 FLIPr",
             "icon": "images/hkstv/icon_200x200.png",
-            "description": "香港衛視的特色，是能夠以熟練駕馭中文的外籍主播、主持人，以西方習慣的敘述方式，報導全球新聞，介紹中華文化。延伸兩岸，融入世界，給您全球觀點。",
+            "description": "延伸兩岸，融入世界，香港衛視帶給您不同的全球觀點。",
             "calltoaction": "立刻免費下載給你看更多！",
              "ios": {
                 "origin": "https://itunes.apple.com/app/id948200607?mt=8&",

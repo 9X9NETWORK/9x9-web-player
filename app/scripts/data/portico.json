@@ -1,0 +1,75 @@
+{
+    "app": [
+        {
+            "mso": "portico.flipr.tv",
+            "name": "杰德影音 FLIPr",
+            "icon": "images/portico/icon_200x200.png",
+            "description": "最新最快與美同期首播的歐美影集預告，世界各國賣座強片和影展佳作預告與最新時尚活動精彩畫面。",
+            "calltoaction": "立刻免費下載給你看更多！",
+            "ios": {
+               
+            },
+            "android": {
+                "origin": "https://play.google.com/store/apps/details?id=tv.flipr.portico",
+                "landing": [
+                            "https://play.google.com/store/apps/details?id=tv.flipr.portico&referrer=utm_source=landing&utm_campaign=direct",
+                            "https://play.google.com/store/apps/details?id=tv.flipr.portico&referrer=utm_source=landing&utm_campaign=suggested"
+                            ],
+                "officesite": "https://play.google.com/store/apps/details?id=tv.flipr.portico&referrer=utm_source=landing&utm_campaign=fliprtv",
+                "market":[
+                            "market://details?id=tv.flipr.portico&referrer=utm_source=landing&utm_campaign=direct",
+                            "market://details?id=tv.flipr.portico&referrer=utm_source=landing&utm_campaign=suggested"
+                        ]
+            },
+            "playeronly" : false
+        }
+    ],
+    "social": [
+        {
+            "icon": "images/portico/social-media-portico.png",
+            "url": "http://www.porticomedia.com/"
+        },
+        {
+            "icon": "images/social-media-fb.png",
+            "url": "https://www.facebook.com/porticomediatw"
+        },
+        {
+            "icon": "images/portico/social-media-fb-diva.png",
+            "url": "https://www.facebook.com/DIVAUniversalTaiwan"
+        }
+      
+    ],
+    "promote": [
+       {
+            "name": "",
+            "image": "images/portico/cms-thumbnail-ratio-1.png",
+            "link": ""
+        },
+        {
+            "name": "",
+            "image": "images/portico/cms-thumbnail-ratio-2.png",
+            "link": ""
+        },
+        {
+            "name": "",
+            "image": "images/portico/cms-thumbnail-ratio-3.png",
+            "link": ""
+        },
+        {
+            "name": "",
+            "image": "images/portico/cms-thumbnail-ratio-4.png",
+            "link": ""
+        },
+        {
+            "name": "",
+            "image": "images/portico/cms-thumbnail-ratio-5.png",
+            "link": ""
+        },
+        {
+            "name": "",
+            "image": "images/portico/cms-thumbnail-ratio-6.png",
+            "link": ""
+        }
+       
+    ]
+}
