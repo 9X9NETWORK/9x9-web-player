@@ -7,7 +7,10 @@
             "description": "最新最快與美同期首播的歐美影集預告，世界各國賣座強片和影展佳作預告與最新時尚活動精彩畫面。",
             "calltoaction": "立刻免費下載給你看更多！",
             "ios": {
-               
+               "origin" : "",
+                "landing" : "",
+                "officesite" : "",
+                "market" : ""
             },
             "android": {
                 "origin": "https://play.google.com/store/apps/details?id=tv.flipr.portico",
