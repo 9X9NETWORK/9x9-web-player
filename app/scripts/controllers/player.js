@@ -116,7 +116,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
       }else if(url1 && url1.indexOf("vimeo.com/") > -1){
 
          var vid = url1.split("vimeo.com/")[1].split(";")[0];
-         $.get("/playerAPI/getVimeoDirectUrl?url=" + encodeURIComponent("http://vimeo.com/" + vid), function(rs){
+         $.get("/playerAPI/getVimeoDirectUrl?originalUrl=" + encodeURIComponent("http://vimeo.com/" + vid), function(rs){
                var rs = rs.split("--\n");
                if(rs[0].charAt(0) === "0"){
 
