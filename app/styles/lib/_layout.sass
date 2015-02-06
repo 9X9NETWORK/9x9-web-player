@@ -218,7 +218,8 @@ body
     .playeronly &
         display: none
 .social-media-text
-    display: inline-block
+    // display: inline-block
+    display: none
     
 .social-media-list
     display: inline-block
@@ -331,11 +332,19 @@ body
     background-color: $basic-bgcolor
 .promote-programe-text,.promote-programe-text-sub
     text-align: center
-    +padding-leader
-    +padding-trailer
-    +adjust-font-size-to($huge-font)
+    // +padding-leader
+    // +padding-trailer
+    // +adjust-font-size-to($huge-font)
     //line-height: 1.5
-
+.promote-programe-text
+    background-image: url('../images/title1.png')
+    padding-top: 4em
+    padding-bottom: 4em
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: 50% 0
+.promote-programe-text-sub
+    display: none
 .promote-programe-list
     +clearfix
 
@@ -370,13 +379,19 @@ body
 .promote-app-wrap
     //+bleed(0.83333%)
     +span(12 no-gutters) 
-    background-color: #fff
+    background-color: #a05414
+    
     color: #000
+
     .playeronly &
         display: none
 
 .promote-content-wrap
     position: relative
+
+    background-image: url('../images/img_background.png') 
+    background-size: cover
+    background-position: 0 50%
     
     .program-gesture,.episode-gesture
 
@@ -399,14 +414,16 @@ body
 
     height: 20rem
     width: 100%
-    background-image: url(../images/app-promote-text.jpg)
+    // background-image: url(../images/app-promote-text.jpg)
+    background-image: url(../images/img_front.png)
     background-position: 50% 0
     background-repeat: no-repeat
     background-size: 140%
-    margin-bottom: 0.5rem 
+    margin-bottom: 0
     //background-size: cover
     
 .promote-app-text
+    display: none
     text-align: center
 
     padding-left:  1rem
@@ -418,12 +435,16 @@ body
 .promote-app-link-wrap
     +span(12)
     text-align: center
-    +leader
-    +trailer
+    padding: 2em 0
+    // +leader
+    // +trailer
+    background-color: #ff8000
+    +background-image(linear-gradient(to top, rgba(0,0,0,.4), rgba(0,0,0,0)))
     //line-height: 1.5
     //dirty work
 .promote-app-link-text
-    display: inline-block
+    display: none
+    // display: inline-block
     //padding-top: 0.5rem
     //padding-bottom: 1rem
 
@@ -439,7 +460,13 @@ body
     .playeronly &
         display: none
     .app-group-text
-        +adjust-font-size-to($huge-font)
+        background-image: url("../images/title-2.png")
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: 50% 0
+        height: 4em
+
+        // +adjust-font-size-to($huge-font)
         text-align: left
         +trailer(1,$huge-font)
 
