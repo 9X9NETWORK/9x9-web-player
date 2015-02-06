@@ -215,7 +215,10 @@ $desktop-large-font: 36px
         +adjust-font-size-to($desktop-large-font)
         text-align: left
         padding-left: 0
-        +padding-trailer(5,$desktop-large-font)
+        // +padding-trailer(5,$desktop-large-font)
+        padding-bottom: 1em
+        margin-top: 2em
+        background-size: cover
     .promote-content-wrap
 
         .program-gesture
@@ -228,8 +231,8 @@ $desktop-large-font: 36px
         +bleed-x(100rem)
         //width: auto
         +box-sizing(content-box)
-        +background-image(linear-gradient(to top, #d5d5d5, #fff 24%))
-        margin-top: span(1)
+        // +background-image(linear-gradient(to top, #d5d5d5, #fff 24%))
+        // margin-top: span(1)
         
 
     .promote-app-text
@@ -251,9 +254,10 @@ $desktop-large-font: 36px
     .promote-back-img
         height: 35rem
         width: 100%
-        margin-bottom: 0.5rem 
         background-size: contain
-    .promote-app-link-wrap        
+    .promote-app-link-wrap 
+        +bleed-x(100rem)
+        +box-sizing(content-box)       
         text-align: center
         .app-download-appstore,.app-download-googleplay
             //+span(3 of 6)
@@ -267,7 +271,8 @@ $desktop-large-font: 36px
     
     .app-group-wrap
         .app-group-text
-            +adjust-font-size-to($desktop-large-font)
+            // +adjust-font-size-to($desktop-large-font)
+            background-size: auto
             //margin-top: 2rem
             //margin-bottom: 2rem
 
