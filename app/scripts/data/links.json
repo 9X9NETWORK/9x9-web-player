@@ -7,6 +7,13 @@
             "description": "杰德影音，數位 fun 映。",
             "calltoaction": "立刻免費下載給你看更多！",
             "ios": {
+                   "origin": "https://itunes.apple.com/us/app/jie-de-ying-yin-flipr/id956058870?l=zh&ls=1&mt=8",
+                "landing": [
+                            "http://ad.apps.fm/-E8inPBSNs7sSNmIMA28p_E7og6fuV2oOMeOQdRqrE2_OlZMfGaiFLwVRgZwJ_632VeYxFqvamltlSj-4tkCmPCYagKnjd3JTKLywLOw94o",
+                            "http://ad.apps.fm/P22uK9Z9aaFUsZPaEuccSPE7og6fuV2oOMeOQdRqrE2_OlZMfGaiFLwVRgZwJ_63DnYUpLL92S_Je3WilV_w1udRcu2zQCQJNRtK9M-CTlE"
+                            ],
+                "officesite": "http://ad.apps.fm/oV1NEcVHACZxYbJXTa-YufE7og6fuV2oOMeOQdRqrE2_OlZMfGaiFLwVRgZwJ_63tN-9eMnHpNn45gkujdo3u-LmZdPOcw8KmZqWpyf4zjc"
+               
                
             },
             "android": {
