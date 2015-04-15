@@ -3,13 +3,13 @@
     $ytChannelRegex = "/^http:\\/\\/www\\.youtube\\.com\\/user\\/(.*)$/";
     $ytPlaylistRegex = "/^http:\\/\\/www\\.youtube\\.com\\/view_play_list\\?p=(.*)$/";
     $ytThumbRegex ="/^http:\\/\\/i[0-9]?\\.ytimg\\.com\\/vi\\/([\\w-]+)\\/(sd|hq|mq)?default\\.jpg$/";
-    $ytApiKey = "AI39si7lCrdz_clsMg5Ssip-jeguuZIZZ7Zev-pz35ay43sH2ApxagMgtUOa6j3kWpcOU-2P-ERJ44oLwRdbidDJJlPR2nKCGw";
-    $ytGdata = "http://gdata.youtube.com";
-    $ytParam = "v=2&alt=json&key=$ytApiKey";
+    $ytApiKey = "AIzaSyBWTbnENN8StmCSjgRwJ5AfGhEvXewgAJk";
+    $ytGdata = "https://www.googleapis.com/youtube/v3";
+    $ytParam = "&key=$ytApiKey";
     $ytBannerImageNames = array(
-        'channel.banner.tv.high.image.url',
-        'channel.banner.tv.image.url',
-        'channel.banner.tv.low.image.url',
+        'bannerTvHighImageUrl',
+        'bannerTvImageUrl',
+        'bannerTvLowImageUrl',
     );
 
     function get_json($url) {
@@ -24,28 +24,22 @@
         if ($videoId == null) {
             return null;
         }
-        $ytVideo = get_json("$ytGdata/feeds/api/videos/$videoId?$ytParam");
-        if ($ytVideo == null || !isset($ytVideo['entry'])) {
+        $ytVideo = get_json("$ytGdata/videos/?part=snippet,contentDetails&id=$videoId&$ytParam");
+        if ($ytVideo == null || !is_array($ytVideo['items']) || count($ytVideo['items']) == 0 ||
+            isset($ytVideo['error'])) {
+
             return null;
         }
-        if (isset($ytVideo['entry']['media$group']['media$description'])) {
-            // shortcut
-            $ytVideo['entry']['description'] = $ytVideo['entry']['media$group']['media$description'];
+        $item = $ytVideo['items'][0];
+        $snippet = $item['snippet'];
+        $regex = '/^PT(\\d+)M(\\d+)S$/';
+        $durationStr = $item['contentDetails']['duration'];
+        if (preg_match($regex, $durationStr, $matches)) {
+            $snippet['duration'] = $machtes[1] * 60 + $matches[2];
         }
-        if (isset($ytVideo['entry']['media$group']['yt$duration'])) {
-            $ytVideo['entry']['duration'] = $ytVideo['entry']['media$group']['yt$duration'];
-        }
-        // sort thumbnails by size
-        $thumbnails = $ytVideo['entry']['media$group']['media$thumbnail'];
-        if ($thumbnails && is_array($thumbnails) && count($thumbnails) > 0) {
-            usort($thumbnails, 'compare_thumbnail');
-            $ytVideo['entry']['thumbnails'] = $thumbnails;
-        }
-        return $ytVideo['entry'];
-    }
+        $snippet['link'] = "http://www.youtube.com/watch?v=" . $item['id'];
 
-    function compare_thumbnail($thumb1, $thumb2) {
-        return $thumb1['width'] - $thumb2['width'];
+        return $snippet;
     }
 
     function htmlsafe($str) {
@@ -80,18 +74,18 @@
                             $videoId = substr($programs[0]['fileUrl'], 31);
                             $ytVideo = fetch_yt_video($videoId);
                             if ($ytVideo) {
-                                if ($ytVideo['thumbnails']) {
+                                if ($is_array($ytVideo['thumbnails']) && count($ytVideo['thumbnails']) > 0) {
                                     $thumb = array_pop($ytVideo['thumbnails']);
                                     $content = str_replace("{{meta_thumbnail}}", $thumb['url'], $content);
                                 }
                                 if ($ytVideo['title']) {
-                                    $content = str_replace("{{meta_title}}", htmlsafe($ytVideo['title']['$t']), $content);
+                                    $content = str_replace("{{meta_title}}", htmlsafe($ytVideo['title']), $content);
                                 }
                                 if ($ytVideo['description']) {
-                                    $content = str_replace("{{meta_description}}", htmlsafe($ytVideo['description']['$t']), $content);
+                                    $content = str_replace("{{meta_description}}", htmlsafe($ytVideo['description']), $content);
                                 }
-                                if (is_array($ytVideo['link']) && count($ytVideo['link']) > 0) {
-                                    $content = str_replace("{{meta_yt_link}}", htmlsafe($ytVideo['link'][0]['href']), $content);
+                                if ($ytVideo['link']) {
+                                    $content = str_replace("{{meta_yt_link}}", htmlsafe($ytVideo['link']), $content);
                                 }
                             }
                         }
@@ -103,8 +97,8 @@
                                 $thumb = array_pop($ytVideo['thumbnails']);
                                 $content = str_replace("{{meta_thumbnail}}", $thumb['url'], $content);
                             }
-                            if (is_array($ytVideo['link']) && count($ytVideo['link']) > 0) {
-                                $content = str_replace("{{meta_yt_link}}", htmlsafe($ytVideo['link'][0]['href']), $content);
+                            if ($ytVideo['link']) {
+                                $content = str_replace("{{meta_yt_link}}", htmlsafe($ytVideo['link']), $content);
                             }
                         }
                     }
@@ -114,10 +108,10 @@
                     $content = str_replace("{{meta_url}}", "http://$host/view/p$ch/$ep", $content);
                 }
             } else if (preg_match('/^(\\d+)$/', $ep, $matches)) {
-    
+
                 $ytProgram = get_json("http://$localhost/api/ytprograms/$matches[1]");
                 if ($ytProgram) {
-                        
+
                     $ytVideo = fetch_yt_video($ytProgram['ytVideoId']);
                     if ($ytVideo) {
                         if (is_array($ytVideo['thumbnails']) && count($ytVideo['thumbnails']) > 0) {
@@ -125,13 +119,13 @@
                             $content = str_replace("{{meta_thumbnail}}", $thumb['url'], $content);
                         }
                         if ($ytVideo['title']) {
-                            $content = str_replace("{{meta_title}}", htmlsafe($ytVideo['title']['$t']), $content);
+                            $content = str_replace("{{meta_title}}", htmlsafe($ytVideo['title']), $content);
                         }
                         if ($ytVideo['description']) {
-                            $content = str_replace("{{meta_description}}", htmlsafe($ytVideo['description']['$t']), $content);
+                            $content = str_replace("{{meta_description}}", htmlsafe($ytVideo['description']), $content);
                         }
-                        if (is_array($ytVideo['link']) && count($ytVideo['link']) > 0) {
-                            $content = str_replace("{{meta_yt_link}}", htmlsafe($ytVideo['link'][0]['href']), $content);
+                        if ($ytVideo['link']) {
+                            $content = str_replace("{{meta_yt_link}}", htmlsafe($ytVideo['link']), $content);
                         }
                     }
                     $content = str_replace("{{meta_title}}", htmlsafe($ytProgram['name']), $content);
@@ -140,13 +134,13 @@
                     $content = str_replace("{{meta_url}}", "http://$host/view/p$ch/$ep", $content);
                 }
             } else if (preg_match("/^yt([\\w-]+)$/", $ep, $matches)) {
-    
+
                 $ytVideo = fetch_yt_video($matches[1]);
                 if ($ytVideo) {
                     $thumb = array_pop($ytVideo['thumbnails']);
                     $content = str_replace("{{meta_thumbnail}}", $thumb['url'], $content);
-                    $content = str_replace("{{meta_title}}", htmlsafe($ytVideo['title']['$t']), $content);
-                    $content = str_replace("{{meta_description}}", htmlsafe($ytVideo['description']['$t']), $content);
+                    $content = str_replace("{{meta_title}}", htmlsafe($ytVideo['title']), $content);
+                    $content = str_replace("{{meta_description}}", htmlsafe($ytVideo['description']), $content);
                     $content = str_replace("{{meta_url}}", "http://$host/view/p$ch/$ep", $content);
 //                    $content = str_replace("{{meta_type}}", "video.tv_show", $content);
 //                    $content = str_replace("{{meta_video}}", htmlsafe("http://www.youtube.com/v/$matches[1]?version=3&autohide=1"), $content);
@@ -154,46 +148,51 @@
 //                    $content = str_replace("{{meta_video_width}}", "480", $content);
 //                    $content = str_replace("{{meta_video_height}}", "360", $content);
 //                    $content = str_replace("{{meta_video_duration}}", $ytVideo['duration']['seconds'], $content);
-                    $content = str_replace("{{meta_yt_link}}", htmlsafe($ytVideo['link'][0]['href']), $content);
+                    $content = str_replace("{{meta_yt_link}}", htmlsafe($ytVideo['link']), $content);
                 }
             }
         } else if ($chMeta) {
 
             if (preg_match($ytChannelRegex, $chMeta['sourceUrl'], $matches)) {
 
-                $data = get_json("$ytGdata/feeds/api/partners/$matches[1]/branding/default?$ytParam");
-                if ($data && $data['entry'] && $data['entry']['yt$option'] &&
-                    is_array($data['entry']['yt$option']) && count($data['entry']['yt$option']) > 0) {
-
-                    $ytOption = $data['entry']['yt$option'];
-                    for ($i = 0; $i < count($ytBannerImageNames); $i++) {
-                        for ($j = 0; $j < count($ytOption); $j++) {
-                            if ($ytOption[$j]['name'] == $ytBannerImageNames[$i])
-                                $content = str_replace('{{meta_thumbnail}}', $ytOption[$j]['$t'], $content);
+                $ytChannelId = $matches[1];
+                if (!preg_match('/^UC/', $ytChannelId)) {
+                    $data = get_json("$ytGdata/channels?part=id&forUsername=$ytChannelId&$ytParam");
+                    if (isset($data['items']) && is_array($data['items']) && count($data['items']) > 0) {
+                        $item = array_pop($data['items']);
+                        $ytChannelId = $item['id'];
+                    }
+                }
+                $data = get_json("$ytGdata/channels?part=brandingSettings&id=$ytChannelId&$ytParam");
+                if (isset($data['items']) && is_array($data['items']) && count($data['items']) > 0) {
+                    $item = array_pop($data['items']);
+                    $brandingSettings = $item['brandingSettings'];
+                    if (isset($brandingSettings['image']) && is_array($brandingSettings['image'])) {
+                        $image = $brandingSettings['image'];
+                        for ($i = 0; $i < count($ytBannerImageNames); $i++) {
+                            if (isset($image[$ytBannerImageNames[$i]])) {
+                                $content = str_replace('{{meta_thumbnail}}', $image[$ytBannerImageNames[$i]], $content);
+                                break;
+                            }
                         }
                     }
-                } else {
-                    $data = get_json("$ytGdata/feeds/api/users/$matches[1]?$ytParam");
-                    $content = str_replace('{{meta_thumbnail}}', $data['media$thumbnail']['url'], $content);
                 }
-
             } else if (preg_match($ytPlaylistRegex, $chMeta['sourceUrl'], $matches)) {
 
-                $data = get_json("$ytGdata/feeds/api/playlists/$matches[1]?$ytParam");
-                if ($data && $data['feed'] && $data['feed']['media$group'] &&
-                    $data['feed']['media$group']['media$thumbnail'] &&
-                    is_array($data['feed']['media$group']['media$thumbnail']) &&
-                    count($data['feed']['media$group']['media$thumbnail']) > 0) {
-                    
-                    $thumbnails = $data['feed']['media$group']['media$thumbnail'];
-                    usort($thumbnails, 'compare_thumbnail');
-                    $thumb = array_pop($thumbnails);
-                    $content = str_replace('{{meta_thumbnail}}', $thumb['url'], $content);
+                $data = get_json("$ytGdata/playlists?part=snippet&id=$matches[1]&$ytParam");
+                if (isset($data['items']) && is_array($data['items'])) {
+
+                    $item = array_pop($data['items']);
+                    $snippet = $item['snippet'];
+                    if (isset($snippet['thumbnails']) && is_array($snippet['thumbnails']) && count($snippet['thumbnails']) > 0) {
+                        $thumb = array_pop($snippet['thumbnails']);
+                        $content = str_replace('{{meta_thumbnail}}', $thumb['url'], $content);
+                    }
                 }
             }
             $content = str_replace("{{meta_title}}", htmlsafe($chMeta['name']), $content);
             $content = str_replace("{{meta_description}}", htmlsafe($chMeta['intro']), $content);
-            $content = str_replace("{{meta_thumbnail}}", htmlsafe($chMeta['imageUrl']), $content);
+            $content = str_replace("{{meta_thumbnail}}", htmlsafe(is_null($chMeta['bannerImageUrl']) ? $chMeta['imageUrl'] : $chMeta['bannerImageUrl']), $content);
             $content = str_replace("{{meta_url}}", "http://$host/view/p$ch", $content);
         }
     }
