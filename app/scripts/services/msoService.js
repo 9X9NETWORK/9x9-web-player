@@ -1,9 +1,13 @@
 ld.service("msoService", function($http){
 
 	var loaded = false;
+    var _d = null;
 	this.get = function(){
 
-		var _d = $.Deferred();
+        if (_d)
+            return _d;
+
+		_d = $.Deferred();
 		var parseBrandInfo = function(csv){
 			var blocks = csv.split("--\n");
 			if(blocks[0].split("\t")[0] === "0"){
