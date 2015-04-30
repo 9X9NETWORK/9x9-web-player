@@ -53,7 +53,7 @@
         <link href="videojs/video-js.css" rel="stylesheet">
         <!-- endbuild -->
 </head>
-  <body ontouchstart="" style="display:none">
+  <body data-mso-name="{{mso_name}}" ontouchstart="" style="display:none">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -62,6 +62,8 @@
       <script src="bower_components/es5-shim/es5-shim.js"></script>
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
+
+    <div id="fb-root"></div>
 
     <!-- Add your site or application content here -->
     <div class="l-main-container">
@@ -82,11 +84,10 @@
                          class="video-js vjs-default-skin"
                          height="100%"
                          width="100%"
-                         autoplay
                          controls>
                     <source
-                       src=""
-                       type="application/x-mpegURL">
+                         src="http://www.flipr.tv/images/Fliprtv-promo.webm"
+                         type="video/webm">
                     </video>
 
                 </div>
