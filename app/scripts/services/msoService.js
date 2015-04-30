@@ -28,14 +28,15 @@ ld.service("msoService", function($http){
 			_d.resolve(data);
 		}else{
 			var jsonName = mso;
+            var url = "/api/mso/" + jsonName + ".json"
 			if(mso === "9x9"){
 				if(navigator.language === "zh-TW" || navigator.language === "zh-CN"){
-					jsonName = mso + ".zh";
+                    url = "scripts/data/" + jsonName + ".zh.json";
 				}
 			}
 			$http({
 			  	"method" : "get",
-			  	"url" : "/api/mso/" + jsonName + ".json"
+			  	"url" : url
 			})
 			.success(function(data){
 				$http({
