@@ -74,7 +74,7 @@
                             $videoId = substr($programs[0]['fileUrl'], 31);
                             $ytVideo = fetch_yt_video($videoId);
                             if ($ytVideo) {
-                                if ($is_array($ytVideo['thumbnails']) && count($ytVideo['thumbnails']) > 0) {
+                                if (is_array($ytVideo['thumbnails']) && count($ytVideo['thumbnails']) > 0) {
                                     $thumb = array_pop($ytVideo['thumbnails']);
                                     $content = str_replace("{{meta_thumbnail}}", $thumb['url'], $content);
                                 }
