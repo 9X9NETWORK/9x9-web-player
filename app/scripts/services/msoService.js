@@ -35,10 +35,9 @@ ld.service("msoService", function($http){
 			}
 			$http({
 			  	"method" : "get",
-			  	"url" : "scripts/data/" + jsonName + ".json"
+			  	"url" : "/api/mso/" + jsonName + ".json"
 			})
 			.success(function(data){
-				//var brandInfo = parseBrandInfo(data);
 				$http({
 					"method" : "get",
 					"url" : "scripts/data/links.json"
