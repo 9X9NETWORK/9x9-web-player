@@ -74,7 +74,7 @@
                             $videoId = substr($programs[0]['fileUrl'], 31);
                             $ytVideo = fetch_yt_video($videoId);
                             if ($ytVideo) {
-                                if ($is_array($ytVideo['thumbnails']) && count($ytVideo['thumbnails']) > 0) {
+                                if (is_array($ytVideo['thumbnails']) && count($ytVideo['thumbnails']) > 0) {
                                     $thumb = array_pop($ytVideo['thumbnails']);
                                     $content = str_replace("{{meta_thumbnail}}", $thumb['url'], $content);
                                 }
@@ -205,8 +205,9 @@
     if ($mso['intro']) $content = str_replace("{{meta_description}}", htmlsafe($mso['intro']), $content);
     if ($mso['logoUrl']) $content = str_replace("{{meta_thumbnail}}", htmlsafe($mso['logoUrl']), $content);
     $content = str_replace("{{favicon}}", htmlsafe($mso['jingleUrl']), $content);
+    $content = str_replace("{{mso_name}}", htmlsafe($mso['name']), $content);
 
-    $content = str_replace("{{meta_title}}", "9x9 flirp landing page", $content);
+    $content = str_replace("{{meta_title}}", "9x9 FLILPr Landing Page", $content);
     $content = str_replace("{{meta_description}}", htmlsafe(null), $content);
     $content = str_replace("{{meta_thumbnail}}", htmlsafe(null), $content);
     $content = str_replace("{{meta_url}}", "http://$host/view/", $content);

@@ -53,7 +53,7 @@
         <link href="videojs/video-js.css" rel="stylesheet">
         <!-- endbuild -->
 </head>
-  <body ontouchstart="" style="display:none">
+  <body data-mso-name="{{mso_name}}" ontouchstart="" style="display:none">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -62,6 +62,8 @@
       <script src="bower_components/es5-shim/es5-shim.js"></script>
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
+
+    <div id="fb-root"></div>
 
     <!-- Add your site or application content here -->
     <div class="l-main-container">
@@ -82,11 +84,10 @@
                          class="video-js vjs-default-skin"
                          height="100%"
                          width="100%"
-                         autoplay
                          controls>
                     <source
-                       src=""
-                       type="application/x-mpegURL">
+                         src="http://www.flipr.tv/images/Fliprtv-promo.webm"
+                         type="video/webm">
                     </video>
 
                 </div>
@@ -152,12 +153,12 @@
                     
                     <div class="app-download-appstore">
 
-                        <a href="{{app.ios.landing[0]}}" target="_blank" class="app-button">
+                        <a href="{{app.ios.origin}}" target="_blank" class="app-button">
                            <img src="images/btn_app_store@x2.png">  
                        </a>
                     </div>
                 <div class="app-download-googleplay">
-                    <a href="{{isAndroid ? app.android.market[0] : app.android.landing[0]}}" target="_blank" class="app-button">
+                    <a href="{{isAndroid && app.android.market ? app.android.market[0] : app.android.origin}}" target="_blank" class="app-button">
                        <img src="images/btn_google_play@x2.png">    
                     </a>
                 </div>
@@ -251,13 +252,14 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <!-- <script src="scripts/controllers/main.js"></script> -->
-        <script src="https://9x9ui.s3.amazonaws.com/playerlib/nn.landing/controllers/app.js"></script>
-        <script src="https://9x9ui.s3.amazonaws.com/playerlib/nn.landing/controllers/player.js"></script>
-        <script src="https://9x9ui.s3.amazonaws.com/playerlib/nn.landing/controllers/promote.js"></script>
-        <script src="https://9x9ui.s3.amazonaws.com/playerlib/nn.landing/controllers/app-group.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/player.js"></script>
+        <script src="scripts/controllers/promote.js"></script>
+        <script src="scripts/controllers/app-group.js"></script>
         <script src="scripts/services/shared-objects.js"></script>
         <script src="scripts/services/msoService.js"></script>
         <script src="scripts/ZeroClipboard.js"></script>
+        <script src="scripts/purl.js"></script>
         <script src="videojs/videojs-hls-all.js"></script>
         <!-- <script src="scripts/services/youtube-player.js"></script>-->
         <!-- endbuild -->

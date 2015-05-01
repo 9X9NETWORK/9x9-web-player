@@ -1,9 +1,13 @@
 ld.service("msoService", function($http){
 
 	var loaded = false;
+    var _d = null;
 	this.get = function(){
 
-		var _d = $.Deferred();
+        if (_d)
+            return _d;
+
+		_d = $.Deferred();
 		var parseBrandInfo = function(csv){
 			var blocks = csv.split("--\n");
 			if(blocks[0].split("\t")[0] === "0"){
@@ -24,17 +28,17 @@ ld.service("msoService", function($http){
 			_d.resolve(data);
 		}else{
 			var jsonName = mso;
+            var url = "/api/mso/" + jsonName + ".json"
 			if(mso === "9x9"){
 				if(navigator.language === "zh-TW" || navigator.language === "zh-CN"){
-					jsonName = mso + ".zh";
+                    url = "scripts/data/" + jsonName + ".zh.json";
 				}
 			}
 			$http({
 			  	"method" : "get",
-			  	"url" : "scripts/data/" + jsonName + ".json"
+			  	"url" : url
 			})
 			.success(function(data){
-				//var brandInfo = parseBrandInfo(data);
 				$http({
 					"method" : "get",
 					"url" : "scripts/data/links.json"
