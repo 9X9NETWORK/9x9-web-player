@@ -558,7 +558,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
             
             setTimeout(function(){
               var src;
-              if($scope.app.ios.landing[0]  === "" || $scope.app.ios.landing.length === 0){
+              if(typeof $scope.app.ios.origin  == 'undefined' || $scope.app.ios.origin == ''){
                 src = $(".app-download-appstore img").eq(0).attr("src");
                 src = src.split(".")[0] + "_comingsoon.png";
 
@@ -576,7 +576,7 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                 */
               }
 
-              if($scope.app.android.landing[0] === "" || $scope.app.android.landing.length === 0){
+              if(typeof $scope.app.android.origin == 'undefined' || $scope.app.android.origin == ''){
                   src = $(".app-download-googleplay img").eq(0).attr("src");
                   src = src.split(".")[0] + "_comingsoon.png";
 
@@ -584,8 +584,8 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                   $(".app-download-googleplay a").click(function(){
                     return false;
                   }).removeAttr("href");
-                  /*
 
+                  /*
                   // $(".app-item-link-group").addClass("lack-android");
                   $(".app-item-link-group.lack-android a").click(function(){
                     return false;

@@ -153,12 +153,12 @@
                     
                     <div class="app-download-appstore">
 
-                        <a href="{{app.ios.landing[0]}}" target="_blank" class="app-button">
+                        <a href="{{app.ios.origin}}" target="_blank" class="app-button">
                            <img src="images/btn_app_store@x2.png">  
                        </a>
                     </div>
                 <div class="app-download-googleplay">
-                    <a href="{{isAndroid ? app.android.market[0] : app.android.landing[0]}}" target="_blank" class="app-button">
+                    <a href="{{isAndroid && app.android.market ? app.android.market[0] : app.android.origin}}" target="_blank" class="app-button">
                        <img src="images/btn_google_play@x2.png">    
                     </a>
                 </div>
