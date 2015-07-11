@@ -22,7 +22,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
                  $("body").addClass("episode-error");
                  channel.loadEpisodes().then(onChannelLoaded);
               });
-              //channel.loadEpisodes().then(onChannelLoaded);
             }else{
               channel.loadEpisodes().then(onChannelLoaded);
             }
@@ -410,7 +409,6 @@ ld.controller('PlayerCtrl', function ($scope, $stateParams, sharedObjects, $loca
               }
         }
         if(channelId === null){
-        //if(true){  
             var portal = new nn.model.Portal(mso, true, lang);
             var set, setInfo, cid, channel;
             portal.get().then(function(){
